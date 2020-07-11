@@ -85,11 +85,3 @@
 
 /* Uncomment out the line below to help debug layout issues */
 /*@import './imports/_debug';*/
-
-
-$base-color: #c6538c;
-$border-dark: rgba($base-color, 0.88);
-
-.alert {
-  border: 1px solid $border-dark;
-}

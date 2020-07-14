@@ -1,17 +1,23 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
-  {{ partial "head" . }}
-  <body class="sans-serif">
+{{ partial "head" . }}
 
-    {{ block "header" . }}{{ partial "nav" . }}{{end}}
+<body class="sans-serif">
 
-    {{ block "main" . }}{{ end }}
+  <!-- Nav and footer is disabled for now before fitting in the caseit content to the template. -->
+  <!--  Muted the navigation header for now -->
+  <!-- {{ block "header" . }} -->
+  <!-- {{ partial "nav" . }}{{end}} -->
 
-    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  {{ block "main" . }}{{ end }}
 
-    {{ $script := .Site.Data.webpack.main }}
-    {{ with $script.js }}
-      <script src="{{ relURL . }}"></script>
-    {{ end }}
-  </body>
+  <!--  Muted the footer for now -->
+  <!-- {{ block "footer" . }}{{ partial "footer" . }}{{end}} -->
+
+  {{ $script := .Site.Data.webpack.main }}
+  {{ with $script.js }}
+  <script src="{{ relURL . }}"></script>
+  {{ end }}
+</body>
+
 </html>

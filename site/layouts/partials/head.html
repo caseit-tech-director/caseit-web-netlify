@@ -1,18 +1,23 @@
 <head>
 
-  <title>{{ .Title }} | {{ $.Site.Title }}</title>
+	<title>{{ .Title }} | {{ $.Site.Title }}</title>
 
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+	{{ $stylesheet := .Site.Data.webpack.main }}
+	{{ with $stylesheet.css }}
+	<link href="{{ relURL . }}" rel="stylesheet">
+	{{ end }}
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<base
+		href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<!-- Only the basic Roboto is important: light, regular, bold -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet"> -->
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -23,12 +28,13 @@
 	<meta name="theme-color" content="#fff">
 
 	<!-- Open Graph -->
-	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="CaseIT | The Premier MIS Case Compeititon">
 	<meta property="og:url" content="/">
-	<meta property="og:image" content="/img/og-image.jpg">
+	<!-- TODO: replace this with CaseIT branding image -->
+	<!-- <meta property="og:image" content="/img/og-image.jpg"> -->
 
-  {{ if .IsHome }}
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  {{ end }}
+	{{ if .IsHome }}
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	{{ end }}
 </head>

@@ -79,13 +79,13 @@ Muted to remove the template branding
 
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
-@import './imports/_colors.css';
+/* @import './imports/_colors.css';
 @import './imports/_media-queries.css';
-@import './imports/_variables.css';
+@import './imports/_variables.css'; */
 
 /* Debugging */
-@import './imports/_debug-children';
-@import './imports/_debug-grid';
+/* @import './imports/_debug-children';
+@import './imports/_debug-grid'; */
 
 /* typography */
 @import './imports/_DINPro.css';

@@ -1,5 +1,5 @@
 ---
-title: "CaseIT 2021"
+title: "Coming Soon"
 subtitle: Support sustainable farming while enjoying a cup
 image: /img/home-jumbotron.jpg
 blurb:

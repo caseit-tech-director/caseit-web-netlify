@@ -1,0 +1,88 @@
+/* 
+
+Temporary styling Content for "under construction" landing page 
+
+*/
+
+
+body {
+  background-color: #252222;
+  color: #FFF;
+  font-family: 'DINPro', sans-serif;
+
+  margin: 0rem;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+
+  Code for "underconstuction" index page
+
+*/
+
+/* for the underconstruction site */
+.pulsing-caseit-dot {
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 50%;
+  background-color: #C43434;
+
+  animation-name: pulsing-caseit-dot-animation;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-container p {
+  margin-top: 2rem;
+}
+
+.social-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.social-container>a {
+  display: block;
+  margin-right: 1rem;
+  opacity: .1;
+
+  transition: opacity 200ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.social-container>a:hover {
+  opacity: 1;
+}
+
+.social-container>a:last-child {
+  margin-right: 0rem;
+}
+
+@keyframes pulsing-caseit-dot-animation {
+  0% {
+    transform: scale(.5);
+    opacity: 0;
+  }
+
+  90% {
+    transform: scale(.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

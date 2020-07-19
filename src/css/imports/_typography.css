@@ -1,0 +1,147 @@
+/* 
+ *
+ * Content
+ * 
+ * Typography for
+ *  - Header 1 - 4
+ *  - Body
+ *  - lead
+ *  - caption
+ *  - Interactive elements
+ */
+
+
+/* 
+ Inspired the bootstrap type system
+ https: //getbootstrap.com/docs/4.3/content/typography/#headings
+
+ Old Material Design typography styles
+ https: //material.io/archive/guidelines/style/typography.html#typography-other-typographic-guidelines
+ */
+
+:root {
+  --header-spacing-top: 1rem;
+  --header-spacing-bottom: 1rem;
+  --paragraph-spacing-top: 2rem;
+  --paragraph-spacing-bottom: 2rem;
+  --caption-spacing-top: 1rem;
+  --caption-spacing-bottom: 2rem;
+}
+
+
+.display {
+  font-family: var(--typeface-header);
+  font-size: var(--type-size-display);
+  letter-spacing: var(--type-tracking-display);
+  line-height: var(--type-leading-display);
+  font-weight: bold;
+  margin: var(--header-spacing-top) 0rem var(--header-spacing-bottom);
+}
+
+h1,
+.h1 {
+  font-family: var(--typeface-header);
+  font-size: var(--type-size-h1);
+  letter-spacing: var(--type-tracking-h1);
+  line-height: var(--type-leading-h1);
+  font-weight: bold;
+  margin: var(--header-spacing-top) 0rem var(--header-spacing-bottom);
+}
+
+h2,
+.h2 {
+  font-family: var(--typeface-header);
+  font-size: var(--type-size-h2);
+  letter-spacing: var(--type-tracking-h2);
+  line-height: var(--type-leading-h2);
+  font-weight: bold;
+  margin: var(--header-spacing-top) 0rem var(--header-spacing-bottom);
+}
+
+h3,
+.h3 {
+  font-family: var(--typeface-header);
+  font-size: var(--type-size-h3);
+  letter-spacing: var(--type-tracking-h3);
+  line-height: var(--type-leading-h3);
+  font-weight: bold;
+  margin: var(--header-spacing-top) 0rem var(--header-spacing-bottom);
+}
+
+h4,
+.h4 {
+  font-family: var(--typeface-header);
+  font-size: var(--type-size-h4);
+  letter-spacing: var(--type-tracking-h4);
+  line-height: var(--type-leading-h4);
+  font-weight: bold;
+  margin: var(--header-spacing-top) 0rem var(--header-spacing-bottom);
+  text-transform: uppercase;
+}
+
+
+p,
+.body {
+  font-family: var(--typeface-body);
+  font-size: var(--type-size-body);
+  letter-spacing: var(--type-tracking-body);
+  line-height: var(--type-leading-body);
+  font-weight: normal;
+  margin: var(--paragraph-spacing-top) 0rem var(--paragraph-spacing-bottom);
+  /* for testing */
+  max-width: 1000ch;
+
+}
+
+.body--small {
+  font-size: var(--type-size-body-small);
+  letter-spacing: var(--type-tracking-body-small);
+  line-height: var(--type-leading-body-small);
+  font-weight: normal;
+  margin: var(--paragraph-spacing-top) 0rem var(--paragraph-spacing-bottom);
+}
+
+
+
+/* 
+  Make a paragraph stand out by adding .lead
+*/
+.lead {
+  font-family: var(--typeface-header);
+  font-size: var(--type-size-lead);
+  letter-spacing: var(--type-tracking-lead);
+  line-height: var(--type-leading-lead);
+  font-weight: normal;
+  margin: var(--paragraph-spacing-top) 0rem var(--paragraph-spacing-bottom);
+}
+
+.caption {
+  font-family: var(--typeface-caption);
+  font-size: var(--type-size-caption);
+  letter-spacing: var(--type-tracking-caption);
+  line-height: var(--type-leading-caption);
+  font-weight: normal;
+  margin: var(--caption-spacing-top) 0rem var(--caption-spacing-bottom);
+}
+
+
+/* 
+  Interactive Typography
+*/
+
+a {
+  /* https://cssanimation.rocks/animating-links/ */
+  color: var(--color-accent);
+  text-decoration: none;
+  background-image: linear-gradient(var(--color-accent), var(--color-accent));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% .125em;
+  transition: background-size cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  background-size: 100% .125em;
+}

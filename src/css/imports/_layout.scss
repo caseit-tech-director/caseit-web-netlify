@@ -1,0 +1,61 @@
+/* 
+ * LAYOUTS
+ * 
+ * handling everything spacing of elements
+ * 
+ * Table of contents
+ * 
+ * - basic grid structures
+ * - layout utilities 
+ *   - responsive container
+ *   - full width
+ * 
+ */
+
+// we use SASS-compiled variable here because css var() variable run into issue when using in the media query
+$full-wdith-size: 1200px;
+$full-wdith-size--article: 800px;
+
+/* reset body margin */
+body {
+  margin: 0rem;
+}
+
+/* container of layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* for preview purpose */
+.layout--frame {
+  border: 0.1em dashed #fff;
+  padding: 1em;
+  border-radius: 0.25em;
+  height: 10rem;
+}
+
+/* for center floating elements */
+.full-width {
+  margin: 0rem 1rem;
+  max-width: $full-wdith-size;
+
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.full-width--article {
+  max-width: $full-wdith-size--article;
+}
+
+@media only screen and (min-width: $full-wdith-size--article) {
+  .full-width--article {
+    margin: 0rem auto;
+  }
+}
+
+@media only screen and (min-width: $full-wdith-size) {
+  .full-width {
+    margin: 0rem auto;
+  }
+}

@@ -23,6 +23,9 @@
 /* Font Library */
 @import './imports/_DINPro';
 
+/* Custom made css reset */
+@import './imports/_reset.css';
+
 
 /* CaseIT Branding */
 /* @import './imports/_tempLandingPage.css'; */

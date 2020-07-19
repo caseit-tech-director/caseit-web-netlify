@@ -1,0 +1,73 @@
+/* 
+ * 
+ * CSS RESETS
+ * 
+ * Code adapted from Bootstrap 4 _reboot.css
+ * 
+ * SOURCE
+ * https: //github.com/twbs/bootstrap/blob/v4-dev/scss/_reboot.scss
+ * 
+ */
+
+
+/* 
+ *++++++++++++++++++++++
+ * 
+ * LAYOUT element resets
+ * 
+ * ++++++++++++++++++++++
+ */
+
+/* reset box-sizing with "inheritance" - https://css-tricks.com/box-sizing/ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* turn off all the default css collapsing margin behaviour */
+body {
+  margin: 0rem;
+}
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+/* 
+ * +++++++++++++++++++++
+ * 
+ * IMAGE element resets
+ * 
+ *+++++++++++++++++++++
+ */
+
+/* remove the image margin */
+img {
+  display: block;
+}
+
+
+/* 
+ * +++++++++++++++++++++
+ * 
+ * FORM element resets
+ * 
+ *+++++++++++++++++++++
+ */
+
+/* add "hand" cursor to non-disabled button elements. */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}

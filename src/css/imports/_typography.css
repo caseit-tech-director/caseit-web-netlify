@@ -20,11 +20,11 @@
  */
 
 :root {
-  --header-spacing-top: 1rem;
+  --header-spacing-top: 0rem;
   --header-spacing-bottom: 1rem;
-  --paragraph-spacing-top: 2rem;
+  --paragraph-spacing-top: 0rem;
   --paragraph-spacing-bottom: 2rem;
-  --caption-spacing-top: 1rem;
+  --caption-spacing-top: 0rem;
   --caption-spacing-bottom: 2rem;
 }
 
@@ -144,4 +144,8 @@ a:hover,
 a:focus {
   text-decoration: none;
   background-size: 100% .125em;
+}
+
+a:active {
+  opacity: .7;
 }

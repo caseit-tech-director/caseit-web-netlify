@@ -5,6 +5,9 @@
  * 
  * Table of contents
  * 
+ * - basic css layout reset
+ *   - box-sizing reset
+ *   - margin size reset
  * - basic grid structures
  * - layout utilities 
  *   - responsive container
@@ -16,10 +19,6 @@
 $full-wdith-size: 1200px;
 $full-wdith-size--article: 800px;
 
-/* reset body margin */
-body {
-  margin: 0rem;
-}
 
 /* container of layout */
 .layout {

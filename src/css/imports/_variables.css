@@ -8,6 +8,8 @@
  *
  */
 
+$useRoundedCorner:false;
+
 :root {
 
   /* 
@@ -23,7 +25,7 @@
   --color-accent-darkest: #81222E;
 
   --color-primary-lightest: #FFFFFF;
-  --color-primary-lighter: #c9c9c9;
+  --color-primary-lighter: #EEE;
   --color-primary-light: #8b8b8b;
   --color-primary-dark: #393636;
   --color-primary-darker: #252222;

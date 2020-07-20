@@ -1,11 +1,11 @@
 {{ define "main" }}
 
-<div class="full-width--article">
+<main class="full-width--article">
   <section class="content-block">
     <h1 class="display">
       {{ .Title }}
     </h1>
-    <h2 class="h4">Showcase of the CaseIT web style</h2>
+    <h2 class="h4">Showcasing Caseit Design</h2>
   </section>
   <section class="content-block">
     <h1 class="display">
@@ -100,8 +100,32 @@
 
   <section class="content-block">
     <h2>Interactive Element</h2>
-    <button class="button-primary">Button Primary</button>
-    <button class="button-secondary">Button Secondary</button>
+    <div class="form">
+      <div class="field">
+        <label for="txtName">Name</label>
+        <input id="txtName" name="txtName" placeholder="John Doe" type="text">
+        <span class="field__assist">*Required</span>
+      </div>
+      <div class="field">
+        <label for="txtPass">Password</label>
+        <input id="txtPass" name="txtPass" placeholder="Password" type="password">
+        <span class="field__assist">*Required</span>
+      </div>
+      <div class="field">
+        <label class="error" for="txtError">Error</label>
+        <input class="error" id="txtError" name="txtError" placeholder="Error!" type="text">
+        <span class="error" class="field__assist">Incorrect Input</span>
+      </div>
+      <div class="field">
+        <label for="txtPass">Password</label>
+        <input id="txtPass" name="txtPass" placeholder="Password" type="password">
+        <span class="field__assist">*Required</span>
+      </div>
+      <div class="form-controls">
+        <button class="button-primary">Button Primary</button>
+        <button class="button-secondary">Button Secondary</button>
+      </div>
+    </div>
 
     <p class="caption">
       Examples of interactive elements
@@ -142,7 +166,7 @@
       });
     })
   </script>
-</div>
+</main>
 
 
 {{ end }}

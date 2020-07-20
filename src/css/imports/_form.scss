@@ -1,0 +1,106 @@
+/* 
+ *
+ * Content
+ * 
+ * Form
+ *  - Text input field
+ */
+
+@import '_variables';
+
+:root {
+  --form-element-width: 20rem;
+  --form-element-leading: 1rem;
+  --form-max-width: 25rem;
+}
+
+input[type='text'],
+input[type='password'] {
+  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+
+  font-family: var(--typeface-body);
+  font-size: var(--type-size-body);
+  /* letter-spacing: var(--type-tracking-button); */
+
+  border: none;
+  border-bottom: 2px solid var(--color-primary-dark);
+
+  /* border-radius: 0.25em; */
+  @if($useRoundedCorner==true) {
+    border-top-right-radius: .25rem;
+    border-top-left-radius: .25rem;
+  }
+
+  background-color: var(--color-primary-lighter);
+
+  transition-property: box-shadow,
+  background-color,
+  border;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  outline: none;
+  border-color: var(--color-darker);
+  background-color: #FAFAFA;
+}
+
+label {
+  font-family: var(--typeface-body);
+  font-size: 14px;
+}
+
+/* 
+ * 
+ */
+input[type='text'].error,
+input[type='password'].error {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.error {
+  color: var(--color-accent) !important;
+}
+
+/* 
+ * form layout
+ */
+.field {
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 1rem; */
+  margin-bottom: 1.5rem;
+  /* define a constraining width for a field */
+  /* max-width: var(--form-element-wdith); */
+}
+
+.field__assist,
+.field>span {
+  font-family: var(--typeface-caption);
+  font-size: 12px;
+  color: #999;
+  margin-left: 1rem;
+}
+
+/* interactive element group without label */
+.form-controls {
+  margin-top: 3rem;
+}
+
+.form-controls>* {
+  /* when width is too short */
+  margin-bottom: 1rem;
+}
+
+form,
+.form {
+  max-width: var(--form-max-width);
+  margin: 2rem 0 2rem;
+}

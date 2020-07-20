@@ -1,8 +1,20 @@
+/* 
+ *
+ * Content
+ * 
+ * Buttons
+ *  - Primary Button Styling
+ *  - Secondary Button Styling
+ */
+
+@import '_variables';
+// $useRoundedCorner:false;
+
 .button-primary,
 .button-secondary {
   text-decoration: none;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 
@@ -14,9 +26,14 @@
   text-transform: uppercase;
 
   border: 2px solid transparent;
-  border-radius: 0.25em;
 
-  transition-property: box-shadow, background-color, border;
+  @if ($useRoundedCorner==true) {
+    border-radius: 0.25em;
+  }
+
+  transition-property: box-shadow,
+  background-color,
+  border;
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }

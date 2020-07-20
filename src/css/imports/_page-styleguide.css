@@ -18,8 +18,8 @@
   flex-basis: 10rem;
   height: 10rem;
 
-  padding-left: .25rem;
-  padding-top: .25rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
   flex-grow: 1;
 
   color: var(--color-primary-lightest);

@@ -70,9 +70,9 @@
   --type-leading-h2: 1em;
   --type-leading-h3: 1em;
   --type-leading-h4: 1em;
-  --type-leading-lead: 1.5em;
-  --type-leading-body: 1.5em;
-  --type-leading-body-small: 1.5em;
+  --type-leading-lead: 34px;
+  --type-leading-body: 24px;
+  --type-leading-body-small: 20px;
 
   /* 
    *

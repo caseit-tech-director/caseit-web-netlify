@@ -1,7 +1,7 @@
 /* 
  * LAYOUTS
  * 
- * handling everything spacing of elements
+ * handling spacing of elements
  * 
  * Table of contents
  * 
@@ -17,8 +17,17 @@
 
 // we use SASS-compiled variable here because css var() variable run into issue when using in the media query
 $full-wdith-size: 1200px;
-$full-wdith-size--article: 800px;
+$full-wdith-size--article: 768px;
 
+
+/* 
+ * A class that use to seperate different chunk of content
+ */
+.content-block,
+section {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
 
 /* container of layout */
 .layout {
@@ -34,7 +43,7 @@ $full-wdith-size--article: 800px;
   height: 10rem;
 }
 
-/* for center floating elements */
+/* for center floating column */
 .full-width {
   margin: 0rem 1rem;
   max-width: $full-wdith-size;
@@ -44,6 +53,7 @@ $full-wdith-size--article: 800px;
 }
 
 .full-width--article {
+  margin: 0rem 1rem;
   max-width: $full-wdith-size--article;
 }
 

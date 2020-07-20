@@ -1,0 +1,4 @@
+body {
+  /* css baseline grid */
+  background: repeating-linear-gradient(#FFF, #FFF 7px, #FF7676 8px);
+}

@@ -20,14 +20,26 @@
  */
 
 :root {
+  /* 
+   * We want each header to stick closer together in to make header group layout easier
+   */
   --header-spacing-top: 0rem;
   --header-spacing-bottom: 1rem;
-  --paragraph-spacing-top: 0rem;
+  /* 
+   * We want each paragraph to be a distinct entity, so they have larger spacing of 2rem
+   */
+  --paragraph-spacing-top: 2rem;
   --paragraph-spacing-bottom: 2rem;
-  --caption-spacing-top: 0rem;
+  /* 
+   * We want the caption to belong to something above, so 
+   */
+  --caption-spacing-top: 1rem;
   --caption-spacing-bottom: 2rem;
 }
 
+/* 
+ * FOR HEADLINES AND DISPLAY
+ */
 
 .display {
   font-family: var(--typeface-header);
@@ -80,16 +92,26 @@ h4,
 }
 
 
+/* 
+ * FOR BODY COPY TEXT
+ */
 p,
-.body {
+.body,
+body {
   font-family: var(--typeface-body);
   font-size: var(--type-size-body);
   letter-spacing: var(--type-tracking-body);
   line-height: var(--type-leading-body);
   font-weight: normal;
+}
+
+p,
+.body {
   margin: var(--paragraph-spacing-top) 0rem var(--paragraph-spacing-bottom);
-  /* for testing */
-  max-width: 1000ch;
+  /* 
+   * prevent lines going too wide to enhance readability
+   */
+  max-width: 40rem;
 
 }
 
@@ -101,7 +123,9 @@ p,
   margin: var(--paragraph-spacing-top) 0rem var(--paragraph-spacing-bottom);
 }
 
-
+/* 
+ * FOR OTHER TYPOGRAPHIC ELEMENTS - eg CAPTIONS, LEAD, CALL OUT BOX
+ */
 
 /* 
   Make a paragraph stand out by adding .lead

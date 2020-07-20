@@ -52,6 +52,8 @@ body {
 /* remove the image margin */
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 

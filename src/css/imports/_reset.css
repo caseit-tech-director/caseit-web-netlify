@@ -21,6 +21,8 @@
 /* reset box-sizing with "inheritance" - https://css-tricks.com/box-sizing/ */
 html {
   box-sizing: border-box;
+  /*r remove the iphone touch area indicator */
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,

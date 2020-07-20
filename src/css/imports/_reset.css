@@ -9,6 +9,16 @@
  * 
  */
 
+/* 
+ * remove the iphone touch area indicator in all interactive elements except links
+ */
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  -webkit-tap-highlight-color: default;
+}
 
 /* 
  *++++++++++++++++++++++
@@ -21,8 +31,6 @@
 /* reset box-sizing with "inheritance" - https://css-tricks.com/box-sizing/ */
 html {
   box-sizing: border-box;
-  /*r remove the iphone touch area indicator */
-  -webkit-tap-highlight-color: transparent;
 }
 
 *,

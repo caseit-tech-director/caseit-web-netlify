@@ -16,8 +16,14 @@
 html {
   -webkit-tap-highlight-color: transparent;
 }
+
 a {
   -webkit-tap-highlight-color: default;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: #FFF;
 }
 
 /* 
@@ -38,7 +44,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
 
 /* turn off all the default css collapsing margin behaviour */
 body {
@@ -65,7 +70,6 @@ img {
   width: 100%;
   height: auto;
 }
-
 
 /* 
  * +++++++++++++++++++++

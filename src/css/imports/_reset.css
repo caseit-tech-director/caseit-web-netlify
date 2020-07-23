@@ -21,9 +21,12 @@ a {
   -webkit-tap-highlight-color: default;
 }
 
+/* 
+ * text selection style
+ */
 ::selection {
-  background-color: var(--color-accent);
-  color: #FFF;
+  background-color: #DDD;
+  color: #000;
 }
 
 /* 

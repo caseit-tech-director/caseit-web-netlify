@@ -1,172 +1,379 @@
 {{ define "main" }}
 
-<main class="full-width--article">
-  <section class="content-block">
-    <h1 class="display">
-      {{ .Title }}
-    </h1>
-    <h2 class="h4">Showcasing Caseit Design</h2>
+<main>
+  <section class="full-width--article">
+
+    <section class="content-block">
+      <h1 class="display">
+        {{ .Title }}
+      </h1>
+      <h2 class="h4">Showcasing Caseit Design</h2>
+    </section>
+    <section class="content-block">
+      <h1 class="display">
+        Headline Display
+      </h1>
+      <div class="caption">DINPro Bold 96</div>
+
+      <h1>
+        Headline 1
+      </h1>
+      <div class="caption">DINPro Bold 64</div>
+
+      <h2>
+        Headline 2
+      </h2>
+      <div class="caption">DINPro Bold 48</div>
+
+      <h3>
+        Headline 3
+      </h3>
+      <div class="caption">DINPro Bold 34</div>
+
+      <h4>
+        Headline 4
+      </h4>
+      <div class="caption">DINPro Bold 20, Uppercase</div>
+
+      <p class="lead">
+        Lead - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
+        consequat
+        ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
+        pariatu
+      </p>
+      <div class="caption">DINPro Regular 20</div>
+
+      <p>
+        Body - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
+        consequat
+        ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
+        pariatur
+        reprehenderit culpa magna. Sint occaecat sint occaecat irure magna Lorem occaecat occaecat culpa tempor sit
+        quis.
+        Labore laboris id cillum exercitation velit cillum aliqua mollit voluptate dolor amet aliquip. Cupidatat mollit
+        laborum dolor aliqua ea excepteur minim pariatur mollit. Exercitation anim incididunt in aliqua occaecat
+        deserunt.
+      </p>
+      <div class="caption">Roboto Regular 16</div>
+
+      <p class="body--small">
+        Body(small) - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non
+        commodo
+        consequat ea dolore.
+      </p>
+      <div class="caption">Roboto Regular 14</div>
+
+      <img src="https://source.unsplash.com/random/800x600" alt="Testing Images">
+      <p class="caption">
+        Caption - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
+        consequat ea dolore.
+      </p>
+
+    </section>
+
+    <section class="content-block">
+      <h1>Testing header</h1>
+      <h2 class="h4">header 2 with h4 styling</h2>
+      <p>
+        Body - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
+        consequat
+        ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
+        pariatur
+        reprehenderit culpa magna. Sint occaecat sint occaecat irure magna Lorem occaecat occaecat culpa tempor sit
+        quis.
+        Labore laboris id cillum exercitation velit cillum aliqua mollit voluptate dolor amet aliquip. Cupidatat mollit
+        laborum dolor aliqua ea excepteur minim pariatur mollit. Exercitation anim incididunt in aliqua occaecat
+        deserunt.
+      </p>
+
+
+      <p>
+        Body - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
+        consequat
+        ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
+        pariatur
+        reprehenderit culpa magna. Sint occaecat sint occaecat irure magna Lorem occaecat occaecat culpa tempor sit
+        quis.
+        Labore laboris id cillum exercitation velit cillum aliqua mollit voluptate dolor amet aliquip. Cupidatat mollit
+        laborum dolor aliqua ea excepteur minim pariatur mollit. Exercitation anim incididunt in aliqua occaecat
+        deserunt.
+      </p>
+      <p>
+        This is a in text <a href="#">Link</a>
+      </p>
+      <p class="caption">
+        Examples of typographic elements on website
+      </p>
+    </section>
+
+
+    <section class="content-block">
+      <h2>Interactive Element</h2>
+      <div class="form">
+        <div class="field">
+          <label for="txtName">Name</label>
+          <input id="txtName" name="txtName" placeholder="John Doe" type="text">
+          <span class="field__assist">*Required</span>
+        </div>
+        <div class="field">
+          <label for="txtPass">Password</label>
+          <input id="txtPass" name="txtPass" placeholder="Password" type="password">
+          <span class="field__assist">*Required</span>
+        </div>
+        <div class="field">
+          <label class="error" for="txtError">Error</label>
+          <input class="error" id="txtError" name="txtError" placeholder="Error!" type="text">
+          <span class="error" class="field__assist">Incorrect Input</span>
+        </div>
+        <div class="field">
+          <label for="txtPass">Password</label>
+          <input id="txtPass" name="txtPass" placeholder="Password" type="password">
+          <span class="field__assist">*Required</span>
+        </div>
+        <div class="form-controls">
+          <button class="button-primary">Button Primary</button>
+          <button class="button-secondary">Button Secondary</button>
+        </div>
+      </div>
+
+      <p class="caption">
+        Examples of interactive elements
+      </p>
+    </section>
+
+    <section class="content-block">
+      <h2>Colour Scheme</h2>
+      <p>Click to copy color code</p>
+
+      <h3 class="h4">Primary</h3>
+      <div class="color-swatch-container">
+        <div class="color-swatch" style="background-color: #FFFFFF; color:#000000">#FFFFFF</div>
+        <div class="color-swatch" style="background-color: #393636;">#393636</div>
+        <div class="color-swatch" style="background-color: #252222;">#252222</div>
+        <div class="color-swatch" style="background-color: #000000;">#000000</div>
+      </div>
+
+      <h3 class="h4">Accent</h3>
+      <div class="color-swatch-container">
+        <div class="color-swatch" style="background-color: #C43434;">#C43434</div>
+        <div class="color-swatch" style="background-color: #81222E;">#81222E</div>
+        <div class="color-swatch" style="background-color: #721F2A;">#721F2A</div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      document.querySelectorAll(".color-swatch").forEach((elm) => {
+        elm.addEventListener('click', (e) => {
+          let copyText = document.createElement('input');
+          copyText.type = "input";
+          document.body.append(copyText);
+
+          copyText.value = e.target.innerHTML;
+          copyText.select();
+          document.execCommand("copy");
+          copyText.remove();
+        });
+      })
+    </script>
   </section>
-  <section class="content-block">
-    <h1 class="display">
-      Headline Display
-    </h1>
-    <div class="caption">DINPro Bold 96</div>
 
-    <h1>
-      Headline 1
-    </h1>
-    <div class="caption">DINPro Bold 64</div>
-
-    <h2>
-      Headline 2
-    </h2>
-    <div class="caption">DINPro Bold 48</div>
-
-    <h3>
-      Headline 3
-    </h3>
-    <div class="caption">DINPro Bold 34</div>
-
-    <h4>
-      Headline 4
-    </h4>
-    <div class="caption">DINPro Bold 20, Uppercase</div>
-
-    <p class="lead">
-      Lead - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
-      consequat
-      ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
-      pariatu
-    </p>
-    <div class="caption">DINPro Regular 20</div>
-
-    <p>
-      Body - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
-      consequat
-      ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
-      pariatur
-      reprehenderit culpa magna. Sint occaecat sint occaecat irure magna Lorem occaecat occaecat culpa tempor sit quis.
-      Labore laboris id cillum exercitation velit cillum aliqua mollit voluptate dolor amet aliquip. Cupidatat mollit
-      laborum dolor aliqua ea excepteur minim pariatur mollit. Exercitation anim incididunt in aliqua occaecat deserunt.
-    </p>
-    <div class="caption">Roboto Regular 16</div>
-
-    <p class="body--small">
-      Body(small) - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
-      consequat ea dolore.
-    </p>
-    <div class="caption">Roboto Regular 14</div>
-
-    <img src="https://source.unsplash.com/random/800x600" alt="Testing Images">
-    <p class="caption">
-      Caption - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
-      consequat ea dolore.
-    </p>
-
-  </section>
-
-  <section class="content-block">
-    <h1>Testing header</h1>
-    <h2 class="h4">header 2 with h4 styling</h2>
-    <p>
-      Body - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
-      consequat
-      ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
-      pariatur
-      reprehenderit culpa magna. Sint occaecat sint occaecat irure magna Lorem occaecat occaecat culpa tempor sit quis.
-      Labore laboris id cillum exercitation velit cillum aliqua mollit voluptate dolor amet aliquip. Cupidatat mollit
-      laborum dolor aliqua ea excepteur minim pariatur mollit. Exercitation anim incididunt in aliqua occaecat deserunt.
-    </p>
-
-
-    <p>
-      Body - Incididunt mollit quis tempor sunt id aliquip nisi ipsum fugiat.Esse fugiat velit minim non commodo
-      consequat
-      ea dolore. Ullamco cupidatat amet proident quis pariatur nulla ex officia fugiat reprehenderit eiusmod. Esse
-      pariatur
-      reprehenderit culpa magna. Sint occaecat sint occaecat irure magna Lorem occaecat occaecat culpa tempor sit quis.
-      Labore laboris id cillum exercitation velit cillum aliqua mollit voluptate dolor amet aliquip. Cupidatat mollit
-      laborum dolor aliqua ea excepteur minim pariatur mollit. Exercitation anim incididunt in aliqua occaecat deserunt.
-    </p>
-    <p>
-      This is a in text <a href="#">Link</a>
-    </p>
-    <p class="caption">
-      Examples of typographic elements on website
-    </p>
-  </section>
-
-
-  <section class="content-block">
-    <h2>Interactive Element</h2>
-    <div class="form">
-      <div class="field">
-        <label for="txtName">Name</label>
-        <input id="txtName" name="txtName" placeholder="John Doe" type="text">
-        <span class="field__assist">*Required</span>
-      </div>
-      <div class="field">
-        <label for="txtPass">Password</label>
-        <input id="txtPass" name="txtPass" placeholder="Password" type="password">
-        <span class="field__assist">*Required</span>
-      </div>
-      <div class="field">
-        <label class="error" for="txtError">Error</label>
-        <input class="error" id="txtError" name="txtError" placeholder="Error!" type="text">
-        <span class="error" class="field__assist">Incorrect Input</span>
-      </div>
-      <div class="field">
-        <label for="txtPass">Password</label>
-        <input id="txtPass" name="txtPass" placeholder="Password" type="password">
-        <span class="field__assist">*Required</span>
-      </div>
-      <div class="form-controls">
-        <button class="button-primary">Button Primary</button>
-        <button class="button-secondary">Button Secondary</button>
-      </div>
+  <section>
+    <div class="full-width--article">
+      <h2>Grid Layout</h2>
+      <p>The following is a demostration of the grid layout we use on the website</p>
     </div>
 
-    <p class="caption">
-      Examples of interactive elements
-    </p>
-  </section>
+    <div class="full-width">
 
-  <section class="content-block">
-    <h2>Colour Scheme</h2>
-    <p>Click to copy color code</p>
+      <!-- 
+      
+        Demo for
+        2 column grid, image right
+      
+      -->
 
-    <h3 class="h4">Primary</h3>
-    <div class="color-swatch-container">
-      <div class="color-swatch" style="background-color: #FFFFFF; color:#000000">#FFFFFF</div>
-      <div class="color-swatch" style="background-color: #393636;">#393636</div>
-      <div class="color-swatch" style="background-color: #252222;">#252222</div>
-      <div class="color-swatch" style="background-color: #000000;">#000000</div>
+      <div class="content-block">
+        <!-- grid preview -->
+        <div class="grid-2-cols caption">
+          <div class="grid-2-cols__image-left layout--frame">.grid-2-cols__image-left</div>
+          <div class="grid-2-cols__blurb-right layout--frame">.grid-2-cols__blurb-right</div>
+        </div>
+        <!-- code demo -->
+        <div class="full-width--article">
+          <pre><code class="language-html">
+&lt;div class=&quot;grid-2-cols&quot;&gt;
+  &lt;div class=&quot;grid-2-cols__image-left layout--frame&quot;&gt;.grid-2-cols__image-left&lt;/div&gt;
+  &lt;div class=&quot;grid-2-cols__blurb-right layout--frame&quot;&gt;.grid-2-cols__blurb-right&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- 
+      
+        Demo for
+        2 column grid, image right
+      
+      -->
+
+      <div class="content-block">
+        <!-- grid preview -->
+        <div class="grid-2-cols caption">
+          <div class="grid-2-cols__blurb-left layout--frame">.grid-2-cols__blurb-left</div>
+          <div class="grid-2-cols__image-right layout--frame">.grid-2-cols__image-right</div>
+        </div>
+        <!-- code demo -->
+        <div class="full-width--article">
+          <pre><code class="language-html">
+&lt;div class=&quot;grid-2-cols&quot;&gt;
+  &lt;div class=&quot;grid-2-cols__blurb-left layout--frame&quot;&gt;.grid-2-cols__blurb-left&lt;/div&gt;
+  &lt;div class=&quot;grid-2-cols__image-right layout--frame&quot;&gt;.grid-2-cols__image-right&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- 
+      
+        Demo for
+        3 column grid
+      
+      -->
+
+      <div class="content-block">
+        <!-- grid preview -->
+        <div class="grid-3-cols caption">
+          <div class="layout--frame">Item 1</div>
+          <div class="layout--frame">Item 2</div>
+          <div class="layout--frame">Item 3</div>
+        </div>
+
+        <!-- code demo -->
+        <div class="full-width--article">
+          <pre><code class="language-html">
+&lt;div class=&quot;grid-3-cols&quot;&gt;
+  &lt;div&gt;Item 1&lt;/div&gt;
+  &lt;div&gt;Item 2&lt;/div&gt;
+  &lt;div&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- 
+      
+        Demo for
+        blog
+      
+      -->
+
     </div>
 
-    <h3 class="h4">Accent</h3>
-    <div class="color-swatch-container">
-      <div class="color-swatch" style="background-color: #C43434;">#C43434</div>
-      <div class="color-swatch" style="background-color: #81222E;">#81222E</div>
-      <div class="color-swatch" style="background-color: #721F2A;">#721F2A</div>
+    <!-- 
+      
+        Demo for
+        Image Grid
+      
+      -->
+
+    <div class="content-block">
+      <div class="full-width--article">
+        <h2>Photo Grid</h2>
+        <p>Demostration of photo grid layout on ladnding page</p>
+      </div>
+      <!-- grid preview -->
+      <div class="photo-grid caption">
+        <!-- Row 1 -->
+        <div class="span-col4 span-row3"></div>
+        <div class="span-col5 span-row3"></div>
+        <div class="span-col3 span-row2"></div>
+        <div class="span-col3 span-row2"></div>
+
+        <!--  Row 2-->
+        <div class="span-col span-row2 blank">BLANK SPACE</div>
+        <div class="span-col2 span-row2"></div>
+        <div class="span-col4 span-row3"></div>
+        <div class="span-col2 span-row4"></div>
+        <div class="span-col3 span-row3 blank">BLANK SPACE</div>
+
+        <!-- Row 3-->
+        <div class="span-col4 span-row2 blank">BLANK SPACE</div>
+        <div class="span-col3 span-row2"></div>
+        <!-- Row (3.5)-->
+        <div class="span-col5 span-row4"></div>
+
+        <!-- Row 4 -->
+        <div class="span-col1 span-row3 blank">BLANK SPACE</div>
+        <div class="span-col4 span-row3"></div>
+        <div class="span-col2 span-row4"></div>
+
+        <!-- Row 5 -->
+        <div class="span-col2 span-row3 blank">BLANK SPACE</div>
+        <div class="span-col3 span-row4"></div>
+        <div class="span-col4 span-row3"></div>
+        <div class="span-col1 span-row3 blank">BLANK SPACE</div>
+
+        <!-- Row(5.5) -->
+        <div class="span-col2 span-row2 fading-close"></div>
+
+        <!-- Row 6-->
+        <div class="span-col2 span-row2 fading-close"></div>
+        <div class="span-col2 span-row2 fading-far"></div> <!-- to be shrink-->
+        <div class="span-col3 span-row2 "></div>
+        <div class="span-col2 span-row2 fading-close"></div> <!-- to be shrink-->
+
+        <!-- Row 6.5-->
+        <div class="span-col1 span-row2 blank">BLANK SPACE</div>
+        <div class="span-col2 span-row2 fading-close"></div>
+
+        <!-- Row 7-->
+        <div class="span-col2 span-row1 fading-far"></div>
+        <div class="span-col3 span-row3 "></div><!-- to be shrink -->
+        <div class="span-col3 span-row2 fading-close"></div><!-- to be shrink -->
+        <div class="span-col1 span-row2 blank">BLANK SPACE</div>
+
+        <!-- Row 8-->
+        <div class="span-col1 span-row2 blank">BLANK SPACE</div>
+        <div class="span-col3 span-row2 fading-close"></div> <!-- to be shrink -->
+        <div class="span-col3 span-row2 fading-far"></div> <!-- to be shrink -->
+        <div class="span-col3 span-row2 fading-far fading-top-right"></div> <!-- to be shrink -->
+        <div class="span-col2 span-row3 fading-close"></div> <!-- to be shrink -->
+        <div class="span-col3 span-row2 fading-close"></div> <!-- to be shrink -->
+        <div class="span-col2 span-row3 fading-close"></div> <!-- to be shrink -->
+        <div class="span-col2 span-row2 fading-far fading-top-left"></div> <!-- to be shrink -->
+
+      </div>
+
     </div>
   </section>
-
-  <script type="text/javascript">
-    document.querySelectorAll(".color-swatch").forEach((elm) => {
-      elm.addEventListener('click', (e) => {
-        let copyText = document.createElement('input');
-        copyText.type = "input";
-        document.body.append(copyText);
-
-        copyText.value = e.target.innerHTML;
-        copyText.select();
-        document.execCommand("copy");
-        copyText.remove();
-      });
-    })
-  </script>
 </main>
+
+
+<footer>
+  <div class="full-width footer-grid">
+    <img src="img/logo/CaseIt_White.svg" alt="CaseIT Logo" class="footer-grid__logo">
+
+    <ul class="link-list">
+      <li class="link-list__title">Competition</li>
+      <li>
+        <a href="#">Overview</a>
+      </li>
+      <li>
+        <a href="#">Registration</a>
+      </li>
+      <li>
+        <a href="#">Competition Structure</a>
+      </li>
+      <li>
+        <a href="#">Event Schedule</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<!-- for syntax highlighting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/googlecode.min.css">
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
 
 
 {{ end }}

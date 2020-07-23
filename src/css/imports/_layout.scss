@@ -19,6 +19,12 @@
 $full-wdith-size: 1200px;
 $full-wdith-size--article: 768px;
 
+// breakpoint for the phone
+$breakpoint-s: 600px;
+
+// $grid-size-column: 84px;
+// $grid-columns: 12;
+$grid-gutter: 1rem;
 
 /* 
  * A class that use to seperate different chunk of content
@@ -37,23 +43,20 @@ section {
 
 /* for preview purpose */
 .layout--frame {
-  border: 0.1em dashed #fff;
+  border: 0.1em dashed #aaa;
   padding: 1em;
   border-radius: 0.25em;
-  height: 10rem;
+  height: 15rem;
 }
 
 /* for center floating column */
 .full-width {
-  margin: 0rem 1rem;
+  margin: 0rem 1.5rem;
   max-width: $full-wdith-size;
-
-  padding-top: 2em;
-  padding-bottom: 2em;
 }
 
 .full-width--article {
-  margin: 0rem 1rem;
+  margin: 0rem 1.5rem;
   max-width: $full-wdith-size--article;
 }
 
@@ -66,5 +69,161 @@ section {
 @media only screen and (min-width: $full-wdith-size) {
   .full-width {
     margin: 0rem auto;
+  }
+}
+
+/*
+ *
+ * 12 column Grid layout for the website
+ * 
+ */
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: $grid-gutter;
+  row-gap: $grid-gutter;
+}
+
+@media only screen and (min-width: $breakpoint-s) {
+
+  // enable full size grid after the mobile breakpoint
+  .grid-2-cols {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .grid-2-cols__blurb-left {
+    // start at column 1 and span across 5 cells
+    grid-column: 1 / span 5;
+  }
+
+  .grid-2-cols__blurb-right {
+    // start at column 8 and span across 5 cells
+    grid-column: 8 / span 5;
+  }
+
+  .grid-2-cols__image-left {
+    // start at column 1 and span across 6 cells
+    grid-column: 1 / span 6;
+  }
+
+  .grid-2-cols__image-right {
+    // start at column 7 and span across 6 cells
+    grid-column: 7 / span 6;
+  }
+
+  .grid-2-cols__image {
+    // start at the following column next to the previous content and span across 6 cells
+    grid-column: auto / auto;
+  }
+}
+
+/*
+ *
+ * Three Cols display
+ * 
+ */
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: $grid-gutter;
+  row-gap: $grid-gutter;
+}
+
+@media only screen and (min-width: $breakpoint-s) {
+  .grid-3-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*
+ *
+ * Image Grid
+ * 
+ */
+
+.photo-grid {
+  // grid setup
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  // grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-rows: repeat(23, 6vw);
+
+  column-gap: 1rem;
+  row-gap: 1rem;
+
+  grid-auto-flow: row;
+  // set a constraint of how wide the grid could grow
+  // and center the
+  max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// utility class for indicating image
+.photo-grid>div {
+  // center the content text
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  background-color: #EEE;
+}
+
+// utility class for indicating where the blank space
+.photo-grid>.blank {
+  // center the content text
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  color: #BBB;
+  border: 0.1em dashed #aaa;
+
+  opacity: 0;
+}
+
+// utility class for highlighting the current box
+.photo-grid>.current {
+  background-color: yellow;
+}
+
+
+//  Grid fading image effect
+.photo-grid>.fading-top-left {
+  transform-origin: top left;
+}
+
+.photo-grid>.fading-top-right {
+  transform-origin: top right;
+}
+
+.photo-grid>.fading-top {
+  transform-origin: top;
+}
+
+.photo-grid>.fading-far {
+  transform: scale(.4);
+  opacity: .3;
+}
+
+.photo-grid>.fading-close {
+  transform: scale(.8);
+  opacity: .5;
+}
+
+// generate classes for grid items
+@for $i from 1 through 6 {
+  .photo-grid>.span-col#{$i} {
+    grid-column: auto/span #{$i};
+  }
+}
+
+@for $i from 1 through 6 {
+  .photo-grid>.span-row#{$i} {
+    grid-row: auto/span #{$i};
   }
 }

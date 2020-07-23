@@ -42,7 +42,7 @@
 .button-primary {
   background-color: var(--color-primary-darkest);
   color: var(--color-primary-lightest);
-  box-shadow: 0 0.2em 0.4em rgba(54, 54, 54, 0);
+  box-shadow: 0 0.2em 0.3em rgba(54, 54, 54, .5);
 }
 
 .button-primary:active,
@@ -61,7 +61,7 @@
 .button-primary:focus {
   /* css box shadow https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
   /* drop shadow vs box shadow https://css-tricks.com/breaking-css-box-shadow-vs-drop-shadow/ */
-  box-shadow: 0 0.2em 0.4em rgba(54, 54, 54, 0.5);
+  box-shadow: 0 0.2em 0.5em rgba(54, 54, 54, 0.6);
   outline: none;
 }
 

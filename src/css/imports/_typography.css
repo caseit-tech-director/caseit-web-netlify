@@ -164,19 +164,23 @@ p,
 
 a {
   /* https://cssanimation.rocks/animating-links/ */
-  color: var(--color-accent);
+  color: var(--color-primary-light);
   text-decoration: none;
   background-image: linear-gradient(var(--color-accent), var(--color-accent));
   background-position: 0% 100%;
   background-repeat: no-repeat;
-  background-size: 0% .125em;
-  transition: background-size cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  background-size: 100% 0%;
+  /* transition: none cubic-bezier(0.19, 1, 0.22, 1) 0.3s; */
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  transition-duration: .3s;
+  transition-property: background-size color;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  background-size: 100% .125em;
+  background-size: 100% 100%;
+  color: var(--color-primary-lightest);
 }
 
 a:active {

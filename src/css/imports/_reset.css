@@ -91,3 +91,16 @@ input[type="submit"],
 input[type="submit"]:not(:disabled) {
   cursor: pointer;
 }
+
+/* 
+ *++++++++++++++++++++++++++++++++++++++++++++++++
+ * 
+ * Fix the Material Design icon alignment issue
+ * 
+ *++++++++++++++++++++++++++++++++++++++++++++++++
+ */
+.material-icons {
+  font-size: 1.2em;
+  display: inline-flex;
+  vertical-align: middle;
+}

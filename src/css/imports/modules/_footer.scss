@@ -4,14 +4,14 @@
  * 
  */
 
-@import "../_layout.scss";
+// @import "../_layout.scss";
+@import "../_breakpoints.scss";
 
 // +++++++++++++++++++++++++++++++++
 //
 //  The footer module container
 //
 // +++++++++++++++++++++++++++++++++
-
 
 footer {
   background-color: var(--color-accent-darker);
@@ -21,9 +21,8 @@ footer {
   // edit the footer link colour to match the background
   a {
     color: var(--color-primary-lightest);
-    opacity: .7;
-    background-image: linear-gradient(var(--color-accent),
-        var(--color-accent));
+    opacity: 0.7;
+    background-image: linear-gradient(var(--color-accent), var(--color-accent));
   }
 
   a:hover {
@@ -31,7 +30,12 @@ footer {
   }
 
   a:active {
-    opacity: .5;
+    opacity: 0.5;
+  }
+
+  // Show the depricated link
+  a[href="#"] {
+    text-decoration: line-through;
   }
 }
 
@@ -52,8 +56,7 @@ footer .footer-grid {
   row-gap: $grid-gutter;
 }
 
-
-@media only screen and (min-width: $breakpoint-s) {
+@include viewportLargerThan($breakpoint-m) {
   :root {
     --list-list-colum-start: 4;
   }
@@ -73,10 +76,8 @@ footer .footer-grid__logo {
   grid-column: 1/-1;
   max-width: 20vw;
   margin-bottom: 4rem;
-}
 
-@media only screen and (min-width: $breakpoint-s) {
-  footer .footer-grid__logo {
+  @include viewportLargerThan($breakpoint-s) {
     grid-column: 1/4;
     grid-row: 1/4;
 
@@ -85,7 +86,11 @@ footer .footer-grid__logo {
   }
 }
 
+// +++++++++++++++++++++++++++++++++
+//
 // the site map list at the footer
+//
+// +++++++++++++++++++++++++++++++++
 footer .link-list {
   // layout attributes
   display: block;
@@ -108,17 +113,22 @@ footer .link-list {
   }
 
   li {
-    margin-bottom: .75rem;
+    margin-bottom: 0.75rem;
   }
 
   li.link-list__social-media {
     max-width: 1.5rem;
     float: left;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
   }
 }
 
-// Footer Seperator line at the bottom
+// +++++++++++++++++++++++++++++++++
+//
+//  Footer Seperator line at the bottom
+//
+// +++++++++++++++++++++++++++++++++
+
 footer hr {
   // layout attributes
   grid-column-start: var(--list-list-colum-start);
@@ -128,10 +138,18 @@ footer hr {
   // how it looks
   border: none;
   border-bottom: 1px solid var(--color-primary-lightest);
-  opacity: .3;
+  opacity: 0.3;
 }
 
-// Misc information like copyright, privacy policy, Traditional Territories Acknowledgement
+// +++++++++++++++++++++++++++++++++
+//
+//  Misc information like
+//
+//  copyright, privacy policy,
+//  Traditional Territories Acknowledgement
+//
+// +++++++++++++++++++++++++++++++++
+
 footer .misc-info {
   grid-column-start: var(--list-list-colum-start);
   grid-column-end: -1; // span to the end of row

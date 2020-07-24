@@ -15,12 +15,11 @@
  * 
  */
 
+@import "./_breakpoints.scss";
+
 // we use SASS-compiled variable here because css var() variable run into issue when using in the media query
 $full-wdith-size: 1200px;
 $full-wdith-size--article: 768px;
-
-// breakpoint for the phone
-$breakpoint-s: 600px;
 
 // $grid-size-column: 84px;
 // $grid-columns: 12;
@@ -60,13 +59,13 @@ section {
   max-width: $full-wdith-size--article;
 }
 
-@media only screen and (min-width: $full-wdith-size--article) {
+@include viewportLargerThan($full-wdith-size--article) {
   .full-width--article {
     margin: 0rem auto;
   }
 }
 
-@media only screen and (min-width: $full-wdith-size) {
+@include viewportLargerThan($full-wdith-size) {
   .full-width {
     margin: 0rem auto;
   }
@@ -85,8 +84,7 @@ section {
   row-gap: $grid-gutter;
 }
 
-@media only screen and (min-width: $breakpoint-s) {
-
+@include viewportLargerThan($breakpoint-s) {
   // enable full size grid after the mobile breakpoint
   .grid-2-cols {
     grid-template-columns: repeat(12, 1fr);
@@ -131,7 +129,7 @@ section {
   row-gap: $grid-gutter;
 }
 
-@media only screen and (min-width: $breakpoint-s) {
+@include viewportLargerThan($breakpoint-s) {
   .grid-3-cols {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -162,68 +160,67 @@ section {
 }
 
 // utility class for indicating image
-.photo-grid>div {
+.photo-grid > div {
   // center the content text
   display: flex;
   align-items: center;
   justify-content: center;
 
   padding: 1rem;
-  background-color: #EEE;
+  background-color: #eee;
 }
 
 // utility class for indicating where the blank space
-.photo-grid>.blank {
+.photo-grid > .blank {
   // center the content text
   display: flex;
   align-items: center;
   justify-content: center;
 
   background-color: transparent;
-  color: #BBB;
+  color: #bbb;
   border: 0.1em dashed #aaa;
 
   opacity: 0;
 }
 
 // utility class for highlighting the current box
-.photo-grid>.current {
+.photo-grid > .current {
   background-color: yellow;
 }
 
-
 //  Grid fading image effect
-.photo-grid>.fading-top-left {
+.photo-grid > .fading-top-left {
   transform-origin: top left;
 }
 
-.photo-grid>.fading-top-right {
+.photo-grid > .fading-top-right {
   transform-origin: top right;
 }
 
-.photo-grid>.fading-top {
+.photo-grid > .fading-top {
   transform-origin: top;
 }
 
-.photo-grid>.fading-far {
-  transform: scale(.4);
-  opacity: .3;
+.photo-grid > .fading-far {
+  transform: scale(0.4);
+  opacity: 0.3;
 }
 
-.photo-grid>.fading-close {
-  transform: scale(.8);
-  opacity: .5;
+.photo-grid > .fading-close {
+  transform: scale(0.8);
+  opacity: 0.5;
 }
 
 // generate classes for grid items
 @for $i from 1 through 6 {
-  .photo-grid>.span-col#{$i} {
+  .photo-grid > .span-col#{$i} {
     grid-column: auto/span #{$i};
   }
 }
 
 @for $i from 1 through 6 {
-  .photo-grid>.span-row#{$i} {
+  .photo-grid > .span-row#{$i} {
     grid-row: auto/span #{$i};
   }
 }

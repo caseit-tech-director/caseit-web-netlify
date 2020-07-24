@@ -1,0 +1,145 @@
+/* 
+ * 
+ * Styles for FOOTER module
+ * 
+ */
+
+@import "../_layout.scss";
+
+// +++++++++++++++++++++++++++++++++
+//
+//  The footer module container
+//
+// +++++++++++++++++++++++++++++++++
+
+
+footer {
+  background-color: var(--color-accent-darker);
+  color: var(--color-primary-lightest);
+  padding: 8rem 0rem 8rem;
+
+  // edit the footer link colour to match the background
+  a {
+    color: var(--color-primary-lightest);
+    opacity: .7;
+    background-image: linear-gradient(var(--color-accent),
+        var(--color-accent));
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  a:active {
+    opacity: .5;
+  }
+}
+
+// +++++++++++++++++++++++++++++++++
+//
+//  Setup of footer grid layout
+//
+// +++++++++++++++++++++++++++++++++
+
+:root {
+  --list-list-colum-start: 1;
+}
+
+footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: $grid-gutter;
+  row-gap: $grid-gutter;
+}
+
+
+@media only screen and (min-width: $breakpoint-s) {
+  :root {
+    --list-list-colum-start: 4;
+  }
+
+  footer .footer-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+// +++++++++++++++++++++++++++++++++
+//
+//  Elements inside footer
+//
+// +++++++++++++++++++++++++++++++++
+
+footer .footer-grid__logo {
+  grid-column: 1/-1;
+  max-width: 20vw;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: $breakpoint-s) {
+  footer .footer-grid__logo {
+    grid-column: 1/4;
+    grid-row: 1/4;
+
+    // make it one third of the layot
+    max-width: 66%;
+  }
+}
+
+// the site map list at the footer
+footer .link-list {
+  // layout attributes
+  display: block;
+  grid-column: auto/span 3;
+
+  margin-bottom: 2rem;
+
+  // style resets
+  list-style: none; // remove list bullets
+
+  // make all the link list starts from the 4th column on desktop mode
+  &:first-of-type {
+    grid-column-start: var(--list-list-colum-start);
+  }
+
+  li.link-list__title {
+    color: var(--color-primary-lightest);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  li {
+    margin-bottom: .75rem;
+  }
+
+  li.link-list__social-media {
+    max-width: 1.5rem;
+    float: left;
+    margin-right: .5rem;
+  }
+}
+
+// Footer Seperator line at the bottom
+footer hr {
+  // layout attributes
+  grid-column-start: var(--list-list-colum-start);
+  grid-column-end: -1; // spn to the end of row
+  margin-top: 4rem;
+
+  // how it looks
+  border: none;
+  border-bottom: 1px solid var(--color-primary-lightest);
+  opacity: .3;
+}
+
+// Misc information like copyright, privacy policy, Traditional Territories Acknowledgement
+footer .misc-info {
+  grid-column-start: var(--list-list-colum-start);
+  grid-column-end: -1; // span to the end of row
+
+  margin-top: 1rem;
+
+  span {
+    font-size: var(--type-size-body-small);
+    margin-right: 1rem;
+  }
+}

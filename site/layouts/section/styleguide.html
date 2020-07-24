@@ -244,6 +244,60 @@
 
   <section>
     <div class="full-width--article">
+      <h2>Interface Icons</h2>
+      <p>
+        We love the use of
+        <a
+          href="https://material.io/resources/icons/"
+          target="blank"
+          alt="material design icons"
+          >material design icons</a
+        >. Google material design provided a vast set of ready to use icon with
+        simple copy and past code.
+      </p>
+      <h3>Application on Website</h3>
+      <p><strong>Step 1</strong> - Link the stylesheet from google</p>
+
+      <pre><code class="language-html">&lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel=&quot;stylesheet&quot; /&gt;</code></pre>
+
+      <p>
+        <strong>Step 2</strong> - Use the following css code to fix
+        <a
+          href="https://github.com/google/material-design-icons/issues/206"
+          target="blank"
+          >alignment issue</a
+        >.
+      </p>
+      <pre><code class="language-css">.material-icons {
+  font-size: 1.2em;
+  display: inline-flex;
+  vertical-align: middle;
+}</code></pre>
+      <p>
+        <strong>Step 3</strong> - copy the code from
+        <a
+          href="https://material.io/resources/icons/"
+          target="blank"
+          alt="material design icons"
+          >material design icon browser</a
+        >
+        and paste it at your desired location on the html.
+      </p>
+      <pre><code class="language-html">&lt;div class=&quot;color-swatch&quot; style=&quot;background-color: #81222e;&quot;&gt;
+  &lt;span class=&quot;material-icons&quot;&gt;content_copy&lt;/span&gt;
+  &lt;span&gt;#81222E&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+
+      <p>
+        <strong>Notes:</strong> if you are working with the hugo code base
+        created for CaseIT 2021 webste, these code should be set up correctly
+        already. No need to manually insert them on every page.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="full-width--article">
       <h2>Grid Layout</h2>
       <p>
         The following is a demostration of the grid layout we use on the website

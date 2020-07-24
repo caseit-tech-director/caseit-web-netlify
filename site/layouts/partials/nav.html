@@ -1,19 +1,41 @@
-<nav class="overflow-x-scroll overflow-x-visible-ns flex justify-between items-center center bg-white divider-grey relative">
+<div class="fixed-wrapper">
+  <nav>
+    <!-- prevent it going off in this styleguide page-->
+    <div class="full-width nav-bar">
 
-	<!-- Logo -->
-	<a href="/" class="pa3 db mr4 h-100 w3 flex-none">
-		<img src="/img/logo.svg" alt="Kaldi logo" class="br0 db mb0 w-100"/>
-	</a>
+      <a href="/" class="nav-bar__logo-link">
+        <img src="img/logo/CaseIT_Black.svg" alt="CaseIt Logo" />
+      </a>
 
-	<!-- Primary Nav -->
-	<ul class="flex b grey-3">
-		<li><a href="/products" class="pa3 no-underline db">Products</a></li>
+      <div class="nav-bar__link-container">
+        <ul class="nav-link-list">
+          <li>
+            <a href="#" class="nav-link-list__link">Competition</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link-list__link">Sponsorhip</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link-list__link">About</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link-list__link inactive" title="under construction!">Blog</a>
+          </li>
+        </ul>
 
-		<li><a href="/values" class="pa3 no-underline db">Values</a></li>
+        <a href="#" class="contact-button">
+          <span class="material-icons">
+            contact_support
+          </span>
+          Contact Us
+        </a>
+      </div>
 
-		<li><a href="/post" class="pa3 no-underline db">Blog</a></li>
-
-		<li><a href="/contact" class="pa3 no-underline db">Contact</a></li>
-	</ul>
-
-</nav>
+      <a class="hamburger-menu-toggle" href="#">
+        <div></div>
+        <div></div>
+        <div></div>
+      </a>
+    </div>
+  </nav>
+</div>

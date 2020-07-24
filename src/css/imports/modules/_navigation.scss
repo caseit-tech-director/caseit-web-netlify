@@ -23,6 +23,28 @@ $nav-breakpoint: 875px;
 nav {
   // create some space between nav bar top and bottom
   padding: 1.5rem 0rem;
+
+  background-color: var(--color-primary-lightest);
+
+  // elegant transition
+  transition-property: transform;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+  transform: translateY(0rem);
+
+  /* stay on top of the page */
+  z-index: 10;
+}
+
+nav.scrolled {
+  // apply these value after the page is no longer on top
+  box-shadow: 0rem .2rem .4rem rgba(0, 0, 0, .2);
+  will-change: box-shadow;
+}
+
+nav.hidden {
+  transform: translateY(-100%);
 }
 
 // the container elements for links on the navigation bar

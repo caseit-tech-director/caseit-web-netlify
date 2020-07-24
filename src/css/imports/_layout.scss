@@ -59,13 +59,18 @@ section {
   max-width: $full-wdith-size--article;
 }
 
-@include viewportLargerThan($full-wdith-size--article) {
+// consider the margin size as well (margin 1rem on each side -> 32px)
+@include viewportLargerThan($full-wdith-size--article + 32px) {
+
+
   .full-width--article {
     margin: 0rem auto;
   }
 }
 
-@include viewportLargerThan($full-wdith-size) {
+// consider the margin size as well (margin 1rem on each side -> 32px)
+@include viewportLargerThan($full-wdith-size + 32px) {
+
   .full-width {
     margin: 0rem auto;
   }
@@ -85,6 +90,7 @@ section {
 }
 
 @include viewportLargerThan($breakpoint-s) {
+
   // enable full size grid after the mobile breakpoint
   .grid-2-cols {
     grid-template-columns: repeat(12, 1fr);
@@ -160,7 +166,7 @@ section {
 }
 
 // utility class for indicating image
-.photo-grid > div {
+.photo-grid>div {
   // center the content text
   display: flex;
   align-items: center;
@@ -171,7 +177,7 @@ section {
 }
 
 // utility class for indicating where the blank space
-.photo-grid > .blank {
+.photo-grid>.blank {
   // center the content text
   display: flex;
   align-items: center;
@@ -185,42 +191,42 @@ section {
 }
 
 // utility class for highlighting the current box
-.photo-grid > .current {
+.photo-grid>.current {
   background-color: yellow;
 }
 
 //  Grid fading image effect
-.photo-grid > .fading-top-left {
+.photo-grid>.fading-top-left {
   transform-origin: top left;
 }
 
-.photo-grid > .fading-top-right {
+.photo-grid>.fading-top-right {
   transform-origin: top right;
 }
 
-.photo-grid > .fading-top {
+.photo-grid>.fading-top {
   transform-origin: top;
 }
 
-.photo-grid > .fading-far {
+.photo-grid>.fading-far {
   transform: scale(0.4);
   opacity: 0.3;
 }
 
-.photo-grid > .fading-close {
+.photo-grid>.fading-close {
   transform: scale(0.8);
   opacity: 0.5;
 }
 
 // generate classes for grid items
 @for $i from 1 through 6 {
-  .photo-grid > .span-col#{$i} {
+  .photo-grid>.span-col#{$i} {
     grid-column: auto/span #{$i};
   }
 }
 
 @for $i from 1 through 6 {
-  .photo-grid > .span-row#{$i} {
+  .photo-grid>.span-row#{$i} {
     grid-row: auto/span #{$i};
   }
 }

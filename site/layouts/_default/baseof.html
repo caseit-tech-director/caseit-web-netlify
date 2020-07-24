@@ -11,8 +11,7 @@
 
   {{ block "main" . }}{{ end }}
 
-  <!--  Muted the footer for now -->
-  <!-- {{ block "footer" . }}{{ partial "footer" . }}{{end}} -->
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}

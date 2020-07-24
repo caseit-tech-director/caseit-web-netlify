@@ -70,7 +70,8 @@ body {
 /* remove the image margin */
 img {
   display: block;
-  width: 100%;
+  /* constraint it within the assigned block */
+  max-width: 100%;
   height: auto;
 }
 

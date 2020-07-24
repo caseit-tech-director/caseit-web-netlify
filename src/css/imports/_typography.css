@@ -96,6 +96,9 @@ h4,
   text-transform: uppercase;
 }
 
+.h4--accented {
+  color: var(--color-accent);
+}
 
 /* 
  * FOR BODY COPY TEXT
@@ -163,6 +166,8 @@ p,
 */
 
 a {
+  display: inline-block;
+
   /* https://cssanimation.rocks/animating-links/ */
   color: var(--color-primary-light);
   text-decoration: none;

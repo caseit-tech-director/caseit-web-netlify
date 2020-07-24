@@ -18,6 +18,9 @@
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 
+  // reset the css link background rule
+  background-image: none;
+
   font-family: var(--typeface-interactive);
   font-size: var(--type-size-button);
 
@@ -47,7 +50,6 @@
 
 .button-primary:active,
 .button-secondary:active {
-  /* transform: scale(0.95); */
   background-color: var(--color-primary-dark);
 }
 
@@ -80,4 +82,32 @@
 .button-secondary:focus {
   background-color: rgba(0, 0, 0, 0.05);
   outline: none;
+}
+
+/* 
+ * 
+ * Inverted style
+ * 
+ */
+
+.button-primary--inverted {
+  background-color: var(--color-primary-lightest);
+  color: var(--color-primary-darkest);
+  box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, .5);
+
+  &:hover {
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, .5);
+    color: var(--color-primary-darkest);
+  }
+
+  &:active {
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-darkest);
+    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, .5);
+  }
+}
+
+.button-secondary--inverted {
+  border-color: var(--color-primary-lightest);
+  color: var(--color-primary-lightest);
 }

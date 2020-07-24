@@ -1,53 +1,93 @@
-<footer class="bg-black ph3 pv4 white">
+<footer>
+	<div class="full-width footer-grid">
+		<img src="img/logo/CaseIt_White.svg" alt="CaseIT Logo" class="footer-grid__logo" />
 
-	<div class="mw7 center pt3">
+		<ul class="link-list">
+			<li class="link-list__title">Competition</li>
+			<li>
+				<a href="#">Overview</a>
+			</li>
+			<li>
+				<a href="#">Registration</a>
+			</li>
+			<li>
+				<a href="#">Competition Structure</a>
+			</li>
+			<li>
+				<a href="#">Event Schedule</a>
+			</li>
+		</ul>
 
-		<div class="measure-narrow center mb4">
+		<ul class="link-list">
+			<li class="link-list__title">Sponsorship</li>
+			<li>
+				<a href="#">Benifits</a>
+			</li>
+			<li>
+				<a href="#">Last Year Sponsors</a>
+			</li>
+			<li>
+				<a href="#">Ways of Sponsoring</a>
+			</li>
+		</ul>
 
-			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
+		<ul class="link-list">
+			<li class="link-list__title">About</li>
+			<li>
+				<a href="#">Chair's Welcoming</a>
+			</li>
+			<li>
+				<a href="#">CaseIT History</a>
+			</li>
+			<li>
+				<a href="#">Our Team 2021</a>
+			</li>
+		</ul>
 
-			{{ partial "newsletter-form" . }}
+		<ul class="link-list">
+			<li class="link-list__title">Contact</li>
+			<li>
+				<a href="#">FQA</a>
+			</li>
+			<li>
+				<a href="#">Contact Information</a>
+			</li>
+		</ul>
 
-		</div>
+		<ul class="link-list">
+			<li class="link-list__title">Follow us!</li>
+			<li class="link-list__social-media">
+				<a target="blank" href="https://www.facebook.com/CaseIT" alt="visit caseit facebook page"
+					title="Visit caseit facebook page">
+					<img src="img/connect-facebook.svg" alt="facebook icon" /></a>
+			</li>
+			<li class="link-list__social-media">
+				<a target="blank" href="https://www.instagram.com/caseitsfu/" alt="visit caseit instagram page"
+					title="Visit caseit instagram page">
+					<img src="img/connect-instagram.svg" alt="instagram icon" /></a>
+			</li>
+			<li class="link-list__social-media">
+				<a target="blank" href="https://www.linkedin.com/company/caseit-mis-case-competition/"
+					alt="visit caseit linkedin page" title="Visit caseit linkedin page">
+					<img src="img/connect-linkedin.svg" alt="instagram icon" />
+				</a>
+			</li>
+		</ul>
 
-		<div class="flex-ns justify-between">
+		<hr />
 
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
-				<ul class="mb3">
-					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
-					<li><a href="/contact" class="link">Schedule and appointment</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
-				</ul>
-			</div>
-
+		<div class="misc-info">
+			<span>
+				CaseIT &copy; 2020-2021
+			</span>
+			<span>
+				<a href="#">Privacy Policy</a>
+			</span>
+			<span>
+				<a href="#">Traditional Territories Acknowledgement</a>
+			</span>
 		</div>
 	</div>
-
 </footer>
-
-{{ partial "svg" . }}
 
 <script src="/app.js"></script>

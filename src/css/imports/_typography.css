@@ -187,6 +187,10 @@ a:active {
   opacity: .7;
 }
 
+a.inactive {
+  text-decoration: line-through;
+}
+
 /* code {
 
   font-family: "Roboto Mono";

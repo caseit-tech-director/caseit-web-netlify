@@ -40,6 +40,7 @@
 
 /* Modules on the Website */
 @import './imports/modules/_footer';
+@import './imports/modules/_navigation';
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import './imports/_debug'; */

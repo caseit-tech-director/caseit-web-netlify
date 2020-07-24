@@ -1,0 +1,187 @@
+/*
+ *
+ * Main Site Navigation Module
+ * 
+ * Dependency:
+ * _variables.scss
+ * breakpoints.scss
+ * 
+ */
+
+@import "../_breakpoints.scss";
+
+// Breakpoints
+$nav-breakpoint: 875px;
+
+// Variables
+:root {
+  --hor-spacing: 3rem;
+}
+
+
+// Wrapper that encapsulate the whole navigation module
+nav {
+  // create some space between nav bar top and bottom
+  padding: 1.5rem 0rem;
+}
+
+// the container elements for links on the navigation bar
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  // make everything align to the axis horizontally
+  align-items: center;
+
+  &__link-container {
+    display: none;
+  }
+
+  @include viewportLargerThan($nav-breakpoint) {
+    &__link-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      // fill the space in the rest of the nav bar
+      flex: 1;
+    }
+  }
+}
+
+
+// ==================================
+//
+// Logo Styling
+//
+// ==================================
+
+a.nav-bar__logo-link {
+  display: block;
+  margin-right: var(--hor-spacing);
+
+  // reset the default link hover effect established in _typography.css
+  background: none;
+
+  // hte image element of the nav link
+  img {
+    max-height: 2em;
+    max-width: auto;
+  }
+}
+
+
+// ==================================
+//
+// Link Styling
+//
+// ==================================
+
+
+ul.nav-link-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-right: var(--hor-spacing);
+
+    // vertically align the link text
+    display: flex;
+    align-items: center;
+  }
+}
+
+a.nav-link-list__link,
+a.contact-button {
+  // reset the default link hover effect established in _typography.css
+  background: none;
+  // font-size: 20px;
+
+  &:hover,
+  &:focus {
+    color: var(--color-primary-darkest);
+  }
+
+  // override the original colour
+  &:active {
+    color: var(--color-primary-dark);
+  }
+}
+
+a.contact-button {
+  display: block;
+  // make the button align to the right side of the screen
+  margin-left: auto;
+}
+
+
+// ==================================
+// 
+// Hamburger Menu
+// 
+// ==================================
+.hamburger-menu-toggle {
+
+  // make it stick to the right side
+  margin-left: auto;
+
+  // remove the default link style
+  background: none;
+
+  width: 2em;
+  height: 2em;
+
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &::after {
+    border: none;
+  }
+
+  div {
+
+    display: block;
+
+    width: 100%;
+    height: .15em;
+
+    padding: 0em;
+    margin-bottom: .6em;
+
+    background-color: var(--color-primary-darkest);
+
+    transition-property: opacity, transform;
+    will-change: opacity, transform;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
+
+.hamburger-menu-toggle--cross {
+  div:nth-child(2) {
+    transform: rotateZ(-45deg);
+    opacity: 0;
+  }
+
+  div:nth-child(1) {
+    transform: translate(0em, .75em) rotateZ(-45deg);
+  }
+
+  div:nth-child(3) {
+    transform: translate(0em, -.75em) rotateZ(45deg);
+  }
+}
+
+
+
+// for responsive layout
+.hamburger-menu-toggle {
+  display: block;
+
+  @include viewportLargerThan($nav-breakpoint) {
+    display: none;
+  }
+}

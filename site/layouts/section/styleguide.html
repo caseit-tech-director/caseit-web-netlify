@@ -61,10 +61,7 @@
       </p>
       <div class="caption">Roboto Regular 14</div>
 
-      <img
-        src="https://source.unsplash.com/random/800x600"
-        alt="Testing Images"
-      />
+      <img src="https://source.unsplash.com/random/800x600" alt="Testing Images" />
       <p class="caption">
         Caption - Incididunt mollit quis tempor sunt id aliquip nisi ipsum
         fugiat.Esse fugiat velit minim non commodo consequat ea dolore.
@@ -108,43 +105,22 @@
       <div class="form">
         <div class="field">
           <label for="txtName">Name</label>
-          <input
-            id="txtName"
-            name="txtName"
-            placeholder="John Doe"
-            type="text"
-          />
+          <input id="txtName" name="txtName" placeholder="John Doe" type="text" />
           <span class="field__assist">*Required</span>
         </div>
         <div class="field">
           <label for="txtPass">Password</label>
-          <input
-            id="txtPass"
-            name="txtPass"
-            placeholder="Password"
-            type="password"
-          />
+          <input id="txtPass" name="txtPass" placeholder="Password" type="password" />
           <span class="field__assist">*Required</span>
         </div>
         <div class="field">
           <label class="error" for="txtError">Error</label>
-          <input
-            class="error"
-            id="txtError"
-            name="txtError"
-            placeholder="Error!"
-            type="text"
-          />
+          <input class="error" id="txtError" name="txtError" placeholder="Error!" type="text" />
           <span class="error" class="field__assist">Incorrect Input</span>
         </div>
         <div class="field">
           <label for="txtPass">Password</label>
-          <input
-            id="txtPass"
-            name="txtPass"
-            placeholder="Password"
-            type="password"
-          />
+          <input id="txtPass" name="txtPass" placeholder="Password" type="password" />
           <span class="field__assist">*Required</span>
         </div>
         <div class="form-controls">
@@ -164,10 +140,7 @@
 
       <h3 class="h4">Primary</h3>
       <div class="color-swatch-container">
-        <div
-          class="color-swatch"
-          style="background-color: #ffffff; color: #000000;"
-        >
+        <div class="color-swatch" style="background-color: #ffffff; color: #000000;">
           <span class="material-icons">content_copy</span>
           <span>#FFFFFF</span>
         </div>
@@ -209,10 +182,7 @@
       https://material.io/resources/icons/
 
     -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <style type="text/css">
       .material-icons {
         font-size: 1.2em;
@@ -247,12 +217,8 @@
       <h2>Interface Icons</h2>
       <p>
         We love the use of
-        <a
-          href="https://material.io/resources/icons/"
-          target="blank"
-          alt="material design icons"
-          >material design icons</a
-        >. Google material design provided a vast set of ready to use icon with
+        <a href="https://material.io/resources/icons/" target="blank" alt="material design icons">material design
+          icons</a>. Google material design provided a vast set of ready to use icon with
         simple copy and past code.
       </p>
       <h3>Application on Website</h3>
@@ -262,11 +228,7 @@
 
       <p>
         <strong>Step 2</strong> - Use the following css code to fix
-        <a
-          href="https://github.com/google/material-design-icons/issues/206"
-          target="blank"
-          >alignment issue</a
-        >.
+        <a href="https://github.com/google/material-design-icons/issues/206" target="blank">alignment issue</a>.
       </p>
       <pre><code class="language-css">.material-icons {
   font-size: 1.2em;
@@ -275,12 +237,8 @@
 }</code></pre>
       <p>
         <strong>Step 3</strong> - copy the code from
-        <a
-          href="https://material.io/resources/icons/"
-          target="blank"
-          alt="material design icons"
-          >material design icon browser</a
-        >
+        <a href="https://material.io/resources/icons/" target="blank" alt="material design icons">material design icon
+          browser</a>
         and paste it at your desired location on the html.
       </p>
       <pre><code class="language-html">&lt;div class=&quot;color-swatch&quot; style=&quot;background-color: #81222e;&quot;&gt;
@@ -384,15 +342,59 @@
 &lt;/div&gt;</code></pre>
         </div>
       </div>
-
-      <!-- 
-      
-        Demo for
-        blog
-      
-      -->
     </div>
 
+    <!-- 
+      
+        Demo for
+        Navigation Module
+      
+      -->
+    <div class="content-block">
+      <div class="full-width--article">
+        <h2>Navigation Module</h2>
+        <p>Main site navigation</p>
+      </div>
+      <!-- navigation modeule preview-->
+      <nav>
+        <div class="full-width nav-bar">
+
+          <a href="/" class="nav-bar__logo-link">
+            <img src="img/logo/CaseIT_Black.svg" alt="CaseIt Logo" />
+          </a>
+
+          <div class="nav-bar__link-container">
+            <ul class="nav-link-list">
+              <li>
+                <a href="#" class="nav-link-list__link">Competition</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link-list__link">Sponsorhip</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link-list__link">About</a>
+              </li>
+              <li>
+                <a href="#" class="nav-link-list__link inactive" title="under construction!">Blog</a>
+              </li>
+            </ul>
+
+            <a href="#" class="contact-button">
+              <span class="material-icons">
+                contact_support
+              </span>
+              Contact Us
+            </a>
+          </div>
+
+          <a class="hamburger-menu-toggle" href="#">
+            <div></div>
+            <div></div>
+            <div></div>
+          </a>
+        </div>
+      </nav>
+    </div>
     <!-- 
       
         Demo for
@@ -402,7 +404,7 @@
 
     <div class="content-block">
       <div class="full-width--article">
-        <h2>Photo Grid</h2>
+        <h2>Photo Grid Module</h2>
         <p>Demostration of photo grid layout on ladnding page</p>
       </div>
       <!-- grid preview -->
@@ -483,11 +485,7 @@
 
 <footer>
   <div class="full-width footer-grid">
-    <img
-      src="img/logo/CaseIt_White.svg"
-      alt="CaseIT Logo"
-      class="footer-grid__logo"
-    />
+    <img src="img/logo/CaseIt_White.svg" alt="CaseIT Logo" class="footer-grid__logo" />
 
     <ul class="link-list">
       <li class="link-list__title">Competition</li>
@@ -544,32 +542,18 @@
     <ul class="link-list">
       <li class="link-list__title">Follow us!</li>
       <li class="link-list__social-media">
-        <a
-          target="blank"
-          href="https://www.facebook.com/CaseIT"
-          alt="visit caseit facebook page"
-          title="Visit caseit facebook page"
-        >
-          <img src="img/connect-facebook.svg" alt="facebook icon"
-        /></a>
+        <a target="blank" href="https://www.facebook.com/CaseIT" alt="visit caseit facebook page"
+          title="Visit caseit facebook page">
+          <img src="img/connect-facebook.svg" alt="facebook icon" /></a>
       </li>
       <li class="link-list__social-media">
-        <a
-          target="blank"
-          href="https://www.instagram.com/caseitsfu/"
-          alt="visit caseit instagram page"
-          title="Visit caseit instagram page"
-        >
-          <img src="img/connect-instagram.svg" alt="instagram icon"
-        /></a>
+        <a target="blank" href="https://www.instagram.com/caseitsfu/" alt="visit caseit instagram page"
+          title="Visit caseit instagram page">
+          <img src="img/connect-instagram.svg" alt="instagram icon" /></a>
       </li>
       <li class="link-list__social-media">
-        <a
-          target="blank"
-          href="https://www.linkedin.com/company/caseit-mis-case-competition/"
-          alt="visit caseit linkedin page"
-          title="Visit caseit linkedin page"
-        >
+        <a target="blank" href="https://www.linkedin.com/company/caseit-mis-case-competition/"
+          alt="visit caseit linkedin page" title="Visit caseit linkedin page">
           <img src="img/connect-linkedin.svg" alt="instagram icon" />
         </a>
       </li>
@@ -593,10 +577,7 @@
 
 <!-- for syntax highlighting -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/googlecode.min.css"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/googlecode.min.css" />
 <script>
   hljs.initHighlightingOnLoad();
 </script>

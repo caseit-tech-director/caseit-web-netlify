@@ -36,4 +36,5 @@ endingCtaBlock:
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vivamus interdum in purus, in dictumst bibendum. Enim id facilisis egestas mauris aenean eu penatibus sed.
   ctaTextStudent: How to join as a student
   ctaTextCoach: Register school as a coach
+  imageUrl: "https://source.unsplash.com/random"
 ---

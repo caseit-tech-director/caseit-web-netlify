@@ -1,4 +1,99 @@
 {{ define "main" }}
 
+<!-- hero section -->
+<header class="hero">
+  <div class="hero__blurb full-width">
+    <h1 class="display">{{ .Title }}</h1>
+    <p class="h4 h4--accented">{{ .Params.subtitle }}</p>
+  </div>
+</header>
+
+<main>
+  <div class="content-block">
+    <section class="grid-2-cols full-width">
+      <div class="grid-2-cols__image-left">
+        <img class="image--bleed-left" src="{{.Params.pitch1.imageUrl}}" />
+      </div>
+      <div class="grid-2-cols__blurb-right">
+        <!-- <div class="caption">overline</div> -->
+        <h2>{{.Params.pitch1.heading}}</h2>
+        <p>{{.Params.pitch1.text}}</p>
+        <a href="#" class="button-primary">{{ .Params.pitch1.ctaText}}</a>
+      </div>
+    </section>
+  </div>
+
+  <section class="grid-2-cols full-width content-block">
+    <div class="grid-2-cols__blurb-left">
+      <h2>{{.Params.pitch2.heading}}</h2>
+      <p>{{.Params.pitch2.text}}</p>
+      <a href="#" class="button-primary">{{ .Params.pitch2.ctaText}}</a>
+    </div>
+    <div class="grid-2-cols__image-right">
+      <img class="image--bleed-right" src="{{.Params.pitch2.imageUrl}}" />
+    </div>
+  </section>
+
+  <section id="caseitGoingOnline" class="content-block">
+    <div class="center-text">
+      <h2>{{.Params.caseitGoingOnline.heading}}</h2>
+      <p>{{.Params.caseitGoingOnline.text}}</p>
+      <a href="#" class="button-primary button-primary--inverted">{{ .Params.caseitGoingOnline.ctaText}}</a>
+    </div>
+
+    <div class="center-graphic-container">
+      <img src="img/globe-line-art.svg" alt="Globe line art" />
+      <div class="center-graphic-container__gradient"></div>
+    </div>
+
+    <div class="grid-3-cols full-width going-online-info">
+      {{ range .Params.caseitGoingOnline.resources }}
+      <a class="info-card" href="#">
+        <h3 class="h4 h4--accented">{{ .heading}}</h3>
+        <p>{{ .text}}</p>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  <section id="caseit2020">
+    <div class="center-text">
+      <h2>{{.Params.caseit2020.heading}}</h2>
+      <p>{{.Params.caseit2020.text}}</p>
+    </div>
+    {{ partial "photo-grid" . }}
+  </section>
+
+  <section class="content-block">
+    <div id="sponsors" class="grid-2-cols full-width">
+      <div class="grid-2-cols__blurb-left">
+        <!-- <div class="caption">overline</div> -->
+        <h2>{{.Params.sponsors.heading}}</h2>
+        <p>{{.Params.sponsors.text}}</p>
+        <a href="#" class="button-primary">{{ .Params.sponsors.ctaText}}</a>
+      </div>
+      <div class="grid-2-cols__image-right">
+        <img class="image--bleed-left" src="{{.Params.sponsors.imageUrl}}" />
+      </div>
+    </div>
+  </section>
+
+  <section class="content-block">
+    <div id="sponsors" class="grid-2-cols full-width">
+      <div class="grid-2-cols__image-left">
+        <img class="image--bleed-left" src="{{.Params.endingCtaBlock.imageUrl}}" />
+      </div>
+      <div class="grid-2-cols__blurb-right">
+        <!-- <div class="caption">overline</div> -->
+        <h2>{{.Params.endingCtaBlock.heading}}</h2>
+        <p>{{.Params.endingCtaBlock.text}}</p>
+        <div class="form-controls">
+          <a href="#" class="button-primary">{{ .Params.endingCtaBlock.ctaTextStudent}}</a>
+          <a href="#" class="button-secondary">{{ .Params.endingCtaBlock.ctaTextCoach}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
 {{ end }}

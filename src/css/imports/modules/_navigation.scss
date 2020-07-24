@@ -34,7 +34,7 @@ nav {
   transform: translateY(0rem);
 
   /* stay on top of the page */
-  z-index: 10;
+  z-index: 10000;
 }
 
 nav.scrolled {

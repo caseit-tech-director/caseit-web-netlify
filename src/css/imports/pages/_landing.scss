@@ -1,0 +1,72 @@
+/* 
+ *
+ * Page specific styling
+ * Landing
+ * 
+ */
+
+section#caseitGoingOnline {
+  position: relative;
+
+  background-color: var(--color-primary-darker);
+  color: var(--color-primary-lightest);
+
+  padding: 12rem 0rem;
+
+  overflow: hidden;
+
+  --graphic-spacing: 30rem;
+}
+
+.center-graphic-container {
+  width: 100%;
+
+
+  // make the graphic center and float behind the content
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+  img {
+    z-index: 1;
+  }
+
+  &__gradient {
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(rgb(37, 34, 34), 0), rgba(rgb(37, 34, 34), 1));
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+
+    z-index: 2;
+  }
+}
+
+.going-online-info {
+  position: relative;
+  margin-top: var(--graphic-spacing);
+  z-index: 10;
+}
+
+
+.info-card {
+  background-color: var(--color-primary-dark);
+  box-shadow: var(--drop-shdow-dark);
+
+  padding: 2rem;
+
+  // clear the remainding margin on the last item
+  :last-child {
+    margin: 0rem;
+  }
+
+
+  &:hover {
+    .h4 {
+      color: #FFF;
+    }
+  }
+}

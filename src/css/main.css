@@ -12,35 +12,37 @@
  *
  */
 
-
 /* Modules */
-
 
 /* Debugging */
 /* @import './imports/_debug-children';
 @import './imports/_debug-grid'; */
 
 /* Font Library */
-@import './imports/_DINPro';
+@import "./imports/_DINPro";
 
 /* Custom made css reset */
-@import './imports/_reset.css';
-
+@import "./imports/_reset.css";
 
 /* CaseIT Branding */
 /* @import './imports/_tempLandingPage.css'; */
-@import './imports/_variables';
-@import './imports/_layout';
-@import './imports/_typography';
-@import './imports/_buttons';
-@import './imports/_form';
-@import './imports/_page-styleguide';
+@import "./imports/_variables";
+@import "./imports/_layout";
+@import "./imports/_typography";
+@import "./imports/_buttons";
+@import "./imports/_form";
+@import "./imports/_page-styleguide";
+@import "./imports/_color";
 
 /* @import './imports/_baseline-grid.css'; */
 
 /* Modules on the Website */
-@import './imports/modules/_footer';
-@import './imports/modules/_navigation';
+@import "./imports/modules/_footer";
+@import "./imports/modules/_navigation";
+@import "./imports/modules/_hero";
+
+/* pages on the website */
+@import "./imports/pages/_landing.scss";
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import './imports/_debug'; */

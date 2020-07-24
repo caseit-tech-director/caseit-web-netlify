@@ -67,7 +67,8 @@
   outline: none;
 }
 
-.button-secondary {
+.button-secondary,
+.button-secondary:hover {
   color: var(--color-primary-darkest);
   border-color: var(--color-primary-darkest);
   background-color: rgba(0, 0, 0, 0);
@@ -103,7 +104,7 @@
   &:active {
     background-color: var(--color-primary-lighter);
     color: var(--color-primary-darkest);
-    box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, .5);
+
   }
 }
 

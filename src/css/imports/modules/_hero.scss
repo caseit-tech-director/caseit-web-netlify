@@ -1,0 +1,17 @@
+/* 
+ * 
+ * Styles for HERO section on the landing page
+ *  
+ *  
+ */
+
+.hero {
+  // Scroll bar bug, thats why we are not using 100 scroll width
+  // https://stackoverflow.com/questions/23367345/100vw-causing-horizontal-overflow-but-only-if-more-than-one/23367686
+  max-width: 100%;
+  height: 80vh;
+
+  &__blurb {
+    padding-top: 40vh;
+  }
+}

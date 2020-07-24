@@ -2,12 +2,13 @@
 <html lang="{{ $.Site.Language.Lang }}">
 {{ partial "head" . }}
 
-<body class="sans-serif">
+<body>
 
   <!-- Nav and footer is disabled for now before fitting in the caseit content to the template. -->
   <!--  Muted the navigation header for now -->
   <!-- {{ block "header" . }} -->
-  <!-- {{ partial "nav" . }}{{end}} -->
+
+  {{ partial "nav" . }}{{end}}
 
   {{ block "main" . }}{{ end }}
 

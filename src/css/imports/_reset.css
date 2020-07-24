@@ -26,7 +26,7 @@ a {
  */
 ::selection {
   background-color: #DDD;
-  color: var(--color-accent);
+  color: var(--color-primary-darkest) !important;
 }
 
 /* 

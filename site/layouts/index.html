@@ -38,7 +38,9 @@
     <div class="center-text">
       <h2>{{.Params.caseitGoingOnline.heading}}</h2>
       <p>{{.Params.caseitGoingOnline.text}}</p>
-      <a href="#" class="button-primary button-primary--inverted">{{ .Params.caseitGoingOnline.ctaText}}</a>
+      <a href="#" class="button-primary button-primary--inverted"
+        >{{ .Params.caseitGoingOnline.ctaText}}</a
+      >
     </div>
 
     <div class="center-graphic-container">
@@ -81,15 +83,22 @@
   <section class="content-block">
     <div id="sponsors" class="grid-2-cols full-width">
       <div class="grid-2-cols__image-left">
-        <img class="image--bleed-left" src="{{.Params.endingCtaBlock.imageUrl}}" />
+        <img
+          class="image--bleed-left"
+          src="{{.Params.endingCtaBlock.imageUrl}}"
+        />
       </div>
       <div class="grid-2-cols__blurb-right">
         <!-- <div class="caption">overline</div> -->
         <h2>{{.Params.endingCtaBlock.heading}}</h2>
         <p>{{.Params.endingCtaBlock.text}}</p>
         <div class="form-controls">
-          <a href="#" class="button-primary">{{ .Params.endingCtaBlock.ctaTextStudent}}</a>
-          <a href="#" class="button-secondary">{{ .Params.endingCtaBlock.ctaTextCoach}}</a>
+          <a href="#" class="button-primary"
+            >{{ .Params.endingCtaBlock.ctaTextStudent}}</a
+          >
+          <a href="#" class="button-secondary"
+            >{{ .Params.endingCtaBlock.ctaTextCoach}}</a
+          >
         </div>
       </div>
     </div>

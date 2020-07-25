@@ -32,7 +32,7 @@ sponsors:
   imageUrl: "https://source.unsplash.com/random"
 
 endingCtaBlock:
-  heading: Excited? We are too!
+  heading: ExcITed? We are too!
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vivamus interdum in purus, in dictumst bibendum. Enim id facilisis egestas mauris aenean eu penatibus sed.
   ctaTextStudent: How to join as a student
   ctaTextCoach: Register school as a coach

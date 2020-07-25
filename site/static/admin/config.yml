@@ -71,8 +71,8 @@ collections: # A list of collections the CMS should be able to edit
             }
           - {
               label: "CaseIT 2020 Photo Grid",
-              name: products,
-              widget: list,
+              name: caseit2020,
+              widget: object,
               fields:
                 [
                   { label: "Heading", name: "heading", widget: "string" },

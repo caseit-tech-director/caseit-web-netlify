@@ -13,8 +13,9 @@
   />
 
   <!-- this is the tag causing links with "#" to jump to home page instead of staying at the same page-->
-  <!-- <base
-		href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}"> -->
+  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv
+  "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{
+  $.Site.BaseURL }}{{ end }}">
 
   <!-- Only the basic Roboto is important: light, regular, bold -->
   <link

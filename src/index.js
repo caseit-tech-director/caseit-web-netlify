@@ -6,7 +6,7 @@ import "./css/main.css";
 // console.log("🦊 Hello! Edit me in src/index.js");
 
 // Hamburger menu module
-window.addEventListener("load", (e) => {
+window.addEventListener("DOMContentLoaded", (e) => {
   // init the AOS library
   AOS.init();
 

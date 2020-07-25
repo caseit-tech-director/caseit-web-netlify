@@ -7,7 +7,7 @@
  *  - Secondary Button Styling
  */
 
-@import '_variables';
+@import "_variables";
 // $useRoundedCorner:false;
 
 .button-primary,
@@ -34,9 +34,7 @@
     border-radius: 0.25em;
   }
 
-  transition-property: box-shadow,
-  background-color,
-  border;
+  transition-property: box-shadow, background-color, border;
   transition-duration: 0.2s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -45,7 +43,7 @@
 .button-primary {
   background-color: var(--color-primary-darkest);
   color: var(--color-primary-lightest);
-  box-shadow: 0 0.2em 0.3em rgba(54, 54, 54, .5);
+  box-shadow: 0 0.2em 0.3em rgba(54, 54, 54, 0.5);
 }
 
 .button-primary:active,
@@ -94,21 +92,22 @@
 .button-primary--inverted {
   background-color: var(--color-primary-lightest);
   color: var(--color-primary-darkest);
-  box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, .5);
+  box-shadow: 0 0.2em 0.3em rgba(0, 0, 0, 0.2);
 
   &:hover {
-    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, .5);
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.2);
     color: var(--color-primary-darkest);
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: var(--color-primary-lighter);
     color: var(--color-primary-darkest);
-
   }
 }
 
-.button-secondary--inverted {
+.button-secondary--inverted,
+.button-secondary--inverted:hover {
   border-color: var(--color-primary-lightest);
   color: var(--color-primary-lightest);
 }

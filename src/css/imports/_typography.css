@@ -34,6 +34,12 @@
    */
   --caption-spacing-top: 1rem;
   --caption-spacing-bottom: 2rem;
+
+  /* 
+   * We want the caption to belong to something above, so 
+   */
+  --overline-spacing-top: 1rem;
+  --overline-spacing-bottom: 1rem;
 }
 
 /* 
@@ -158,6 +164,16 @@ p,
   margin-bottom: var(--caption-spacing-bottom);
 }
 
+.overline {
+  font-family: var(--typeface-caption);
+  font-size: var(--type-size-caption);
+  letter-spacing: var(--type-tracking-caption);
+  line-height: var(--type-leading-caption);
+  /* font-weight: normal; */
+  margin-top: var(--overline-spacing-top);
+  margin-bottom: var(--overline-spacing-bottom);
+}
+
 /* 
   Interactive Typography
 */
@@ -191,6 +207,10 @@ a:active {
 
 a.inactive {
   text-decoration: line-through;
+}
+
+.link-reset {
+  background-image: none;
 }
 
 /* code {

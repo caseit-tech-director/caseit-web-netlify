@@ -48,12 +48,17 @@
 
 .display {
   font-family: var(--typeface-header);
-  font-size: var(--type-size-display);
   letter-spacing: var(--type-tracking-display);
   line-height: var(--type-leading-display);
   font-weight: bold;
   margin-top: var(--header-spacing-top);
   margin-bottom: var(--header-spacing-bottom);
+
+  // font size only be that big on huge viewport
+  font-size: var(--type-size-h1);
+  @include viewportLargerThan($breakpoint-m) {
+    font-size: var(--type-size-display);
+  }
 }
 
 h1,

@@ -4,133 +4,140 @@ import format from "date-fns/format";
 import Jumbotron from "./components/jumbotron";
 
 export default class PostPreview extends React.Component {
-    render() {
-        const {
-          entry,
-          getAsset
-        } = this.props;
-        let image = getAsset(entry.getIn(["data", "image"]));
+  render() {
+    const { entry, getAsset } = this.props;
+    let image = getAsset(entry.getIn(["data", "image"]));
 
-        // Bit of a nasty hack to make relative paths work as expected as a background image here
-        if (image && !image.fileObj) {
-          image = window.parent.location.protocol + "//" + window.parent.location.host + image;
-        }
+    // Bit of a nasty hack to make relative paths work as expected as a background image here
+    if (image && !image.fileObj) {
+      image =
+        window.parent.location.protocol +
+        "//" +
+        window.parent.location.host +
+        image;
+    }
 
-        return <div >
-          <
-          Jumbotron image = {
-            image
-          }
-        title = {
-          entry.getIn(["data", "title"])
-        }
-        subtitle = {
-          entry.getIn(["data", "subtitle"])
-        }
-        />
+    return (
+      <div>
+        <header className="hero">
+          <div className="hero__blurb full-width">
+            <h1 className="display">{entry.getIn(["data", "title"])}</h1>
+            <p className="h4 h4--accented">
+              {entry.getIn(["data", "subtitle"])}
+            </p>
+          </div>
+        </header>
 
-        <
-        div className = "bg-grey-1 pv4" >
-          <
-          div className = "flex-l mhn1-l ph3 center mw7" >
-          <
-          h2 className = "f2 b lh-title mb2 w-40-l" > {
-            entry.getIn(["data", "blurb", "heading"])
-          } < /h2> <
-          p className = "w-60-l mb0" > {
-            entry.getIn(["data", "blurb", "text"])
-          } < /p> <
-          /div> <
-          /div>
+        <main>
+          <div className="content-block">
+            <section className="grid-2-cols full-width">
+              <div className="grid-2-cols__image-left">
+                <img
+                  className="image--bleed-left"
+                  src="{ entry.getIn(['data', 'pitch1', 'imageUrl'])}"
+                />
+              </div>
+              <div className="grid-2-cols__blurb-right">
+                <h2>{entry.getIn(["data", "pitch1", "heading"])}</h2>
+                <p>{entry.getIn(["data", "pitch1", "text"])}</p>
+                <a href="#" className="button-primary">
+                  {entry.getIn(["data", "pitch1", "ctaText"])}
+                </a>
+              </div>
+            </section>
+          </div>
 
-          <
-          div className = "bg-off-white pv4" >
-          <
-          div className = "ph3 mw7 center" >
-          <
-          h2 className = "f2 b lh-title mb2" > {
-            entry.getIn(["data", "intro", "heading"])
-          } < /h2> <
-          p className = "mb4 mw6" > {
-            entry.getIn(["data", "intro", "text"])
-          } < /p>
+          <section className="grid-2-cols full-width content-block">
+            <div className="grid-2-cols__blurb-left">
+              <h2>{entry.getIn(["data", "pitch2", "heading"])}</h2>
+              <p>{entry.getIn(["data", "pitch2", "text"])}</p>
+              <a href="#" className="button-primary">
+                {entry.getIn(["data", "pitch2", "ctaText"])}
+              </a>
+            </div>
+            <div className="grid-2-cols__image-right">
+              <img
+                className="image--bleed-right"
+                src="{ entry.getIn(['data', 'pitch2', 'imageUrl'])}"
+              />
+            </div>
+          </section>
 
-          <
-          div className = "flex-ns mhn2-ns mb3" > {
-            (entry.getIn(["data", "products"]) || []).map((product, i) => < div className = "ph2-ns w-50-ns"
-              key = {
-                i
-              } >
-              <
-              img src = {
-                getAsset(product.get("image"))
-              }
-              alt = ""
-              className = "center db mb3"
-              style = {
-                {
-                  width: "240px"
-                }
-              }
-              /> <
-              p > {
-                product.get("text")
-              } < /p> <
-              /div>)} <
-              /div>
+          <section id="caseitGoingOnline" className="content-block">
+            <div className="center-text">
+              <h2>{entry.getIn(["data", "caseitGoingOnline", "heading"])}</h2>
+              <p>{entry.getIn(["data", "caseitGoingOnline", "text"])}</p>
+              <a href="#" className="button-primary button-primary--inverted">
+                {entry.getIn(["data", "caseitGoingOnline", "cta"])}
+              </a>
+            </div>
 
-              <
-              div className = "tc" >
-              <
-              a href = "#"
-              className = "btn raise" > See all products < /a> <
-              /div> <
-              /div> <
-              /div>
+            <div className="center-graphic-container">
+              <img src="img/globe-line-art.svg" alt="Globe line art" />
+              <div className="center-graphic-container__gradient"></div>
+            </div>
 
-              <
-              div className = "bg-grey-1 pv4" >
-              <
-              div className = "ph3 mw7 center" >
+            <div className="grid-3-cols full-width going-online-info">
+              {entry
+                .getIn(["data", "caseitGoingOnline", "resources"])
+                .map((current) => (
+                  <a className="info-card" href="#">
+                    <h3 className="h4 h4--accented">{current.heading}</h3>
+                    <p>{current.text}</p>
+                  </a>
+                ))}
+            </div>
+          </section>
 
-              <
-              div className = "flex-l mhn2-l" >
-              <
-              div className = "w-40-l ph2-l" >
-              <
-              h2 className = "f2 b lh-title mb2" > {
-                entry.getIn(["data", "values", "heading"])
-              } < /h2>
+          <section id="caseit2020">
+            <div className="center-text">
+              <h2>{entry.getIn(["data", "caseit2020", "heading"])}</h2>
+              <p>{entry.getIn(["data", "caseit2020", "text"])}</p>
+            </div>
+          </section>
 
-              <
-              p > {
-                entry.getIn(["data", "values", "text"])
-              } < /p> <
-              /div>
+          <section className="content-block">
+            <div id="sponsors" className="grid-2-cols full-width">
+              <div className="grid-2-cols__blurb-left">
+                <h2>{entry.getIn(["data", "sponsors", "heading"])}</h2>
+                <p>{entry.getIn(["data", "sponsors", "text"])}</p>
+                <a href="#" className="button-primary">
+                  {entry.getIn(["data", "sponsors", "ctaText"])}
+                </a>
+              </div>
+              <div className="grid-2-cols__image-right">
+                <img
+                  className="image--bleed-left"
+                  src="{entry.getIn(['data', 'sponsors', 'imageUrl'])}"
+                />
+              </div>
+            </div>
+          </section>
 
-              <
-              div className = "w-60-l ph2-l" >
-              <
-              img src = "/img/home-about-section.jpg"
-              alt = ""
-              className = "mb3" / >
-              <
-              /div> <
-              /div>
-
-              <
-              div className = "tc" >
-              <
-              a href = "{{.buttonLink}}"
-              className = "btn raise" > Read more < /a> <
-              /div>
-
-              <
-              /div> <
-              /div>
-
-
-              <
-              /div>
-            }
-          }
+          <section className="content-block">
+            <div id="sponsors" className="grid-2-cols full-width">
+              <div className="grid-2-cols__image-left">
+                <img
+                  className="image--bleed-left"
+                  src="{{entry.getIn(['data', 'endingCtaBlock', 'imageUrl'])}}"
+                />
+              </div>
+              <div className="grid-2-cols__blurb-right">
+                <h2>{entry.getIn(["data", "endingCtaBlock", "heading"])}</h2>
+                <p>{entry.getIn(["data", "endingCtaBlock", "text"])}</p>
+                <div className="form-controls">
+                  <a href="#" className="button-primary">
+                    {entry.getIn(["data", "endingCtaBlock", "ctaTextStudent"])}
+                  </a>
+                  <a href="#" className="button-secondary">
+                    {entry.getIn(["data", "endingCtaBlock", "ctaTextCoach"])}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+}

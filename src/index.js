@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
 function setupHamburgerMenu() {
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
-  // let navMenu = document.querySelector(".nav-main");
+  let navMenu = document.querySelector(".nav-bar__link-container");
 
   hamburgerMenuToggle.addEventListener("click", (e) => {
     e.preventDefault();
@@ -27,11 +27,13 @@ function setupHamburgerMenu() {
     ) {
       // meaning hamburger already opened
       hamburgerMenuToggle.classList.remove("hamburger-menu-toggle--cross");
-      // navMenu.classList.remove("nav-main--expanded");
+      navMenu.classList.remove("nav-bar__link-container--expanded");
+      unlockBodyScroll();
     } else {
       // hamburger menu is collapsed
       hamburgerMenuToggle.classList.add("hamburger-menu-toggle--cross");
-      // navMenu.classList.add("nav-main--expanded");
+      navMenu.classList.add("nav-bar__link-container--expanded");
+      lockBodyScroll();
     }
   });
 }
@@ -40,7 +42,7 @@ function setupHamburgerMenu() {
 // https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp
 function setupMenuHideOnScroll() {
   let prevScrollpos = window.pageYOffset;
-  let minScrolPos = 100; // when does it start shrinking
+  let minScrolPos = 50; // when does it start shrinking
 
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
   let navBar = document.querySelector("nav");
@@ -79,4 +81,14 @@ function setupMenuScrolledLook() {
       navBar.classList.remove("scrolled");
     }
   });
+}
+
+function lockBodyScroll() {
+  document.querySelector(".body-content-wrapper").classList.add("scroll-lock");
+}
+
+function unlockBodyScroll() {
+  document
+    .querySelector(".body-content-wrapper")
+    .classList.remove("scroll-lock");
 }

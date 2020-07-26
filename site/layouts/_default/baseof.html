@@ -10,9 +10,10 @@
 
   {{ partial "nav" . }}{{end}}
 
-  {{ block "main" . }}{{ end }}
-
-  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  <div class="body-content-wrapper">
+    {{ block "main" . }}{{ end }}
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  </div>
 
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}

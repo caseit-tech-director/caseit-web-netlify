@@ -343,3 +343,46 @@ section {
     grid-row: auto/span #{$i};
   }
 }
+
+/*
+ *
+ * Scroll Lock
+ * 
+ */
+.scroll-lock {
+  overflow: hidden;
+  transform: scale(0.9);
+}
+
+.scroll-lock::after {
+  content: "";
+
+  position: fixed;
+  top: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
+
+  background-color: rgba(0, 0, 0, 0.6); // dimmer
+
+  z-index: 1;
+}
+
+// for the scroll lock transition diminganimation
+.body-content-wrapper::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0); // dimmer
+  transition-property: background-color;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.body-content-wrapper {
+  width: 100vw;
+  height: 100vh;
+  transform: scale(1);
+  transform-origin: top;
+  transition-property: transform;
+  transition-duration: 700ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}

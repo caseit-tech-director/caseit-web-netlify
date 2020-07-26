@@ -14,6 +14,9 @@ window.addEventListener("DOMContentLoaded", (e) => {
   setupHamburgerMenu();
   setupMenuHideOnScroll();
   setupMenuScrolledLook();
+
+  // hide hamburger menu on resize
+  window.addEventListener("resize", (e) => closeHamburgerMenu());
 });
 
 function setupHamburgerMenu() {
@@ -83,12 +86,59 @@ function setupMenuScrolledLook() {
   });
 }
 
+function setbodyContentWrapperTransformOrigin() {
+  const bodyContentWrapper = document.querySelector(".body-content-wrapper");
+  const currentScrollPos = window.pageYOffset;
+  bodyContentWrapper.style.transformOrigin = `center ${currentScrollPos}px`;
+}
+
+function openHamburgerMenu() {
+  const hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
+  const navMenu = document.querySelector(".nav-bar__link-container");
+
+  hamburgerMenuToggle.classList.add("hamburger-menu-toggle--cross");
+  navMenu.classList.add("nav-bar__link-container--expanded");
+  lockBodyScroll();
+}
+function closeHamburgerMenu() {
+  const hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
+  const navMenu = document.querySelector(".nav-bar__link-container");
+  hamburgerMenuToggle.classList.remove("hamburger-menu-toggle--cross");
+
+  navMenu.classList.remove("nav-bar__link-container--expanded");
+  unlockBodyScroll();
+}
+
 function lockBodyScroll() {
-  document.querySelector(".body-content-wrapper").classList.add("scroll-lock");
+  document.body.style.overflowY = "hidden";
+
+  // set the transform origin to the center of teh screen
+  setbodyContentWrapperTransformOrigin();
+  document
+    .querySelector(".body-content-wrapper")
+    .classList.add("body-content-wrapper--dimmed");
 }
 
 function unlockBodyScroll() {
+  document.body.style.overflowY = "scroll";
+
+  // set the transform origin to the center of teh screen
+  setbodyContentWrapperTransformOrigin();
   document
     .querySelector(".body-content-wrapper")
-    .classList.remove("scroll-lock");
+    .classList.remove("body-content-wrapper--dimmed");
 }
+
+// Trick adapted from the following link
+// purpose is to stop the menu animation showing when window resizing
+// https://css-tricks.com/stop-animations-during-window-resizing/
+//
+// Refer to _reset.css for the css component of this script
+let resizeTimer;
+window.addEventListener("resize", () => {
+  document.body.classList.add("resize-animation-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove("resize-animation-stopper");
+  }, 400);
+});

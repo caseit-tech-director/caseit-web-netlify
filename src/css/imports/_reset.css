@@ -110,3 +110,19 @@ input[type="submit"]:not(:disabled) {
   display: inline-flex;
   vertical-align: middle;
 }
+
+/* 
+ * 
+ * Trick adapted from the following link
+ * purpose is to stop the menu animation showing when window resizing
+ * https://css-tricks.com/stop-animations-during-window-resizing/
+ * 
+ * 
+ * Refer to index.js to see the javascript component of this fix
+ * 
+ */
+
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}

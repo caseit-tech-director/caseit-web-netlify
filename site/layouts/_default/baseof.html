@@ -11,7 +11,9 @@
   {{ partial "nav" . }}{{end}}
 
   <div class="body-content-wrapper">
+
     {{ block "main" . }}{{ end }}
+
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </div>
 

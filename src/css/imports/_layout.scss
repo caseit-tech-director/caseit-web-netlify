@@ -349,12 +349,13 @@ section {
  * Scroll Lock
  * 
  */
-.scroll-lock {
-  overflow: hidden;
-  transform: scale(0.9);
+.body-content-wrapper--dimmed {
+  transform: scale(0.95) !important;
+  opacity: 0.3;
 }
 
-.scroll-lock::after {
+.body-content-wrapper--dimmed::after {
+  // prevent user from touching the content
   content: "";
 
   position: fixed;
@@ -363,26 +364,23 @@ section {
   left: 0rem;
   right: 0rem;
 
-  background-color: rgba(0, 0, 0, 0.6); // dimmer
-
-  z-index: 1;
+  z-index: 1000;
 }
 
 // for the scroll lock transition diminganimation
 .body-content-wrapper::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0); // dimmer
+
   transition-property: background-color;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .body-content-wrapper {
-  width: 100vw;
-  height: 100vh;
   transform: scale(1);
-  transform-origin: top;
-  transition-property: transform;
+  transition-property: transform, opacity;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+  will-change: opacity, transform;
 }

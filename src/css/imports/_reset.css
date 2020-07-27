@@ -80,6 +80,16 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* 
+ *++++++++++++++++++++++++++++++++++++++++++++++++
+ * 
+ * Make footer stick to bottom of the page if the page is too short
+ * 
+ *++++++++++++++++++++++++++++++++++++++++++++++++
+ */
+body {
+  min-height: 100vh;
+}
 
 /* 
  * +++++++++++++++++++++

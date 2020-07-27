@@ -1,52 +1,61 @@
 ---
 title: The Premier MIS Case Competition
-subtitle: International Case comp, reimagined
+subtitle: International Case Competition, reimagined
 pitch1:
   heading: Expand your network
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vivamus
-    interdum in purus, in dictumst bibendum. Enim id facilisis egestas mauris
-    aenean eu penatibus sed. "
+  text: "An international stage. A rigorous competition. CaseIT aims to challenge
+    your traditional thinking and foster analytic skills and experience.
+    CaseIT’s week-long competition leaves competitors with passion, fulfillment,
+    and fosters lasting connections. "
   imageUrl: img/dsc03831.jpg
-  ctaText: See Changes This Year
+  ctaText: See How to get involved
 pitch2:
-  heading: A prestegious international case competition
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vivamus
-    interdum in purus, in dictumst bibendum. Enim id facilisis egestas mauris
-    aenean eu penatibus sed.
+  heading: A prestigious international case competition
+  text: >
+    CaseIT is the premier International Management Information Systems (MIS)
+    Case Competition hosted in collaboration with the Simon Fraser University
+    Beedie School of Business. Students showcase their critical business case
+    analysis through innovation and business acumen to esteemed industry judges
+    on an established international stage.
   imageUrl: img/dsc04227.jpg
   ctaText: See Changes This Year
 caseitGoingOnline:
   heading: CaseIT is going online!
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vivamus
-    interdum in purus, in dictumst bibendum. Enim id facilisis egestas mauris
-    aenean eu penatibus sed.
-  ctaText: See How we Adapt
+  text: >
+    This year is not like the rest. CaseIT 2021 will be a virtual competition!
+    For the first time in history, the CaseIT 2021 organizing committee will be
+    pioneering a premier case competition in an online format.
+  ctaText: See How We Adapt
   resources:
-    - heading: Not another case comp
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     - heading: Competition Structure
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - heading: Not another online comp
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      text: |
+        New format, same fierce competition.
+    - heading: International COVID-19 impact
+      text: CaseIT is committed to providing a competition that is accessible and
+        safe.
+    - heading: Business Technology Update
+      text: >
+        Embracing this change, we will be debuting new mediums to enhance our
+        competition.
 caseit2020:
   heading: Our Awesome 2020
-  text: Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone.
+  text: >
+    
+
+    CaseIT 2020 was a week filled with intensive competition and exciting events. The premiere of our ExchangeIT event provided competitor engagement like never before. Students showcased their innovation and passion to esteemed industry judges with Indiana University taking first place. 
 sponsors:
   heading: Sponsors
-  text: Coffee is an amazing part of human culture but it has a dark side too –
-    one of colonialism and mindless abuse of natural resources and human lives.
-    We want to turn this around and return the coffee trade to the drink’s
-    exhilarating, empowering and unifying nature.
-  ctaText: See All Benifits
+  text: >
+    
+    We would like to extend a big thank you to our 2020 sponsors for helping us create a phenomenal event. Your involvement has helped CaseIT create connections and inspire learning and growth for 872 undergraduate competitors, representing 47 universities, and 19 countries since 2004.
+  ctaText: See  Benefits
   imageUrl: img/sponsors-logo.png
 endingCtaBlock:
   heading: ExcITed? We are too!
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et vivamus
-    interdum in purus, in dictumst bibendum. Enim id facilisis egestas mauris
-    aenean eu penatibus sed.
+  text: >
+    Do you have what it takes to compete? 
+
+    CaseIT 2021, the premier international case competition is open for applications. 
   ctaTextStudent: How to join as a student
   ctaTextCoach: Register school as a coach
   imageUrl: img/dsc04281.jpg

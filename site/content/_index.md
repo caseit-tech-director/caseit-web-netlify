@@ -4,9 +4,9 @@ subtitle: International Case Competition, reimagined
 pitch1:
   heading: Expand your network
   text: "An international stage. A rigorous competition. CaseIT aims to challenge
-    your traditional thinking and foster analytic skills and experience.
-    CaseIT’s week-long competition leaves competitors with passion, fulfillment,
-    and fosters lasting connections. "
+    your traditional thinking to foster analytic skills and experience. CaseIT’s
+    week-long competition leaves competitors with passion, fulfillment, and
+    fosters lasting connections. "
   imageUrl: img/dsc03831.jpg
   ctaText: See How to get involved
 pitch2:

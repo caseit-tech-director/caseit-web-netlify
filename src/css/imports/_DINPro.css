@@ -1,11 +1,11 @@
-@font-face {
+/* @font-face {
     font-family: 'DINPro';
     src: url('../fonts/DINPro-Light.woff2') format('woff2'),
         url('../fonts/DINPro-Light.woff') format('woff');
     font-weight: lighter;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 /* 
 @font-face {
@@ -27,19 +27,19 @@
 } */
 
 @font-face {
-    font-family: 'DINPro';
-    src: url('../fonts/DINPro-Bold.woff2') format('woff2'),
-        url('../fonts/DINPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "DINPro";
+  src: url("../fonts/DINPro-Bold.woff2") format("woff2"),
+    url("../fonts/DINPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'DINPro';
-    src: url('../fonts/DINPro-Regular.woff2') format('woff2'),
-        url('../fonts/DINPro-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "DINPro";
+  src: url("../fonts/DINPro-Regular.woff2") format("woff2"),
+    url("../fonts/DINPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }

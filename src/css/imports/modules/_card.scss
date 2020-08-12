@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../layout";
+
+:root {
+  --card-spacing-vertical: 2rem;
+  --card-spacing-horizontal: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-primary-lightest);
+  box-shadow: var(--drop-shadow-light);
+  padding: var(--card-spacing-vertical) var(--card-spacing-horizontal);
+
+  & > * {
+    margin-top: 0rem;
+    margin-bottom: var(--card-spacing-vertical);
+  }
+
+  & > .h4,
+  & > h4 {
+    // tighten the line height for the heading
+    line-height: 1em;
+  }
+
+  & > *:last-child {
+    // remove the bottom margin at the last child
+    margin-bottom: 0rem;
+  }
+
+  &__cta {
+    margin-top: auto;
+  }
+}

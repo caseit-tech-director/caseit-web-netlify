@@ -15,9 +15,50 @@ window.addEventListener("DOMContentLoaded", (e) => {
   setupMenuHideOnScroll();
   setupMenuScrolledLook();
 
+  // setup custom form element
+  setupCopyableField();
+
   // hide hamburger menu on resize
   window.addEventListener("resize", (e) => closeHamburgerMenu());
 });
+
+function setupCopyableField() {
+  const copyableFields = document.querySelectorAll(".copyable-field");
+  copyableFields.forEach((elm) => {
+    const copyButton = elm.querySelector(".copyable-field__button");
+    const copyText = elm.querySelector(".copyable-field__copyText");
+    copyButton.addEventListener("click", (e) => {
+      // copy the text
+      copyTextToClipboard(copyText.innerHTML);
+      // animate the text in
+      playTextCopiedAnimation(elm);
+    });
+  });
+  function playTextCopiedAnimation(containerElm) {
+    const elm = document.createElement("div");
+    elm.innerHTML = "Copied to clipboard!";
+    elm.classList.add("hint-popup");
+    elm.addEventListener(
+      "animationend",
+      (e) => {
+        if (e.animationName.includes("exit")) containerElm.removeChild(elm);
+      },
+      false
+    );
+    containerElm.appendChild(elm);
+  }
+}
+
+function copyTextToClipboard(text) {
+  let copyText = document.createElement("input");
+  copyText.type = "input";
+  document.body.append(copyText);
+
+  copyText.value = text;
+  copyText.select();
+  document.execCommand("copy");
+  copyText.remove();
+}
 
 function setupHamburgerMenu() {
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");

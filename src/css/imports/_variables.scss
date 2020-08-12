@@ -8,10 +8,9 @@
  *
  */
 
-$useRoundedCorner:false;
+$useRoundedCorner: false;
 
 :root {
-
   /* 
     Colours
   */
@@ -53,25 +52,25 @@ $useRoundedCorner:false;
   --type-size-body: 16px;
   --type-size-body-small: 0.875rem;
   --type-size-button: 0.875rem;
-  --type-size-caption: .75rem;
+  --type-size-caption: 0.75rem;
 
   /* TRACKING - relateive to font size */
-  --type-tracking-display: -.05em;
-  --type-tracking-h1: -.02em;
-  --type-tracking-h2: .02em;
-  --type-tracking-h3: .02em;
-  --type-tracking-h4: .05em;
-  --type-tracking-lead: -.025em;
-  --type-tracking-body: .02em;
-  --type-tracking-body-small: .02em;
-  --type-tracking-button: .08em;
+  --type-tracking-display: -0.05em;
+  --type-tracking-h1: -0.02em;
+  --type-tracking-h2: 0.02em;
+  --type-tracking-h3: 0.02em;
+  --type-tracking-h4: 0.05em;
+  --type-tracking-lead: -0.025em;
+  --type-tracking-body: 0.02em;
+  --type-tracking-body-small: 0.02em;
+  --type-tracking-button: 0.08em;
 
   /* LEADING - relative to font size */
   --type-leading-display: 1em;
   --type-leading-h1: 1em;
   --type-leading-h2: 1em;
   --type-leading-h3: 1em;
-  --type-leading-h4: 1em;
+  --type-leading-h4: 1.5em;
   --type-leading-lead: 34px;
   --type-leading-body: 24px;
   --type-leading-body-small: 20px;
@@ -81,6 +80,6 @@ $useRoundedCorner:false;
    * Shadow Utilities
    * 
    */
-  --drop-shadow-dark: 0px 15px 25px rgba(0, 0, 0, .25);
-  --drop-shadow-light: 0px 15px 25px rgba(0, 0, 0, .1);
+  --drop-shadow-dark: 0px 15px 25px rgba(0, 0, 0, 0.25);
+  --drop-shadow-light: 0px 15px 25px rgba(0, 0, 0, 0.1);
 }

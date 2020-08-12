@@ -40,6 +40,9 @@
 @import "./imports/modules/_footer";
 @import "./imports/modules/_navigation";
 @import "./imports/modules/_hero";
+@import "./imports/modules/_header";
+@import "./imports/modules/_breadcrumbs";
+@import "./imports/modules/_card";
 
 /* pages on the website */
 @import "./imports/pages/_landing.scss";

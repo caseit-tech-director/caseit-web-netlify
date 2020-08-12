@@ -42,6 +42,18 @@
   --overline-spacing-bottom: 1rem;
 }
 
+// line height crop mixin
+// https://medium.com/codyhouse/line-height-crop-a-simple-css-formula-to-remove-top-space-from-your-text-9c3de06d7c6f
+@mixin lineHeightCrop($line-height) {
+  &::before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    margin-top: calc((1 - #{$line-height}) * 0.5em);
+  }
+}
+
 /* 
  * FOR HEADLINES AND DISPLAY
  */
@@ -81,6 +93,19 @@ h2,
   font-weight: bold;
   margin-top: var(--header-spacing-top);
   margin-bottom: var(--header-spacing-bottom);
+}
+
+.h2--accented {
+  &::before {
+    content: "";
+    display: block;
+    border-top: 8px solid var(--color-accent);
+    width: 3rem;
+    height: 2px;
+
+    padding-bottom: 1rem;
+    // background-color: var(--color-accent);
+  }
 }
 
 h3,

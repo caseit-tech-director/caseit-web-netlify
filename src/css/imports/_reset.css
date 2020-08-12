@@ -136,3 +136,13 @@ input[type="submit"]:not(:disabled) {
   animation: none !important;
   transition: none !important;
 }
+
+/*
+ *
+ * No bullet list
+ * 
+ */
+
+ul.no-bullet {
+  list-style: none;
+}

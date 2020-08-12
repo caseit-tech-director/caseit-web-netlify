@@ -1,19 +1,18 @@
 ---
 title: "Contact"
-logo: "/img/logo.svg"
+subtitle: "Let's Talk!"
 contact_entries:
-  - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
-  - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+  - heading: Email
+    text: "We would love to answer you about questions CaseIT 2021! Typically reply in X hours"
+    email: "caseit@sfu.ca"
+  - heading: Facebook Messeenger
+    text: "Quick questions need quick response? We are reachable through facebook messenger."
+    messenger_link: "https://m.me/caseit"
+top_questions:
+  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi, id cras lacinia eu nulla massa, ullamcorper. Ultricies vel dictum quis vel volutpat leo at nisl tortor.
+  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi, id cras lacinia eu nulla massa, ullamcorper. Ultricies vel dictum quis vel volutpat leo at nisl tortor.
+  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+    text: lorem ipsm fdsa [fdsa](http://www.google.com)
 ---
-
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
-
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
-
-You can also use the form below for any inquiries about coffee
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our baristas. Don’t be shy, drop us a line!

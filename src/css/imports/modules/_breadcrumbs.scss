@@ -1,0 +1,16 @@
+@import "../variables";
+
+.breadcrumbs {
+  padding-bottom: 1rem;
+
+  a {
+    color: var(--color-primary-darkest);
+
+    // remove the background colour from the default link
+    background: none;
+  }
+
+  a:last-child {
+    font-weight: bold;
+  }
+}

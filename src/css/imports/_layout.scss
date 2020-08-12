@@ -27,6 +27,10 @@ $grid-gutter: 1rem;
 
 $body-side-margin: 1.5rem;
 
+:root {
+  --card-width: 20rem;
+}
+
 /* 
  * A class that use to seperate different chunk of content
  */
@@ -110,7 +114,12 @@ section {
 
 .grid-2-cols__blurb-left,
 .grid-2-cols__blurb-right {
-  grid-row: 2;
+  grid-row: auto;
+}
+
+.grid-2-cols__heading,
+.grid-2-cols__content-area {
+  grid-row: auto;
 }
 
 .blurb--valign-center {
@@ -164,6 +173,13 @@ section {
     // start at the following column next to the previous content and span across 6 cells
     grid-column: auto / auto;
   }
+
+  .grid-2-cols__heading {
+    grid-column: 2/3;
+  }
+  .grid-2-cols__content-area {
+    grid-column: 4/12;
+  }
 }
 
 @include viewportLargerThan($breakpoint-m) {
@@ -211,6 +227,18 @@ section {
   .grid-3-cols {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/*
+ *
+ * Auto flowing card container
+ * 
+ */
+.card-layout-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+  column-gap: $grid-gutter;
+  row-gap: $grid-gutter;
 }
 
 /*

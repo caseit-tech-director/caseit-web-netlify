@@ -1,0 +1,48 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  {{ partial "breadcrumbs.html" . }}
+  <h1>Contact Us</h1>
+  <div class="h4">Lets Talk!</div>
+</header>
+
+<main>
+  <section id="contact-info" class="card-layout-container full-width--article content-block">
+    {{range where .Params.contact_entries "heading" "Email"}}
+    <div class="card-layout-item card">
+      <h3 class="h4 h4--accented">{{.heading}}</h3>
+      <p>{{.text}}</p>
+      <div class="copyable-field">
+        <span class="copyable-field__copyText">{{.email}}</span>
+        <button class="copyable-field__button">
+          <span class="material-icons">content_copy</span>
+        </button>
+      </div>
+    </div>
+    {{end}}
+    {{range where .Params.contact_entries "heading" "Facebook Messeenger"}}
+    <div class="card-layout-item card">
+      <h3 class="h4 h4--accented">{{.heading}}</h3>
+      <p>{{.text}}</p>
+      <a class="button-secondary card__cta" href="{{.messenger_link}}" target="blank">open messenger</a>
+    </div>
+    {{end}}
+  </section>
+
+  <section id="top-questions" class="content-block grid-2-cols full-width">
+    <div class="grid-2-cols__heading">
+      <h2 class="h2--accented">Top Questions</h2>
+    </div>
+    <div class="grid-2-cols__content-area">
+      <ul class="no-bullet">
+        {{range .Params.top_questions }}
+        <li>
+          <h3 class="h4">{{.heading}}</h3>
+          <p>{{.text | markdownify}}</p>
+        </li>
+        {{end}}
+      </ul>
+    </div>
+  </section>
+</main>
+
+{{ end }}

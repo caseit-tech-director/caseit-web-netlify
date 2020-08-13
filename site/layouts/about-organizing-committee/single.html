@@ -2,20 +2,32 @@
 <header class="header-module full-width">
   {{ partial "breadcrumbs.html" . }}
   <h1>{{.Params.title}}</h1>
-
+  <p class="lead">{{.Params.intro_blurb}}</p>
 </header>
 
 <main>
-  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair">
-  <section class="content-block content-block--related grid-2-cols full-width">
-    <div class="grid-2-cols__content-area drop-cap">
-      {{.Content}}
-      <div class="signiture">
-        <div class="signiture__name">{{.Params.author}}</div>
-        <div class="signiture__position">CaseIT 2021 Chair</div>
-        <div class="signiture__date">{{.Params.writtenDate}}</div>
+  {{/*  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair"> */}}
+
+  {{/*  {{ range .Params.team }}
+  {{ range .team_member }}
+  {{.name}}
+  {{.position}}
+  {{ end }}
+  {{ end }} */}}
+
+  <section id="committee" class="content-block full-width">
+    {{range .Params.team}}
+    <h2 class="h3 h3--accented">Competition Execution</h2>
+    <div class="team-display-container">
+      {{ range .team_member }}
+      <div class="team-display-item">
+        <h3 class="team-display-item__name h4 h4--accented">{{.name}}</h3>
+        <div class="team-display-item__position">{{.position}}</div>
+        <img src="{{.image}}" alt="Portrait of {{.team_member}}">
       </div>
+      {{ end }}
     </div>
+    {{end}}
   </section>
 
 

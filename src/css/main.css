@@ -43,6 +43,7 @@
 @import "./imports/modules/_header";
 @import "./imports/modules/_breadcrumbs";
 @import "./imports/modules/_card";
+@import "./imports/modules/_team-display-module";
 
 /* pages on the website */
 @import "./imports/pages/_landing.scss";

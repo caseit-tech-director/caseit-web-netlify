@@ -1,9 +1,11 @@
+@import "../typography";
 @import "../variables";
 
 .breadcrumbs {
   padding-bottom: 1rem;
 
   a {
+    @extend .link-reset;
     color: var(--color-primary-darkest);
 
     // remove the background colour from the default link

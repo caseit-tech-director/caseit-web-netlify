@@ -1,18 +1,20 @@
 ---
-title: "About"
-subtitle: "About Caseit"
-contact_entries:
-  - heading: Email
-    text: "We would love to answer you about questions CaseIT 2021! Typically reply in X hours"
-    email: "caseit@sfu.ca"
-  - heading: Facebook Messeenger
-    text: "Quick questions need quick response? We are reachable through facebook messenger."
-    messenger_link: "https://m.me/caseit"
-top_questions:
-  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi, id cras lacinia eu nulla massa, ullamcorper. Ultricies vel dictum quis vel volutpat leo at nisl tortor.
-  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi, id cras lacinia eu nulla massa, ullamcorper. Ultricies vel dictum quis vel volutpat leo at nisl tortor.
-  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-    text: lorem ipsm fdsa [fdsa](http://www.google.com)
+title: "About Caseit"
+intro_blurb:
+  CaseIT brings together top undergraduate business students, distinguished faculty members, experienced industry
+  professionals, and a dedicated student-run organizing committee to challenge conventional thinking and build global
+  connections.
+about_sections:
+  - heading: Chair's Welcoming
+    text: Our competition executive team could answer you about questions CaseIT 2021
+    image: img/about-chair.jpg
+    link: /about/welcoming/
+  - heading: Our History
+    text: Our competition executive team could answer you about questions CaseIT 2021
+    image: img/about-history.jpg
+    link: /about/history/
+  - heading: Organizing Committee
+    text: Our competition executive team could answer you about questions CaseIT 2021
+    image: img/about-caseit-team.jpg
+    link: /about/organizing-committee/
 ---

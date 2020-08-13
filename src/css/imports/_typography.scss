@@ -204,6 +204,18 @@ p,
   margin-bottom: var(--overline-spacing-bottom);
 }
 
+.drop-cap > *:first-child:first-letter,
+.drop-cap:first-child:first-letter {
+  // color: #903;
+  float: left;
+  font-size: 80px;
+
+  line-height: 60px;
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-left: 0px;
+}
+
 /* 
   Interactive Typography
 */
@@ -242,8 +254,10 @@ a.inactive {
 .link-reset {
   background-image: none;
 
-  &:hover {
-    color: var(--color-primary-light);
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-primary-darker);
   }
 }
 

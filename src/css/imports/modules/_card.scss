@@ -7,7 +7,11 @@
   --card-spacing-horizontal: 2rem;
 }
 
-// a utility class for making everything in the card have a consistant spacing
+// =================================
+//
+// Utili
+//
+// =================================
 .card-layout-reset {
   & > * {
     margin-top: 0rem;
@@ -30,6 +34,12 @@
   }
 }
 
+// =================================
+//
+// Simple white card layout
+//
+// =================================
+
 .card {
   @extend .card-layout-reset;
 
@@ -41,9 +51,32 @@
   padding: var(--card-spacing-vertical) var(--card-spacing-horizontal);
 }
 
-.image-card {
-  display: block;
+a.card {
+  // if the whole card is a link
+  h4,
+  .h4 {
+    transition: color 200ms ease-out;
+  }
 
+  &:hover {
+    h4,
+    .h4 {
+      color: var(--color-primary-lightest) !important;
+    }
+  }
+}
+
+// =================================
+//
+// Card layout with image background
+//
+// =================================
+
+.image-card {
+  --accent-bar-initial-width: 0.1;
+  --accent-bar-height: 8px;
+
+  display: block;
   padding: 0rem;
 
   // setup a context for absolute position
@@ -122,18 +155,19 @@
 
     // initil state of the border
     &::before {
-      border-top: 8px solid var(--color-accent);
+      border-top: var(--accent-bar-height) solid var(--color-accent);
       top: 0rem;
-      transform: translateX(0);
-      width: 2rem;
+      transform-origin: top left;
+      transform: scaleX(var(--accent-bar-initial-width)) translateX(0);
+      width: 100%;
     }
 
     // Hover styles
     &:hover::before {
-      width: 100%;
+      // width: 100%;
 
       // offset the border so it stick to the left side of the card
-      transform: translateX(calc(-1 * var(--card-spacing-horizontal)));
+      transform: scaleX(1) translateX(calc(-1 * var(--card-spacing-horizontal)));
     }
 
     &:hover::before {

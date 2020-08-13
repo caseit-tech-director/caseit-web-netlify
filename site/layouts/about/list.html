@@ -1,0 +1,25 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  {{ partial "breadcrumbs.html" . }}
+  <h1>{{.Params.title}}</h1>
+
+  <p class="lead">
+    {{.Params.intro_blurb}}
+  </p>
+</header>
+
+<main>
+  <div class="card-layout-container full-width content-block">
+    {{ range .Params.about_sections }}
+    <a href="{{.link}}" class="image-card">
+      <div class="image-card__content">
+        <h2 class="h4">{{.heading}}</h2>
+        <p>{{.text}}</p>
+      </div>
+      <img src="{{.image}}" alt="{{.text}}">
+    </a>
+    {{ end }}
+  </div>
+</main>
+
+{{ end }}

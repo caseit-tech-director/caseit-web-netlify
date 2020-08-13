@@ -135,6 +135,10 @@ form,
     // position the button at the center
     padding: 0.75rem 0.75rem;
     border: none;
+
+    &:active {
+      color: #888;
+    }
   }
 }
 
@@ -158,12 +162,12 @@ form,
 @keyframes hint-popup-animation--enter {
   0% {
     opacity: 0;
-    transform: scale(0.8);
+    transform: translateY(30%);
   }
 
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0%);
   }
 }
 

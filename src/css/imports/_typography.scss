@@ -241,6 +241,10 @@ a.inactive {
 
 .link-reset {
   background-image: none;
+
+  &:hover {
+    color: var(--color-primary-light);
+  }
 }
 
 /* code {

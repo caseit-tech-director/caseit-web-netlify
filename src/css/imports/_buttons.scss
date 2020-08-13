@@ -1,6 +1,6 @@
 /* 
- *
- * Content
+*
+* Content
  * 
  * Buttons
  *  - Primary Button Styling
@@ -85,6 +85,7 @@
 
 .button-secondary:focus {
   background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-primary-dark);
   outline: none;
 }
 

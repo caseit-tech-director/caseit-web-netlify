@@ -34,7 +34,7 @@ const NumberDisplay = {
           if (!entry.target.classList.contains("counting")) {
             entry.target.classList.add("counting");
             const targetNumber = parseInt(entry.target.innerHTML);
-            animateValue(entry.target, 0, targetNumber);
+            animateValue(entry.target, 0, targetNumber, 500);
 
             // remove the elment from the observe list so it wont be trigger again
             observer.unobserve(entry.target);
@@ -53,11 +53,11 @@ const NumberDisplay = {
   },
 };
 
-function animateValue(elm, start, end) {
+function animateValue(elm, start, end, duration) {
   var range = end - start;
   var current = start;
   var increment = end > start ? 1 : -1;
-  var stepTime = 30; // Math.abs(Math.floor(duration / range));
+  var stepTime = Math.abs(Math.floor(duration / range));
   var obj = elm;
   var timer = setInterval(function () {
     current += increment;

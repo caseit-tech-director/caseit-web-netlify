@@ -220,6 +220,20 @@ p,
   padding-left: 0px;
 }
 
+.button-text {
+  font-family: var(--typeface-interactive);
+  font-size: var(--type-size-button);
+  letter-spacing: var(--type-tracking-button);
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  text-align: center; // center align for <a>
+  line-height: normal; // reset line height for <a>
+  background-image: none;
+}
+
 /* 
   Interactive Typography
 */

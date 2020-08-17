@@ -44,9 +44,11 @@
 @import "./imports/modules/_breadcrumbs";
 @import "./imports/modules/_card";
 @import "./imports/modules/_team-display-module";
+@import "./imports/modules/_section-nav";
 
 /* pages on the website */
 @import "./imports/pages/_landing.scss";
+@import "./imports/pages/_competition.scss";
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import "./imports/_debug"; */

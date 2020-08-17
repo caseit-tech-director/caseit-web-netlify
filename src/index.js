@@ -2,6 +2,8 @@
 
 import "./css/main.css";
 
+import NumberDisplay from "./js/modules/number-display.js";
+
 // Say hello
 // console.log("🦊 Hello! Edit me in src/index.js");
 
@@ -17,6 +19,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
 
   // setup custom form element
   setupCopyableField();
+
+  NumberDisplay.setup();
 
   // hide hamburger menu on resize
   window.addEventListener("resize", (e) => closeHamburgerMenu());

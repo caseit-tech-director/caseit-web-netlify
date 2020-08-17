@@ -1,0 +1,215 @@
+/* 
+ *
+ * Page specific styling
+ * Competition Overview Page
+ * 
+ */
+
+@import "../breakpoints";
+@import "../typography";
+
+// displaying special layout for the site
+
+// INTO SECTION -> "are you ready for it"
+.comp-hype-intro {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+
+  & > * {
+    margin: auto;
+  }
+
+  height: 70vh;
+}
+
+.cta-arrow {
+  animation-name: pointing-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: forward;
+}
+
+@keyframes pointing-animation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30%);
+  }
+}
+
+// NUMBER SECTION
+.comp-hype-section {
+  // control the spacing between element within this module
+  --spacing-vertical: 30vw;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  &:last-child {
+    margin-bottom: 0rem;
+  }
+
+  // make everything center align
+  * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    border-top: 4px solid var(--color-primary-lightest);
+
+    width: 5rem;
+
+    // make the seperator line center aligne
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.number-display {
+  position: relative;
+
+  text-align: center;
+
+  margin-top: var(--spacing-vertical);
+  margin-bottom: var(--spacing-vertical);
+
+  &__text {
+    // center the text
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+
+    font-family: var(--typeface-header);
+    font-weight: bold;
+
+    z-index: 100;
+
+    opacity: 0;
+
+    transition-property: transform, opacity;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+
+    &--show {
+      transform: translate(-50%, -50%) translateZ(10px);
+      opacity: 1;
+    }
+  }
+
+  &__number {
+    // center the text
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateZ(4px);
+
+    font-family: var(--typeface-header);
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: normal;
+
+    color: var(--color-accent);
+    z-index: 1;
+  }
+
+  @include viewportLargerThan($breakpoint-s) {
+    &__text {
+      font-size: 4vw;
+      line-height: normal;
+      width: 100vw;
+    }
+    &__number {
+      font-size: 25vw;
+    }
+  }
+
+  // prevent the text going too wild
+  @include viewportLargerThan($breakpoint-xl) {
+    &__text {
+      font-size: 2vw;
+      line-height: normal;
+      width: 100vw;
+    }
+    &__number {
+      font-size: 20vw;
+    }
+  }
+}
+
+// flex implementation of two col layout
+.number-2-cols {
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    width: 90vw;
+    // position: relative;
+  }
+}
+
+// break point at breakpoint m to match the grid implementation
+@include viewportLargerThan($breakpoint-s) {
+  .number-2-cols {
+    display: flex;
+    flex-direction: row;
+
+    & > * {
+      position: relative;
+      width: 50vw;
+    }
+  }
+}
+
+.comp-hype-title {
+  @extend h1;
+
+  margin-top: var(--spacing-vertical);
+  margin-bottom: var(--spacing-vertical);
+
+  font-size: 5vw;
+  letter-spacing: -0.3vw;
+}
+
+//
+// TEXT HYPE SECTION
+//
+#competition-hype {
+  margin-bottom: 0rem;
+}
+
+//
+// VIDEO SECTION
+//
+
+#promo-video {
+  margin: 0;
+  position: relative;
+}
+
+// unmute button
+#promo-video > #btnUnmute {
+  position: absolute;
+  // give it a little bit margin
+  left: 1rem;
+  top: 1rem;
+}
+
+#promo-video > video {
+  // selecting the video tag inside promo video
+  width: 100%;
+  height: auto;
+
+  // make the video look clickable for unmuting
+  cursor: pointer;
+}

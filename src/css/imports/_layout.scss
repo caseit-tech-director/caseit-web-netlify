@@ -245,6 +245,14 @@ section {
   row-gap: $grid-gutter;
 }
 
+.card-layout-container--list {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin-bottom: 1rem;
+  }
+}
+
 /*
  *
  * Centered text section

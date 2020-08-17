@@ -1,0 +1,60 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  {{ partial "breadcrumbs.html" . }}
+  <h1>{{.Params.title}}</h1>
+
+</header>
+
+<main>
+  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair">
+  <section class="content-block content-block--related grid-2-cols full-width">
+    <div class="grid-2-cols__content-area drop-cap">
+      {{.Content}}
+      <div class="signiture">
+        <img class="signiture__image" src="{{.Params.signiture_image}}" alt="{{.Params.author}}'s signiture">
+        <div class="signiture__name">{{.Params.author}}</div>
+        <div class="signiture__position">CaseIT 2021 Chair</div>
+        <div class="signiture__date">{{.Params.written_ate}}</div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="up-next" class="content-block grid-2-cols full-width">
+
+    <div class="grid-2-cols__heading">
+      <h2 class="h2--accented">Up Next</h2>
+    </div>
+
+    <div class="grid-2-cols__content-area">
+      <div class="card-layout-container">
+        {{/*  When there is "next page" in the section  */}}
+        {{ if .NextInSection }}
+        {{ with .NextInSection }}
+        <a href="{{.Permalink}}" class="image-card">
+          <div class="image-card__content">
+            <h2 class="h4">{{.Title}}</h2>
+            <p>{{.Description}}</p>
+          </div>
+          <img src="{{.Params.image}}" alt="Go to {{.Title}}">
+        </a>
+        {{ end }}
+        {{/*  When this is the last page  */}}
+        {{else}}
+        {{ with .Site.GetPage "/about/organizing-committee.md"}}
+        <a href="{{.Permalink}}" class="image-card">
+          <div class="image-card__content">
+            <h2 class="h4">{{.Title}}</h2>
+            <p>{{.Description}}</p>
+          </div>
+          <img src="{{.Params.image}}" alt="Go to {{.Title}}">
+        </a>
+        {{ end }}
+        {{end}}
+
+      </div>
+    </div>
+  </section>
+</main>
+
+{{ end }}

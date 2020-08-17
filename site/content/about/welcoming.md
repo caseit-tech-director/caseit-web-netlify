@@ -2,9 +2,10 @@
 title: "Chair's Welcome"
 image: img/welcoming-chair-photo.jpg
 author: Jordan Wong
-writtenDate: MM/DD/YYYY
+signiture_image: img/jordan-signiture.png
+written_date: MM/DD/YYYY
 description: Read CaseIT 2021 Chair Jordan Wong's welcome
-type: about
+type: about-chairs-welcoming
 ---
 
 It is our pleasure to welcome you to CaseIT 2021. Hosted in collaboration with the Beedie School of Business at Simon Fraser University, CaseIT is the world’s premier International Undergraduate Management Information Systems Business Case Competition. CaseIT has welcomed 872 undergraduate competitors representing 47 universities from 19 different countries to compete in Vancouver since 2004.

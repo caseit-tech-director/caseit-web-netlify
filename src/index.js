@@ -118,11 +118,11 @@ function setupMenuScrolledLook() {
 
     // setup "scrolled" look when back is not zero
     if (currentScrollPos != 0 && !scrolled) {
-      navBar.classList.add("scrolled");
+      navBar.classList.add("main-nav--scrolled");
       scrolled = true;
     } else if (currentScrollPos == 0) {
       scrolled = false;
-      navBar.classList.remove("scrolled");
+      navBar.classList.remove("main-nav--scrolled");
     }
   });
 }

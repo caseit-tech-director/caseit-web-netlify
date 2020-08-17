@@ -1,0 +1,69 @@
+/*
+ * 
+ * Information Page spaceific style
+ * 
+ */
+
+.timeline-container {
+  --dot-size: 1rem;
+  --line-length: 10rem;
+  display: flex;
+  flex-direction: column;
+
+  max-width: var(--dot-size);
+
+  margin-bottom: 8rem;
+}
+
+.timeline-anchor--active {
+  opacity: 1 !important;
+  background-color: var(--color-accent) !important;
+}
+
+.timeline-anchor {
+  // create an pivot point of the description text
+  position: relative;
+
+  // make the inactive part semi transparent
+  opacity: 0.4;
+  background-color: var(--color-primary-darkest);
+
+  // construct the dot
+  width: var(--dot-size);
+  height: var(--dot-size);
+
+  border-radius: 50%;
+}
+
+.timeline-anchor__description {
+  // achor
+  position: absolute;
+  width: 20rem;
+
+  left: 2rem;
+  top: -0.5rem;
+
+  // adjust the spacing between elements in a block
+  .h4 {
+    margin-bottom: 0rem;
+  }
+  p {
+    margin-top: 0rem;
+  }
+}
+
+.timeline-connector {
+  // make some space between connector dot and the line
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  // center align the connector
+  margin-left: auto;
+  margin-right: auto;
+
+  // make the inactive part semi transparent
+  opacity: 0.1;
+  height: var(--line-length);
+  width: 2px;
+  background-color: var(--color-primary-darkest);
+}

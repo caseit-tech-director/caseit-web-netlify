@@ -184,6 +184,18 @@ section {
   .grid-2-cols__content-area {
     grid-column: 5/12;
   }
+
+  // flex box implementation of the 2 cols layout
+  .grid-2-cols__header--narrow {
+    grid-column: 1/5;
+  }
+  .grid-2-cols__content--narrow {
+    grid-column: 6/12;
+
+    & > *:first-child {
+      margin-top: 0rem;
+    }
+  }
 }
 
 @include viewportLargerThan($breakpoint-m) {
@@ -435,4 +447,33 @@ section {
   width: 100%;
   max-height: 50vh;
   margin-top: 4rem;
+}
+
+/*
+ *
+ * Hero Center
+ * 
+ */
+
+.hero-centered {
+  display: flex;
+  flex-direction: column;
+
+  // constraint the width
+  max-width: 35rem;
+
+  // create space between top and bottom
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  // center align
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+
+  // tweak the spacing between header and the lead
+  p {
+    margin-top: 1rem;
+  }
 }

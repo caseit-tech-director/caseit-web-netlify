@@ -1,0 +1,90 @@
+{{ define "main" }}
+
+<header class="header-module full-width">
+  <nav class="section-nav">
+    <a href="/competition/" class="section-nav__header">Competition 2021</a>
+    <div class="section-nav__tab-container">
+      <a href="/competition/" class="section-nav__tab">Overview</a>
+      <a href="/competition/information/" class="section-nav__tab">Information</a>
+      <a href="/competition/registration/" class="section-nav__tab section-nav__tab--current">Registration</a>
+    </div>
+  </nav>
+
+  <!-- Centered Header module-->
+  <div class="hero-centered">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">{{.Params.description}}</p>
+    <div class="form-controls">
+      <a class="button-primary button-primary--disabled">Register school now</a>
+    </div>
+    <p>
+      <em>Registration opens on X</em>
+    </p>
+  </div>
+</header>
+
+<section class="full-width--article">
+  <div class="grid-2-cols content-block">
+    <div class="grid-2-cols__header--narrow">
+      <h2>Eligibility</h2>
+    </div>
+    <div class="grid-2-cols__content--narrow">
+      <p>
+        Each team must consist of four students enrolled in an undergraduate program
+      </p>
+      <p>
+        Universities must have a minimum of one team coach or faculty advisor.¹
+      </p>
+      <p>
+        All team members must be first-time competitors at CaseIT MIS Case Competition.²
+      </p>
+
+      <p class="caption">
+        ¹ Universities are welcome to have more than one coach for the competition.
+      </p>
+      <p class="caption">
+        ² This requirement for eligibility strictly applies to student competitors. Returning coaches and faculty
+        advisors are welcomed.
+      </p>
+    </div>
+  </div>
+  <div class="grid-2-cols content-block">
+    <div class="grid-2-cols__header--narrow">
+      <h2>Fees</h2>
+    </div>
+    <div class="grid-2-cols__content--narrow">
+      <h3>
+        $550
+      </h3>
+      <p>
+        Covers 4 students and 1 coach
+      </p>
+      <p class="caption">
+        *The team fee covers the cost of shipping a CaseIT crewneck, CaseIT water bottle, and welcome basket to each
+        competitor
+        and coach. Please note that an additional credit card processing fee may be charged for international
+        transactions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="full-width--article">
+  <div class="center-text">
+    <h2>Questions?</h2>
+  </div>
+  <div class="card-layout-container">
+    <div class="card-layout-item card">
+      <h3 class="h4 h4--accented">Email</h3>
+      <p>Our University Relations team would love to answer your questions, please reach us through the following email.
+      </p>
+      <div class="copyable-field">
+        <span class="copyable-field__copyText">caseit@sfu.ca</span>
+        <button class="copyable-field__button">
+          <span class="material-icons">content_copy</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -5,9 +5,88 @@
     <a href="/competition/" class="section-nav__header">Competition 2021</a>
     <div class="section-nav__tab-container">
       <a href="/competition/" class="section-nav__tab">Overview</a>
-      <a href="/competition/infomration/" class="section-nav__tab section-nav__tab--current">Information</a>
+      <a href="/competition/information/" class="section-nav__tab section-nav__tab--current">Information</a>
       <a href="/competition/registration/" class="section-nav__tab">Registration</a>
     </div>
   </nav>
+
+  <!-- Centered Header module-->
+  <div class="hero-centered">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">{{.Params.description}}</p>
+    <div class="form-controls">
+      <a href="#" class="button-primary">Download Information Package (PDF)</a>
+    </div>
+  </div>
+  <div class="grid-3-cols">
+    <a href="#" class="card-clickable">Competition Week Schedule</a>
+    <a href="#" class="card-clickable">Event Highlight</a>
+    <a href="#" class="card-clickable">COVID Response</a>
+  </div>
 </header>
+
+<section>
+  <div class="full-width">
+    <div class="center-text">
+      <h2>Important Dates</h2>
+      <p>More Information on the way!</p>
+    </div>
+    <div class="grid-2-cols content-block">
+      <div class="grid-2-cols__blurb-left">
+        <div class="timeline-container">
+          {{ range $index, $e := .Params.important_dates }}
+
+          {{ $len := len $.Params.important_dates }}
+          {{ $len := sub $len 1 }}
+
+          {{ if eq .active true }}
+          <div class="timeline-anchor timeline-anchor--active">
+            <div class="timeline-anchor__description">
+              <div class="h4">{{.heading}}</div>
+              <p>
+                {{.text}}
+              </p>
+            </div>
+          </div>
+          {{ if not (eq $index $len) }}
+          <div class="timeline-connector"></div>
+          {{ end }}
+          {{ else }}
+          <div class="timeline-anchor">
+            <div class="timeline-anchor__description">
+              <div class="h4">{{.heading}}</div>
+              <p>
+                {{.text}}
+              </p>
+            </div>
+          </div>
+          {{ if not (eq $index $len) }}
+          <div class="timeline-connector"></div>
+          {{ end }}
+          {{ end }}
+
+          {{ end }}
+        </div>
+      </div>
+      <div class="grid-2-cols__blurb-right">
+        <h3>Get Notified</h3>
+        <p>
+          We value your time as a partner of CaseIT. By subscribing to updates, you will only receive the most
+          essential information that improves your experience with CaseIT.
+        </p>
+
+        <div class="form">
+          <div class="field">
+            <label for="txtEmail">Email</label>
+            <input id="txtEmail" name="txtEmail" placeholder="Exmaple@gmail.com" type="text" />
+            <span class="field__assist">*Required</span>
+          </div>
+          <div class="form-controls">
+            <button class="button-primary">Subscribe to updates</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}

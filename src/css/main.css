@@ -49,6 +49,7 @@
 /* pages on the website */
 @import "./imports/pages/_landing.scss";
 @import "./imports/pages/_competition.scss";
+@import "./imports/pages/_competition-information.scss";
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import "./imports/_debug"; */

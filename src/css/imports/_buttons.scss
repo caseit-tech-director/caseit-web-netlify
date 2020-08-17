@@ -117,3 +117,21 @@
   border-color: var(--color-primary-lightest);
   color: var(--color-primary-lightest);
 }
+
+// disabled state
+.button-primary--disabled {
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary-light);
+
+  cursor: not-allowed;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-light);
+
+    cursor: not-allowed;
+    // color: unset;
+  }
+}

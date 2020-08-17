@@ -19,15 +19,33 @@ $nav-breakpoint: 875px;
   --vert-spacing: 2rem;
 }
 
+// for controlling whether light logo or the dark logo is shown depending context
+
+@mixin logo-dark-mode {
+  .logo-mode--dark {
+    display: block;
+  }
+  .logo-mode--light {
+    display: none;
+  }
+}
+
+@mixin logo-light-mode {
+  .logo-mode--dark {
+    display: none;
+  }
+  .logo-mode--light {
+    display: block;
+  }
+}
+
 // Wrapper that encapsulate the whole navigation module
-nav {
+.main-nav {
   // create some space between nav bar top and bottom
   padding: 1.5rem 0rem;
 
-  background-color: var(--color-primary-lightest);
-
   // elegant transition
-  transition-property: transform;
+  transition-property: transform, color, background-color;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 
@@ -35,12 +53,40 @@ nav {
 
   /* stay on top of the page */
   z-index: 1000;
+
+  --link-color: var(--color-primary-light);
+  --link-color-hover: var(--color-primary-darkest);
+  --link-color-active: var(--color-primary-dark);
+
+  @include logo-light-mode();
 }
 
-nav.scrolled {
+.main-nav--dark {
+  // dark mode color configuration
+  --link-color: var(--color-primary-lightest);
+  --link-color-hover: var(--color-primary-lightest);
+  --link-color-active: var(--color-primary-lightest);
+  @include logo-dark-mode();
+}
+
+.light-mode-color {
+  // light mode color configuration for the navigation bar
+  --link-color: var(--color-primary-light);
+  --link-color-hover: var(--color-primary-darkest);
+  --link-color-active: var(--color-primary-dark);
+  @include logo-light-mode();
+}
+
+nav.main-nav--scrolled {
   // apply these value after the page is no longer on top
   box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   will-change: box-shadow;
+
+  // only apply background color when the page is scrolled
+  background-color: var(--color-primary-lightest);
+
+  // make reset everything in light mode after scroll
+  @extend .light-mode-color;
 }
 
 nav.hidden {
@@ -61,6 +107,9 @@ nav.hidden {
   // hide the website link by default on mobile site
   &__link-container--expanded {
     transform: translateX(0%) !important;
+
+    // make reset everything in light mode after container is expanded
+    @extend .light-mode-color;
   }
 
   // the nav link container hidden by default
@@ -83,7 +132,7 @@ nav.hidden {
     z-index: 10000;
 
     // animation
-    transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1); //ease out expo
+    transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1); //ease out expo
     will-change: transform;
   }
 
@@ -100,6 +149,8 @@ nav.hidden {
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      background-color: transparent;
 
       // fill the space in the rest of the nav bar
       flex: 1;
@@ -163,14 +214,16 @@ a.contact-button {
   background: none;
   // font-size: 20px;
 
+  color: var(--link-color);
+
   &:hover,
   &:focus {
-    color: var(--color-primary-darkest);
+    color: var(--link-color-hover);
   }
 
   // override the original colour
   &:active {
-    color: var(--color-primary-dark);
+    color: var(--link-color-active);
   }
 }
 
@@ -214,7 +267,7 @@ a.contact-button {
     padding: 0em;
     margin-bottom: 0.6em;
 
-    background-color: var(--color-primary-darkest);
+    background-color: var(--link-color);
 
     transition-property: opacity, transform;
     will-change: opacity, transform;

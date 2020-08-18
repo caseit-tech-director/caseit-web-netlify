@@ -97,7 +97,11 @@ function setupMenuHideOnScroll() {
 
   window.addEventListener("scroll", (e) => {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos < currentScrollPos && currentScrollPos > minScrolPos) {
+
+    if (
+      (prevScrollpos < currentScrollPos && currentScrollPos > minScrolPos) ||
+      !canShowMenu()
+    ) {
       // hide nav bar here
       if (
         !navBar.classList.contains("hidden") &&
@@ -111,6 +115,15 @@ function setupMenuHideOnScroll() {
     }
     prevScrollpos = currentScrollPos;
   });
+}
+
+function canShowMenu() {
+  // check if table head is occupying the navigation bar top position,
+  // the menu shouldn't be shown when the user viewing the table with it's stick heading
+  const tableHead = document.querySelector("th");
+  if (!tableHead) return true;
+  const tableHeadPosition = tableHead.getBoundingClientRect().top;
+  return tableHeadPosition !== 0;
 }
 
 function setupMenuScrolledLook() {

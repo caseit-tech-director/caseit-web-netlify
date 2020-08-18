@@ -4,7 +4,7 @@
     <a href="/sponsorship/" class="section-nav__header">Sponsorship</a>
     <div class="section-nav__tab-container">
       <a href="/sponsorship/" class="section-nav__tab section-nav__tab--current">Overview</a>
-      <a href="/sponsorship/opportunities/" class="section-nav__tab">Package Comparison</a>
+      <a href="/sponsorship/opportunities/" class="section-nav__tab">Sponsorship Opportunities</a>
       <!-- <a href="/sponsorship/registration/" class="section-nav__tab">Get in Touch</a> -->
     </div>
   </nav>
@@ -14,7 +14,8 @@
     <h1>{{.Params.title}}</h1>
     <p class="lead">{{.Params.description}}</p>
     <div class="form-controls">
-      <a href="#" class="button-primary">Download Sponsorship Package (PDF)</a>
+      <a href="sponsorship-opportunities" class="button-primary">See All Sponsorship Opportunities</a>
+      <a href="#" class="button-secondary">Download Sponsorhip Package (PDF)</a>
     </div>
   </div>
 </header>
@@ -160,15 +161,34 @@
     </div>
   </section>
 
-  <section id="opportunitites">
-    <div class="center-text">
-      <h2>{{.Params.sponsorhip_opportunities.heading}}</h2>
-      <p>{{.Params.sponsorhip_opportunities.text}}</p>
+  <section id="opportunitites" class="full-width content-block" data-aos="fade-up">
+    <div class="center-text content-block">
+      <h2>{{.Params.sponsorship_opportunities.heading}}</h2>
+      <p>{{.Params.sponsorship_opportunities.text}}</p>
       <div class="fomr-controls">
-        <a href="/sponsorship/opportunities" class="button-primary">{{.Params.sponsorhip_opportunities.ctaText}}</a>
+        <a href="#" class="button-primary">{{.Params.sponsorship_opportunities.ctaText}}</a>
       </div>
     </div>
+    <div class="grid-3-cols content-block">
+      <a href="/sponsorship/opportunities/#financial-sponsorship" class="card-clickable">Financial Sponsorship</a>
+      <a href="/sponsorship/opportunities/#technology-sponsorship" class="card-clickable">Technology Sponsorship</a>
+      <a href="/sponsorship/opportunities/#in-kin-sponsorship" class="card-clickable">In-Kind Sponsorship</a>
+    </div>
   </section>
+  <section id="sponsorship-package" class="grid-2-cols full-width content-block" data-aos="fade-up">
+    <div class="grid-2-cols__blurb-left">
+      <h2>{{.Params.sponsorship_package.heading}}</h2>
+      <p>{{.Params.sponsorship_package.text}}</p>
+      <div class="fomr-controls">
+        <a href="#" class="button-primary">{{.Params.sponsorship_package.ctaText}}</a>
+      </div>
+    </div>
+
+    <div class="grid-2-cols__image-right">
+      <img src="{{.Params.sponsorship_package.img}}" alt="{{.Params.sponsorship_package.heading}}">
+    </div>
+  </section>
+
 </main>
 
 {{ end }}

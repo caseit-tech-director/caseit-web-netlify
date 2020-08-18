@@ -24,13 +24,13 @@ pitch:
 our_2020_sponsors:
   heading: Our 2020 Sponsors
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing ac non elementum mattis tempor.
-sponsorhip_opportunities:
+sponsorship_opportunities:
   heading: Sponsorship Opportunities
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing ac non elementum mattis tempor.
   ctaText: Explore All Options
-sponsorhip_package:
+sponsorship_package:
   heading: Sponsorship Package
   text: more information about hubilo and blah other things that we haven’t mention can be found inside the sponsorship package.
-  imageUrl: img/dsc04227.jpg
+  img: img/dsc04227.jpg
   ctaText: Download Sponsorhip Package (PDF)
 ---

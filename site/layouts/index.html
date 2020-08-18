@@ -22,7 +22,7 @@
         <h2>{{.Params.pitch1.heading}}</h2>
         <p>{{.Params.pitch1.text}}</p>
         <div class="form-controls">
-          <a href="#" class="button-primary">{{ .Params.pitch1.ctaText}}</a>
+          <a href="/competition/" class="button-primary">{{ .Params.pitch1.ctaText}}</a>
         </div>
       </div>
     </section>
@@ -34,7 +34,7 @@
       <h2>{{.Params.pitch2.heading}}</h2>
       <p>{{.Params.pitch2.text}}</p>
       <div class="form-controls">
-        <a href="#" class="button-primary">{{ .Params.pitch2.ctaText}}</a>
+        <a href="/competition/" class="button-primary">{{ .Params.pitch2.ctaText}}</a>
       </div>
     </div>
     <div class="grid-2-cols__image-right">
@@ -48,7 +48,8 @@
       <h2>{{.Params.caseitGoingOnline.heading}}</h2>
       <p>{{.Params.caseitGoingOnline.text}}</p>
       <div class="form-controls">
-        <a href="#" class="button-primary button-primary--inverted">{{ .Params.caseitGoingOnline.ctaText}}</a>
+        <a href="/competition/information/"
+          class="button-primary button-primary--inverted">{{ .Params.caseitGoingOnline.ctaText}}</a>
       </div>
     </div>
 
@@ -59,7 +60,7 @@
 
     <div class="grid-3-cols full-width going-online-info">
       {{ range .Params.caseitGoingOnline.resources }}
-      <a class="info-card" href="#" data-aos="fade-up">
+      <a class="info-card" href="/competition/information" data-aos="fade-up">
         <h3 class="h4 h4--accented">{{ .heading}}</h3>
         <p>{{ .text}}</p>
       </a>
@@ -82,7 +83,7 @@
       <h2>{{.Params.sponsors.heading}}</h2>
       <p>{{.Params.sponsors.text}}</p>
       <div class="form-controls">
-        <a href="#" class="button-primary">{{ .Params.sponsors.ctaText}}</a>
+        <a href="/sponsorship/" class="button-primary">{{ .Params.sponsors.ctaText}}</a>
       </div>
     </div>
     <div class="grid-2-cols__image-right">
@@ -99,10 +100,10 @@
       <h2>{{.Params.endingCtaBlock.heading}}</h2>
       <p>{{.Params.endingCtaBlock.text}}</p>
       <div class="form-controls">
-        <a href="#" class="button-primary button-primary--inverted">
+        <a href="/competition/" class="button-primary button-primary--inverted">
           {{ .Params.endingCtaBlock.ctaTextStudent}}
         </a>
-        <a href="#" class="button-secondary button-secondary--inverted">
+        <a href="/competition/registration/" class="button-secondary button-secondary--inverted">
           {{ .Params.endingCtaBlock.ctaTextCoach}}
         </a>
       </div>

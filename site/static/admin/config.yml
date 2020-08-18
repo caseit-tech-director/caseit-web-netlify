@@ -15,6 +15,16 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Intro Blurb", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "competition-information"
+    label: "Competition Information"
+    folder: "site/content/competition/information"
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Intro Blurb", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "pages"
     label: "Pages"
     files:
@@ -117,8 +127,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "contact"
         fields:
           - { label: Title, name: title, widget: string }
-          - { label: Logo, name: logo, widget: image }
-          - { label: Body, name: body, widget: markdown }
           - label: Contact Entries
             name: contact_entries
             widget: list
@@ -131,14 +139,14 @@ collections: # A list of collections the CMS should be able to edit
                 widget: text
               - label: Link
                 name: link
-                widget: text
+                widget: string
           - label: Top Questions
             name: top_questions
             widget: list
             fields:
               - label: Questions
                 name: heading
-                widget: text
+                widget: string
               - label: Answer
                 name: text
                 widget: markdown

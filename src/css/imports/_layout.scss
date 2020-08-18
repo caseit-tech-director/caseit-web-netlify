@@ -135,6 +135,10 @@ section {
   align-items: flex-start;
 }
 
+.grid-2-cols__half {
+  grid-row: 1;
+}
+
 @include viewportLargerThan($breakpoint-m) {
   // enable full size grid after the mobile breakpoint
   .grid-2-cols {
@@ -185,9 +189,13 @@ section {
     grid-column: 5/12;
   }
 
-  // flex box implementation of the 2 cols layout
+  // grid layout size for "full-width--article"
   .grid-2-cols__header--narrow {
     grid-column: 1/5;
+
+    & > *:first-child {
+      margin-top: 0rem;
+    }
   }
   .grid-2-cols__content--narrow {
     grid-column: 6/12;
@@ -195,6 +203,11 @@ section {
     & > *:first-child {
       margin-top: 0rem;
     }
+  }
+
+  // for a simple equally seperated grid
+  .grid-2-cols__half {
+    grid-column: span 6;
   }
 }
 
@@ -464,7 +477,7 @@ section {
 
   // create space between top and bottom
   padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-bottom: 4rem;
 
   // center align
   margin-left: auto;

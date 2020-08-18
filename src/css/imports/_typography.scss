@@ -304,3 +304,8 @@ a.inactive {
     margin-bottom: 2rem;
   }
 }
+
+.emphasized {
+  padding-left: 1rem;
+  border-left: 2px solid var(--color-accent);
+}

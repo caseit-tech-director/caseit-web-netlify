@@ -1,0 +1,148 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  <nav class="section-nav">
+    <a href="/sponsorship/" class="section-nav__header">Sponsorship</a>
+    <div class="section-nav__tab-container">
+      <a href="/sponsorship/" class="section-nav__tab">Overview</a>
+      <a href="/sponsorship/opportunities/" class="section-nav__tab section-nav__tab--current">Package Comparison</a>
+      <!-- <a href="/sponsorship/registration/" class="section-nav__tab">Get in Touch</a> -->
+    </div>
+  </nav>
+
+  <!-- Centered Header module-->
+  <div class="hero-centered">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">{{.Params.description| markdownify}}</p>
+    <div class="form-control">
+      <a href="/contact/" class="button-primary">talk to our team</a>
+    </div>
+  </div>
+</header>
+
+<section id="financial-sponsorship">
+  <div class="center-text">
+    <h2>{{.Params.finanicial_sponsorship.heading}}</h2>
+    <p>{{.Params.finanicial_sponsorship.text}}</p>
+  </div>
+  <div class="full-width">
+    {{/* Data from google sheet url*/}}
+
+    {{/* PROBLEM: Hugo only grab the link once and cache it forwever*/}}
+    {{/*          - could not identify the cache location on the local server */}}
+    {{/*          - current hack is to inject a random string parameter to force hugo to refresh th data */}}
+    {{$sponsorShipTierCSV := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSreJing6yOSf7bv9wr1sXY5MMo7LxxcvG3QH5Iqc6vFFxwUzdEcNClKghSvURtlUxArs_VY4f6d-Qi/pub?gid=372472437&single=true&output=csv&x=fdsalk;fd"}}
+    {{$data := getCSV "," $sponsorShipTierCSV}}
+
+    <table class="content-block">
+
+      {{ $DOCUMENT_TITLE_ROW := 0 }}
+      {{ $HEADER_ROW := 1 }}
+      {{ $END_ROW := 27 }}
+
+      {{ range $row, $value := $data }}
+      {{/* CONDITION 1: Skip the first line of the google sheet data(the title) */}}
+      {{/* CONDITION 2: neglect data the after the $END_ROW */}}
+      {{ if not (or (eq $row $DOCUMENT_TITLE_ROW) (gt $row $END_ROW)) }}
+      <tr>
+        {{ if eq $row $HEADER_ROW }}
+        {{/* If we are iterating through the HEADER row */}}
+        <thead>
+          {{ range $col, $value := . }}
+          <th>{{ . }}</th>
+          {{ end }}
+        </thead>
+        <tbody>
+          {{ else }}
+          {{/* If we are iterating through the NORMAL row */}}
+
+          {{ range $col, $value := . }}
+          <td>{{.}}</td>
+          {{ end }}
+          {{ end }}
+      </tr>
+      {{ end }}
+      {{ end }}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="technology-sponsorship" class="full-width">
+  <h2>Technology Sponsorship</h2>
+  <div class="grid-2-cols content-block">
+    <div class="grid-2-cols__header--narrow">
+      <p class="lead emphasized">
+        As we transition CaseIT to an online format, we strive to leverage the most advanced technological
+        devices to support the execution of the world’s premier management information systems case competition.
+      </p>
+    </div>
+    <div class="grid-2-cols__content--narrow">
+      <p>
+        CaseIT 2021 will be a new and innovative experience for both our international competitors and our Organizing
+        Committee.
+        As we transition CaseIT to an online format, we strive to leverage the most advanced technological devices to
+        support
+        the execution of the world’s premier management information systems case competition. Our competition requires a
+        wide
+        array of reliable and professional technology contributions for a seamless competition execution. Equipment
+        requirements
+        include but are not limited to: laptops, ethernet cords, USB ethernet adapters, microphones, cameras, and
+        virtual
+        reality equipment.
+      </p>
+
+      <p>
+        Technology sponsors receive acknowledgments in the form of your logo and name on the CaseIT website, social
+        media, event
+        program, and our online competition platform.
+      </p>
+
+      <p>
+        Additional benefits include a tailored resume book of all CaseIT competitors and Organizing Committee,
+        invitations to the synchronous CaseIT Awards Banquet, and the opportunity to judge CaseIT Preliminary and Final
+        Presentations.
+        Based on the value of the equipment provided, an appropriate sponsorship tier will be allocated to technology
+        sponsors.
+        Sponsors can further customize their contribution with our sponsorship team.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section id="in-kind-sponsorship" class="full-width">
+  <h2>In-Kind Sponsorship</h2>
+  <div class="grid-2-cols content-block">
+    <div class="grid-2-cols__header--narrow">
+      <p class="lead emphasized">
+        It is essential that our competitors have full access to materials, resources, and proper nourishment required
+        to compete at the best of their ability.
+      </p>
+    </div>
+    <div class="grid-2-cols__content--narrow">
+      <p>
+        At CaseIT, we recognize that each corporate partner provides unique value to execute our first ever virtual
+        event. We
+        warmly welcome in-kind contributions and resources that your organization can provide to enhance our
+        competition. CaseIT
+        brings together over 64 competitors and coaches over six days of intensive competition. It is essential that our
+        competitors have full access to materials, resources, and proper nourishment required to compete at the best of
+        their
+        ability.
+      </p>
+
+      <p>
+        In-kind sponsors will receive recognition in the form of your name and hyperlink on the CaseIT website and
+        online
+        platform. Additional benefits include your company name in our signature event program, and interactions with
+        your
+        product itself during competition week. A general list of sponsorship opportunities are detailed below, but our
+        team
+        will graciously accept any other types of in-kind contributions.
+      </p>
+    </div>
+  </div>
+</section>
+
+{{ partial "contact-sponsor-relations.html" }}
+{{ end }}

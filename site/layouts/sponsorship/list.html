@@ -1,0 +1,174 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  <nav class="section-nav">
+    <a href="/sponsorship/" class="section-nav__header">Sponsorship</a>
+    <div class="section-nav__tab-container">
+      <a href="/sponsorship/" class="section-nav__tab section-nav__tab--current">Overview</a>
+      <a href="/sponsorship/opportunities/" class="section-nav__tab">Package Comparison</a>
+      <!-- <a href="/sponsorship/registration/" class="section-nav__tab">Get in Touch</a> -->
+    </div>
+  </nav>
+
+  <!-- Centered Header module-->
+  <div class="hero-centered">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">{{.Params.description}}</p>
+    <div class="form-controls">
+      <a href="#" class="button-primary">Download Sponsorship Package (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  {{ range $index, $element := .Params.pitch }}
+
+  {{if not (modBool $index 2)}}
+  <div class="content-block">
+    <section class="grid-2-cols full-width pitch">
+      <div class="grid-2-cols__image-right">
+        <img class="image--bleed-left" src="{{.imageUrl}}" />
+      </div>
+      <!-- Start of the blurb -->
+      <div class="grid-2-cols__blurb-left blurb--valign-center" data-aos="fade-up">
+        <!-- overline -->
+        <div class="overline">Why support CaseIT</div>
+        <!-- heading -->
+        <h2>{{.heading}}</h2>
+        <!-- benifits -->
+        <ul class="feature-list">
+          {{ range .benefits }}
+          <li>{{.text}}</li>
+          {{ end }}
+        </ul>
+        <!-- render cta text if it exist in the data -->
+        {{ if .ctaText }}
+        <div class="form-controls">
+          <a href="#" class="button-primary">{{ .ctaText}}</a>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+  {{ else }}
+  <div class="content-block">
+    <section class="grid-2-cols full-width pitch">
+      <div class="grid-2-cols__image-left">
+        <img class="image--bleed-left" src="{{.imageUrl}}" />
+      </div>
+      <div class="grid-2-cols__blurb-right blurb--valign-center" data-aos="fade-up">
+        <div class="overline">Why support CaseIT</div>
+        <h2>{{.heading}}</h2>
+        <ul class="feature-list">
+          {{ range .benefits }}
+          <li>{{.text}}</li>
+          {{ end }}
+        </ul>
+        {{ if .ctaText }}
+        <div class="form-controls">
+          <a href="#" class="button-primary">{{ .ctaText}}</a>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+  {{ end }}
+  {{ end }}
+
+  <section id="2020-sponsors" class="full-width">
+    <div class="center-text">
+      <h2>{{.Params.our_2020_sponsors.heading}}</h2>
+      <p>
+        {{.Params.our_2020_sponsors.text}}
+      </p>
+    </div>
+    <div class="sponsor-logo-row">
+      <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Foundational Sponsors</h3>
+      <div class="sponsor-grid">
+        <div class="sponsor-grid__item sponsor-logo-row__logo" data-aos="fade-up">
+          <img src="img/sponsor-logos-2020/beedie-school-of-business.png" alt="beedie school of business logo">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <img src="img/sponsor-logos-2020/cio.png" alt="CIO logo" data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-logo-row">
+      <div class="sponsor-grid">
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Diamond Sponsor</h3>
+          <img src="img/sponsor-logos-2020/microsoft.png" alt="microsoft logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Platinum Sponsor</h3>
+          <img src="img/sponsor-logos-2020/beedie.png" alt="beedie logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Gold Sponsor</h3>
+          <img src="img/sponsor-logos-2020/cgi.png" alt="CGI logo" data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-logo-row">
+      <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Sliver Sponsors</h3>
+      <div class="sponsor-grid">
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <img src="img/sponsor-logos-2020/pearson.png" alt="pearson logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <img src="img/sponsor-logos-2020/vancity.png" alt="vancity logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <img src="img/sponsor-logos-2020/sfu-student-society-logo.png" alt="sfu student society logo"
+            data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-logo-row">
+      <div class="sponsor-grid">
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">5 hour case Sponsor</h3>
+          <img src="img/sponsor-logos-2020/spexi.png" alt="spexi logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo">
+          <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">24 Hour Case Sponsor</h3>
+          <img src="img/sponsor-logos-2020/visier.png" alt="visier logo" data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-logo-row">
+      <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Sliver Sponsors</h3>
+      <div class="sponsor-grid">
+        <div class="sponsor-grid__item sponsor-logo-row__logo" data-aos="fade-up">
+          <img src="img/sponsor-logos-2020/talent-market-place.png" alt="talent market place logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo" data-aos="fade-up">
+          <img src="img/sponsor-logos-2020/bclc.png" alt="bclc logo" data-aos="fade-up">
+        </div>
+        <div class="sponsor-grid__item sponsor-logo-row__logo" data-aos="fade-up">
+          <img src="img/sponsor-logos-2020/traction-on-demand.png" alt="traction on demand logo" data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-logo-row">
+      <h3 class="h4 sponsor-logo-row__title" data-aos="fade-up">Sliver Sponsors</h3>
+      <div class="sponsor-grid">
+        <div class="sponsor-grid__item sponsor-logo-row__logo" data-aos="fade-up">
+          <img src="img/sponsor-logos-2020/cpa.png" alt="CPA logo" data-aos="fade-up">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="opportunitites">
+    <div class="center-text">
+      <h2>{{.Params.sponsorhip_opportunities.heading}}</h2>
+      <p>{{.Params.sponsorhip_opportunities.text}}</p>
+      <div class="fomr-controls">
+        <a href="/sponsorship/opportunities" class="button-primary">{{.Params.sponsorhip_opportunities.ctaText}}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{ end }}

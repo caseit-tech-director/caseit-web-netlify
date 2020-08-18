@@ -95,7 +95,7 @@ function setupMenuHideOnScroll() {
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
   let navBar = document.querySelector("nav");
 
-  window.addEventListener("scroll", (e) => {
+  const scrollHandler = (e) => {
     let currentScrollPos = window.pageYOffset;
 
     if (
@@ -114,7 +114,8 @@ function setupMenuHideOnScroll() {
         navBar.classList.remove("hidden");
     }
     prevScrollpos = currentScrollPos;
-  });
+  };
+  window.addEventListener("scroll", scrollHandler);
 }
 
 function canShowMenu() {
@@ -129,8 +130,7 @@ function canShowMenu() {
 function setupMenuScrolledLook() {
   let scrolled = false;
   let navBar = document.querySelector("nav");
-
-  window.addEventListener("scroll", (e) => {
+  const scrollHandler = (e) => {
     let currentScrollPos = window.pageYOffset;
 
     // setup "scrolled" look when back is not zero
@@ -141,7 +141,11 @@ function setupMenuScrolledLook() {
       scrolled = false;
       navBar.classList.remove("main-nav--scrolled");
     }
-  });
+  };
+  window.addEventListener("scroll", scrollHandler);
+
+  // initialize the nav bar when load, in case the user start the page in the middle
+  window.addEventListener("load", scrollHandler);
 }
 
 function setbodyContentWrapperTransformOrigin() {

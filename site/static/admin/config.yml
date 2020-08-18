@@ -15,11 +15,12 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Intro Blurb", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+    # not finished, to be implemented
   - name: "competition-information"
     label: "Competition Information"
     folder: "site/content/competition/information"
-    create: true # Allow users to create new documents in this collection
-    fields: # The fields each document in this collection have
+    create: true
+    fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Intro Blurb", name: "description", widget: "text" }
@@ -150,3 +151,23 @@ collections: # A list of collections the CMS should be able to edit
               - label: Answer
                 name: text
                 widget: markdown
+      # competition information page
+      - file: "site/content/competition/information/_index.md"
+        label: "Competition Information Home Page"
+        name: "competition-information"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - label: "Important Dates/Announcement Timeline"
+            name: important_dates
+            widget: list
+            fields:
+              - label: "Time"
+                name: heading
+                widget: string
+              - label: "Things Happen"
+                name: text
+                widget: string
+              - label: "active"
+                name: active
+                widget: boolean

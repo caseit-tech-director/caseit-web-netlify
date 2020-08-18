@@ -1,0 +1,56 @@
+/* 
+ *
+ * Page specific styling
+ * sponsorship
+ * 
+ */
+
+.sponsor-logo-row {
+  // spacing between each row
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+
+  --logo-max-width: 15rem;
+  --title-spacing: 2rem;
+}
+
+.sponsor-logo-row__title {
+  text-align: center;
+  color: var(--color-primary-darkest);
+  opacity: 0.3;
+
+  // spacing between logo and title
+  margin-bottom: var(--title-spacing);
+}
+
+.sponsor-logo-row__logo {
+  //center the image inside
+  display: flex;
+  & > * {
+    margin: auto;
+    padding: 1 rem;
+  }
+}
+
+// grid for acoomodating the sponsor logo
+.sponsor-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.sponsor-grid__item {
+  display: flex;
+  flex-direction: column;
+
+  .sponsor-logo-row__title {
+    // make mathe title stick to the top
+    margin-top: 0rem;
+    margin-bottom: var(--title-spacing);
+  }
+
+  flex: 1 1 var(--logo-max-width);
+  padding: 2rem;
+}

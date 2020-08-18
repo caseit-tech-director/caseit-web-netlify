@@ -1,0 +1,21 @@
+/*
+ * 
+ * A stylelish list with a line on the left
+ * 
+ */
+
+@import "../typography";
+@import "../variables";
+
+ul.feature-list {
+  margin-top: var(--paragraph-spacing-top);
+  margin-bottom: var(--paragraph-spacing-bottom);
+
+  list-style: none;
+
+  li {
+    padding-left: 2rem;
+    border-left: 2px solid var(--color-accent);
+    margin-bottom: 2rem;
+  }
+}

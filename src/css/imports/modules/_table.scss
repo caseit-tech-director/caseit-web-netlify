@@ -1,0 +1,43 @@
+/*
+ *
+ * Manages the styleing of HTML table elements
+ * 
+ */
+
+@import "../typography";
+
+table {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+th {
+  @extend .button-text;
+
+  position: sticky;
+  top: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  background: var(--color-primary-lightest);
+  text-transform: capitalize;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td:first-child {
+  max-width: 25rem;
+}
+
+td {
+  padding: 1rem;
+}
+
+tr:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary-lightest);
+}

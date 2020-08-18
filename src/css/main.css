@@ -45,11 +45,14 @@
 @import "./imports/modules/_card";
 @import "./imports/modules/_team-display-module";
 @import "./imports/modules/_section-nav";
+@import "./imports/modules/_feature-list";
+@import "./imports/modules/_table";
 
 /* pages on the website */
 @import "./imports/pages/_landing.scss";
 @import "./imports/pages/_competition.scss";
 @import "./imports/pages/_competition-information.scss";
+@import "./imports/pages/_sponsorship.scss";
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import "./imports/_debug"; */

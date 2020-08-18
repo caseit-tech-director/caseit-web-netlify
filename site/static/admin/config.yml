@@ -171,3 +171,49 @@ collections: # A list of collections the CMS should be able to edit
               - label: "active"
                 name: active
                 widget: boolean
+
+      #sponsorship overview
+      - file: "site/content/sponsorship/_index.md"
+        label: "Sponsorship Overview Page"
+        name: "sponsorship-overview"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - label: "Pitch"
+            name: pitch
+            widget: list
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Benefits
+                name: benefits
+                widget: list
+                fields:
+                  - label: Text
+                    name: text
+                    widget: markdown
+              - label: Image
+                name: imageUrl
+                widget: image
+          - label: "Our 2020 Sponsors"
+            name: our_2020_sponsors
+            widget: object
+            fields:
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Text", name: text, widget: markdown }
+          - label: "Sponsorship Opportunities"
+            name: sponsorship_opportunities
+            widget: object
+            fields:
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Text", name: text, widget: markdown }
+              - { label: "CTA Text", name: ctaText, widget: string }
+          - label: "Sponsorship Package"
+            name: sponsorship_package
+            widget: object
+            fields:
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Text", name: text, widget: markdown }
+              - { label: "Image", name: img, widget: image }
+              - { label: "CTA Text", name: ctaText, widget: string }

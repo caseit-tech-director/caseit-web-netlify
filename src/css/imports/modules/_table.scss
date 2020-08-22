@@ -41,3 +41,15 @@ tr:hover {
   background-color: var(--color-primary-light);
   color: var(--color-primary-lightest);
 }
+
+tfoot > tr {
+  &:hover {
+    background-color: transparent;
+    color: var(--color-primary-darkest);
+  }
+
+  td.price {
+    @extend .button-text;
+    border-bottom: 2px solid var(--color-accent);
+  }
+}

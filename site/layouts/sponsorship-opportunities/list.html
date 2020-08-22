@@ -31,40 +31,83 @@
     {{/* PROBLEM: Hugo only grab the link once and cache it forwever*/}}
     {{/*          - could not identify the cache location on the local server */}}
     {{/*          - current hack is to inject a random string parameter to force hugo to refresh th data */}}
-    {{$sponsorShipTierCSV := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSreJing6yOSf7bv9wr1sXY5MMo7LxxcvG3QH5Iqc6vFFxwUzdEcNClKghSvURtlUxArs_VY4f6d-Qi/pub?gid=372472437&single=true&output=csv&x=fdsalk;fd"}}
+    {{$sponsorShipTierCSV := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSreJing6yOSf7bv9wr1sXY5MMo7LxxcvG3QH5Iqc6vFFxwUzdEcNClKghSvURtlUxArs_VY4f6d-Qi/pub?gid=121210118&single=true&output=csv&x=s"}}
     {{$data := getCSV "," $sponsorShipTierCSV}}
+    <div class="content-block">
 
-    <table class="content-block">
+      <table>
 
-      {{ $DOCUMENT_TITLE_ROW := 0 }}
-      {{ $HEADER_ROW := 1 }}
-      {{ $END_ROW := 27 }}
+        {{ $HEADER_ROW := 1 }}
+        {{ $BEGIN_ROW := 2 }}
+        {{ $END_ROW := 25 }}
+        {{ $FOOTER_ROW := 26 }}
 
-      {{ range $row, $value := $data }}
-      {{/* CONDITION 1: Skip the first line of the google sheet data(the title) */}}
-      {{/* CONDITION 2: neglect data the after the $END_ROW */}}
-      {{ if not (or (eq $row $DOCUMENT_TITLE_ROW) (gt $row $END_ROW)) }}
-      <tr>
-        {{ if eq $row $HEADER_ROW }}
-        {{/* If we are iterating through the HEADER row */}}
         <thead>
-          {{ range $col, $value := . }}
-          <th>{{ . }}</th>
-          {{ end }}
+          <tr>
+            {{ range $col, $value := index $data $HEADER_ROW }}
+            <th>{{ . }}</th>
+            {{ end }}
+          </tr>
         </thead>
         <tbody>
-          {{ else }}
-          {{/* If we are iterating through the NORMAL row */}}
+          {{/* print rows after the data  */}}
+          {{ range $row, $value := after $BEGIN_ROW $data }}
+          {{/*  print table body rows  */}}
+          {{ if lt $row (sub $END_ROW $BEGIN_ROW) }}
+          <tr>
+            {{ range $col, $value := . }}
+            <td>{{- . -}}</td>
+            {{ end }}
+          </tr>
+          {{ end }}
+          {{ end }}
+        </tbody>
+        <tfoot class="price">
+          <tr>
+            {{ range $col, $value := index $data $FOOTER_ROW }}
+            {{ if eq $value "" }}
+            <td>{{ . }}</td>
+            {{ else }}
+            <td class="price">{{ . }}</td>
+            {{ end }}
+            {{ end }}
+          </tr>
+        </tfoot>
+      </table>
 
-          {{ range $col, $value := . }}
-          <td>{{.}}</td>
-          {{ end }}
-          {{ end }}
-      </tr>
-      {{ end }}
-      {{ end }}
-      </tbody>
-    </table>
+      <div class="grid-3-cols gird-3-cols--paragraph content-block">
+        <div>
+          <p class="foot-notes">
+            1. The size of the logo will vary depending on the chosen level of sponsorship
+          </p>
+          <p class="foot-notes">
+            2. Company logo will appear in CaseIT 2021’s social media countdown posts which will
+            count down the days remaining to the start of the competition.
+          </p>
+        </div>
+        <div>
+          <p class="foot-notes">
+            3. A CaseIT award will be given in your name if you create an award and provide an
+            appropriate gift (ex: CGI Best Speaker Award)
+          </p>
+          <p class="foot-notes">
+            4. If there are more than four sponsors at the Title, Diamond, and Gold levels, the divisions will be named
+            after the first four organizations that we create partnerships with.
+          </p>
+        </div>
+        <div>
+          <p class="foot-notes">
+            5. Please see Financial Sponsorship: Title Sponsorship for more information regarding CaseIT signature
+            events.
+          </p>
+          <p class="foot-notes">
+            6. Judges must have over 10 years of industry experience and are subject to the approval of CaseIT 2021’s
+            Judging Facilitator and set guidelines. This applies for both Preliminary Presentations and Final
+            Presentations.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 

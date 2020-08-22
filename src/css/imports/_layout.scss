@@ -252,6 +252,14 @@ section {
   row-gap: $grid-gutter;
 }
 
+// for those 3 continuous column paragarph layout
+.gird-3-cols--paragraph {
+  row-gap: 0;
+  div > p:first-child {
+    margin-top: 0rem;
+  }
+}
+
 @include viewportLargerThan($breakpoint-s) {
   .grid-3-cols {
     grid-template-columns: repeat(3, 1fr);
@@ -476,7 +484,7 @@ section {
   max-width: 35rem;
 
   // create space between top and bottom
-  padding-top: 8rem;
+  padding-top: 20vh;
   padding-bottom: 4rem;
 
   // center align

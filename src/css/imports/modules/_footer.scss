@@ -91,7 +91,7 @@ footer .footer-grid__logo {
 // the site map list at the footer
 //
 // +++++++++++++++++++++++++++++++++
-footer .link-list {
+footer .footer-link-list {
   // layout attributes
   display: block;
   grid-column: auto/span 3;
@@ -106,7 +106,7 @@ footer .link-list {
     grid-column-start: var(--list-list-colum-start);
   }
 
-  li.link-list__title {
+  li.footer-link-list__title {
     color: var(--color-primary-lightest);
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -116,7 +116,7 @@ footer .link-list {
     margin-bottom: 0.75rem;
   }
 
-  li.link-list__social-media {
+  li.footer-link-list__social-media {
     max-width: 1.5rem;
     float: left;
     margin-right: 0.5rem;

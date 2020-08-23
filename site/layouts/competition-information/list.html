@@ -1,14 +1,15 @@
 {{ define "main" }}
 
 <header class="header-module full-width">
-  <nav class="section-nav">
+  {{/*  <nav class="section-nav">
     <a href="/competition/" class="section-nav__header">Competition 2021</a>
     <div class="section-nav__tab-container">
       <a href="/competition/" class="section-nav__tab">Overview</a>
       <a href="/competition/information/" class="section-nav__tab section-nav__tab--current">Information</a>
       <a href="/competition/registration/" class="section-nav__tab">Registration</a>
     </div>
-  </nav>
+  </nav>  */}}
+  {{ partial "nav-section.html" (dict "Page" . "menu" .Site.Menus.competition ) }}
 
   <!-- Centered Header module-->
   <div class="hero-centered">
@@ -28,7 +29,7 @@
 <section>
   <div class="full-width">
     <div class="center-text">
-      <h2>Important Dates</h2>
+      <h2>Information Release Timeline</h2>
       <p>More Information on the way!</p>
     </div>
     <div class="grid-2-cols content-block">

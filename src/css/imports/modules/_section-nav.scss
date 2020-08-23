@@ -1,15 +1,25 @@
 @import "../_typography.scss";
+@import "./link-list";
+@import "../breakpoints";
+@import "../buttons";
+@import "../variables";
+
+$breakpoint-section-nav: $breakpoint-s;
 
 .section-nav {
   width: 100%;
+
+  position: relative; // make the sub menu work
+
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 
   --spacing-vertical: 0.75rem;
   --spacing-horizontal: 0.5rem;
 
   --text-color-header: var(--color-primary-darkest);
-  --text-color-muted: var(--color-primary-light);
+  --text-color-normal: var(--color-primary-light);
   --text-color-active: var(--color-primary-darkest);
 
   a:hover,
@@ -20,8 +30,14 @@
 
 .section-nav--dark {
   --text-color-header: var(--color-primary-lightest);
-  --text-color-muted: var(--color-primary-light);
+  --text-color-normal: var(--color-primary-light);
   --text-color-active: var(--color-primary-lightest);
+}
+
+.section-nav--light {
+  --text-color-header: var(--color-primary-darkest);
+  --text-color-normal: var(--color-primary-light);
+  --text-color-active: var(--color-primary-darkest);
 }
 
 .section-nav__header {
@@ -33,30 +49,183 @@
   margin-left: var(--spacing-horizontal);
 
   color: var(--text-color-header);
-}
-.section-nav__tab-container {
-  // make the tab bar container float right;
-  margin-left: auto;
+
+  // hack to make the header and nav tab aligns
+  border-top: 2px solid transparent;
 }
 
-a.section-nav__tab {
+// ==================================================
+//
+// the main link area
+//
+// ==================================================
+
+// ++++++++++++++++++++++++++++
+// Container for menu button
+// ++++++++++++++++++++++++++++
+.section-nav__menu {
+  // make the tab bar container float right;
+  margin-left: auto;
+
+  // make the block stack vertically
+  display: flex;
+  flex-direction: column;
+
+  // make it float on top
+  position: absolute;
+  top: 3rem;
+  right: 0rem;
+
+  // color style for the mobile navigation
+  background-color: var(--color-primary-lightest);
+  box-shadow: var(--drop-shadow-light);
+
+  --text-color-header: var(--color-primary-darkest);
+  --text-color-normal: var(--color-primary-darkest);
+  --text-color-active: var(--color-accent);
+
+  @include viewportLargerThan($breakpoint-section-nav) {
+    // reset the styles for desktop navigation
+    background-color: unset;
+    box-shadow: unset;
+
+    --text-color-header: unset;
+    --text-color-normal: unset;
+    --text-color-active: unset;
+
+    position: unset;
+    flex-direction: row;
+  }
+
+  // MANAGING THE TRANSITION
+
+  // hide the menu link by default
+  opacity: 0;
+  transform: translateY(-1rem);
+  pointer-events: none;
+
+  // transition of expanding animation
+  transition-property: opacity, transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.section-nav__menu--expanded {
+  // hide the menu link by default
+  transform: translateY(0rem);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+// ++++++++++++++++++++++++++++
+// individual menu button
+// ++++++++++++++++++++++++++++
+a.section-nav__menu-link {
+  // basic block style of the element
   @extend .link-reset;
   @extend .button-text;
 
-  margin-left: var(--spacing-horizontal);
-  margin-right: var(--spacing-horizontal);
+  // create vertical spacing to enlarge the hit target
   padding-top: var(--spacing-vertical);
   padding-bottom: var(--spacing-vertical);
 
-  color: var(--text-color-muted);
+  // padding on left & right for mobile list style menu
+  padding-left: var(--spacing-vertical);
+  padding-right: var(--spacing-vertical);
 
+  // create horizontal spacing between elements
+  @include viewportLargerThan($breakpoint-section-nav) {
+    // reset the padding in mobile to prepare styling for desktop
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    // use margin instead of padding to create spaces between so the border top
+    // aligns nicely and not pertruding out of the text
+    margin-left: var(--spacing-horizontal);
+    margin-right: var(--spacing-horizontal);
+  }
+
+  color: var(--text-color-normal);
+  border-top: 2px solid transparent;
+
+  text-align: left !important;
+
+  // menu link interaction
   &:hover,
   &:focus {
     color: var(--text-color-active) !important;
   }
 
   &--current {
-    border-top: 2px solid var(--color-accent);
+    text-align: center;
     color: var(--text-color-active);
+
+    @include viewportLargerThan($breakpoint-section-nav) {
+      border-top-color: var(--color-accent);
+      color: var(--text-color-active);
+    }
+  }
+}
+
+// ++++++++++++++++++++++++++++
+// menu toggle for mobile
+// ++++++++++++++++++++++++++++
+.section-nav__toggle {
+  @extend .button-text;
+
+  // make the button float right
+  margin-left: auto;
+
+  // set the toggle button dimension
+  padding: var(--spacing-vertical);
+
+  // make the button text and icon stay on one row
+  display: flex;
+
+  // set the color of this button
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary-darkest);
+
+  // the toggle icon in the button
+  .material-icons {
+    color: var(--color-accent);
+
+    font-size: 1.5rem;
+    // fine tune the toggle icon position
+    margin-right: -0.2rem;
+    margin-top: -0.15rem;
+
+    // transition for the icon rotation
+    transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  &:hover,
+  &:active {
+    // set the color of this button
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-darkest);
+  }
+  border: none;
+}
+
+.section-nav__toggle--active {
+  .material-icons {
+    transform: rotate(180deg);
+  }
+}
+
+// hide the mobile navigation scheme when screen gets bigger
+@include viewportLargerThan($breakpoint-section-nav) {
+  .section-nav__toggle {
+    display: none;
+  }
+  .section-nav__sub-menu {
+    display: none;
+  }
+
+  .section-nav__menu {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
   }
 }

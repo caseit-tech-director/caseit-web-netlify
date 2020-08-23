@@ -1,0 +1,19 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  {{ partial "nav-section.html" (dict "Page" . "menu" .Site.Menus.competition ) }}
+</header>
+
+<aside>
+  {{/* side bar */}}
+</aside>
+<main class="content-block">
+  {{/*  main article */}}
+  <div class="full-width">
+    <h1>{{.Title}}</h1>
+  </div>
+  <img class="banner-image" src="{{ .Params.image }}" alt="{{ .Params.description }}">
+  <div class="content-block full-width--article">
+    {{.Content}}
+  </div>
+</main>
+{{ end }}

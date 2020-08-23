@@ -1,0 +1,75 @@
+{{/*  Navigation system for section  */}}
+
+{{/*  
+   
+  PARTIAL VARIABLES
+
+  - .
+    -> takes in the general context of the page
+
+  - .darkmode 
+    -> if the field is set, then this menu is going to be rendered in darkmode
+
+  - .menu
+    -> specify which menu are we using from the site config.toml
+    -> eg .Site.Menus.competition
+
+
+  - .current
+    -> 
+  
+
+  RESOURCES
+
+  setting up hierachical menu (an entry inside a section)
+  https://discourse.gohugo.io/t/hierarchical-menus/2406
+
+
+*/}}
+
+
+{{/*  Render dark mode section base on the pass in parameter  */}}
+<nav class='section-nav {{cond (isset . "darkmode") "section-nav--dark" "" }}'>
+
+  {{/*  section "home button"  */}}
+  <a href="/competition/" class="section-nav__header">Competition 2021</a>
+
+  {{ $Page := .Page }}
+  {{ $Menu := .menu }}
+
+  {{ range .menu }}
+  {{ if or ($Page.HasMenuCurrent "competition" .) ($Page.IsMenuCurrent "competition" .) }}
+  <button class="section-nav__toggle">
+    {{.Name}}
+    <span class="material-icons">
+      expand_more
+    </span>
+  </button>
+  {{ end }}
+  {{ end }}
+
+  {{/*  Items in the section  */}}
+  <div class="section-nav__menu">
+    {{ range .menu }}
+    {{ $isMenuCurrent := or ($Page.HasMenuCurrent "competition" .) ($Page.IsMenuCurrent "competition" .)}}
+    <a href="{{.URL}}"
+      class='section-nav__menu-link {{ if $isMenuCurrent }}section-nav__menu-link--current{{end}}'>{{.Name}}</a>
+
+    {{ if .HasChildren }}
+    {{/*  print out the individual pages in the section when there are entries inside the sub-section */}}
+    <ul class="link-list section-nav__sub-menu">
+      {{ range .Children }}
+      {{/*  conditionally highlight the current page  */}}
+      <li class='{{ if $Page.IsMenuCurrent "competition" . }}link-list__current{{end}}'>
+        <a href="{{.URL}}">{{.Name}}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ end }}
+    {{/*  <a href="/competition/" class="section-nav__tab">Overview</a>
+    <a href="/competition/information/" class="section-nav__tab section-nav__tab--current">Information</a>
+    <a href="/competition/registration/" class="section-nav__tab">Registration</a>  */}}
+    {{/*  {{ $section := where $.Site.Pages "Section" "competition"}} */}}
+  </div>
+</nav>

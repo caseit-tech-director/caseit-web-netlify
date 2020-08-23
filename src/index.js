@@ -17,6 +17,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
   setupMenuHideOnScroll();
   setupMenuScrolledLook();
 
+  setupSectionMenuToggle();
+
   // setup custom form element
   setupCopyableField();
 
@@ -62,6 +64,21 @@ function copyTextToClipboard(text) {
   copyText.select();
   document.execCommand("copy");
   copyText.remove();
+}
+
+function setupSectionMenuToggle() {
+  const sectionNavToggle = document.querySelector(".section-nav__toggle");
+  const sectionNavMenu = document.querySelector(".section-nav__menu");
+
+  if (!sectionNavToggle) return;
+
+  sectionNavToggle.addEventListener("click", toggleSectionMenu);
+
+  function toggleSectionMenu(e) {
+    e.preventDefault();
+    sectionNavToggle.classList.toggle("section-nav__toggle--active");
+    sectionNavMenu.classList.toggle("section-nav__menu--expanded");
+  }
 }
 
 function setupHamburgerMenu() {

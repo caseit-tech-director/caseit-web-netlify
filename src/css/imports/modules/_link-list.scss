@@ -1,0 +1,26 @@
+@import "../typography";
+
+ul.link-list {
+  --spacing-vertical: 0.5rem;
+  --spacing-horizontal: 1rem;
+
+  list-style: none;
+
+  & > li > a {
+    @extend .link-reset;
+
+    width: 100%;
+    padding: var(--spacing-vertical) var(--spacing-horizontal);
+
+    // right border allignment
+    border-right: 2px solid var(--color-primary-lighter);
+  }
+
+  li.link-list__current > a {
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-darkest);
+
+    // accent border
+    border-right: 2px solid var(--color-accent);
+  }
+}

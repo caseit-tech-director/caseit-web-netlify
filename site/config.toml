@@ -7,3 +7,23 @@ title = "CaseIT 2021"
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+# main site menu
+[menu]
+  [[menu.competition]]
+    identifier = "comeptition-overview"
+    name = "Overview"
+    url = "/competition/"
+    weight = 1
+
+  [[menu.competition]]
+    identifier = "comeptition-information"
+    name = "Information"
+    url = "/competition/information/"
+    weight = 2
+
+  [[menu.competition]]
+    identifier = "comeptition-registration"
+    name = "Registration"
+    url = "/competition/registration/"
+    weight = 3

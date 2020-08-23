@@ -146,3 +146,7 @@ input[type="submit"]:not(:disabled) {
 ul.no-bullet {
   list-style: none;
 }
+
+ul {
+  padding-left: 1rem;
+}

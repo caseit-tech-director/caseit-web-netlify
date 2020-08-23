@@ -1,0 +1,13 @@
+<div>
+  {{ .Get "name" }}
+  {{ $syncStatus := .Get "sync"}}
+  {{ if eq $syncStatus "sync"}}
+    (Synchronous)
+  {{end}}
+  {{ if eq $syncStatus "async"}}
+  (Asynchronous)
+  {{end}}
+  {{ if eq $syncStatus "semi"}}
+  (Semi-Synchronous)
+  {{end}}
+</div>

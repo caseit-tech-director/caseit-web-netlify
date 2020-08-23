@@ -1,0 +1,56 @@
+/*
+ *
+ * Competition Schedule Module 
+ * 
+ */
+
+@import "../typography";
+
+.comp-schedule {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.comp-schedule-item {
+  --spacing-vertical: 4rem;
+  --spacing-horizontal: 1rem;
+
+  --size-col-time: 20rem;
+  --size-col-events: 40rem;
+
+  display: flex;
+  flex-direction: row;
+
+  &__col-time {
+    flex-basis: var(--size-col-time);
+    margin-bottom: var(--spacing-vertical);
+  }
+
+  &__date {
+    @extend .h4;
+    color: var(--color-accent);
+    margin-bottom: 0rem !important;
+  }
+
+  &__day {
+    color: var(--color-accent);
+    font-family: var(--typeface-header);
+    font-size: 4rem;
+    line-height: 0.8em;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    // hack to make the element aligns
+    margin-left: -0.2rem;
+  }
+
+  &__col-events {
+    flex-basis: var(--size-col-events);
+    border-top: 2px solid var(--color-primary-darkest);
+
+    @extend .lead;
+    // hack to make both side align
+    margin-top: 0.5rem !important;
+    padding: 0.5rem 0rem;
+  }
+}

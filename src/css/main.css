@@ -47,6 +47,7 @@
 @import "./imports/modules/_section-nav";
 @import "./imports/modules/_feature-list";
 @import "./imports/modules/_table";
+@import "./imports/modules/_comp-schedule";
 
 /* pages on the website */
 @import "./imports/pages/_landing.scss";

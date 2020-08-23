@@ -1,0 +1,24 @@
+{{/*  
+  
+  Takes in variables:
+
+  date: with format "2021-02-13" or "YYYY-MM-DD"
+  index: the day number like "01", "02", "03"
+
+  inner: can be either text or short code component "comp-schedule-event"
+  
+  */}}
+
+<div class="comp-schedule-item">
+  <div class="comp-schedule-item__col-time">
+    <div class="comp-schedule-item__date">
+      {{ dateFormat "Jan 2, Mon" (.Get "date")}}
+    </div>
+    <div class="comp-schedule-item__day">
+      {{ .Get "index" }}
+    </div>
+  </div>
+  <div class="comp-schedule-item__col-events">
+    {{.Inner}}
+  </div>
+</div>

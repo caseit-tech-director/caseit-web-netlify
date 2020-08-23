@@ -1,9 +1,9 @@
 ---
 title: "Covid 19 Response"
 subtitle: "Covid 19 Response"
-description: ""
+description: "test"
 lead: "After careful consideration from our Organizing Committee surrounding the COVID-19 pandemic, we are thrilled to announce that CaseIT 2021 will be held as a virtual competition!"
-image:
+image: "img/dsc03831.jpg"
 type: "competition-information"
 
 # add this page under "competition-information" section

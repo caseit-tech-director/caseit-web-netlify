@@ -1,6 +1,9 @@
 @import "../typography";
+@import "../reset";
 
 ul.link-list {
+  @extend .list-reset;
+
   --spacing-vertical: 0.5rem;
   --spacing-horizontal: 1rem;
 

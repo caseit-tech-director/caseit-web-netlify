@@ -212,7 +212,13 @@ a.nav-link-list__link,
 a.contact-button {
   // reset the default link hover effect established in _typography.css
   background: none;
-  // font-size: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+
+  @include viewportLargerThan($nav-breakpoint) {
+    font-size: unset;
+    margin-bottom: unset;
+  }
 
   color: var(--link-color);
 

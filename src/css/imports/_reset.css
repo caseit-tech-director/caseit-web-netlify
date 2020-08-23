@@ -153,9 +153,24 @@ ul.no-bullet {
  * 
  */
 ul {
-  padding-left: 1rem;
   margin: 2rem 0rem;
 }
 li {
+  margin-left: 1rem;
   margin-bottom: 1rem;
+}
+
+/*
+ *
+ * utilities for list css
+ * 
+ */
+
+ul.list-reset {
+  margin: 0rem 0rem;
+}
+
+ul.list-reset > li {
+  margin-left: 0rem;
+  margin-bottom: 0rem;
 }

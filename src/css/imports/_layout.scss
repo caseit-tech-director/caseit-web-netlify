@@ -122,6 +122,7 @@ section {
 }
 
 .grid-2-cols__heading,
+.grid-2-cols__aside,
 .grid-2-cols__content-area {
   grid-row: auto;
 }
@@ -183,6 +184,10 @@ section {
   }
 
   .grid-2-cols__heading {
+    grid-column: 2/4;
+  }
+
+  .grid-2-cols__aside {
     grid-column: 2/4;
   }
   .grid-2-cols__content-area {

@@ -280,7 +280,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - label: "Downloadable Documents"
             name: "downloadableDocuments"
-            widget: object
+            widget: list
             fields:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "File", name: "URL", widget: "file" }

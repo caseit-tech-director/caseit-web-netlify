@@ -282,4 +282,4 @@ collections: # A list of collections the CMS should be able to edit
             name: "downloadableDocuments"
             widget: object
             fields:
-              - { label: "File", name: "URL", widget: File }
+              - { label: "File", name: "URL", widget: "file" }

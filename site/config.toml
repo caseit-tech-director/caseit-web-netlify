@@ -11,19 +11,19 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 # main site menu
 [menu]
   [[menu.competition]]
-    identifier = "comeptition-overview"
+    identifier = "competition-overview"
     name = "Overview"
     url = "/competition/"
     weight = 1
 
   [[menu.competition]]
-    identifier = "comeptition-information"
+    identifier = "competition-information"
     name = "Information"
     url = "/competition/information/"
     weight = 2
 
   [[menu.competition]]
-    identifier = "comeptition-registration"
+    identifier = "competition-registration"
     name = "Registration"
     url = "/competition/registration/"
     weight = 3

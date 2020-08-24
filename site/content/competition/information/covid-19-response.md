@@ -9,7 +9,7 @@ type: "competition-information"
 # add this page under "competition-information" section
 menu:
   competition:
-    parent: "comeptition-information"
+    parent: "competition-information"
 ---
 
 The international component of CaseIT is the highlight of our event, therefore, the CaseIT team is committed to producing a competition that is accessible and safe. Challenging the perspective of online competition and global connection, CaseIT 2021 will set the virtual standard as a world-renown premier undergraduate MIS case competition.

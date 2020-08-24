@@ -31,10 +31,10 @@ $useRoundedCorner: false;
   --color-primary-darkest: rgb(0, 0, 0);
 
   /* ff = font family */
-  --typeface-body: "Roboto";
-  --typeface-interactive: "DINPro";
-  --typeface-header: "DINPro";
-  --typeface-caption: "Roboto Mono";
+  --typeface-body: "Roboto", sans-serif;
+  --typeface-interactive: "DINPro", sans-serif;
+  --typeface-header: "DINPro", sans-serif;
+  --typeface-caption: "Roboto Mono", sans-serif;
 
   /* 
    * ====================

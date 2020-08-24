@@ -4,6 +4,7 @@
 </header>
 
 <div class="full-width article-layout">
+  {{/*  The side bar navigation module  */}}
   <aside class="article-layout__aside">
     <div class="sticky">
       <h2 class="h4">Information</h2>
@@ -15,6 +16,7 @@
     </div>
   </aside>
 
+  {{/*  The center main content */}}
   <main class="article-layout__main">
     <h1 class="header-article h1--responsive">{{.Params.title}}</h1>
     <img class="" src="{{.Params.image}}" alt="this year's chair">
@@ -26,16 +28,8 @@
     </section>
   </main>
 </div>
-<div id="up-next" class="grid-2-cols full-width content-block">
 
-  <div class="grid-2-cols__heading">
-    <h2 class="h2--responsive">Up Next</h2>
-  </div>
+{{/*  The "up next" section */}}
+{{ partial "up-next-section.html" . }}
 
-  <div class="grid-2-cols__content-area">
-    <div class="card-layout-container">
-      {{ partial "up-next-section.html" . }}
-    </div>
-  </div>
-</div>
 {{ end }}

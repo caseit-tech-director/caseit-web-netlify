@@ -18,8 +18,8 @@
 @import "./_breakpoints.scss";
 
 // we use SASS-compiled variable here because css var() variable run into issue when using in the media query
-$full-wdith-size: 1200px;
-$full-wdith-size--article: 768px;
+$full-width-size: 1200px;
+$full-width-size--article: 600px;
 
 // $grid-size-column: 84px;
 // $grid-columns: 12;
@@ -73,18 +73,18 @@ section {
 .full-width {
   margin-left: $body-side-margin;
   margin-right: $body-side-margin;
-  max-width: $full-wdith-size;
+  max-width: $full-width-size;
 }
 
 .full-width--article {
   margin-left: $body-side-margin;
   margin-right: $body-side-margin;
 
-  max-width: $full-wdith-size--article;
+  max-width: $full-width-size--article;
 }
 
 // consider the margin size as well (margin 1rem on each side -> 32px)
-@include viewportLargerThan($full-wdith-size--article + 32px) {
+@include viewportLargerThan($full-width-size--article + 32px) {
   .full-width--article {
     margin-left: auto;
     margin-right: auto;
@@ -92,7 +92,7 @@ section {
 }
 
 // consider the margin size as well (margin 1rem on each side -> 32px)
-@include viewportLargerThan($full-wdith-size + 32px) {
+@include viewportLargerThan($full-width-size + 32px) {
   .full-width {
     margin-left: auto;
     margin-right: auto;
@@ -520,6 +520,9 @@ section {
  * Article Layout
  * 
  */
+
+$breakpoint-article: 1200px;
+
 .article-layout {
   display: flex;
   flex-direction: row;
@@ -529,7 +532,7 @@ section {
 
 .article-layout__aside {
   order: 1;
-  flex: 0 0 18rem;
+  flex: 0 1 18rem;
 
   margin-right: 2rem;
   margin-top: var(--spacing-vertical);
@@ -548,5 +551,20 @@ section {
   // collapse the margin manually inside flex
   & > *:first-child {
     margin-top: 0rem;
+  }
+}
+
+.article-body-wrapper {
+  width: 100%;
+}
+.article-body {
+  // control the flowing behaviour base on the breakpoint
+  max-width: 100%;
+  margin-left: 0rem;
+
+  @include viewportLargerThan($breakpoint-m) {
+    max-width: $full-width-size--article;
+    margin-left: auto;
+    margin-right: 5%;
   }
 }

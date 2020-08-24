@@ -67,7 +67,6 @@ collections: # A list of collections the CMS should be able to edit
           hidden: true,
           default: "competition-information",
         }
-
   - name: "pages"
     label: "Pages"
     files:
@@ -268,3 +267,19 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "Text", name: text, widget: markdown }
               - { label: "Image", name: img, widget: image }
               - { label: "CTA Text", name: ctaText, widget: string }
+
+  # ==============================================================
+  # Storing Data
+  # ==============================================================
+  - label: "Downloadable Resources"
+    name: "resources"
+    - file: "site/data/downloadableResources.json"
+        label: "Downloadable Resources list"
+        name: "downloadable-resources"
+        fields:
+          - label: "Downloadable Resources",
+            name: downloadable_resources
+            widget: object
+            fields:
+              - { label: "File", name: "URL", widget: File}
+      

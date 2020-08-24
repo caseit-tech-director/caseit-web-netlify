@@ -1,0 +1,48 @@
+<div class="fixed-wrapper">
+  {{ if isset .Params "darkmode" }}
+  <nav class="main-nav main-nav--dark">
+    {{ else }}
+    <nav class="main-nav">
+      {{end}}
+      <!-- prevent it going off in this styleguide page-->
+
+      <div class="full-width nav-bar">
+
+        <a href="/" class="nav-bar__logo-link">
+          <!--have both the dark mode and light mode image here, toggle on and off base on the styling logic in css-->
+          <img class="logo-mode--light" src="img/logo/CaseIT_Black.svg" alt="CaseIt Logo Black" />
+          <img class="logo-mode--dark" src="img/logo/CaseIT_White.svg" alt="CaseIt Logo White" />
+        </a>
+
+        <div class="nav-bar__link-container">
+          <ul class="list-reset nav-link-list">
+            <li>
+              <a href="/competition/" class="nav-link-list__link">Competition</a>
+            </li>
+            <li>
+              <a href="/sponsorship/" class="nav-link-list__link">Sponsorship</a>
+            </li>
+            <li>
+              <a href="/about/" class="nav-link-list__link">About</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link-list__link inactive" title="under construction!">Blog</a>
+            </li>
+          </ul>
+
+          <a href="/contact/" class="contact-button">
+            <span class="material-icons">
+              contact_support
+            </span>
+            Contact Us
+          </a>
+        </div>
+
+        <a class="hamburger-menu-toggle" href="#">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+      </div>
+    </nav>
+</div>

@@ -1,53 +1,62 @@
 {{ define "main" }}
 <header class="header-module full-width">
   {{ partial "nav-section.html" (dict "Page" . "menu" .Site.Menus.competition ) }}
-  <h1 class="header-article">{{.Params.title}}</h1>
 </header>
 
-<main>
-  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair">
-  <section class="content-block content-block--related grid-2-cols full-width">
-    <div class="grid-2-cols__content-area">
-      <p class="lead">{{.Params.lead}}</p>
-      {{.Content}}
+<div class="full-width article-layout">
+  <aside class="article-layout__aside">
+    <div class="sticky">
+      <h2 class="h4">Information</h2>
+      {{ partial "nav-section-article.html" (dict "Page" . "menu" .Site.Menus.competition ) }}
     </div>
-  </section>
+  </aside>
 
-
-  <section id="up-next" class="content-block grid-2-cols full-width">
-
-    <div class="grid-2-cols__heading">
-      <h2 class="h2--accented">Up Next</h2>
-    </div>
-
-    <div class="grid-2-cols__content-area">
-      <div class="card-layout-container">
-        {{/*  When there is "next page" in the section  */}}
-        {{ if .NextInSection }}
-        {{ with .NextInSection }}
-        <a href="{{.Permalink}}" class="image-card">
-          <div class="image-card__content">
-            <h2 class="h4">{{.Title}}</h2>
-            <p>{{.Description}}</p>
-          </div>
-          <img src="{{.Params.image}}" alt="Go to {{.Title}}">
-        </a>
-        {{ end }}
-        {{/*  When this is the last page  */}}
-        {{else}}
-        {{ with .Site.GetPage "/about/organizing-committee.md"}}
-        <a href="{{.Permalink}}" class="image-card">
-          <div class="image-card__content">
-            <h2 class="h4">{{.Title}}</h2>
-            <p>{{.Description}}</p>
-          </div>
-          <img src="{{.Params.image}}" alt="Go to {{.Title}}">
-        </a>
-        {{ end }}
-        {{end}}
-
+  <main class="article-layout__main">
+    <h1 class="header-article">{{.Params.title}}</h1>
+    <img class="banner-image" src="{{.Params.image}}" alt="this year's chair">
+    <section class="content-block content-block--related grid-2-cols full-width">
+      <div class="grid-2-cols__content-area">
+        <p class="lead">{{.Params.lead}}</p>
+        {{.Content}}
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+
+
+    <section id="up-next" class="content-block grid-2-cols full-width">
+
+      <div class="grid-2-cols__heading">
+        <h2 class="h2--accented">Up Next</h2>
+      </div>
+
+      <div class="grid-2-cols__content-area">
+        <div class="card-layout-container">
+          {{/*  When there is "next page" in the section  */}}
+          {{ if .NextInSection }}
+          {{ with .NextInSection }}
+          <a href="{{.Permalink}}" class="image-card">
+            <div class="image-card__content">
+              <h2 class="h4">{{.Title}}</h2>
+              <p>{{.Description}}</p>
+            </div>
+            <img src="{{.Params.image}}" alt="Go to {{.Title}}">
+          </a>
+          {{ end }}
+          {{/*  When this is the last page  */}}
+          {{else}}
+          {{ with .Site.GetPage "/about/organizing-committee.md"}}
+          <a href="{{.Permalink}}" class="image-card">
+            <div class="image-card__content">
+              <h2 class="h4">{{.Title}}</h2>
+              <p>{{.Description}}</p>
+            </div>
+            <img src="{{.Params.image}}" alt="Go to {{.Title}}">
+          </a>
+          {{ end }}
+          {{end}}
+
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
 {{ end }}

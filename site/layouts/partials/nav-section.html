@@ -37,6 +37,7 @@
   {{ $Page := .Page }}
   {{ $Menu := .menu }}
 
+  {{/*  print the navigation dropdown toggle with current section name */}}
   {{ range .menu }}
   {{ if or ($Page.HasMenuCurrent "competition" .) ($Page.IsMenuCurrent "competition" .) }}
   <button class="section-nav__toggle">

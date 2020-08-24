@@ -1,20 +1,23 @@
 ---
+
 title: "Competition Week Schedule"
 subtitle: "Competition Week Schedule"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris, ut ut in leo. Congue sit lobortis odio nunc, viverra lorem adipiscing ornare."
+description: "Learn more about CaseIT 2021 Competition Week Schedule"
 image: "img/dsc03831.jpg"
 type: "competition-information"
 lead: "The competition week provides a rigorous platform to test students’ case analysis abilities, exercise creative thinking in a high-pressure setting, and empower students to present with confidence in front of esteemed industry professionals on an international stage."
 
 # add this page under "competition-information" section
+
 menu:
   competition:
     parent: "comeptition-information"
+
 ---
+
 - **Synchronous** events will occur at the same time for all time zones during the competition week
 - **Semi-synchronous** events will occur in multiple time slots to accommodate for the varying time zones 
 - **Asynchronous** events will not occur live during the competition week and will be held offline
-  
 
 {{<comp-schedule>}}
   {{<comp-schedule-item index="00" date="2021-02-13">}}
@@ -47,3 +50,5 @@ menu:
     {{<comp-schedule-event name="Case II Preliminary Presentations" >}}
   {{</comp-schedule-item>}}
 {{</comp-schedule>}}
+
+{{<footnote>}}Please note that this is a tentative event schedule. The CaseIT 2021 Organizing Committee reserves the right to alter this schedule. Detailed logistics will be released closer to the competition week.{{</footnote>}}

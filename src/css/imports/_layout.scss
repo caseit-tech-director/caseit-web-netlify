@@ -31,6 +31,17 @@ $body-side-margin: 1.5rem;
   --card-width: 20rem;
 }
 
+/*
+ *
+ * sticky layout
+ * 
+ */
+.sticky {
+  position: sticky;
+  top: 5rem;
+  display: block;
+}
+
 /* 
  * A class that use to seperate different chunk of content
  */
@@ -501,5 +512,41 @@ section {
   // tweak the spacing between header and the lead
   p {
     margin-top: 1rem;
+  }
+}
+
+/*
+ *
+ * Article Layout
+ * 
+ */
+.article-layout {
+  display: flex;
+  flex-direction: row;
+
+  --spacing-vertical: 2rem;
+}
+
+.article-layout__aside {
+  order: 1;
+  flex: 0 0 auto;
+
+  margin-right: 2rem;
+  margin-top: var(--spacing-vertical);
+
+  // hide the side bar on mobile, show it on desktops
+  display: none;
+  @include viewportLargerThan($breakpoint-m) {
+    display: block;
+  }
+}
+.article-layout__main {
+  flex: 1 1 40rem;
+  order: 2;
+  margin-top: var(--spacing-vertical);
+
+  // collapse the margin manually inside flex
+  & > *:first-child {
+    margin-top: 0rem;
   }
 }

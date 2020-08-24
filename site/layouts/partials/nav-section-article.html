@@ -1,0 +1,18 @@
+{{/*  navgation module for navigating between singles  */}}
+
+{{ $Page := .Page }}
+{{ $Menu := .menu }}
+{{ range .menu }}
+{{ $isMenuCurrent := or ($Page.HasMenuCurrent "competition" .) ($Page.IsMenuCurrent "competition" .)}}
+{{ if and .HasChildren $isMenuCurrent }}
+{{/*  print out the individual pages in the section when there are entries inside the sub-section */}}
+<ul class="link-list">
+  {{ range .Children }}
+  {{/*  conditionally highlight the current page  */}}
+  <li class='{{ if $Page.IsMenuCurrent "competition" . }}link-list__current{{end}}'>
+    <a href="{{.URL}}">{{.Name}}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+{{ end }}

@@ -31,15 +31,16 @@
 {{/*  Render dark mode section base on the pass in parameter  */}}
 <nav class='section-nav {{cond (isset . "darkmode") "section-nav--dark" "" }}'>
 
-  {{/*  section "home button"  */}}
-  <a href="/competition/" class="section-nav__header">Competition 2021</a>
-
   {{ $Page := .Page }}
   {{ $Menu := .menu }}
 
+  {{/*  section "home button"  */}}
+  <a href="/{{$Page.Section}}/" class="section-nav__header">{{$Page.Section | humanize}}</a>
+
+
   {{/*  print the navigation dropdown toggle with current section name */}}
   {{ range .menu }}
-  {{ if or ($Page.HasMenuCurrent "competition" .) ($Page.IsMenuCurrent "competition" .) }}
+  {{ if or ($Page.HasMenuCurrent $Page.Section .) ($Page.IsMenuCurrent $Page.Section .) }}
   <button class="section-nav__toggle">
     {{.Name}}
     <span class="material-icons">

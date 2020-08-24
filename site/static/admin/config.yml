@@ -50,13 +50,16 @@ collections: # A list of collections the CMS should be able to edit
           name: "menu",
           widget: "object",
           hidden: true,
-          fields: 
-            - {
-              name: "competition",
-              widget: "object", 
-              hidden: true,
-              fields: {name: "parent", default: "competition-information"}
-              }
+          fields:
+            [
+              {
+                name: "competition",
+                widget: "object",
+                hidden: true,
+                fields:
+                  [{ name: "parent", default: "competition-information" }],
+              },
+            ],
         }
       - {
           name: "type",

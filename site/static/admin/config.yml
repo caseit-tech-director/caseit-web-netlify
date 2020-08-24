@@ -273,12 +273,12 @@ collections: # A list of collections the CMS should be able to edit
   # ==============================================================
   - label: "Downloadable Resources"
     name: "resources"
-    - file: "site/data/downloadableResources.json"
+    files:
+      - file: "site/data/downloadableResources.json"
         label: "Downloadable Resources list"
         name: "downloadable_documents"
         fields:
           - label: "Downloadable Documents"
             widget: object
             fields:
-              - { label: "File", name: "URL", widget: File}
-      
+              - { label: "File", name: "URL", widget: File }

@@ -10,6 +10,8 @@
  *  - Interactive elements
  */
 
+@import "./breakpoints";
+
 /* 
  Inspired the bootstrap type system
  https: //getbootstrap.com/docs/4.3/content/typography/#headings
@@ -89,6 +91,13 @@ h1,
   margin-bottom: var(--header-spacing-bottom);
 }
 
+.h1--responsive {
+  font-size: 48px;
+  @include viewportLargerThan($breakpoint-m) {
+    font-size: var(--type-size-h1);
+  }
+}
+
 h2,
 .h2 {
   font-family: var(--typeface-header);
@@ -110,6 +119,13 @@ h2,
 
     padding-bottom: 1rem;
     // background-color: var(--color-accent);
+  }
+}
+
+.h2--responsive {
+  font-size: 32px;
+  @include viewportLargerThan($breakpoint-m) {
+    font-size: var(--type-size-h2);
   }
 }
 

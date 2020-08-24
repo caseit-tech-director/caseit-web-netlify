@@ -8,6 +8,10 @@
     <div class="sticky">
       <h2 class="h4">Information</h2>
       {{ partial "nav-section-article.html" (dict "Page" . "menu" .Site.Menus.competition ) }}
+      <div class="content-block--related">
+        <a href="#" class="button-secondary button--stretch">Download PDF</a>
+        <p class="foot-notes">For detailed information, please reference the pdf package</p>
+      </div>
     </div>
   </aside>
 
@@ -25,7 +29,7 @@
     <section id="up-next" class="content-block grid-2-cols full-width">
 
       <div class="grid-2-cols__heading">
-        <h2 class="h2--accented">Up Next</h2>
+        <h2 class="">Up Next</h2>
       </div>
 
       <div class="grid-2-cols__content-area">

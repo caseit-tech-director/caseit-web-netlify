@@ -208,7 +208,7 @@ function lockBodyScroll() {
 }
 
 function unlockBodyScroll() {
-  document.body.style.overflowY = "scroll";
+  document.body.style.overflowY = "auto";
 
   // set the transform origin to the center of teh screen
   setbodyContentWrapperTransformOrigin();

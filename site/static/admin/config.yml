@@ -24,25 +24,45 @@ collections: # A list of collections the CMS should be able to edit
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - comment: "Short text that helps viewer to understand what where are they going before clicking into this article"
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          comment: "Short text that helps viewer to understand what where are they going before clicking into this article",
+        }
       - {
           label: "Featured Image",
           name: "image",
           widget: "image",
           required: false,
+          comment: "Banner of this article, an image smaller than 1663 x 1080 is recommended",
         }
-      - comment: "Banner of this article, an image smaller than 1663 x 1080 is recommended"
-      - { label: "Lead", name: "lead", widget: "markdown", required: false }
-      - comment: "A short summery/key point of content that used to capture viewer's attention"
+      - {
+          label: "Lead",
+          name: "lead",
+          widget: "markdown",
+          required: false,
+          comment: "A short summery/key point of content that used to capture viewer's attention",
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       # add a record under navigation
       - {
-          label: "menu",
           name: "menu",
+          widget: "object",
+          hidden: true,
+          fields: 
+            - {
+              name: "competition",
+              widget: "object", 
+              hidden: true,
+              fields: {name: "parent", default: "competition-information"}
+              }
+        }
+      - {
+          name: "type",
           widget: "string",
           hidden: true,
-          default: "\ncompetition:\n    parent: competition-information",
+          default: "competition-information",
         }
 
   - name: "pages"

@@ -277,7 +277,7 @@ collections: # A list of collections the CMS should be able to edit
         label: "Downloadable Resources list"
         name: "downloadable-resources"
         fields:
-          - label: "Downloadable Resources",
+          - label: "Downloadable Resources"
             name: downloadable_resources
             widget: object
             fields:

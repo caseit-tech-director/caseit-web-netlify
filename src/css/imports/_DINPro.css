@@ -32,7 +32,7 @@
     url("../fonts/DINPro-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }
 
 @font-face {
@@ -41,5 +41,5 @@
     url("../fonts/DINPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+  font-display: fallback;
 }

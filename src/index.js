@@ -73,11 +73,20 @@ function setupSectionMenuToggle() {
   if (!sectionNavToggle) return;
 
   sectionNavToggle.addEventListener("click", toggleSectionMenu);
+  window.addEventListener("click", closeMenu);
 
   function toggleSectionMenu(e) {
+    // prevent triggering the "close menu event listener"
     e.preventDefault();
+    e.stopPropagation();
     sectionNavToggle.classList.toggle("section-nav__toggle--active");
     sectionNavMenu.classList.toggle("section-nav__menu--expanded");
+  }
+
+  function closeMenu() {
+    // remove the classes
+    sectionNavToggle.classList.remove("section-nav__toggle--active");
+    sectionNavMenu.classList.remove("section-nav__menu--expanded");
   }
 }
 

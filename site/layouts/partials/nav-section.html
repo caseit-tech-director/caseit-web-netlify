@@ -52,7 +52,7 @@
   {{/*  Items in the section  */}}
   <div class="section-nav__menu">
     {{ range .menu }}
-    {{ $isMenuCurrent := or ($Page.HasMenuCurrent "competition" .) ($Page.IsMenuCurrent "competition" .)}}
+    {{ $isMenuCurrent := or ($Page.HasMenuCurrent $Page.Section .) ($Page.IsMenuCurrent $Page.Section .)}}
     <a href="{{.URL}}"
       class='section-nav__menu-link {{ if $isMenuCurrent }}section-nav__menu-link--current{{end}}'>{{.Name}}</a>
 

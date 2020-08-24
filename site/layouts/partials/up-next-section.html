@@ -1,0 +1,24 @@
+{{/*  
+  
+  Thie piece of "Up Next" module is responsible for 
+  grabbing the necessary resources and decide what to
+  render.
+
+  see "up-next.html" for the actual the rendering of the "up next" html
+
+*/}}
+
+
+{{/*  When there is "next page" in the section  */}}
+{{ if .NextInSection }}
+{{ with .NextInSection }}
+{{ partial "up-next.html" . }}
+{{ end }}
+{{/*  When this is the last page  */}}
+{{else}}
+{{/*  get the first page in the section if we are at the last page  */}}
+{{ $mysection := .CurrentSection.Pages }}
+{{ range last 1 $mysection }}
+{{ partial "up-next.html" . }}
+{{ end }}
+{{end}}

@@ -1,0 +1,10 @@
+{{/*  
+  Partial for rendering the "up next" module
+*/}}
+<a href="{{.Permalink}}" class="image-card">
+  <div class="image-card__content">
+    <h2 class="h4">{{.Title}}</h2>
+    <p>{{.Description}}</p>
+  </div>
+  <img src="{{.Params.image}}" alt="Go to {{.Title}}">
+</a>

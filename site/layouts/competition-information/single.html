@@ -10,7 +10,11 @@
       <h2 class="h4">Information</h2>
       {{ partial "nav-section-article.html" (dict "Page" . "menu" .Site.Menus.competition ) }}
       <div class="content-block--related">
-        <a href="#" class="button-secondary button--stretch">Download Full PDF</a>
+        {{/*  get the info package  */}}
+        {{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "competition-info-package" }}
+        {{/*  get the pdf url  */}}
+        {{$PDFUrl := (index $PDFResourceEntry 0).URL }}
+        <a href="{{$PDFUrl}}" class="button-secondary button--stretch">Download Full PDF</a>
         <p class="foot-notes">For detailed information, please reference the PDF competition information package</p>
       </div>
     </div>

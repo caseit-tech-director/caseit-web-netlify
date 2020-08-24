@@ -1,10 +1,12 @@
 {
-  "competitionInfoPackage": "",
-  "sponsorshipPackage": "",
-  "downloadableDocuments": [
+  "documents": [
     {
       "name": "competition-info-package",
       "URL": "img/university-info-package.pdf"
+    },
+    {
+      "name": "sponsorship-package",
+      "URL": ""
     }
   ]
 }

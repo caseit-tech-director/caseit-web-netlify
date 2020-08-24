@@ -27,3 +27,15 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
     name = "Registration"
     url = "/competition/registration/"
     weight = 3
+
+  [[menu.sponsorship]]
+    identifier = "sponsorship-overview"
+    name = "Overview"
+    url = "/sponsorship/"
+    weight = 1
+
+  [[menu.sponsorship]]
+    identifier = "sponsorship-opportunities"
+    name = "Sponsorship Opportunities"
+    url = "/sponsorship/opportunities/"
+    weight = 2

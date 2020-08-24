@@ -14,8 +14,7 @@
     <h1>{{.Params.title}}</h1>
     <p class="lead">{{.Params.description}}</p>
     <div class="form-controls">
-      <a href="sponsorship-opportunities" class="button-primary">See All Sponsorship Opportunities</a>
-      {{ partial "button-sponsorship-package.html" . }}
+      <a href="sponsorship/opportunities" class="button-primary">Explore Sponsorship Opportunities</a>
     </div>
   </div>
 </header>
@@ -180,7 +179,8 @@
       <h2>{{.Params.sponsorship_package.heading}}</h2>
       <p>{{.Params.sponsorship_package.text}}</p>
       <div class="fomr-controls">
-        <a href="#" class="button-primary">{{.Params.sponsorship_package.ctaText}}</a>
+        {{/*  <a href="#" class="button-primary">{{.Params.sponsorship_package.ctaText}}</a> */}}
+        {{ partial "button-sponsorship-package.html" . }}
       </div>
     </div>
 

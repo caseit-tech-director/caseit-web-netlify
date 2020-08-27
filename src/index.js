@@ -94,6 +94,21 @@ function setupHamburgerMenu() {
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
   let navMenu = document.querySelector(".nav-bar__link-container");
 
+  // click anywhere in the document to collapse the menu
+  document.addEventListener("click", (e) => {
+    closeHamburgerMenu();
+  });
+
+  // prevent the menu collapsing cause by the document click listener
+  // when the user actually interacting with the menu
+  hamburgerMenuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+  navMenu.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  // register the opening and closing mechanisim
   hamburgerMenuToggle.addEventListener("click", (e) => {
     e.preventDefault();
     if (

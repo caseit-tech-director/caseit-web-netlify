@@ -9,6 +9,7 @@
  */
 
 @import "../_breakpoints.scss";
+@import "../buttons";
 
 // Breakpoints
 $nav-breakpoint: 875px;
@@ -57,6 +58,9 @@ $nav-breakpoint: 875px;
   --link-color: var(--color-primary-light);
   --link-color-hover: var(--color-primary-darkest);
   --link-color-active: var(--color-primary-dark);
+  // for cta button
+  --button-color: var(--color-primary-darkest);
+  --button-text-color: var(--color-primary-lightest);
 
   @include logo-light-mode();
 }
@@ -66,6 +70,9 @@ $nav-breakpoint: 875px;
   --link-color: var(--color-primary-lightest);
   --link-color-hover: var(--color-primary-lightest);
   --link-color-active: var(--color-primary-lightest);
+  // for cta button
+  --button-color: var(--color-primary-lightest);
+  --button-text-color: var(--color-primary-darkest);
   @include logo-dark-mode();
 }
 
@@ -74,6 +81,10 @@ $nav-breakpoint: 875px;
   --link-color: var(--color-primary-light);
   --link-color-hover: var(--color-primary-darkest);
   --link-color-active: var(--color-primary-dark);
+
+  // for cta button
+  --button-color: var(--color-primary-darkest);
+  --button-text-color: var(--color-primary-lightest);
   @include logo-light-mode();
 }
 
@@ -208,8 +219,7 @@ ul.nav-link-list {
   }
 }
 
-a.nav-link-list__link,
-a.contact-button {
+a.nav-link-list__link {
   // reset the default link hover effect established in _typography.css
   background: none;
   font-size: 1.2rem;
@@ -233,10 +243,16 @@ a.contact-button {
   }
 }
 
-a.contact-button {
+a.nav-cta-button {
+  @extend .button-primary;
+
   display: block;
   // make the button align to the right side of the screen
   margin-left: auto;
+
+  // set the color reactive to light mode vs dark mode
+  background-color: var(--button-color) !important;
+  color: var(--button-text-color) !important;
 }
 
 // ==================================

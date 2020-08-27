@@ -12,51 +12,69 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, "dist")
+    path: path.join(__dirname, "dist"),
   },
 
   module: {
-    rules: [{
+    rules: [
+      {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         // loader: "file-loader?name=/[hash].[ext]",
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: './assets/[name].[ext]'
-          }
-        }]
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "./assets/[name].[ext]",
+            },
+          },
+        ],
       },
       {
         loader: "babel-loader",
         test: /\.js?$/,
         exclude: /node_modules/,
         query: {
-          cacheDirectory: true
-        }
+          cacheDirectory: true,
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
       },
-    ]
+    ],
   },
 
   plugins: [
     new AssetsPlugin({
       filename: "webpack.json",
       path: path.join(process.cwd(), "site/data"),
-      prettyPrint: true
+      prettyPrint: true,
     }),
-    new CopyWebpackPlugin([{
-      from: "./src/fonts/",
-      to: "fonts/",
-      flatten: true
-    }]),
+    new CopyWebpackPlugin([
+      {
+        from: "./src/fonts/",
+        to: "fonts/",
+        flatten: true,
+      },
+    ]),
     new HtmlWebpackPlugin({
-      filename: 'admin/index.html',
-      template: 'src/cms.html',
+      filename: "admin/index.html",
+      template: "src/cms.html",
       inject: false,
     }),
-  ]
+    // inject assets into the registration form module
+    new HtmlWebpackPlugin({
+      filename: "registration-form/index.html",
+      template: "site/static/index.html",
+      base: "registration-form",
+      inject: true,
+    }),
+  ],
 };

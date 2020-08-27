@@ -74,6 +74,7 @@ module.exports = {
       filename: "registration-form/index.html",
       template: "site/static/registration-form/template.html",
       base: "registration-form",
+      chunks: ["main"],
       inject: true,
     }),
   ],

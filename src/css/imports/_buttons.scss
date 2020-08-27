@@ -123,6 +123,8 @@
   background-color: var(--color-primary-lighter);
   color: var(--color-primary-light);
 
+  box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.15);
+
   cursor: not-allowed;
 
   &:focus,
@@ -130,6 +132,7 @@
   &:active {
     background-color: var(--color-primary-lighter);
     color: var(--color-primary-light);
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.15);
 
     cursor: not-allowed;
     // color: unset;

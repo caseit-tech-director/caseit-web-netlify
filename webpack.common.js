@@ -71,8 +71,8 @@ module.exports = {
     }),
     // inject assets into the registration form module
     new HtmlWebpackPlugin({
-      filename: "registration-form/template.html",
-      template: "site/static/registration-form/index.html",
+      filename: "registration-form/index.html",
+      template: "site/static/registration-form/template.html",
       base: "registration-form",
       inject: true,
     }),

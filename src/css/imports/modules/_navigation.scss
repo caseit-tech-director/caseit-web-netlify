@@ -244,15 +244,15 @@ a.nav-link-list__link {
 }
 
 a.nav-cta-button {
-  @extend .button-primary;
+  @extend .button-secondary;
 
   display: block;
   // make the button align to the right side of the screen
   margin-left: auto;
 
   // set the color reactive to light mode vs dark mode
-  background-color: var(--button-color) !important;
-  color: var(--button-text-color) !important;
+  border-color: var(--button-color) !important;
+  color: var(--button-color) !important;
 }
 
 // ==================================

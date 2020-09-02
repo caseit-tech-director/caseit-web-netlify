@@ -515,6 +515,29 @@ section {
   }
 }
 
+.hero-left-aligned {
+  display: flex;
+  flex-direction: column;
+
+  // constraint the width
+  max-width: 35rem;
+
+  // create space between top and bottom
+  padding-top: 30vh;
+  padding-bottom: 4rem;
+
+  // center align
+  // margin-left: auto;
+  // margin-right: auto;
+
+  text-align: left;
+
+  // tweak the spacing between header and the lead
+  p {
+    margin-top: 1rem;
+  }
+}
+
 /*
  *
  * Article Layout

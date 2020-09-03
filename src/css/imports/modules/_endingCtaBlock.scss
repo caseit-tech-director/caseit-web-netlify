@@ -1,0 +1,33 @@
+#endingCtaBlock,
+.endingCtaBlock {
+  background-color: var(--color-accent);
+  color: var(--color-primary-lightest);
+
+  // change the blurb right
+  .endingCtaBlurb {
+    // add padding on mobile to make it look good
+    padding: 0rem 2rem 4rem;
+
+    // reset the padding when it's two column layout
+    @include viewportLargerThan($breakpoint-m) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+
+  .endingCtaImage {
+    // stick to the container in middle to small viewport
+    max-width: 100%;
+    min-width: auto;
+
+    // make it float when the viewport is big enough
+    @include viewportLargerThan($breakpoint-l) {
+      // make it float
+      transform: translate(4rem, -1rem) scale(1.05);
+      z-index: 10;
+
+      // floating drop shadow effect
+      box-shadow: var(--drop-shadow-dark);
+    }
+  }
+}

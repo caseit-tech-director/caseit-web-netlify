@@ -42,6 +42,7 @@
 @import "./imports/modules/_hero";
 @import "./imports/modules/_header";
 @import "./imports/modules/_breadcrumbs";
+@import "./imports/modules/_endingCtaBlock";
 @import "./imports/modules/_card";
 @import "./imports/modules/_team-display-module";
 @import "./imports/modules/_section-nav";

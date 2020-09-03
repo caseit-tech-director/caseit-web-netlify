@@ -39,45 +39,51 @@
       <p>More Information on the way!</p>
     </div>
     <div class="grid-2-cols content-block">
-      <div class="grid-2-cols__blurb-left">
+      <div class="grid-2-cols__image-left">
         <div class="timeline-container">
           {{ range $index, $e := .Params.important_dates }}
-
           {{ $len := len $.Params.important_dates }}
           {{ $len := sub $len 1 }}
 
+          {{/*  case for active items  */}}
           {{ if eq .active true }}
-          <div class="timeline-anchor timeline-anchor--active">
-            <div class="timeline-anchor__description">
+          <div class="timeline-item">
+            <div class="timeline-anchor timeline-anchor--active">
+            </div>
+            {{ if not (eq $index $len) }}
+            <div class="timeline-connector"></div>
+            {{ end }}
+            <div class="timeline-description timeline-description--active">
               <div class="h4">{{.heading}}</div>
               <p>
                 {{.text}}
               </p>
             </div>
-          </div>
-          {{ if not (eq $index $len) }}
-          <div class="timeline-connector"></div>
-          {{ end }}
-          {{ else }}
-          <div class="timeline-anchor">
-            <div class="timeline-anchor__description">
-              <div class="h4">{{.heading}}</div>
-              <p>
-                {{.text}}
-              </p>
-            </div>
-          </div>
-          {{ if not (eq $index $len) }}
-          <div class="timeline-connector"></div>
-          {{ end }}
-          {{ end }}
 
+          </div>
+          {{/*  print the timeline connector if this is NOT the last item on the list  */}}
+          {{ else }}
+          {{/*  case for inactive items  */}}
+          <div class="timeline-item">
+            <div class="timeline-anchor"></div>
+            {{/*  print the timeline connector if this is NOT the last item on the list  */}}
+            {{ if not (eq $index $len) }}
+            <div class="timeline-connector"></div>
+            {{ end }}
+            <div class="timeline-description">
+              <div class="h4">{{.heading}}</div>
+              <p>
+                {{.text}}
+              </p>
+            </div>
+          </div>
+          {{ end }}
           {{ end }}
         </div>
       </div>
 
       <div class="grid-2-cols__blurb-right">
-        <h3>Get Notified</h3>
+        <h3>Stay tuned</h3>
         <p>
           Recieve email updates when we have new information for you.
         </p>

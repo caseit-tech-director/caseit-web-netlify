@@ -7,25 +7,35 @@
 .timeline-container {
   --dot-size: 1rem;
   --line-length: 10rem;
+  --line-width: 2px;
+
+  --inactive-opacity: 0.4;
+
   display: flex;
   flex-direction: column;
 
-  max-width: var(--dot-size);
-
+  // create vertical spacing between elements
   margin-bottom: 8rem;
+
+  padding: 4rem 4rem;
+
+  // give the section a background colour
+  background-color: var(--color-primary-lighter);
+
+  // min-width: 30rem;
 }
 
-.timeline-anchor--active {
-  opacity: 1 !important;
-  background-color: var(--color-accent) !important;
+.timeline-item {
+  display: flex;
+  flex-direction: row;
 }
 
 .timeline-anchor {
   // create an pivot point of the description text
-  position: relative;
+  position: absolute;
 
   // make the inactive part semi transparent
-  opacity: 0.4;
+  opacity: var(--inactive-opacity);
   background-color: var(--color-primary-darkest);
 
   // construct the dot
@@ -35,13 +45,18 @@
   border-radius: 50%;
 }
 
-.timeline-anchor__description {
-  // achor
-  position: absolute;
-  width: 20rem;
+.timeline-anchor--active {
+  opacity: 1 !important;
+  background-color: var(--color-accent) !important;
+}
 
-  left: 2rem;
-  top: -0.5rem;
+.timeline-description {
+  margin-left: 2rem;
+  // offset the to top margin to match the dot position
+  margin-top: -0.5rem;
+
+  // left: 2rem;
+  // top: -0.5rem;
 
   // adjust the spacing between elements in a block
   .h4 {
@@ -50,20 +65,26 @@
   p {
     margin-top: 0rem;
   }
+
+  opacity: var(--inactive-opacity);
+}
+
+.timeline-description--active {
+  opacity: 1 !important;
 }
 
 .timeline-connector {
   // make some space between connector dot and the line
-  margin-top: 8px;
+  margin-top: 24px;
   margin-bottom: 8px;
 
   // center align the connector
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: calc(var(--dot-size) / 2 - var(--line-width) / 2);
+  // margin-right: auto;
 
   // make the inactive part semi transparent
   opacity: 0.1;
   height: var(--line-length);
-  width: 2px;
+  width: var(--line-width);
   background-color: var(--color-primary-darkest);
 }

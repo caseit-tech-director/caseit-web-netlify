@@ -22,6 +22,8 @@ collections: # A list of collections the CMS should be able to edit
     label: "Competition Information"
     folder: "site/content/competition/information"
     create: true
+    # not to list pages that marked "ignore", eg _index.md
+    filter: { field: "netlify-cms-collection-ignore", value: true }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -164,6 +166,11 @@ collections: # A list of collections the CMS should be able to edit
                   },
                 ],
             }
+
+      # ==============================================================
+      # Contact page
+      # ==============================================================
+
       - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
@@ -217,6 +224,19 @@ collections: # A list of collections the CMS should be able to edit
               - label: "active"
                 name: active
                 widget: boolean
+          - label: "Email Subscription Section"
+            name: email_subscription
+            widget: object
+            fields:
+              [
+                { label: "Heading", name: "heading", widget: "string" },
+                { label: "Blurb", name: "text", widget: "markdown" },
+                { label: "CTA Text", name: "ctaText", widget: "string" },
+              ]
+          - label: "netlify-cms-collection-ignore"
+            name: netlify-cms-collection-ignore
+            widget: hidden
+            default: true
 
       # ==============================================================
       # Sponsorship Section

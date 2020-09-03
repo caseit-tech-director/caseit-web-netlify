@@ -83,9 +83,9 @@
       </div>
 
       <div class="grid-2-cols__blurb-right">
-        <h3>Stay tuned</h3>
+        <h3>{{.Params.email_subscription.heading}}</h3>
         <p>
-          Recieve email updates when we have new information for you.
+          {{.Params.email_subscription.text}}
         </p>
 
         <div class="form">
@@ -95,7 +95,7 @@
             <span class="field__assist">*Required</span>
           </div>
           <div class="form-controls">
-            <button class="button-primary">Subscribe to updates</button>
+            <button class="button-primary">{{.Params.email_subscription.ctaText}}</button>
           </div>
         </div>
       </div>

@@ -14,4 +14,12 @@ important_dates:
     text: Competing Universities Announcement
   - heading: Mid-December
     text: Competing Universities Announcement
+
+# to tell netlify cms not to list this page
+netlify-cms-collection-ignore: true
+
+email_subscription:
+  heading: Stay Tuned
+  text: Recieve email updates when we have new information for you.
+  ctaText: Subscribe to Updates
 ---

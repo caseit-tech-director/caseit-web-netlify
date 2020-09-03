@@ -1,12 +1,12 @@
 {{ define "main" }}
 <header class="header-module full-width">
-  {{ partial "breadcrumbs.html" . }}
+  <!-- {{ partial "breadcrumbs.html" . }} -->
   <h1>Contact Us</h1>
-  <div class="h4">Lets Talk!</div>
+  <!-- <div class="h4">Lets Talk!</div> -->
 </header>
 
 <main>
-  <section id="contact-info" class="card-layout-container full-width--article content-block">
+  <section id="contact-info" class="card-layout-container full-width content-block">
     {{range where .Params.contact_entries "heading" "Email"}}
     <div class="card-layout-item card">
       <h3 class="h4 h4--accented">{{.heading}}</h3>

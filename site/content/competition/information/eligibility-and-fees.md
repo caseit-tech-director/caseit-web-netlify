@@ -4,7 +4,7 @@ subtitle: "Eligibility and Fees"
 description: "Learn more about CaseIT 2021 Competition Week Schedule"
 image: "img/dsc03831.jpg"
 type: "competition-information"
-lead: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris, ut ut in leo. Congue sit lobortis odio nunc, viverra lorem adipiscing ornare."
+lead: ""
 
 # add this page under "competition-information" section
 menu:

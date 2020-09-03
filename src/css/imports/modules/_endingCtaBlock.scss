@@ -31,3 +31,15 @@
     }
   }
 }
+
+.endingCtaBlock--light {
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary-dark);
+
+  // apply lighter shadow effect for a softer look
+  .endingCtaImage {
+    @include viewportLargerThan($breakpoint-l) {
+      box-shadow: var(--drop-shadow-light);
+    }
+  }
+}

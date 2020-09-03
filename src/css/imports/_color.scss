@@ -10,6 +10,11 @@
   color: var(--color-primary-lightest);
 }
 
+.bg-primary-shade {
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary-darkest);
+}
+
 .bg-red {
   background-color: var(--color-primary-darkest);
   color: var(--color-primary-lightest);

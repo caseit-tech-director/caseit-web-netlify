@@ -231,7 +231,7 @@ section {
   .image--bleed-left,
   .image--bleed-right {
     // let the image bleed through the container by assigning a bigger size for it
-    max-width: 50vw;
+    min-width: 50vw;
 
     // constraint the height so that the photo wont be too short
     height: 50rem;
@@ -303,7 +303,9 @@ section {
 }
 
 .card-layout-container--dynamic {
-  grid-template-columns: minmax(var(--card-width), 2fr) 1fr;
+  @include viewportLargerThan($breakpoint-l) {
+    grid-template-columns: minmax(var(--card-width), 2fr) 1fr;
+  }
 
   & > * {
     min-height: var(--card-width);

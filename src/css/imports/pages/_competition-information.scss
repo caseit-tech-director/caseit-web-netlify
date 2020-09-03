@@ -11,16 +11,21 @@
 
   --inactive-opacity: 0.4;
 
+  --color-text: var(--color-primary-darkest);
+  --color-background: var(--color-primary-lighter);
+  --color-dot-accent: var(--color-accent);
+
   display: flex;
   flex-direction: column;
 
   // create vertical spacing between elements
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 
   padding: 4rem 4rem;
 
   // give the section a background colour
-  background-color: var(--color-primary-lighter);
+  background-color: var(--color-background);
+  color: var(--color-text);
 
   // min-width: 30rem;
 }
@@ -36,7 +41,7 @@
 
   // make the inactive part semi transparent
   opacity: var(--inactive-opacity);
-  background-color: var(--color-primary-darkest);
+  background-color: var(--color-text);
 
   // construct the dot
   width: var(--dot-size);
@@ -47,7 +52,7 @@
 
 .timeline-anchor--active {
   opacity: 1 !important;
-  background-color: var(--color-accent) !important;
+  background-color: var(--color-dot-accent) !important;
 }
 
 .timeline-description {
@@ -86,5 +91,5 @@
   opacity: 0.1;
   height: var(--line-length);
   width: var(--line-width);
-  background-color: var(--color-primary-darkest);
+  background-color: var(--color-text);
 }

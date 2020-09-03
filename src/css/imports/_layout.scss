@@ -302,6 +302,18 @@ section {
   }
 }
 
+.card-layout-container--dynamic {
+  grid-template-columns: minmax(var(--card-width), 2fr) 1fr;
+
+  & > * {
+    min-height: var(--card-width);
+  }
+
+  & > *:first-child {
+    grid-row: 1 / span 2;
+  }
+}
+
 /*
  *
  * Centered text section
@@ -523,8 +535,8 @@ section {
   max-width: 35rem;
 
   // create space between top and bottom
-  padding-top: 30vh;
-  padding-bottom: 4rem;
+  padding-top: 20vh;
+  padding-bottom: 6rem;
 
   // center align
   // margin-left: auto;

@@ -93,6 +93,7 @@ a.card {
 
   img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 
     transform: scale(1);
@@ -176,6 +177,10 @@ a.card {
       border-top-color: var(--color-accent); // Make borders visible
     }
   }
+}
+
+.image-card--large {
+  grid-row: span 2;
 }
 
 // =================================

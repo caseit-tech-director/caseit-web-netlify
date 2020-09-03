@@ -19,19 +19,25 @@
       <a href="#" class="button-primary">Download Information Package (PDF)</a>
     </div>  */}}
   </div>
-  <div class="grid-3-cols">
-    <a href="/competition/information/competition-week-schedule/" class="card-clickable">Competition Week Schedule</a>
-    <a href="#" class="card-clickable">Event Highlight</a>
-    <a href="/competition/information/covid-19-response" class="card-clickable">COVID Response</a>
-  </div>
+  <div class="card-layout-container card-layout-container--dynamic">
+    {{ range .Pages }}
+    <a href="{{.Permalink}}" class="image-card">
+      <img src="{{.Params.image}}" alt="placeholder">
+      <div class="image-card__content">
+        <h4>{{.Title}}</h4>
+        <p>{{.Params.description}}</p>
+      </div>
+    </a>
+    {{ end }}
 </header>
 
-<section>
+<!-- get notified section-->
+<section id="get-notified-section">
   <div class="full-width">
-    <div class="center-text">
+    <!-- <div class="center-text">
       <h2>Information Release Timeline</h2>
       <p>More Information on the way!</p>
-    </div>
+    </div> -->
     <div class="grid-2-cols content-block">
       <div class="grid-2-cols__blurb-left">
         <div class="timeline-container">
@@ -69,8 +75,9 @@
           {{ end }}
         </div>
       </div>
+
       <div class="grid-2-cols__blurb-right">
-        <h3>Get Notified</h3>
+        <h2>Get Notified</h2>
         <p>
           Recieve email updates when we have new information for you.
         </p>
@@ -88,5 +95,9 @@
       </div>
     </div>
   </div>
+</section>
+
+<section>
+
 </section>
 {{ end }}

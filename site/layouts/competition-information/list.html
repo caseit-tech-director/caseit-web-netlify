@@ -88,16 +88,16 @@
           {{.Params.email_subscription.text}}
         </p>
 
-        <div class="form">
+        <form name="email-subscription" class="form" netlify>
           <div class="field">
-            <label for="txtEmail">Email</label>
-            <input id="txtEmail" name="txtEmail" placeholder="Exmaple@gmail.com" type="text" />
+            <label for="email">Email</label>
+            <input id="email" name="email" placeholder="Exmaple@gmail.com" type="text" />
             <span class="field__assist">*Required</span>
           </div>
           <div class="form-controls">
-            <button class="button-primary">{{.Params.email_subscription.ctaText}}</button>
+            <button class="button-primary" type="submit">{{.Params.email_subscription.ctaText}}</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </div>

@@ -2,7 +2,9 @@
   "documents": [
     {
       "name": "competition-info-package",
-      "URL": "img/university-info-package.pdf"
+      "URL": "img/university-info-package.pdf",
+      "descriptionTitle": "Get Information Package Now",
+      "descriptionBlurb": "Interested in registering for CaseIT 2021? We got you covered! Learn more by downloading our university information package."
     },
     {
       "name": "sponsorship-package",

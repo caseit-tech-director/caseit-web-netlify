@@ -1,0 +1,21 @@
+<section class="endingCtaBlock content-block grid-2-cols full-width" data-aos="fade-up">
+  <div class="grid-2-cols__image-left">
+    <img class="image--bleed-left endingCtaImage" src="img/information-package-high-res.jpg" />
+  </div>
+  <div class="grid-2-cols__blurb-right blurb--valign-center endingCtaBlurb">
+    <div class="overline">University Information Package</div>
+    {{/*  get the info package  */}}
+    {{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "competition-info-package" }}
+    {{/*  get the pdf url  */}}
+    {{$url := (index $PDFResourceEntry 0).URL }}
+    {{$title := (index $PDFResourceEntry 0).descriptionTitle }}
+    {{$blurb := (index $PDFResourceEntry 0).descriptionBlurb }}
+    <h2>{{$title}}</h2>
+    <p>
+      {{$blurb}}
+    </p>
+    <div class="form-controls">
+      <a class="button-primary button-primary--inverted" target="blank" href="{{$url}}">Download Package (pdf)</a>
+    </div>
+  </div>
+</section>

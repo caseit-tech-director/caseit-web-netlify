@@ -34,11 +34,11 @@
 <!-- get notified section-->
 <section id="get-notified-section">
   <div class="full-width">
-    <div class="center-text">
+    <div class="center-text" data-aos="fade-up">
       <h2>Information Release Timeline</h2>
       <p>More Information on the way!</p>
     </div>
-    <div class="grid-2-cols content-block">
+    <div class="grid-2-cols content-block" data-aos="fade-up">
       <div class="grid-2-cols__image-left">
         <div class="timeline-container">
           {{ range $index, $e := .Params.important_dates }}
@@ -104,18 +104,19 @@
 </section>
 
 
-<section class="endingCtaBlock endingCtaBlock--light content-block grid-2-cols full-width" data-aos="fade-up">
+<section class="endingCtaBlock content-block grid-2-cols full-width" data-aos="fade-up">
   <div class="grid-2-cols__image-left">
     <img class="image--bleed-left endingCtaImage" src="img/information-package-high-res.jpg" />
   </div>
   <div class="grid-2-cols__blurb-right blurb--valign-center endingCtaBlurb">
-    <div class="overline">Get Full PDF</div>
+    <div class="overline">University Information Package</div>
     <h2>Get Information Package Now</h2>
     <p>
-      Interested in joining? We got you covered Take this free PDF home.
+      Interested registering for CaseIT 2021? We got you covered! Learn more by downloading our university information
+      package.
     </p>
     <div class="form-controls">
-      <a class="button-primary">Download Information Package (pdf)</a>
+      <a class="button-primary button-primary--inverted">Download Package (pdf)</a>
     </div>
   </div>
 </section>

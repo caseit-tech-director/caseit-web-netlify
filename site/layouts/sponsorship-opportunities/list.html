@@ -62,17 +62,18 @@
           {{ end }}
           {{ end }}
         </tbody>
-        <tfoot class="price">
+        {{/*  TODO: Wait for jordan signal - see if he want to show price in sponsorship page  */}}
+        {{/*  <tfoot class="price">
           <tr>
             {{ range $col, $value := index $data $FOOTER_ROW }}
-            {{ if eq $value "" }}
-            <td>{{ . }}</td>
-            {{ else }}
-            <td class="price">{{ . }}</td>
-            {{ end }}
-            {{ end }}
-          </tr>
-        </tfoot>
+        {{ if eq $value "" }}
+        <td>{{ . }}</td>
+        {{ else }}
+        <td class="price">{{ . }}</td>
+        {{ end }}
+        {{ end }}
+        </tr>
+        </tfoot> */}}
       </table>
 
       <div class="grid-3-cols gird-3-cols--paragraph content-block">

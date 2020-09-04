@@ -19,10 +19,11 @@ collections: # A list of collections the CMS should be able to edit
       - { label: "Body", name: "body", widget: "markdown" }
     # not finished, to be implemented
   - name: "competition-information"
-    label: "Competition Information Pages"
+    label: "Competition Information"
     folder: "site/content/competition/information"
     create: true
     # not to list pages that marked "ignore", eg _index.md
+    filter: { field: "netlify-cms-collection-ignore", value: false }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -210,7 +211,7 @@ collections: # A list of collections the CMS should be able to edit
 
       - file: "site/content/competition/_index.md"
         label: "Competition Overview"
-        name: "competition-information"
+        name: "competition-overview"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Intro Blurb", name: description, widget: markdown }
@@ -334,6 +335,8 @@ collections: # A list of collections the CMS should be able to edit
   # ==============================================================
   - label: "Downloadable Resources"
     name: "resources"
+    editor:
+      preview: false
     files:
       - file: "site/data/downloadableResources.json"
         label: "Downloadable Resources list"

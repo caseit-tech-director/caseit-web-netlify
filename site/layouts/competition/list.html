@@ -7,7 +7,8 @@
 
   <section class="comp-hype-intro full-width">
     <div>
-      <h1>Are you Ready for It</h1>
+      <h1 class="display">{{.Params.title}}</h1>
+      <p class="lead">{{.Params.subtitle}}</p>
       <span class="material-icons cta-arrow">
         arrow_downward
       </span>
@@ -83,13 +84,12 @@
 </section>
 <section id="learn-more" class="full-width grid-2-cols">
   <div class="grid-2-cols__blurb-left">
-    <h2>Learn More</h2>
+    <h2>{{.Params.learn_more.heading}}</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec in turpis ornare risus amet purus risus, proin.
-      Information Package is also available
+      {{.Params.learn_more.text}}
     </p>
     <div class="form-controls">
-      <a href="/competition/information/" class="button-primary">See Competition Information</a>
+      <a href="/competition/information/" class="button-primary">See Full Information</a>
     </div>
   </div>
   <div class="grid-2-cols__blurb-right">

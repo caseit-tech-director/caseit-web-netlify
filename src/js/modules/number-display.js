@@ -34,7 +34,7 @@ const NumberDisplay = {
           if (!entry.target.classList.contains("counting")) {
             entry.target.classList.add("counting");
             const targetNumber = parseInt(entry.target.innerHTML);
-            animateValue(entry.target, 0, targetNumber, 500);
+            // animateValue(entry.target, 0, targetNumber, 500);
 
             // remove the elment from the observe list so it wont be trigger again
             observer.unobserve(entry.target);

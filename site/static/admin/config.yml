@@ -59,7 +59,13 @@ collections: # A list of collections the CMS should be able to edit
                 widget: "object",
                 hidden: true,
                 fields:
-                  [{ name: "parent", default: "competition-information" }],
+                  [
+                    {
+                      name: "parent",
+                      widget: "hidden",
+                      default: "competition-information",
+                    },
+                  ],
               },
             ],
         }
@@ -199,14 +205,50 @@ collections: # A list of collections the CMS should be able to edit
               - label: Answer
                 name: text
                 widget: markdown
+      # ==============================================================
+      # Competition Overview Section
+      # ==============================================================
+
+      - file: "site/content/competition/_index.md"
+        label: "Competition Overview"
+        name: "competition-information"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - label: "Important Dates/Announcement Timeline"
+            name: important_dates
+            widget: list
+            fields:
+              - label: "Time"
+                name: heading
+                widget: string
+              - label: "Things Happen"
+                name: text
+                widget: string
+              - label: "active"
+                name: active
+                widget: boolean
+          - label: "Email Subscription Section"
+            name: email_subscription
+            widget: object
+            fields:
+              [
+                { label: "Heading", name: "heading", widget: "string" },
+                { label: "Blurb", name: "text", widget: "markdown" },
+                { label: "CTA Text", name: "ctaText", widget: "string" },
+              ]
+          - label: "netlify-cms-collection-ignore"
+            name: netlify-cms-collection-ignore
+            widget: hidden
+            default: true
 
       # ==============================================================
-      # Competition Section
+      # Competition Information Section
       # ==============================================================
 
       # competition information page
       - file: "site/content/competition/information/_index.md"
-        label: "Competition Information Home Page"
+        label: "Competition Information"
         name: "competition-information"
         fields:
           - { label: Title, name: title, widget: string }

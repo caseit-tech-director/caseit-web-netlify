@@ -77,6 +77,8 @@ collections: # A list of collections the CMS should be able to edit
         }
   - name: "pages"
     label: "Pages"
+    editor:
+      preview: false
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
@@ -335,6 +337,8 @@ collections: # A list of collections the CMS should be able to edit
   # ==============================================================
   - label: "Downloadable Resources"
     name: "resources"
+    editor:
+      preview: false
     files:
       - file: "site/data/downloadableResources.json"
         label: "Downloadable Resources list"

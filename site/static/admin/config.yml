@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/competition/information"
     create: true
     # not to list pages that marked "ignore", eg _index.md
-    filter: { field: "netlify-cms-collection-ignore", value: true }
+    filter: { field: "netlify-cms-collection-ignore", value: false }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {

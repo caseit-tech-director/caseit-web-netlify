@@ -23,7 +23,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/competition/information"
     create: true
     # not to list pages that marked "ignore", eg _index.md
-    # filter: { field: "netlify-cms-collection-ignore", value: true }
+    filter: { field: "netlify-cms-collection-ignore", value: false }
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -50,13 +50,13 @@ collections: # A list of collections the CMS should be able to edit
       # add a record under navigation
       - {
           name: "menu",
-          widget: "object",
+          widget: "hidden",
           hidden: true,
           fields:
             [
               {
                 name: "competition",
-                widget: "object",
+                widget: "hidden",
                 hidden: true,
                 fields:
                   [
@@ -71,9 +71,15 @@ collections: # A list of collections the CMS should be able to edit
         }
       - {
           name: "type",
-          widget: "string",
+          widget: "hidden",
           hidden: true,
           default: "competition-information",
+        }
+      - {
+          label: "netlify-cms-collection-ignore",
+          name: netlify-cms-collection-ignore,
+          widget: hidden,
+          default: false,
         }
   - name: "pages"
     label: "Pages"

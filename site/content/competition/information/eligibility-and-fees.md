@@ -6,6 +6,9 @@ image: "img/dsc03831.jpg"
 type: "competition-information"
 lead: ""
 
+# to tell netlify cms not to list this page
+netlify-cms-collection-ignore: false
+
 # add this page under "competition-information" section
 menu:
   competition:

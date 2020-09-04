@@ -9,6 +9,10 @@ image: img/dsc03831.jpg
 lead: After careful consideration from our Organizing Committee surrounding the
   COVID-19 pandemic, we are thrilled to announce that CaseIT 2021 will be held
   as a virtual competition!
+
+# to tell netlify cms not to list this page
+netlify-cms-collection-ignore: false
+
 menu:
   competition:
     parent: competition-information

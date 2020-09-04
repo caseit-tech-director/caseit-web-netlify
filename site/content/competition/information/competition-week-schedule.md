@@ -6,8 +6,10 @@ image: "img/dsc03831.jpg"
 type: "competition-information"
 lead: "The competition week provides a rigorous platform to test students’ case analysis abilities, exercise creative thinking in a high-pressure setting, and empower students to present with confidence in front of esteemed industry professionals on an international stage."
 
-# add this page under "competition-information" section
+# to tell netlify cms not to list this page
+netlify-cms-collection-ignore: false
 
+# add this page under "competition-information" section
 menu:
   competition:
     parent: "competition-information"

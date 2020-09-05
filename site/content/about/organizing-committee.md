@@ -26,6 +26,9 @@ team:
       - name: Kyle Lee
         position: Vice Chair - Marketing Director
         image: img/team-portrait-kyle.jpg
+      - name: Alicia Heng
+        position: "Director of Content Strategy "
+        image: img/team-portrait-alicia.jpg
       - name: Cody Leung
         position: Director of Media
         image: img/team-portrait-cody.jpg

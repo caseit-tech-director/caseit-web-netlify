@@ -18,7 +18,7 @@ Responsibilities include, but are not limited to:
 - Optimise current development workflow
 - Document best practices and guidelines to ensure a smooth transition for future iterations of CaseIT’s website
 
-Qualifications:
+**Qualifications:**
 
 - Previous experience (personal project, course, etc.) with modern web development technologies such as HTML5, SCSS & JavaScript (ReactJS)
 - Previous experience working with github

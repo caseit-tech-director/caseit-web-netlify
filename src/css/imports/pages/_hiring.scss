@@ -2,9 +2,18 @@
  * page specific styling on the /hiring page
  */
 
+@import "../breakpoints";
+
+//  for the grey backdrop effect
+.positions-wrapper {
+  // padding: 2rem 0rem;
+  // background-color: var(--color-primary-lighter);
+}
+
 .position-container {
-  --spacing-vertical: 4rem;
-  --margin-vertical: 4rem;
+  --spacing-vertical: 1rem;
+  --spacing-horizontal: 1rem;
+  --margin-vertical: 2rem;
 
   display: flex;
   flex-direction: row;
@@ -13,13 +22,14 @@
   margin-top: var(--margin-vertical);
   margin-bottom: var(--margin-vertical);
 
-  padding: var(--spacing-vertical);
+  // padding: var(--spacing-vertical);
+
   background-color: var(--color-primary-lighter);
 }
 
 .position {
   max-width: 27rem;
   border-left: 4px solid var(--color-accent);
-  margin-right: 2rem;
-  margin-bottom: 2rem;
+
+  margin: var(--spacing-vertical) var(--spacing-horizontal);
 }

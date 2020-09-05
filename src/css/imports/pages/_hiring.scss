@@ -11,8 +11,8 @@
 }
 
 .position-container {
-  --spacing-vertical: 1rem;
-  --spacing-horizontal: 1rem;
+  --spacing-vertical: 1.5rem;
+  --spacing-horizontal: 1.5rem;
   --margin-vertical: 2rem;
 
   display: flex;
@@ -28,8 +28,21 @@
 }
 
 .position {
-  max-width: 27rem;
+  // max-width: 27rem;
   border-left: 4px solid var(--color-accent);
 
   margin: var(--spacing-vertical) var(--spacing-horizontal);
+  padding: 1.5rem;
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__description {
+    margin-bottom: 2rem;
+    max-width: 25rem;
+  }
+
+  &__available {
+    font-style: italic;
+  }
 }

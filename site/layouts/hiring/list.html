@@ -20,7 +20,7 @@
       {{ range $section }}
       {{ if eq .Params.position_type "director"}}
       <a class="position card" href="{{.Permalink}}">
-        <h4 class="h4--accented">{{.Params.title}}</h4>
+        <h4 class="h4--accented position__title">{{.Params.title}}</h4>
         <span class="position__description">{{.Params.description}}</span>
         <span class="position__available">Available position: {{.Params.position_available}}</span>
       </a>
@@ -37,7 +37,7 @@
       {{ range $section }}
       {{ if eq .Params.position_type "associate"}}
       <a class="position card" href="{{.Permalink}}">
-        <h4 class="h4--accented">{{.Params.title}}</h4>
+        <h4 class="h4--accented position__title">{{.Params.title}}</h4>
         <span class="position__description">{{.Params.description}}</span>
         <span class="position__available">Available position: {{.Params.position_available}}</span>
       </a>

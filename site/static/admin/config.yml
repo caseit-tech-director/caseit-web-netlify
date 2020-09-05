@@ -81,8 +81,8 @@ collections: # A list of collections the CMS should be able to edit
           widget: hidden,
           default: false,
         }
-  - name: "pages"
-    label: "Pages"
+  - name: "unsorted-pages"
+    label: "Unsorted Pages"
     files:
       - file: "site/content/_index.md"
         label: "Home Page"
@@ -211,10 +211,13 @@ collections: # A list of collections the CMS should be able to edit
               - label: Answer
                 name: text
                 widget: markdown
-      # ==============================================================
-      # Competition Overview Section
-      # ==============================================================
 
+    # ==============================================================
+    # Competition Overview Section
+    # ==============================================================
+    - name: "comeptition-section"
+    label: "Competition Section"
+    files:
       - file: "site/content/competition/_index.md"
         label: "Competition Overview"
         name: "competition-overview"
@@ -287,10 +290,12 @@ collections: # A list of collections the CMS should be able to edit
             value: true
             default: true
 
-      # ==============================================================
-      # Sponsorship Section
-      # ==============================================================
-
+    # ==============================================================
+    # Sponsorship Section
+    # ==============================================================
+    - name: "sponsorship-section"
+    label: "Sponsorship Section"
+    files:
       #sponsorship overview
       - file: "site/content/sponsorship/_index.md"
         label: "Sponsorship Overview Page"

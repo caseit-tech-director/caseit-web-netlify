@@ -19,8 +19,10 @@
     <div class="sticky">
       <h2 class="h4">Interested?</h2>
       <div class="content-block--related">
-        <p class="foot-notes">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</p>
-        <a href="#" class="button-primary button--stretch">Apply Now</a>
+        <p>{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</p>
+        <a href='($.Site.GetPage "/hiring").Params.application_link' class="button-primary button--stretch">
+          Apply Now
+        </a>
       </div>
     </div>
   </aside>

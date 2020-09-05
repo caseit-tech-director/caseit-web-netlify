@@ -26,8 +26,9 @@ pitch:
     benefits:
       - text: Share your expertise, feedback, and insights with the next generation
           of  Management Information Systems professionals.
-      - text: Support an established, reputable academic case competition and it's
-          ability to develop the Management Information Systems industry.
+      - text: Support an established, reputable academic case competition in it's
+          ability to grow and develop the Management Information Systems
+          business industry.
       - text: Contribute to building the prevalence and importance of technology focused
           undergraduate business programs in universities around the world.
     imageUrl: img/dsc04227.jpg

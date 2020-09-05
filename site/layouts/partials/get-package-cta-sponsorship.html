@@ -1,5 +1,5 @@
 {{/*  get the info package  */}}
-{{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "competition-info-package" }}
+{{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "sponsorship-package" }}
 {{/*  get the pdf url  */}}
 {{$url := (index $PDFResourceEntry 0).URL }}
 {{$title := (index $PDFResourceEntry 0).descriptionTitle }}
@@ -11,7 +11,8 @@
     <img class="image--bleed-left endingCtaImage" src="{{$image}}" />
   </div>
   <div class="grid-2-cols__blurb-right blurb--valign-center endingCtaBlurb">
-    <div class="overline">University Information Package</div>
+    <div class="overline">Sponsorship Package</div>
+
     <h2>{{$title}}</h2>
     <p>
       {{$blurb}}

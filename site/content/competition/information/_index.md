@@ -9,18 +9,20 @@ important_dates:
     text: Official Competition Dates Announcement
     active: true
   - heading: Late October
-    text: Competition Case Structure, Scoring, and Rules Detailed Competition Week
+    text:
+      Competition Case Structure, Scoring, and Rules Detailed Competition Week
       Schedule Announcement
-    active: true
+    active: false
   - heading: Mid-November
     text: Competing Universities Announcement
-    active: true
+    active: false
   - heading: Mid-December
     text: Competing Universities Announcement
-    active: true
+    active: false
 email_subscription:
   heading: Stay Tuned
-  text: Stay updated with all the information you need to know for the CaseIT 2021
+  text:
+    Stay updated with all the information you need to know for the CaseIT 2021
     competition.
   ctaText: Subscribe to Updates
 netlify-cms-collection-ignore: true

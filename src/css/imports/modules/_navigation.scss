@@ -67,7 +67,7 @@ $nav-breakpoint: 875px;
 
 .main-nav--dark {
   // dark mode color configuration
-  --link-color: var(--color-primary-lightest);
+  --link-color: var(--color-primary-light);
   --link-color-hover: var(--color-primary-lightest);
   --link-color-active: var(--color-primary-lightest);
   // for cta button
@@ -240,6 +240,11 @@ a.nav-link-list__link {
   // override the original colour
   &:active {
     color: var(--link-color-active);
+  }
+
+  // when the user is inside this section
+  &--active {
+    color: var(--link-color-hover);
   }
 }
 

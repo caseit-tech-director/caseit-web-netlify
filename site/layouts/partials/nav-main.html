@@ -16,7 +16,20 @@
 
         <div class="nav-bar__link-container">
           <ul class="list-reset nav-link-list">
+
+            {{ $current := . }}
+            {{ range .Site.Menus.nav }}
+            {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+            {{/*  {{ $active = or $active (and (eq .Name "Competition") (eq $current.Section "competition")) }}
+
+            {{/* hack to make hugo register active state even when the user is inside subpage within a section */}}
+            {{ $active = or $active (eq (lower .Name) (lower $current.Section)) }}
             <li>
+              <a href="{{ .URL }}"
+                class="nav-link-list__link {{ if $active }}nav-link-list__link--active{{ end }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+            {{/*  <li>
               <a href="/competition/" class="nav-link-list__link">Competition</a>
             </li>
             <li>
@@ -25,12 +38,12 @@
             <li>
               <a href="/about/" class="nav-link-list__link">About</a>
             </li>
-            {{/*  <li>
-              <a href="#" class="nav-link-list__link inactive" title="under construction!">Blog</a>
-            </li>  */}}
             <li>
               <a href="/contact/" class="nav-link-list__link">Contact</a>
-            </li>
+            </li>  */}}
+            {{/*  <li>
+                    <a href="#" class="nav-link-list__link inactive" title="under construction!">Blog</a>
+                  </li>  */}}
           </ul>
 
           <a href="/registration-form/" class="nav-cta-button" title="Enroll school for CaseIT 2021">

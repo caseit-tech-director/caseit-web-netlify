@@ -10,6 +10,29 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 # main site menu
 [menu]
+  # the site main navigation
+  [[menu.nav]]
+    identifier = "competition-section"
+    name = "Competition"
+    url = "/competition/"
+    weight = 1
+  [[menu.nav]]
+    identifier = "sponsorship-section"
+    name = "Sponsorship"
+    url = "/sponsorship/"
+    weight = 2
+  [[menu.nav]]
+    identifier = "contact-section"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+  [[menu.nav]]
+    identifier = "about-section"
+    name = "About"
+    url = "/about/"
+    weight = 4
+  
+  # navigation under competition section
   [[menu.competition]]
     identifier = "competition-overview"
     name = "Overview"
@@ -28,6 +51,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
     url = "/competition/registration/"
     weight = 3
 
+  # navigation under sponsorship section
   [[menu.sponsorship]]
     identifier = "sponsorship-overview"
     name = "Overview"

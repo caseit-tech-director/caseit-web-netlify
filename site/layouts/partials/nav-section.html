@@ -33,16 +33,17 @@
 
   {{ $Page := .Page }}
   {{ $Menu := .menu }}
+  {{ $SectionName := $Page.Section}}
 
   {{/*  section "home button"  */}}
-  <a href="/{{$Page.Section}}/" class="section-nav__header">{{$Page.Section | humanize}}</a>
+  {{/*  <a href="/{{$Page.Section}}/" class="section-nav__header">{{$Page.Section | humanize}}</a> */}}
 
 
   {{/*  print the navigation dropdown toggle with current section name */}}
   {{ range .menu }}
   {{ if or ($Page.HasMenuCurrent $Page.Section .) ($Page.IsMenuCurrent $Page.Section .) }}
   <button class="section-nav__toggle">
-    {{.Name}}
+    {{$SectionName}} - {{.Name}}
     <span class="material-icons">
       expand_more
     </span>

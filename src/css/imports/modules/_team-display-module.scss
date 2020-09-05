@@ -4,30 +4,43 @@
  * 
  */
 
+@import "../breakpoints";
+
+// Including the team heading
+.team-display-wrapper {
+  margin-bottom: 4rem;
+}
+
 .team-display-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-width: 20rem;
+  --spacing-horizontal: 4.5rem;
+  --spacing-vertical: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 2rem;
+
+  // min-width: 15rem;
 
   padding: 0rem;
 
-  background-color: #f2f2f2;
   color: var(--color-accent);
 
   // distance between the team title the content
-  margin-top: 4rem;
+  margin-top: var(--spacing-vertical);
 
   border-left: 4px solid var(--color-accent);
 }
 .team-display-item {
-  margin-top: 2rem;
-  margin-left: 4rem;
+  padding-top: var(--spacing-vertical);
+  padding-left: var(--spacing-horizontal);
+  padding-right: var(--spacing-horizontal);
+
+  background-color: #f2f2f2;
 
   &__name {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem !important;
   }
   &__position {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
   }
 }

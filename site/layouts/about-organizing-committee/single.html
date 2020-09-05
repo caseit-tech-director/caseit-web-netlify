@@ -1,8 +1,10 @@
 {{ define "main" }}
 <header class="header-module full-width">
   <!-- {{ partial "breadcrumbs.html" . }} -->
-  <h1>{{.Params.title}}</h1>
-  <p class="lead">{{.Params.intro_blurb}}</p>
+  <div class="hero-left-aligned">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">{{.Params.intro_blurb}}</p>
+  </div>
 </header>
 
 <main>
@@ -17,18 +19,21 @@
 
   <section id="committee" class="content-block full-width">
     {{range .Params.team}}
-    <h2 class="h3 h3--accented">Competition Execution</h2>
-    <div class="team-display-container">
-      {{ range .team_member }}
-      <div class="team-display-item">
-        <h3 class="team-display-item__name h4 h4--accented">{{.name}}</h3>
-        <div class="team-display-item__position">{{.position}}</div>
-        <img src="{{.image}}" alt="Portrait of {{.team_member}}">
+    <div class="team-display-wrapper">
+      <h2 class="h3 h3--accented">{{.team_name}}</h2>
+      <div class="team-display-container">
+        {{ range .team_member }}
+        <div class="team-display-item">
+          <h3 class="team-display-item__name h4 h4--accented">{{.name}}</h3>
+          <div class="team-display-item__position">{{.position}}</div>
+          <img class="team-display-item__portrait" src="{{.image}}" alt="Portrait of {{.team_member}}">
+        </div>
+        {{ end }}
       </div>
-      {{ end }}
     </div>
     {{end}}
   </section>
+
 
 
   <section id="up-next" class="content-block grid-2-cols full-width">

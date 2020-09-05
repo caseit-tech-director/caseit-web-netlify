@@ -1,9 +1,5 @@
 ---
 title: "Organizing Committee"
-image: img/caseit-team-large.jpg
-author: Jordan Wong
-writtenDate: MM/DD/YYYY
-description: Read CaseIT 2021 Chair Jordan Wong's welcome
 intro_blurb: Meet the team! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et donec in turpis ornare risus amet purus risus, proin. At pellentesque ac amet, orci eget.
 type: about-organizing-committee
 

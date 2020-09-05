@@ -376,7 +376,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
       #chairs welcome
       - file: "site/content/about/welcoming.md"
-        label: "Chair's Welcome"
+        label: "Chair's Welcome Page"
         name: "chairs-welcome"
         fields:
           - { label: Title, name: title, widget: string }
@@ -393,13 +393,40 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Body", name: body, widget: markdown }
       #history
       - file: "site/content/about/history.md"
-        label: "History"
+        label: "History Page"
         name: "history"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Cover Image", name: image, widget: image }
           - { label: "Description", name: description, widget: string }
           - { label: "Body", name: body, widget: markdown }
+      #organising committee
+      - file: "site/content/about/organizing-committee.md"
+        label: "Organizing Committee Page"
+        name: "oc-page"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro blurb", name: intro_blurb, widget: markdown }
+          - {
+              label: "type",
+              name: "type",
+              widget: hidden,
+              value: "about-organizing-committee",
+            }
+          - label: "Teams"
+            name: "team"
+            widget: list
+            fields:
+              - label: "Team Name"
+                name: "team_name"
+                widget: string
+              - label: "Team Member"
+                name: "team_member"
+                widget: list
+                fields:
+                  - { label: "Name", name: "name", widget: string }
+                  - { label: "Position", name: "position", widget: string }
+                  - { label: "Portrait Image", name: "image", widget: image }
 
   # ==============================================================
   # Storing Data

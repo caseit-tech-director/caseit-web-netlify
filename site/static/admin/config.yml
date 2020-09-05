@@ -92,7 +92,18 @@ collections: # A list of collections the CMS should be able to edit
     filter: { field: "netlify-cms-collection-ignore", value: false }
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Lead", name: "lead", widget: "markdown" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          hint: "a short blurb about what this position about",
+        }
+      - {
+          label: "Lead",
+          name: "lead",
+          widget: "markdown",
+          hint: "A leading paragarph in the job description page",
+        }
       - {
           label: "Position Type",
           name: "position_type",
@@ -252,6 +263,11 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: markdown }
+          - {
+              label: "Application Form Link",
+              name: application_link,
+              widget: string,
+            }
 
   # ==============================================================
   # Competition Overview Section

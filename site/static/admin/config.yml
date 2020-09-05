@@ -30,21 +30,21 @@ collections: # A list of collections the CMS should be able to edit
           label: "Description",
           name: "description",
           widget: "string",
-          comment: "Short text that helps viewer to understand what where are they going before clicking into this article",
+          hint: "Short text that helps viewer to understand what where are they going before clicking into this article",
         }
       - {
           label: "Featured Image",
           name: "image",
           widget: "image",
           required: false,
-          comment: "Banner of this article, an image smaller than 1663 x 1080 is recommended",
+          hint: "Banner of this article, an image smaller than 1663 x 1080 is recommended",
         }
       - {
           label: "Lead",
           name: "lead",
           widget: "markdown",
           required: false,
-          comment: "A short summery/key point of content that used to capture viewer's attention",
+          hint: "A short summery/key point of content that used to capture viewer's attention",
         }
       - { label: "Body", name: "body", widget: "markdown" }
       # add a record under navigation
@@ -81,6 +81,37 @@ collections: # A list of collections the CMS should be able to edit
           widget: hidden,
           default: false,
         }
+  # ==============================================================
+  # Hiring Collections
+  # ==============================================================
+  - label: "Hiring - Available Positions"
+    name: "hiring-available-positions"
+    create: true
+    folder: "site/content/hiring"
+    # not to list pages that marked "ignore", eg _index.md
+    filter: { field: "netlify-cms-collection-ignore", value: false }
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Lead", name: "lead", widget: "markdown" }
+      - {
+          label: "Position Type",
+          name: "position_type",
+          widget: "select",
+          options:
+            [
+              { label: "Associate", value: "associate" },
+              { label: "Director", value: "director" },
+              { label: "Vice Chair", value: "vice-chair" },
+              { label: "Chair", value: "chair" },
+            ],
+        }
+      - {
+          label: "Position(s) Available",
+          name: "position_available",
+          widget: "number",
+          options: ["associate", "director", "chair", "vice-chair"],
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "unsorted-pages"
     label: "Unsorted Pages"
     files:
@@ -211,6 +242,16 @@ collections: # A list of collections the CMS should be able to edit
               - label: Answer
                 name: text
                 widget: markdown
+
+      # ==============================================================
+      # Hiring page
+      # ==============================================================
+      - file: "site/content/hiring/_index.md"
+        label: "Hiring Page"
+        name: "hiring"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Description, name: description, widget: markdown }
 
   # ==============================================================
   # Competition Overview Section
@@ -352,13 +393,13 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "File", name: "URL", widget: "file" }
               - {
                   label: "Description Title",
-                  comment: "This will show up as a header in the CTA (Call to Action) module",
+                  hint: "This will show up as a header in the CTA (Call to Action) module",
                   name: "descriptionTitle",
                   widget: "string",
                 }
               - {
                   label: "Description Blurb",
                   name: "descriptionBlurb",
-                  comment: "This blurb will show up in the CTA (Call to Action) module",
+                  hint: "This blurb will show up in the CTA (Call to Action) module",
                   widget: "markdown",
                 }

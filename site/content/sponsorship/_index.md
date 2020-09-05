@@ -39,10 +39,10 @@ our_2020_sponsors:
     growth for our international competitors and event attendees.
 sponsorship_opportunities:
   heading: Sponsorship Opportunities
-  text: CaseIT strives to foster opportunities in networking, engagement and
-    community involvement with our sponsorship benefits. CaseIT is a
-    not-for-profit organization that is proud to be primarily funded through the
-    generosity of corporate partners.
+  text: CaseIT is a not-for-profit organization that is proud to be primarily
+    funded through the generosity of corporate partners. Striving to foster
+    opportunities in networking, engagement and community involvement with our
+    sponsorship benefits.
   ctaText: Explore All Options
 sponsorship_package:
   heading: Sponsorship Package

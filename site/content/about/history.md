@@ -1,8 +1,6 @@
 ---
 title: "History"
 image: img/competition-judges-large.jpg
-author: Jordan Wong
-writtenDate: MM/DD/YYYY
 description: Read CaseIT 2021 Chair Jordan Wong's welcome
 type: about
 ---

@@ -391,6 +391,39 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "CTA Text", name: ctaText, widget: string }
 
   # ==============================================================
+  # About Section
+  # ==============================================================
+  - name: "about-section"
+    label: "About Section"
+    files:
+      #chairs welcome
+      - file: "site/content/welcoming.md"
+        label: "Chair's Welcome"
+        name: "chairs-welcome"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Cover Image", name: image, widget: image }
+          - { label: "Author", name: author, widget: string }
+          - { label: "Signiture Image", name: signiture_image, widget: image }
+          - {
+              label: "Written Date",
+              name: written_date,
+              widget: string,
+              hint: "MM/DD/YYYY",
+            }
+          - { label: "Description", name: description, widget: string }
+          - { label: "Body", name: body, widget: markdown }
+      #history
+      - file: "site/content/history.md"
+        label: "History"
+        name: "history"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Cover Image", name: image, widget: image }
+          - { label: "Description", name: description, widget: string }
+          - { label: "Body", name: body, widget: markdown }
+
+  # ==============================================================
   # Storing Data
   # ==============================================================
   - label: "Downloadable Resources"

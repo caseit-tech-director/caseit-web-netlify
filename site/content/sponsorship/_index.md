@@ -1,36 +1,59 @@
 ---
-title: "Sponsoring CaseIT"
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris, ut ut in leo. Congue sit lobortis odio nunc, viverra lorem adipiscing ornare.
+title: Sponsoring CaseIT
+description: Your involvement and support goes a long way in facilitating a
+  competition week that is the highlight of many student’s undergraduate
+  careers.
 pitch:
   - heading: Top Talent Recruitment
     benefits:
-      - text: Connect with the CaseIT 2021 Organizing Committee comprised of 42 driven, dedicated SFU students actively pursuing opportunities in Management Information Systems, Accounting, Finance, Operations Management, Entrepreneurship & Innovation, Marketing, International Business, and Human Resource Management."
+      - text: Connect with the CaseIT 2021 Organizing Committee comprised of 42 driven,
+          dedicated SFU students actively pursuing opportunities in Management
+          Information Systems, Accounting, Finance, Operations Management,
+          Entrepreneurship & Innovation, Marketing, International Business, and
+          Human Resource Management."
     imageUrl: img/dsc03831.jpg
-    # ctaText: See How to get involved
   - heading: Build Professional Connections
     benefits:
-      - text: Gain greater access to a global network of leading technology companies ranked amongst the Forbes Global 2000 List.
-      - text: Connect virtually with distinguished professors and faculty advisors from leading universities from around the globe and the Beedie School of Business.
-      - text: Engage and network with over 70 industry professionals from the Vancouver business community.
+      - text: Gain greater access to a global network of leading technology companies
+          ranked amongst the Forbes Global 2000 List.
+      - text: Connect virtually with distinguished professors and faculty advisors from
+          leading universities from around the globe and the Beedie School of
+          Business.
+      - text: Engage and network with over 70 industry professionals from the Vancouver
+          business community.
     imageUrl: img/dsc04227.jpg
-    # ctaText: See Changes This Year
   - heading: Give Back to Your Community
     benefits:
-      - text: Gain greater access to a global network of leading technology companies ranked amongst the Forbes Global 2000 List.
-      - text: Connect virtually with distinguished professors and faculty advisors from leading universities from around the globe and the Beedie School of Business.
-      - text: Engage and network with over 70 industry professionals from the Vancouver business community.
+      - text: Share your expertise, feedback, and insights with the next generation of
+          local and international Management Information Systems professionals.
+      - text: Support an established, reputable academic case competition by providing
+          top global competitors a unique opportunity to apply their educational
+          knowledge in a meaningful, challenging way.
+      - text: Contribute to building the prevalence and importance of technology focused
+          undergraduate business programs in universities around the world.
     imageUrl: img/dsc04227.jpg
-    # ctaText: See Changes This Year
 our_2020_sponsors:
   heading: Our 2020 Sponsors
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing ac non elementum mattis tempor.
+  text: The support of our valued CaseIT 2020 event sponsors helped us execute an
+    exceptional competition, creating connections and inspiring learning and
+    growth for our international competitors and event attendees.
 sponsorship_opportunities:
   heading: Sponsorship Opportunities
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing ac non elementum mattis tempor.
+  text: CaseIT strives to foster opportunities in networking, engagement and
+    community involvement with our sponsorship benefits. CaseIT is a
+    not-for-profit organization that is proud to be primarily funded through the
+    generosity of corporate partners. We implore you to explore our
+    [financial](https://caseit.org/sponsorship/opportunities/#financial-sponsorship),
+    [technology](https://caseit.org/sponsorship/opportunities/#technology-sponsorship),
+    and
+    [in-kind](https://caseit.org/sponsorship/opportunities/#in-kind-sponsorship)
+    sponsorship opportunities.
   ctaText: Explore All Options
 sponsorship_package:
   heading: Sponsorship Package
-  text: more information about hubilo and blah other things that we haven’t mention can be found inside the sponsorship package.
+  text: For in-depth information of the 2021 CaseIT competition and an outline of
+    our new sponsorship opportunities, we invite you to take a look through our
+    sponsorship package.
   img: img/dsc04227.jpg
   ctaText: Download Sponsorhip Package (PDF)
 ---

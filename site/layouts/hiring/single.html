@@ -20,7 +20,8 @@
       <h2 class="h4">Interested?</h2>
       <div class="content-block--related">
         <p>{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</p>
-        <a href='($.Site.GetPage "/hiring").Params.application_link' class="button-primary button--stretch">
+        <a href='($.Site.GetPage "/hiring").Params.application_link' target="blank"
+          class="button-primary button--stretch">
           Apply Now
         </a>
       </div>
@@ -40,7 +41,8 @@
 
   <div class="hiring-cta-mobile">
     <div class="hiring-cta-mobile__content">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</div>
-    <a href="#" class="button-primary button--stretch">Apply Now</a>
+    <a href='($.Site.GetPage "/hiring").Params.application_link' target="blank"
+      class="button-primary button--stretch">Apply Now</a>
   </div>
 </div>
 {{ end }}

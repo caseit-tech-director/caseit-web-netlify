@@ -49,6 +49,7 @@
 @import "./imports/modules/_feature-list";
 @import "./imports/modules/_table";
 @import "./imports/modules/_comp-schedule";
+@import "./imports/modules/_banner";
 
 /* pages on the website */
 @import "./imports/pages/_landing.scss";

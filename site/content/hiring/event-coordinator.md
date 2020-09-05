@@ -1,9 +1,9 @@
 ---
 title: Event Coordinator
 description: short blurb about what this position about
-lead: The Design Associate is experienced with the art of transforming imaginative ideas and concepts into a cohesive, professional visual experience.
 position_type: associate
 position_available: 1
+lead: The Design Associate is experienced with the art of transforming imaginative ideas and concepts into a cohesive, professional visual experience.
 netlify-cms-collection-ignore: false
 ---
 

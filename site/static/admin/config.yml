@@ -418,6 +418,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Intro blurb", name: intro_blurb, widget: markdown }
+          - { label: Description, name: description, widget: string }
           - {
               label: "type",
               name: "type",

@@ -8,7 +8,7 @@ pitch1:
     week-long competition leaves competitors with passion, fulfillment, and
     fosters lasting connections. "
   imageUrl: img/dsc03831.jpg
-  ctaText: See How to get involved
+  ctaText: Learn more about CaseIT 2021
 pitch2:
   heading: A prestigious international case competition
   text: >
@@ -18,7 +18,7 @@ pitch2:
     analysis through innovation and business acumen to esteemed industry judges
     on an established international stage.
   imageUrl: img/dsc04227.jpg
-  ctaText: See Changes This Year
+  ctaText: Learn more about CaseIT 2021
 caseitGoingOnline:
   heading: CaseIT is going online!
   text: >

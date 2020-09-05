@@ -175,20 +175,8 @@
       <a href="/sponsorship/opportunities/#in-kin-sponsorship" class="card-clickable">In-Kind Sponsorship</a>
     </div>
   </section>
-  <section id="sponsorship-package" class="grid-2-cols full-width content-block" data-aos="fade-up">
-    <div class="grid-2-cols__blurb-left">
-      <h2>{{.Params.sponsorship_package.heading}}</h2>
-      <p>{{.Params.sponsorship_package.text}}</p>
-      <div class="fomr-controls">
-        {{/*  <a href="#" class="button-primary">{{.Params.sponsorship_package.ctaText}}</a> */}}
-        {{ partial "button-sponsorship-package.html" . }}
-      </div>
-    </div>
 
-    <div class="grid-2-cols__image-right">
-      <img src="{{.Params.sponsorship_package.img}}" alt="{{.Params.sponsorship_package.heading}}">
-    </div>
-  </section>
+  {{ partial "get-package-cta-sponsorship" . }}
 
 </main>
 

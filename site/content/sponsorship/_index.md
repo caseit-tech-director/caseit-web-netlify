@@ -42,12 +42,7 @@ sponsorship_opportunities:
   text: CaseIT strives to foster opportunities in networking, engagement and
     community involvement with our sponsorship benefits. CaseIT is a
     not-for-profit organization that is proud to be primarily funded through the
-    generosity of corporate partners. We implore you to explore our
-    [financial](https://caseit.org/sponsorship/opportunities/#financial-sponsorship),
-    [technology](https://caseit.org/sponsorship/opportunities/#technology-sponsorship),
-    and
-    [in-kind](https://caseit.org/sponsorship/opportunities/#in-kind-sponsorship)
-    sponsorship opportunities.
+    generosity of corporate partners.
   ctaText: Explore All Options
 sponsorship_package:
   heading: Sponsorship Package

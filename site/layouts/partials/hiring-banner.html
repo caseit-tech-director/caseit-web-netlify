@@ -1,6 +1,7 @@
+{{with $.Site.GetPage "/hiring" }}
 <div class="banner">
-  <h2 class="h3">Do you have what IT takes?</h2>
-  <p>Do you have what IT takes to be a part of caseit? Fall intake is opened now with positions ranging from web
-    development to team host.</p>
-  <a href="/hiring" class="button-primary button-primary--inverted">See Available Positions</a>
+  <h2 class="h3">{{.Params.hiring_banner.heading}}</h2>
+  <p>{{.Params.hiring_banner.text}}</p>
+  <a href="{{.Permalink}}" class="button-primary button-primary--inverted">{{.Params.hiring_banner.ctaText}}</a>
 </div>
+{{end}}

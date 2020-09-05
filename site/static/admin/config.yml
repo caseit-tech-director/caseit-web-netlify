@@ -216,40 +216,40 @@ collections: # A list of collections the CMS should be able to edit
   # Competition Overview Section
   # ==============================================================
   - name: "comeptition-section"
-  label: "Competition Section"
-  files:
-    - file: "site/content/competition/_index.md"
-      label: "Competition Overview"
-      name: "competition-overview"
-      fields:
-        - { label: Title, name: title, widget: string }
-        - { label: "Intro Blurb", name: description, widget: markdown }
-        - label: "Important Dates/Announcement Timeline"
-          name: important_dates
-          widget: list
-          fields:
-            - label: "Time"
-              name: heading
-              widget: string
-            - label: "Things Happen"
-              name: text
-              widget: string
-            - label: "active"
-              name: active
-              widget: boolean
-        - label: "Email Subscription Section"
-          name: email_subscription
-          widget: object
-          fields:
-            [
-              { label: "Heading", name: "heading", widget: "string" },
-              { label: "Blurb", name: "text", widget: "markdown" },
-              { label: "CTA Text", name: "ctaText", widget: "string" },
-            ]
-        - label: "netlify-cms-collection-ignore"
-          name: netlify-cms-collection-ignore
-          widget: hidden
-          default: true
+    label: "Competition Section"
+    files:
+      - file: "site/content/competition/_index.md"
+        label: "Competition Overview"
+        name: "competition-overview"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - label: "Important Dates/Announcement Timeline"
+            name: important_dates
+            widget: list
+            fields:
+              - label: "Time"
+                name: heading
+                widget: string
+              - label: "Things Happen"
+                name: text
+                widget: string
+              - label: "active"
+                name: active
+                widget: boolean
+          - label: "Email Subscription Section"
+            name: email_subscription
+            widget: object
+            fields:
+              [
+                { label: "Heading", name: "heading", widget: "string" },
+                { label: "Blurb", name: "text", widget: "markdown" },
+                { label: "CTA Text", name: "ctaText", widget: "string" },
+              ]
+          - label: "netlify-cms-collection-ignore"
+            name: netlify-cms-collection-ignore
+            widget: hidden
+            default: true
     # ==============================================================
     # Competition Information Section
     # ==============================================================
@@ -292,45 +292,45 @@ collections: # A list of collections the CMS should be able to edit
   # Sponsorship Section
   # ==============================================================
   - name: "sponsorship-section"
-  label: "Sponsorship Section"
-  files:
-    #sponsorship overview
-    - file: "site/content/sponsorship/_index.md"
-      label: "Sponsorship Overview Page"
-      name: "sponsorship-overview"
-      fields:
-        - { label: Title, name: title, widget: string }
-        - { label: "Intro Blurb", name: description, widget: markdown }
-        - label: "Pitch"
-          name: pitch
-          widget: list
-          fields:
-            - label: Heading
-              name: heading
-              widget: string
-            - label: Benefits
-              name: benefits
-              widget: list
-              fields:
-                - label: Text
-                  name: text
-                  widget: markdown
-            - label: Image
-              name: imageUrl
-              widget: image
-        - label: "Our 2020 Sponsors"
-          name: our_2020_sponsors
-          widget: object
-          fields:
-            - { label: "Heading", name: heading, widget: string }
-            - { label: "Text", name: text, widget: markdown }
-        - label: "Sponsorship Opportunities"
-          name: sponsorship_opportunities
-          widget: object
-          fields:
-            - { label: "Heading", name: heading, widget: string }
-            - { label: "Text", name: text, widget: markdown }
-            - { label: "CTA Text", name: ctaText, widget: string }
+    label: "Sponsorship Section"
+    files:
+      #sponsorship overview
+      - file: "site/content/sponsorship/_index.md"
+        label: "Sponsorship Overview Page"
+        name: "sponsorship-overview"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - label: "Pitch"
+            name: pitch
+            widget: list
+            fields:
+              - label: Heading
+                name: heading
+                widget: string
+              - label: Benefits
+                name: benefits
+                widget: list
+                fields:
+                  - label: Text
+                    name: text
+                    widget: markdown
+              - label: Image
+                name: imageUrl
+                widget: image
+          - label: "Our 2020 Sponsors"
+            name: our_2020_sponsors
+            widget: object
+            fields:
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Text", name: text, widget: markdown }
+          - label: "Sponsorship Opportunities"
+            name: sponsorship_opportunities
+            widget: object
+            fields:
+              - { label: "Heading", name: heading, widget: string }
+              - { label: "Text", name: text, widget: markdown }
+              - { label: "CTA Text", name: ctaText, widget: string }
 
   # ==============================================================
   # Storing Data

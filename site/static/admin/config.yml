@@ -282,28 +282,6 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Intro Blurb", name: description, widget: markdown }
-          - label: "Important Dates/Announcement Timeline"
-            name: important_dates
-            widget: list
-            fields:
-              - label: "Time"
-                name: heading
-                widget: string
-              - label: "Things Happen"
-                name: text
-                widget: string
-              - label: "active"
-                name: active
-                widget: boolean
-          - label: "Email Subscription Section"
-            name: email_subscription
-            widget: object
-            fields:
-              [
-                { label: "Heading", name: "heading", widget: "string" },
-                { label: "Blurb", name: "text", widget: "markdown" },
-                { label: "CTA Text", name: "ctaText", widget: "string" },
-              ]
           - label: "netlify-cms-collection-ignore"
             name: netlify-cms-collection-ignore
             widget: hidden

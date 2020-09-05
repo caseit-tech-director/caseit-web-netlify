@@ -55,6 +55,8 @@
 @import "./imports/pages/_competition.scss";
 @import "./imports/pages/_competition-information.scss";
 @import "./imports/pages/_sponsorship.scss";
+@import "./imports/pages/_hiring.scss";
+@import "./imports/pages/_hiring-job-description.scss";
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import "./imports/_debug"; */

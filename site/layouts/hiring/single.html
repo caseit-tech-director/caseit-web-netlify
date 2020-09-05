@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<header class="header-module full-width">
+  <!-- Centered Header module-->
+  <div class="hero-left-aligned job-description-header">
+    <div>
+      <a href="/hiring/">
+        <span class="material-icons">
+          arrow_back
+        </span>
+        See all available positions</a>
+    </div>
+    <h1>{{.Params.title}}</h1>
+  </div>
+</header>
+<div class="full-width article-layout">
+  {{/*  The side bar navigation module  */}}
+  <aside class="article-layout__aside">
+    <div class="sticky">
+      <h2 class="h4">Interested?</h2>
+      <div class="content-block--related">
+        <p class="foot-notes">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</p>
+        <a href="#" class="button-primary button--stretch">Apply Now</a>
+      </div>
+    </div>
+  </aside>
+
+  {{/*  The center main content */}}
+  <main class="article-layout__main job-description-main">
+    <section class="content-block content-block--related article-body-wrapper">
+      {{/*  <h1 class="header-article h1--responsive">{{.Params.title}}</h1> */}}
+      <div class="article-body">
+        <p class="lead">{{.Params.lead}}</p>
+        {{.Content}}
+      </div>
+    </section>
+  </main>
+
+  <div class="hiring-cta-mobile">
+    <div class="hiring-cta-mobile__content">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</div>
+    <a href="#" class="button-primary button--stretch">Apply Now</a>
+  </div>
+</div>
+{{ end }}

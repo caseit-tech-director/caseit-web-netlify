@@ -1,0 +1,43 @@
+// page specific css of the hiring job description page
+
+@import "../breakpoints";
+
+.hiring-cta-mobile {
+  display: block;
+  position: fixed;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+
+  background-color: #fff;
+  padding: 1rem;
+
+  box-shadow: var(--drop-shadow-dark);
+
+  @include viewportLargerThan($breakpoint-m) {
+    display: none;
+  }
+
+  z-index: 100;
+}
+
+.hiring-cta-mobile__content {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  opacity: 0.4;
+}
+
+.job-description-main {
+  *:first-child {
+    margin-top: 0rem;
+  }
+}
+
+.job-description-header {
+  margin-bottom: 1rem !important;
+
+  @include viewportLargerThan($breakpoint-m) {
+    margin-bottom: 6rem !important;
+  }
+}

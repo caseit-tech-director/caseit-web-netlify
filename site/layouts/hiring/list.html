@@ -1,0 +1,45 @@
+{{ define "main" }}
+
+<header class="header-module full-width">
+  <!-- Centered Header module-->
+  <div class="hero-left-aligned">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">{{.Params.description}}</p>
+    <div class="form">
+      <a class="button-primary" href="{{.Params.application_link}}" target="blank">Apply Now</a>
+    </div>
+  </div>
+</header>
+
+<section id="directors" class="full-width">
+  {{/*  List all pages in director  */}}
+  <h2>Directors</h2>
+  <div class="position-container">
+    {{ $section := where $.Site.RegularPages "Section" "hiring"}}
+    {{ range $section }}
+    {{ if eq .Params.position_type "director"}}
+    <a class="position card" href="{{.Permalink}}">
+      <h4 class="h4--accented">{{.Params.title}}</h4>
+      <span class="position__description">{{.Params.description}}</span>
+      <span class="position__available">Available position: {{.Params.position_available}}</span>
+    </a>
+    {{ end}}
+    {{ end }}
+  </div>
+
+  {{/*  List all pages in associates  */}}
+  <h2>Associates and Coordinators</h2>
+  <div class="position-container">
+    {{ $section := where $.Site.RegularPages "Section" "hiring" }}
+    {{ range $section }}
+    {{ if eq .Params.position_type "associate"}}
+    <a class="position card" href="{{.Permalink}}">
+      <h4 class="h4--accented">{{.Params.title}}</h4>
+      <span class="position__description">{{.Params.description}}</span>
+      <span class="position__available">Available position: {{.Params.position_available}}</span>
+    </a>
+    {{ end}}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

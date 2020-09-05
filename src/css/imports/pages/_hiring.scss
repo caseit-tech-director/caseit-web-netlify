@@ -1,0 +1,25 @@
+/*
+ * page specific styling on the /hiring page
+ */
+
+.position-container {
+  --spacing-vertical: 4rem;
+  --margin-vertical: 4rem;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-top: var(--margin-vertical);
+  margin-bottom: var(--margin-vertical);
+
+  padding: var(--spacing-vertical);
+  background-color: var(--color-primary-lighter);
+}
+
+.position {
+  max-width: 27rem;
+  border-left: 4px solid var(--color-accent);
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}

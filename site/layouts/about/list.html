@@ -2,10 +2,12 @@
 <header class="header-module full-width">
   <!-- {{ partial "breadcrumbs.html" . }} -->
 
-  <h1>{{.Params.title}}</h1>
-  <p class="lead">
-    {{.Params.intro_blurb}}
-  </p>
+  <div class="hero-left-aligned">
+    <h1>{{.Params.title}}</h1>
+    <p class="lead">
+      {{.Params.intro_blurb}}
+    </p>
+  </div>
 </header>
 
 <main>
@@ -21,5 +23,9 @@
     {{ end }}
   </div>
 </main>
+
+<section class="full-width">
+  {{ partial "hiring-banner.html" . }}
+</section>
 
 {{ end }}

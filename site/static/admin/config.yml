@@ -279,6 +279,7 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Text", name: text, widget: markdown },
                   { label: "CTA Text", name: ctaText, widget: string },
                 ],
+              hint: "Content here is for the CTA banner module that will show up in different pages on the website",
             }
 
   # ==============================================================
@@ -293,6 +294,20 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Intro Blurb", name: description, widget: markdown }
+          - {
+              label: "More Information Section",
+              name: "more_information_section",
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Text, name: text, widget: markdown },
+                ],
+            }
+          - label: "darkmode"
+            name: darkmode
+            widget: hidden
+            default: true
           - label: "netlify-cms-collection-ignore"
             name: netlify-cms-collection-ignore
             widget: hidden

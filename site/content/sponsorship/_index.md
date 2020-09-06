@@ -10,7 +10,7 @@ pitch:
           dedicated SFU students actively pursuing opportunities in Management
           Information Systems, Accounting, Finance, Operations Management,
           Entrepreneurship & Innovation, Marketing, International Business, and
-          Human Resource Management."
+          Human Resource Management.
     imageUrl: img/dsc04597.jpg
   - heading: Build Professional Connections
     benefits:
@@ -40,8 +40,8 @@ our_2020_sponsors:
 sponsorship_opportunities:
   heading: Sponsorship Opportunities
   text: CaseIT is a not-for-profit organization that is proud to be primarily
-    funded through the generosity of corporate partners. Striving to foster
-    opportunities in networking, engagement and community involvement with our
-    sponsorship benefits.
+    funded through the generosity of corporate partners. Our sponsorship
+    benefits strive to foster opportunities in networking, engagement and
+    community involvement.
   ctaText: Explore All Options
 ---

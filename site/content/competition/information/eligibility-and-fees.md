@@ -1,18 +1,14 @@
 ---
-title: "Eligibility and Fees"
-subtitle: "Eligibility and Fees"
-description: "Learn more about CaseIT 2021 Competition Week Schedule"
-image: "img/dsc03831.jpg"
-type: "competition-information"
+subtitle: Eligibility and Fees
+title: Eligibility and Fees
+description: Learn more about CaseIT 2021 Competition Week Schedule
+image: img/dsc04353.jpg
 lead: ""
-
-# to tell netlify cms not to list this page
-netlify-cms-collection-ignore: false
-
-# add this page under "competition-information" section
 menu:
   competition:
-    parent: "competition-information"
+    parent: competition-information
+type: competition-information
+netlify-cms-collection-ignore: false
 ---
 
 ### Eligibility

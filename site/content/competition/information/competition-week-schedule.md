@@ -1,7 +1,7 @@
 ---
 subtitle: Competition Week Schedule
 title: Competition Week Schedule
-description: Learn more about CaseIT 2021 Competition Week Schedule
+description: Learn more about CaseIT 2021's Competition Week Schedule
 image: img/dsc03272.jpg
 lead: The competition week provides a rigorous platform to test students’ case
   analysis abilities, exercise creative thinking in a high-pressure setting, and

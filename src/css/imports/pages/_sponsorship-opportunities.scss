@@ -5,5 +5,11 @@
  * 
  */
 
-.sponsorship-type-layout {
+.sponsorship-type-image {
+  max-height: 50vh;
+  width: 100%;
+  object-fit: cover;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }

@@ -104,7 +104,7 @@
   </div>
 </section>
 
-<section id="technology-sponsorship" class="full-width">
+{{/*  <section id="technology-sponsorship" class="full-width">
   <h2>Technology Sponsorship</h2>
   <div class="grid-2-cols content-block">
     <div class="grid-2-cols__header--narrow">
@@ -145,41 +145,53 @@
 
     </div>
   </div>
-</section>
+</section>  */}}
 
-<section id="in-kind-sponsorship" class="full-width">
-  <h2>In-Kind Sponsorship</h2>
-  <div class="grid-2-cols content-block">
+{{with .Params.technology_sponsorship}}
+<section id="technology-sponsorship" class="full-width">
+  <h2>{{.heading}}</h2>
+  <img src="{{.image}}" alt="technology sponsorship" class="sponsorship-type-image">
+  <div class="grid-2-cols content-block--related">
     <div class="grid-2-cols__header--narrow">
       <p class="lead emphasized">
-        It is essential that our competitors have full access to materials, resources, and proper nourishment required
-        to compete at the best of their ability.
+        {{.lead}}
       </p>
     </div>
     <div class="grid-2-cols__content--narrow">
       <p>
-        At CaseIT, we recognize that each corporate partner provides unique value to execute our first ever virtual
-        event. We
-        warmly welcome in-kind contributions and resources that your organization can provide to enhance our
-        competition. CaseIT
-        brings together over 64 competitors and coaches over six days of intensive competition. It is essential that our
-        competitors have full access to materials, resources, and proper nourishment required to compete at the best of
-        their
-        ability.
+        {{.text | markdownify}}
       </p>
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{with .Params.in_kind_sponsorship}}
+<section id="in-kind-sponsorship" class="full-width">
+  <h2>{{.heading}}</h2>
+  <img src="{{.image}}" alt="in kind sponsorship" class="sponsorship-type-image">
+  <div class="grid-2-cols content-block--related">
+    <div class="grid-2-cols__header--narrow">
+      <p class="lead emphasized">
+        {{.lead}}
+      </p>
+    </div>
+    <div class="grid-2-cols__content--narrow">
 
       <p>
-        In-kind sponsors will receive recognition in the form of your name and hyperlink on the CaseIT website and
+        {{.text | markdownify}}
+        {{/*  In-kind sponsors will receive recognition in the form of your name and hyperlink on the CaseIT website and
         online
         platform. Additional benefits include your company name in our signature event program, and interactions with
         your
         product itself during competition week. A general list of sponsorship opportunities are detailed below, but our
         team
-        will graciously accept any other types of in-kind contributions.
+        will graciously accept any other types of in-kind contributions.  */}}
       </p>
     </div>
   </div>
 </section>
+{{end}}
 
 {{ partial "contact-sponsor-relations.html" }}
 {{ end }}

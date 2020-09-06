@@ -378,7 +378,47 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "Heading", name: heading, widget: string }
               - { label: "Text", name: text, widget: markdown }
               - { label: "CTA Text", name: ctaText, widget: string }
-
+          #sponsorship overview
+      - file: "site/content/sponsorship/opportunities/_index.md"
+        label: "Sponsorship Opportunities Page"
+        name: "sponsorship-opportunities"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - {
+              label: "Financial Sponsorship",
+              name: finanicial_sponsorship,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: heading, widget: string },
+                  { label: "Blurb", name: text, widget: markdown },
+                ],
+            }
+          - {
+              label: "Technology Sponsorship",
+              name: technology_sponsorship,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: heading, widget: string },
+                  { label: "Lead", name: lead, widget: markdown },
+                  { label: "Cover Image", name: image, widget: image },
+                  { label: "Text", name: text, widget: markdown },
+                ],
+            }
+          - {
+              label: "In-Kind Sponsorship",
+              name: technology_sponsorship,
+              widget: object,
+              fields:
+                [
+                  { label: "Heading", name: heading, widget: string },
+                  { label: "Lead", name: lead, widget: markdown },
+                  { label: "Cover Image", name: image, widget: image },
+                  { label: "Text", name: text, widget: markdown },
+                ],
+            }
   # ==============================================================
   # About Section
   # ==============================================================

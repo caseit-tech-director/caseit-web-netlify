@@ -1,9 +1,14 @@
 ---
 title: Director of Web Development
-description: short blurb about what this position about
+description: As a full stack developer, this individual is passionate about
+  leveraging modern web technology to build an efficient and aesthetic
+  experience, moving swiftly in the face of disaster to fix any issues that
+  arise.
+lead: As a full stack developer, this individual is passionate about leveraging
+  modern web technology to build an efficient and aesthetic experience, moving
+  swiftly in the face of disaster to fix any issues that arise.
 position_type: director
 position_available: 1
-lead: As a full stack developer, this individual is passionate about leveraging modern web technology to build an efficient and aesthetic experience, moving swiftly in the face of disaster to fix any issues that arise.
 netlify-cms-collection-ignore: false
 ---
 

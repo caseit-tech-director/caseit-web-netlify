@@ -7,20 +7,6 @@ description: Meet our CaseIT 2021 Team!
 image: img/caseit-team-large.jpg
 type: about-organizing-committee
 team:
-  - team_name: Competition Executive
-    team_member:
-      - name: Jenny Lian
-        position: Vice Chair
-        image: img/team-portrait-jenny.jpg
-      - name: Jay Sim
-        position: Logistics
-        image: img/team-portrait-jay.jpg
-      - name: Emily Kim
-        position: Logistics
-        image: img/team-portrait-emily.jpg
-      - name: Ahmed Jaffer
-        position: Events
-        image: img/team-portrait-ahmed.jpg
   - team_name: Operations
     team_member:
       - name: Jordan Wong
@@ -41,6 +27,20 @@ team:
       - name: Annie Zhang
         position: Internal Strategy
         image: img/team-portrait-annie.jpg
+  - team_name: Competition Executive
+    team_member:
+      - name: Jenny Lian
+        position: Vice Chair
+        image: img/team-portrait-jenny.jpg
+      - name: Jay Sim
+        position: Logistics
+        image: img/team-portrait-jay.jpg
+      - name: Emily Kim
+        position: Logistics
+        image: img/team-portrait-emily.jpg
+      - name: Ahmed Jaffer
+        position: Events
+        image: img/team-portrait-ahmed.jpg
   - team_name: Marketing
     team_member:
       - name: Kyle Lee

@@ -1,7 +1,7 @@
 ---
 subtitle: Covid 19 Response
-title: Covid 19 Response
-description: Learn more about how CaseIt respond to covid 19
+title: COVID-19 Response
+description: Learn more about CaseIT's COVID-19 response
 image: img/dsc04504.jpg
 lead: After careful consideration from our Organizing Committee surrounding the
   COVID-19 pandemic, we are thrilled to announce that CaseIT 2021 will be held

@@ -12,14 +12,12 @@
 }
 
 .team-display-container {
-  --spacing-horizontal: 4.5rem;
+  --spacing-horizontal: 4rem;
   --spacing-vertical: 2rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   row-gap: 2rem;
-
-  // min-width: 15rem;
 
   padding: 0rem;
 
@@ -37,10 +35,26 @@
 
   background-color: #f2f2f2;
 
+  // stretch the portrait if the "position text" is wrapping to another line
+  display: flex;
+  flex-direction: column;
+  img {
+    flex: 1 1 auto;
+    align-self: center;
+    object-fit: cover;
+    // shrink the image to give the layout more white space
+    max-width: 80%;
+  }
+
+  // optically constraint an item in the grid if it's the only item
+  @include viewportLargerThan($breakpoint-l) {
+    max-width: calc(16rem + 4.5rem * 2);
+  }
+
   &__name {
     margin-bottom: 0.2rem !important;
   }
   &__position {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0rem !important;
   }
 }

@@ -123,6 +123,12 @@ collections: # A list of collections the CMS should be able to edit
           options: ["associate", "director", "chair", "vice-chair"],
         }
       - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "netlify-cms-collection-ignore",
+          name: netlify-cms-collection-ignore,
+          widget: hidden,
+          default: false,
+        }
   - name: "unsorted-pages"
     label: "Unsorted Pages"
     files:

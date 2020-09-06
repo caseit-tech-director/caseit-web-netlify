@@ -21,23 +21,6 @@ team:
       - name: Ahmed Jaffer
         position: Events
         image: img/team-portrait-ahmed.jpg
-  - team_name: Marketing
-    team_member:
-      - name: Kyle Lee
-        position: Vice Chair
-        image: img/team-portrait-kyle.jpg
-      - name: Alicia Heng
-        position: "Content Strategy "
-        image: img/team-portrait-alicia.jpg
-      - name: Cody Leung
-        position: Media
-        image: img/team-portrait-cody.jpg
-      - name: Amena Salman
-        position: Design
-        image: img/team-portrait-amena.jpg
-      - name: Alvin Leung
-        position: Design
-        image: img/team-portrait-alvin.jpg
   - team_name: Operations
     team_member:
       - name: Jordan Wong
@@ -58,6 +41,23 @@ team:
       - name: Annie Zhang
         position: Internal Strategy
         image: img/team-portrait-annie.jpg
+  - team_name: Marketing
+    team_member:
+      - name: Kyle Lee
+        position: Vice Chair
+        image: img/team-portrait-kyle.jpg
+      - name: Alicia Heng
+        position: "Content Strategy "
+        image: img/team-portrait-alicia.jpg
+      - name: Cody Leung
+        position: Media
+        image: img/team-portrait-cody.jpg
+      - name: Amena Salman
+        position: Design
+        image: img/team-portrait-amena.jpg
+      - name: Alvin Leung
+        position: Design
+        image: img/team-portrait-alvin.jpg
   - team_name: PIVOT
     team_member:
       - name: Henry Nguyen

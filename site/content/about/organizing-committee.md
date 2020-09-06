@@ -1,8 +1,6 @@
 ---
 title: Organizing Committee
-intro_blurb: Meet the team! Lorem ipsum dolor sit amet, consectetur adipiscing
-  elit. Et donec in turpis ornare risus amet purus risus, proin. At pellentesque
-  ac amet, orci eget.
+intro_blurb: Meet the team dedicated to producing an exceptional CaseIT 2021!
 description: Meet our CaseIT 2021 Team!
 image: img/caseit-team-large.jpg
 type: about-organizing-committee

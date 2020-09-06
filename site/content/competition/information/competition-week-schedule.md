@@ -1,18 +1,17 @@
 ---
-title: "Competition Week Schedule"
-subtitle: "Competition Week Schedule"
-description: "Learn more about CaseIT 2021 Competition Week Schedule"
-image: "img/dsc03831.jpg"
-type: "competition-information"
-lead: "The competition week provides a rigorous platform to test students’ case analysis abilities, exercise creative thinking in a high-pressure setting, and empower students to present with confidence in front of esteemed industry professionals on an international stage."
-
-# to tell netlify cms not to list this page
-netlify-cms-collection-ignore: false
-
-# add this page under "competition-information" section
+subtitle: Competition Week Schedule
+title: Competition Week Schedule
+description: Learn more about CaseIT 2021 Competition Week Schedule
+image: img/dsc03272.jpg
+lead: The competition week provides a rigorous platform to test students’ case
+  analysis abilities, exercise creative thinking in a high-pressure setting, and
+  empower students to present with confidence in front of esteemed industry
+  professionals on an international stage.
 menu:
   competition:
-    parent: "competition-information"
+    parent: competition-information
+type: competition-information
+netlify-cms-collection-ignore: false
 ---
 
 - **Synchronous** events will occur at the same time for all time zones during the competition week

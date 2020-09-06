@@ -24,20 +24,40 @@ team:
   - team_name: Marketing
     team_member:
       - name: Kyle Lee
-        position: Vice Chair - Marketing Director
+        position: Vice Chair
         image: img/team-portrait-kyle.jpg
       - name: Alicia Heng
-        position: "Director of Content Strategy "
+        position: "Content Strategy "
         image: img/team-portrait-alicia.jpg
       - name: Cody Leung
-        position: Director of Media
+        position: Media
         image: img/team-portrait-cody.jpg
       - name: Amena Salman
-        position: Co-Director of Design
+        position: Design
         image: img/team-portrait-amena.jpg
       - name: Alvin Leung
-        position: Co-Director of design
+        position: Design
         image: img/team-portrait-alvin.jpg
+  - team_name: Operations
+    team_member:
+      - name: Jordan Wong
+        position: Chair
+        image: img/team-portrait-jordan.jpg
+      - name: Donovan Arseneault
+        position: University Relations
+        image: img/team-portrait-donovan.jpg
+      - name: Siddarth Taank
+        position: Controller
+        image: img/team-portrait-sid.jpg
+      - name: Joaquin Zapata
+        position: Sponsorship
+        image: img/team-portrait-joaquin.jpg
+      - name: Vanessa Chau
+        position: Sponsorship
+        image: img/team-portrait-vanessa.jpg
+      - name: Annie Zhang
+        position: Internal Strategy
+        image: img/team-portrait-annie.jpg
   - team_name: PIVOT
     team_member:
       - name: Henry Nguyen

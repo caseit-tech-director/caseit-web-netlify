@@ -2,7 +2,7 @@
 subtitle: Eligibility and Fees
 title: Eligibility and Fees
 description: Learn more about CaseIT 2021 Competition Week Schedule
-image: img/dsc04353.jpg
+image: img/dsc04255.jpg
 lead: ""
 menu:
   competition:

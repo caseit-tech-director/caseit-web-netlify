@@ -424,7 +424,7 @@ collections: # A list of collections the CMS should be able to edit
             }
           - {
               label: "In-Kind Sponsorship",
-              name: in_kin_sponsorship,
+              name: in_kind_sponsorship,
               widget: object,
               fields:
                 [

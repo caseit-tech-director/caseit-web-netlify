@@ -48,4 +48,4 @@ Working closely with the Director of Design, they will be responsible for bringi
 
 **CONTACT**
 
-* Questions regarding the Director of Web Development role can be directed to the Vice-Chair of Marketing, Kyle Lee, at caseit@sfu.ca.
+Questions regarding the Director of Web Development role can be directed to the Vice-Chair of Marketing, Kyle Lee, at caseit@sfu.ca.

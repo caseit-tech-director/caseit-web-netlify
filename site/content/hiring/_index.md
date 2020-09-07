@@ -1,8 +1,8 @@
 ---
 title: We Are Hiring!
 description: >-
-  Join the CaseIT 2021 Organizing Committee and bring your innovation,
-  collaboration, and enthusiasm to the CaseIT team. 
+  Join the CaseIT 2021 Organizing Committee to challenge yourself, apply
+  innovation, and bring enthusiasm to the CaseIT team. 
 
 
   Do you have what it takes? We know you do.

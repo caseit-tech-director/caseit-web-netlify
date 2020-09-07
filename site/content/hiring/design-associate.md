@@ -12,8 +12,6 @@ netlify-cms-collection-ignore: false
 ---
 This individual sees beauty in detail and is captivated by the opportunity to ensure that every line, word, and image is placed on competition materials with purpose. The Design Associate is comfortable with challenging the status quo, stimulating thoughtful discussion, and understanding that the “packaging” of the competition is equally as valuable and impactful as the competition itself.
 
-
-
 **Commitment required:**
 
 * Term durations are from October 2020 to March 2021.
@@ -23,8 +21,6 @@ This individual sees beauty in detail and is captivated by the opportunity to en
 * Must attend CaseIT 2021 OC Team Meetings (3 hours per week) from January - February 2021
 * Must attend CaseIT 2021 Competition Week from February 14 – 19, 2021
 
-
-
 **Core responsibilities include, but not limited to:**
 
 * Assisting the Director of Design and executing duties as required by the Marketing Team
@@ -32,8 +28,6 @@ This individual sees beauty in detail and is captivated by the opportunity to en
 * Assisting in designing professional documents that will be provided to external stakeholders
 * Ideating new branding strategies and pitching creative ideas to enhance projects
 * Asking questions and using feedback to improve visual assets
-
-
 
 **Additional qualifications and skills:**
 
@@ -45,8 +39,6 @@ This individual sees beauty in detail and is captivated by the opportunity to en
 * Excellent time management and organizational skills, with the ability to handle multiple projects concurrently and operate in a fast-paced environment
 * Open-minded and able to learn from critique
 
-
-
 **Successful completion of this role provides:**
 
 * A creative portfolio bolstered with content from a high-profile international event
@@ -56,3 +48,7 @@ This individual sees beauty in detail and is captivated by the opportunity to en
 * Develop strong organizational skills
 * Lasting connections with team members, student attendees, global competitors, and industry professionals
 * Pride in being a part of the largest MIS international case competition
+
+**CONTACT**
+
+* Questions regarding the Design Associate role can be directed to the Co-Directors of Design, Amena Salman and Alvin Leung, at caseit@sfu.ca.

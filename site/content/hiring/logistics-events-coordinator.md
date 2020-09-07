@@ -1,22 +1,18 @@
 ---
 title: Logistics & Events Coordinator
-description: The Logistics & Events Coordinator will report to the Competition
-  Execution Team, including the Vice-Chair of Competition Execution,
-  Co-Directors of Logistics, and Director of Events, to assist in ensuring that
-  the competition runs smoothly and the key logistical framework is accurate and
-  timely.
-lead: The Logistics & Events Coordinator will report to the Competition
-  Execution Team, including the Vice-Chair of Competition Execution,
-  Co-Directors of Logistics, and Director of Events, to assist in ensuring that
-  the competition runs smoothly and the key logistical framework is accurate and
-  timely.
+description: The Logistics & Events Coordinator will assist the competition
+  execution team in ensuring that the competition runs smoothly and the key
+  logistical framework is accurate and timely.
+lead: The Logistics & Events Coordinator will assist the competition execution
+  team in ensuring that the competition runs smoothly and the key logistical
+  framework is accurate and timely.
 position_type: associate
 position_available: 1
 netlify-cms-collection-ignore: false
 ---
 The Logistics & Events Coordinator will report to the Competition Execution Team, including the Vice-Chair of Competition Execution, Co-Directors of Logistics, and Director of Events, to assist in ensuring that the competition runs smoothly and the key logistical framework is accurate and timely. This individual is passionate about schedules, detail-oriented, exhibits a calm demeanor in the face of abrupt or unplanned challenges, and is excited to bring the CaseIT 2021 vision to life!
 
-Commitment required:
+**Commitment required:**
 
 * Term durations are from October 2020 to March 2021.
 * Must attend the CaseIT 2021 Onboarding on October 24, 2020 from 11 AM - 2 PM.
@@ -26,7 +22,7 @@ Commitment required:
 * Option to attend regularly scheduled Competition Execution Team meetings.
 * Must attend additional Preparation Sessions (as required) with the Competition Execution Team.
 
-Core responsibilities include, but are not limited to:
+**Core responsibilities include, but are not limited to:**
 
 * Assisting with the preparation for logistics training sessions
 * Transcribing spreadsheet logistics into Google Calendar
@@ -36,7 +32,7 @@ Core responsibilities include, but are not limited to:
 * Consolidating competitor information and data
 * Assisting with the sourcing and shipping logistics of hospitality-related components
 
-Additional responsibilities that you are accountable for executing during the CaseIT competition week:
+**Additional responsibilities that you are accountable for executing during the CaseIT competition week:**
 
 * Online Platform Logistics: Assisting with the delivery of content through the online platform, and addressing any technical difficulties.
 * Competition Week Events Logistics: Ensuring the seamless delivery of various social, networking, and informative competition week events, delivered synchronously, asynchronously, and semi-synchronously.
@@ -47,14 +43,14 @@ Additional responsibilities that you are accountable for executing during the Ca
 * Registration: Managing an organized flow of information and welcoming competitors, coaches, sponsors, students, judges, and industry professionals to each CaseIT event.
 * Sponsor Supervisor: Identifying and interacting professionally with sponsors and industry professionals, ensuring all questions are answered, informational materials are provided, and requests are fulfilled.
 
-Additional qualifications:
+**Additional qualifications:**
 
 * Strong verbal and written communication skills
 * Experience in organizing or competing in a case competition is an asset
 * Intermediate knowledge of Excel
 * Detail-oriented and a quick learner
 
-Successful completion of this role provides:
+**Successful completion of this role provides:**
 
 * Demonstrated capabilities in effectively collaborating with a team, under high pressure
 * Proven skills for managing change and communicating effectively with stakeholders

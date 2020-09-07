@@ -1,7 +1,7 @@
 ---
 subtitle: Eligibility and Fees
 title: Eligibility and Fees
-description: Find out the Eligibility and Fees for CaseIT 2021
+description: Find out what it takes to join CaseIT 2021
 image: img/dsc04255.jpg
 lead: ""
 menu:

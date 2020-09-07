@@ -15,7 +15,8 @@ top_questions:
       Organizing Committee.
   - heading: How can I compete in CaseIT 2021?
     text: As a student, you will need an University faculty member to be your liason
-      and assist with completing the short application.
+      and assist with completing the short application. Click **Compete in
+      2021** to continue.
   - heading: I applied to be a competitor, now what?
     text: Awesome! Applications will be reviewed and you will receive notification
       of your acceptance. Next steps will be provided and eligible fees and

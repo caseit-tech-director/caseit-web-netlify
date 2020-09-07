@@ -1,6 +1,6 @@
 ---
 title: Organizing Committee
-intro_blurb: Meet the team dedicated to producing CaseIT 2021!
+intro_blurb: Meet the team dedicated to producing CaseIT 2021.
 description: Meet our CaseIT 2021 Team!
 image: img/caseit-team-large.jpg
 type: about-organizing-committee

@@ -1,11 +1,10 @@
 ---
 title: We Are Hiring!
 description: >-
-  Join the CaseIT 2021 Organizing Committee to challenge yourself, apply
-  innovation, and bring enthusiasm to the CaseIT team. 
-
-
   Do you have what it takes? We know you do.       
+
+
+  Applications are now open. Challenge yourself, inspire innovation, and bring your enthusiasm to the CaseIT 2021 team. 
 
 
   Apply by September 28, 11:59 PM.

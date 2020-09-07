@@ -1,10 +1,8 @@
 ---
 title: We Are Hiring!
 description: >-
-  Do you have what it takes? We know you do.       
-
-
-  Applications are now open. Challenge yourself, inspire innovation, and bring your enthusiasm to the CaseIT 2021 team. 
+  Applications are now open. Challenge yourself, inspire innovation, and bring
+  your enthusiasm to the CaseIT 2021 team. 
 
 
   Apply by September 28, 11:59 PM.

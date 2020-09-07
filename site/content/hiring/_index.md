@@ -1,14 +1,22 @@
 ---
 title: We Are Hiring!
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-  mauris, ut ut in leo. Congue sit lobortis odio nunc, viverra lorem adipiscing
-  ornare. Who wish to particpatte in caseit 2021 Please apply before 20/9
+description: >-
+  Bring your innovation, collaboration, and enthusiasm to the CaseIT team. With
+  positions available in a multitiude of concentrations and skills. Do you have
+  what it takes? We know you do.
+
+
+  `<br>`
+
+
+  Apply by 28/9 11:59 PM.
 application_link: https://www.surveymonkey.ca/r/C82SHWY
 cta_blurb: Please apply before 20/9
 hiring_banner:
   heading: Do you have what IT takes?
-  text: Do you have what IT takes to be a part of caseit? Fall intake is opened
-    now with positions ranging from web development to team host.
+  text: Do you have what IT takes to be a part of CaseIT? Fall intake is open now
+    with positions available for all levels of experience, from directors to
+    team hosts.
   ctaText: See Available Positions
 type: hiring
 netlify-cms-collection-ignore: true

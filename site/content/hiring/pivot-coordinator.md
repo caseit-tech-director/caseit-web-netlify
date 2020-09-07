@@ -12,7 +12,7 @@ position_type: associate
 position_available: 3
 netlify-cms-collection-ignore: false
 ---
- PIVOT is a two day business case competition dedicated exclusively to local undergraduate students, challenging them to solve relevant issues within the community. The event aims to creatively connect problem-solvers from all backgrounds to come together in a day of collaboration, interaction, and engagement.
+PIVOT is a two day business case competition dedicated exclusively to local undergraduate students, challenging them to solve relevant issues within the community. The event aims to creatively connect problem-solvers from all backgrounds to come together in a day of collaboration, interaction, and engagement.
 
 **Contact**
 

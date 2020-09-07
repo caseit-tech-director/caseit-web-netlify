@@ -356,6 +356,25 @@ collections: # A list of collections the CMS should be able to edit
             value: true
             default: true
 
+      # ==============================================================
+      # Competition Registration Section
+      # ==============================================================
+      - file: "site/content/competition/information/_index.md"
+        label: "Competition Information"
+        name: "competition-information"
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: description, widget: markdown }
+          - { label: "Body", name: body, widget: markdown }
+          - label: "type"
+            name: type
+            widget: hidden
+            value: competition-registration
+          - label: "netlify-cms-collection-ignore"
+            name: netlify-cms-collection-ignore
+            widget: hidden
+            value: true
+            default: true
   # ==============================================================
   # Sponsorship Section
   # ==============================================================

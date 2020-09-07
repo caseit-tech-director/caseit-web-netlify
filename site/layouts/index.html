@@ -22,7 +22,7 @@
         <h2>{{.Params.pitch1.heading}}</h2>
         <p>{{.Params.pitch1.text}}</p>
         <div class="form-controls">
-          <a href="/competition/" class="button-primary">{{ .Params.pitch1.ctaText}}</a>
+          <a href="{{.Params.pitch1.link}}" class="button-primary">{{ .Params.pitch1.ctaText}}</a>
         </div>
       </div>
     </section>
@@ -34,7 +34,7 @@
       <h2>{{.Params.pitch2.heading}}</h2>
       <p>{{.Params.pitch2.text}}</p>
       <div class="form-controls">
-        <a href="/competition/" class="button-primary">{{ .Params.pitch2.ctaText}}</a>
+        <a href="{{.Params.pitch2.link}}" class="button-primary">{{ .Params.pitch2.ctaText}}</a>
       </div>
     </div>
     <div class="grid-2-cols__image-right">
@@ -48,7 +48,7 @@
       <h2>{{.Params.caseitGoingOnline.heading}}</h2>
       <p>{{.Params.caseitGoingOnline.text}}</p>
       <div class="form-controls">
-        <a href="/competition/information/"
+        <a href="{{.Params.caseitGoingOnline.link}}"
           class="button-primary button-primary--inverted">{{ .Params.caseitGoingOnline.ctaText}}</a>
       </div>
     </div>
@@ -60,7 +60,7 @@
 
     <div class="grid-3-cols full-width going-online-info">
       {{ range .Params.caseitGoingOnline.resources }}
-      <a class="info-card" href="/competition/information" data-aos="fade-up">
+      <a class="info-card" href="{{.link}}" data-aos="fade-up">
         <h3 class="h4 h4--accented">{{ .heading}}</h3>
         <p>{{ .text}}</p>
       </a>

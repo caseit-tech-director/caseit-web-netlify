@@ -173,6 +173,7 @@ collections: # A list of collections the CMS should be able to edit
                   { label: "Heading", name: "heading", widget: string },
                   { label: "Text", name: "text", widget: text },
                   { label: "CTA Text", name: "ctaText", widget: string },
+                  { label: "Link", name: "link", widget: string },
                   {
                     label: "Resources",
                     name: "resources",
@@ -210,27 +211,28 @@ collections: # A list of collections the CMS should be able to edit
                 ],
             }
           # Section deprecated because of usability
-          # - {
-          #     label: "Ending CTA",
-          #     name: "endingCtaBlock",
-          #     widget: "object",
-          #     fields:
-          #       [
-          #         { label: "Image", name: "imageUrl", widget: image },
-          #         { label: "Heading", name: "heading", widget: string },
-          #         { label: "Text", name: "text", widget: "text" },
-          #         {
-          #           label: "Student TA Text",
-          #           name: "ctaTextStudent",
-          #           widget: string,
-          #         },
-          #         {
-          #           label: "Coach CTA Text",
-          #           name: "ctaTextCoach",
-          #           widget: string,
-          #         },
-          #       ],
-          #   }
+          - {
+              label: "Ending CTA",
+              name: "endingCtaBlock",
+              widget: "object",
+              hint: "Section deprecated because of usability",
+              fields:
+                [
+                  { label: "Image", name: "imageUrl", widget: image },
+                  { label: "Heading", name: "heading", widget: string },
+                  { label: "Text", name: "text", widget: "text" },
+                  {
+                    label: "Student TA Text",
+                    name: "ctaTextStudent",
+                    widget: string,
+                  },
+                  {
+                    label: "Coach CTA Text",
+                    name: "ctaTextCoach",
+                    widget: string,
+                  },
+                ],
+            }
 
       # ==============================================================
       # Contact page

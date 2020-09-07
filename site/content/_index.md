@@ -10,6 +10,7 @@ pitch1:
     fosters lasting connections. "
   imageUrl: img/dsc03831.jpg
   ctaText: Learn more about CaseIT 2021
+  link: /competition/
 pitch2:
   heading: A prestigious international case competition
   text: >
@@ -20,6 +21,7 @@ pitch2:
     on an established international stage.
   imageUrl: img/dsc04227.jpg
   ctaText: Learn more about CaseIT 2021
+  link: /competition/
 caseitGoingOnline:
   heading: CaseIT is going online!
   text: >
@@ -27,16 +29,20 @@ caseitGoingOnline:
     For the first time in history, the CaseIT 2021 organizing committee will be
     pioneering a premier case competition in an online format.
   ctaText: See How We Adapt
+  link: /competition/information/
   resources:
     - heading: Competition Structure
       text: |
         New format, same fierce competition.
+      link: /competition/information
     - heading: CaseIT History
       text: Learn about the CaseIT evolution.
+      link: /competition/information
     - heading: COVID-19 Impact
       text: >
         CaseIT is committed to providing a competition that is accessible and
         safe.
+      link: /competition/information
 caseit2020:
   heading: Our Awesome 2020
   text: >

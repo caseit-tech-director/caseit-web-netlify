@@ -3,8 +3,7 @@ title: Contact
 subtitle: Let's Talk!
 contact_entries:
   - heading: Email
-    text: "We would love to answer you about questions CaseIT 2021! Typically expect
-      a response within 48 hours. "
+    text: "We would love to answer you about questions CaseIT 2021! "
     link: caseit@sfu.ca
   - heading: Quick Question?
     text: For more casual inquiries, you can reach us through Facebook or Instagram

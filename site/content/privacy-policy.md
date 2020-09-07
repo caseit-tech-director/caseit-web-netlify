@@ -1,11 +1,11 @@
 ---
 title: Privacy Policy
 image: img/dsc04594.jpg
-lead: ""
+lead: At CaseIT, accessible from caseit.org, one of our main priorities is the
+  privacy of our visitors. This Privacy Policy document contains types of
+  information that is collected and recorded by CaseIT and how we use it.
 netlify-cms-collection-ignore: false
 ---
-At CaseIT, accessible from caseit.org, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by CaseIT and how we use it.
-
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
 
 ### Log Files

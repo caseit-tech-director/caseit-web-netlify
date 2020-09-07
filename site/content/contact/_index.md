@@ -13,11 +13,13 @@ top_questions:
     text: CaseIT team applications open on September 7th. Take a look at our
       opportunities under **Join Us** to see how you can be a part of the CaseIT
       Organizing Committee.
-  - heading: Lorem ipsum dolor sit amet, consectetur adipiscing elit?
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi, id cras
-      lacinia eu nulla massa, ullamcorper. Ultricies vel dictum quis vel
-      volutpat leo at nisl tortor.
   - heading: How can I compete in CaseIT 2021?
-    text: As a student, you must find a University faculty member to assist with
-      your application.
+    text: As a student, you must find a University faculty member to be your liason
+      and assist with completing the short application. For further information
+      address an email above to Donavan Arseneault our University Relations
+      Director.
+  - heading: I applied to be a competitor, now what?
+    text: Applications will be reviewed and you will receive notification of your
+      acceptance. Next steps will be provided and eligible fees and information
+      will be sent periodically.
 ---

@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-image: null
+image: img/dsc04594.jpg
 lead: ""
 netlify-cms-collection-ignore: false
 ---

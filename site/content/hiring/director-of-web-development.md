@@ -35,7 +35,7 @@ Working closely with the Director of Design, they will be responsible for bringi
 * Previous experience (personal project, course, etc.) with modern web development technologies such as HTML5, SCSS & JavaScript (ReactJS)
 * Previous experience working with github
 * Experience with or interest in learning development using a CMS (e.g. WordPress, Netlify CMS)
-* Experience in working with static site generators such as Hugo. Jekyll is preferred but not required
+* Experience in working with static site generators such as Hugo or Jekyll is preferred but not required
 * Passion for building an engaging interactive experience for a website
 
 **Successful completion of this role provides:**

@@ -12,7 +12,8 @@ menu:
 type: competition-information
 netlify-cms-collection-ignore: false
 ---
-
 The international component of CaseIT is the highlight of our event, therefore, the CaseIT team is committed to producing a competition that is accessible and safe. Challenging the perspective of online competition and global connection, CaseIT 2021 will set the virtual standard as a world-renown premier undergraduate MIS case competition.
+
+The CaseIT 2021 team is working tirelessly to facilitate the same great challenging competition and competitor experience that you have come to expect from CaseIT. 
 
 We hope that you share our excitement and will join us on this journey. We look forward to making CaseIT 2021 one of the best iterations yet!

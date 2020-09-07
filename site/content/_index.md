@@ -3,7 +3,8 @@ title: The Premier MIS Case Competition
 subtitle: International Case Competition, reimagined
 pitch1:
   heading: Expand your network
-  text: "An international stage. A rigorous competition. CaseIT aims to challenge
+  text:
+    "An international stage. A rigorous competition. CaseIT aims to challenge
     your traditional thinking to foster analytic skills and experience. CaseIT’s
     week-long competition leaves competitors with passion, fulfillment, and
     fosters lasting connections. "
@@ -39,13 +40,13 @@ caseitGoingOnline:
 caseit2020:
   heading: Our Awesome 2020
   text: >
-    
 
-    CaseIT 2020 was a week filled with intensive competition and exciting events. The premiere of our ExchangeIT event provided competitor engagement like never before. Students showcased their innovation and passion to esteemed industry judges with Indiana University taking first place. 
+
+    CaseIT 2020 was a week filled with intensive competition and exciting events. The premiere of our ExchangeIT event provided competitor engagement like never before. Students showcased their innovation and passion to esteemed industry judges with Indiana University taking first place.
 sponsors:
   heading: Sponsors
   text: >
-    
+
     We would like to extend a big thank you to our 2020 sponsors for helping us create a phenomenal event. Your involvement has helped CaseIT create connections and inspire learning and growth for 872 undergraduate competitors, representing 47 universities, and 19 countries since 2004.
   ctaText: See  Benefits
   imageUrl: img/sponsors-logo.png
@@ -54,7 +55,7 @@ endingCtaBlock:
   text: >
     Do you have what it takes to compete? 
 
-    CaseIT 2021, the premier international case competition is open for applications. 
+    CaseIT 2021, the premier international case competition is open for applications.
   ctaTextStudent: How to join as a student
   ctaTextCoach: Register school as a coach
   imageUrl: img/dsc04281.jpg

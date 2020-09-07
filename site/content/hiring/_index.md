@@ -5,7 +5,7 @@ description: >-
   innovation, and bring enthusiasm to the CaseIT team. 
 
 
-  Do you have what it takes? We know you do.
+  Do you have what it takes? We know you do.       
 
 
   Apply by September 28, 11:59 PM.

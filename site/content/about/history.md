@@ -54,4 +54,4 @@ CaseIT furthers the competition experience by introducing Coaches Hockey Night a
 
 ## 2021
 
-CaseIT will have its first fully virtual competition, with a whole new experience for their competitors.
+CaseIT will have its first fully virtual competition, challenging how the world views case competitions.

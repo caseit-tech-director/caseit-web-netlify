@@ -295,6 +295,54 @@ collections: # A list of collections the CMS should be able to edit
               hint: "Content here is for the CTA banner module that will show up in different pages on the website",
             }
 
+      # ==============================================================
+      # Privacy Policy page
+      # ==============================================================
+      - file: "site/privacy-policy.md"
+        label: "Other - Privacy Policy"
+        name: "privacy-policy"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Featured Image",
+              name: "image",
+              widget: "image",
+              required: false,
+              hint: "Banner of this article, an image smaller than 1663 x 1080 is recommended",
+            }
+          - {
+              label: "Lead",
+              name: "lead",
+              widget: "markdown",
+              required: false,
+              hint: "A short summery/key point of content that used to capture viewer's attention",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      # ==============================================================
+      # Hiring page
+      # ==============================================================
+      - file: "site/territories-acknowledgement.md"
+        label: "Other - Traditional Territories Acknowledgement"
+        name: "traditional-territories-acknowledgement"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - {
+              label: "Featured Image",
+              name: "image",
+              widget: "image",
+              required: false,
+              hint: "Banner of this article, an image smaller than 1663 x 1080 is recommended",
+            }
+          - {
+              label: "Lead",
+              name: "lead",
+              widget: "markdown",
+              required: false,
+              hint: "A short summery/key point of content that used to capture viewer's attention",
+            }
+          - { label: "Body", name: "body", widget: "markdown" }
+
   # ==============================================================
   # Competition Overview Section
   # ==============================================================

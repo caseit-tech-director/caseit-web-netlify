@@ -14,7 +14,7 @@ about_sections:
     image: img/about-history.jpg
     link: /about/history/
   - heading: Organizing Committee
-    text: Our competition executive team could answer you about questions CaseIT 2021
+    text: Meet our CaseIT 2021 Team!
     image: img/about-caseit-team.jpg
     link: /about/organizing-committee/
 ---

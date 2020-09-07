@@ -23,7 +23,7 @@
     {{/* PROBLEM: Hugo only grab the link once and cache it forwever*/}}
     {{/*          - could not identify the cache location on the local server */}}
     {{/*          - current hack is to inject a random string parameter to force hugo to refresh th data */}}
-    {{$sponsorShipTierCSV := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSreJing6yOSf7bv9wr1sXY5MMo7LxxcvG3QH5Iqc6vFFxwUzdEcNClKghSvURtlUxArs_VY4f6d-Qi/pub?gid=121210118&single=true&output=csv&x=s"}}
+    {{/*  {{$sponsorShipTierCSV := "https://docs.google.com/spreadsheets/d/e/2PACX-1vSreJing6yOSf7bv9wr1sXY5MMo7LxxcvG3QH5Iqc6vFFxwUzdEcNClKghSvURtlUxArs_VY4f6d-Qi/pub?gid=121210118&single=true&output=csv&x=s"}}
     {{$data := getCSV "," $sponsorShipTierCSV}}
     <div class="content-block">
 
@@ -43,9 +43,9 @@
         </thead>
         <tbody>
           {{/* print rows after the data  */}}
-          {{ range $row, $value := after $BEGIN_ROW $data }}
+          {{/*  {{ range $row, $value := after $BEGIN_ROW $data }} */}}
           {{/*  print table body rows  */}}
-          {{ if lt $row (sub $END_ROW $BEGIN_ROW) }}
+          {{/*  {{ if lt $row (sub $END_ROW $BEGIN_ROW) }}
           <tr>
             {{ range $col, $value := . }}
             <td>{{- . -}}</td>
@@ -54,21 +54,20 @@
           {{ end }}
           {{ end }}
         </tbody>
-        {{/*  TODO: Wait for jordan signal - see if he want to show price in sponsorship page  */}}
-        {{/*  <tfoot class="price">
+        <tfoot class="price">
           <tr>
             {{ range $col, $value := index $data $FOOTER_ROW }}
-        {{ if eq $value "" }}
-        <td>{{ . }}</td>
-        {{ else }}
-        <td class="price">{{ . }}</td>
-        {{ end }}
-        {{ end }}
-        </tr>
-        </tfoot> */}}
-      </table>
+            {{ if eq $value "" }}
+            <td>{{ . }}</td>
+            {{ else }}
+            <td class="price">{{ . }}</td>
+            {{ end }}
+            {{ end }}
+          </tr>
+        </tfoot>
+      </table> */}}
 
-      <div class="grid-3-cols gird-3-cols--paragraph content-block">
+      {{/*  <div class="grid-3-cols gird-3-cols--paragraph content-block">
         <div>
           <p class="foot-notes">
             1. The size of the logo will vary depending on the chosen level of sponsorship
@@ -102,9 +101,26 @@
       </div>
     </div>
   </div>
-</section>
+</section>  */}}
 
-{{/*  <section id="technology-sponsorship" class="full-width">
+      {{with .Params.finanicial_sponsorship}}
+      <section id="technology-sponsorship" class="full-width">
+        <h2>{{.heading}}</h2>
+        <img src="{{.image}}" alt="financial sponsorship" class="sponsorship-type-image">
+        <div class="grid-2-cols content-block--related">
+          <div class="grid-2-cols__header--narrow">
+            <p class="lead emphasized">
+              {{.lead}}
+            </p>
+          </div>
+          <div class="grid-2-cols__content--narrow">
+            {{.text | markdownify}}
+          </div>
+        </div>
+      </section>
+      {{end}}
+
+      {{/*  <section id="technology-sponsorship" class="full-width">
   <h2>Technology Sponsorship</h2>
   <div class="grid-2-cols content-block">
     <div class="grid-2-cols__header--narrow">
@@ -147,47 +163,47 @@
   </div>
 </section>  */}}
 
-{{with .Params.technology_sponsorship}}
-<section id="technology-sponsorship" class="full-width">
-  <h2>{{.heading}}</h2>
-  <img src="{{.image}}" alt="technology sponsorship" class="sponsorship-type-image">
-  <div class="grid-2-cols content-block--related">
-    <div class="grid-2-cols__header--narrow">
-      <p class="lead emphasized">
-        {{.lead}}
-      </p>
-    </div>
-    <div class="grid-2-cols__content--narrow">
-      {{.text | markdownify}}
-    </div>
-  </div>
-</section>
-{{end}}
+      {{with .Params.technology_sponsorship}}
+      <section id="technology-sponsorship" class="full-width">
+        <h2>{{.heading}}</h2>
+        <img src="{{.image}}" alt="technology sponsorship" class="sponsorship-type-image">
+        <div class="grid-2-cols content-block--related">
+          <div class="grid-2-cols__header--narrow">
+            <p class="lead emphasized">
+              {{.lead}}
+            </p>
+          </div>
+          <div class="grid-2-cols__content--narrow">
+            {{.text | markdownify}}
+          </div>
+        </div>
+      </section>
+      {{end}}
 
-{{with .Params.in_kind_sponsorship}}
-<section id="in-kind-sponsorship" class="full-width">
-  <h2>{{.heading}}</h2>
-  <img src="{{.image}}" alt="in kind sponsorship" class="sponsorship-type-image">
-  <div class="grid-2-cols content-block--related">
-    <div class="grid-2-cols__header--narrow">
-      <p class="lead emphasized">
-        {{.lead}}
-      </p>
-    </div>
-    <div class="grid-2-cols__content--narrow">
+      {{with .Params.in_kind_sponsorship}}
+      <section id="in-kind-sponsorship" class="full-width">
+        <h2>{{.heading}}</h2>
+        <img src="{{.image}}" alt="in kind sponsorship" class="sponsorship-type-image">
+        <div class="grid-2-cols content-block--related">
+          <div class="grid-2-cols__header--narrow">
+            <p class="lead emphasized">
+              {{.lead}}
+            </p>
+          </div>
+          <div class="grid-2-cols__content--narrow">
 
-      {{.text | markdownify}}
-      {{/*  In-kind sponsors will receive recognition in the form of your name and hyperlink on the CaseIT website and
+            {{.text | markdownify}}
+            {{/*  In-kind sponsors will receive recognition in the form of your name and hyperlink on the CaseIT website and
         online
         platform. Additional benefits include your company name in our signature event program, and interactions with
         your
         product itself during competition week. A general list of sponsorship opportunities are detailed below, but our
         team
         will graciously accept any other types of in-kind contributions.  */}}
-    </div>
-  </div>
-</section>
-{{end}}
+          </div>
+        </div>
+      </section>
+      {{end}}
 
-{{ partial "contact-sponsor-relations.html" }}
-{{ end }}
+      {{ partial "contact-sponsor-relations.html" }}
+      {{ end }}

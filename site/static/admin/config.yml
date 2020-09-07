@@ -480,11 +480,12 @@ collections: # A list of collections the CMS should be able to edit
               widget: list,
               allow_add: false,
               collapsed: false,
-              fields:[
-                { label: Heading, name: heading, widget: string },
-                { label: "Description Blurb", name: text, widget: string},
-                { label: "Link", name: link, widget: string}
-              ]
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: "Description Blurb", name: text, widget: string },
+                  { label: "Link", name: text, widget: string },
+                ],
             }
       #chairs welcome
       - file: "site/content/about/welcoming.md"

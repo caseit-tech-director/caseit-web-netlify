@@ -11,7 +11,7 @@ application_link: https://www.surveymonkey.ca/r/C82SHWY
 cta_blurb: Please apply before 20/9
 hiring_banner:
   heading: Do you have what IT takes?
-  text: Do you have what IT takes to be a part of CaseIT? Fall Intake is open now
+  text: Do you have what IT takes to be a part of CaseIT? Fall intake is open now
     with positions available for all levels of experience, from directors to
     team hosts.
   ctaText: See Available Positions

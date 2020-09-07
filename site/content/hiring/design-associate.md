@@ -51,4 +51,4 @@ This individual sees beauty in detail and is captivated by the opportunity to en
 
 **CONTACT**
 
-* Questions regarding the Design Associate role can be directed to the Co-Directors of Design, Amena Salman and Alvin Leung, at caseit@sfu.ca.
+Questions regarding the Design Associate role can be directed to the Co-Directors of Design, Amena Salman and Alvin Leung, at caseit@sfu.ca.

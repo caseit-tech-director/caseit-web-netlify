@@ -60,6 +60,7 @@
 @import "./imports/pages/_hiring.scss";
 @import "./imports/pages/_hiring-job-description.scss";
 @import "./imports/pages/_organizing-committee.scss";
+@import "./imports/pages/_contact.scss";
 
 /* Uncomment out the line below to help debug layout issues */
 /* @import "./imports/_debug"; */

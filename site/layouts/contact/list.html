@@ -6,9 +6,9 @@
 </header>
 
 <main>
-  <section id="contact-info" class="card-layout-container full-width content-block">
+  <section id="contact-info" class="card-layout-container full-width--article content-block">
     {{range where .Params.contact_entries "heading" "Email"}}
-    <div class="card-layout-item card">
+    <div class="card-layout-item card contact-card-width">
       <h3 class="h4 h4--accented">{{.heading}}</h3>
       <p>{{.text}}</p>
       <div class="copyable-field">
@@ -20,7 +20,7 @@
     </div>
     {{end}}
     {{range where .Params.contact_entries "heading" "Facebook Messeenger"}}
-    <div class="card-layout-item card">
+    <div class="card-layout-item card contact-card-width">
       <h3 class="h4 h4--accented">{{.heading}}</h3>
       <p>{{.text}}</p>
       <a class="button-secondary card__cta" href="{{.link}}" target="blank">open messenger</a>

@@ -298,7 +298,7 @@ collections: # A list of collections the CMS should be able to edit
       # ==============================================================
       # Privacy Policy page
       # ==============================================================
-      - file: "site/privacy-policy.md"
+      - file: "site/content/privacy-policy.md"
         label: "Other - Privacy Policy"
         name: "privacy-policy"
         fields:
@@ -322,7 +322,7 @@ collections: # A list of collections the CMS should be able to edit
       # ==============================================================
       # Hiring page
       # ==============================================================
-      - file: "site/territories-acknowledgement.md"
+      - file: "site/content/territories-acknowledgement.md"
         label: "Other - Traditional Territories Acknowledgement"
         name: "traditional-territories-acknowledgement"
         fields:

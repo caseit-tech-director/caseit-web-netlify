@@ -1,10 +1,10 @@
 ---
 title: Logistics & Events Coordinator
-description: The Logistics & Events Coordinator will assist the competition
-  execution team in ensuring that the competition runs smoothly and the key
+description: The Logistics & Events Coordinator will assist the Competition
+  Execution Team in ensuring that the competition runs smoothly and the key
   logistical framework is accurate and timely.
-lead: The Logistics & Events Coordinator will assist the competition execution
-  team in ensuring that the competition runs smoothly and the key logistical
+lead: The Logistics & Events Coordinator will assist the Competition Execution
+  Team in ensuring that the competition runs smoothly and the key logistical
   framework is accurate and timely.
 position_type: associate
 position_available: 1

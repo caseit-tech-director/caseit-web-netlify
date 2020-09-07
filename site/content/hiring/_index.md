@@ -8,7 +8,7 @@ description: >-
   Do you have what it takes? We know you do. 
 
 
-  **Apply by September 28, 11:59 PM.**
+  Apply by September 28, 11:59 PM.
 application_link: https://www.surveymonkey.ca/r/C82SHWY
 cta_blurb: Please apply before 20/9
 hiring_banner:

@@ -6,7 +6,7 @@ description: CaseIT is a not-for-profit organization that is proud to be
   [technology](sponsorship/opportunities/#technology-sponsorship), and
   [in-kind](sponsorship/opportunities/#in-kind-sponsorship) sponsorship
   opportunities.
-finanicial_sponsorship:
+financial_sponsorship:
   heading: Financial Sponsorship
   lead: Decide from five distinct and valuable tiers of sponsorship packages, meticulously designed to provide a wide variety of touchpoints with competitors, faculty advisors, the CaseIT Organizing Committee, and industry professionals throughout the competition week.
   image: img/dsc03297.jpg

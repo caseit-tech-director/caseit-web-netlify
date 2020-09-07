@@ -5,7 +5,7 @@ intro_blurb: CaseIT brings together top undergraduate business students,
   dedicated student-run organizing committee to challenge conventional thinking
   and build global connections.
 about_sections:
-  - heading: Chair's Welcoming
+  - heading: Chair's Welcome
     text: Read CaseIT 2021 Chair Jordan Wong's welcome
     image: img/about-chair.jpg
     link: /about/welcoming/

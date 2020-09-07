@@ -9,11 +9,11 @@ contact_entries:
     text: For more casual inquiries, you can reach us through Facebook or Instagram
     link: https://m.me/caseit
 top_questions:
-  - heading: How do I join CaseIT?
+  - heading: How do I join the CaseIT Team?
     text: CaseIT team applications open on September 7th. Take a look at our
-      opportunities under **Join Us** to see how you can be a part of the CaseIT
-      Organizing Committee.
-  - heading: How can I compete in CaseIT 2021?
+      opportunities under **[Join Us](https://caseit.org/hiring/)** to see how
+      you can be a part of the CaseIT Organizing Committee.
+  - heading: I am a student, how can I compete in CaseIT 2021?
     text: As a student, you will need an University faculty member to be your liason
       and assist with completing the short application. Click **Compete in
       2021** to continue.

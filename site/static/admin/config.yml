@@ -467,6 +467,25 @@ collections: # A list of collections the CMS should be able to edit
   - name: "about-section"
     label: "About Section"
     files:
+      # about index page
+      - file: "site/content/about/_index.md"
+        label: "About - Section Home Page"
+        name: about-home
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: "Intro Blurb", name: intro_blurb, widget: markdown }
+          - {
+              label: "About Section Sub Pages",
+              name: about_sections,
+              widget: list,
+              allow_add: false,
+              collapsed: false,
+              fields:[
+                { label: Heading, name: heading, widget: string },
+                { label: "Description Blurb", name: text, widget: string},
+                { label: "Link", name: link, widget: string}
+              ]
+            }
       #chairs welcome
       - file: "site/content/about/welcoming.md"
         label: "Chair's Welcome Page"

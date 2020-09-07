@@ -30,13 +30,12 @@ caseitGoingOnline:
     - heading: Competition Structure
       text: |
         New format, same fierce competition.
-    - heading: International COVID-19 impact
-      text: CaseIT is committed to providing a competition that is accessible and
-        safe.
-    - heading: Business Technology Update
+    - heading: CaseIT History
+      text: Learn about the CaseIT evolution.
+    - heading: COVID-19 Impact
       text: >
-        Embracing this change, we will be debuting new mediums to enhance our
-        competition.
+        CaseIT is committed to providing a competition that is accessible and
+        safe.
 caseit2020:
   heading: Our Awesome 2020
   text: >

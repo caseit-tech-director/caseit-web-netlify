@@ -2,9 +2,13 @@
 <header class="header-module full-width">
   {{/*  {{ partial "breadcrumbs.html" . }} */}}
 
+  {{ if and (isset .Params "image") (ne .Params.image "")  }}
+  <h1>{{.Params.title}}</h1>
+  {{ else}}
   <div class="hero-left-aligned">
     <h1>{{.Params.title}}</h1>
   </div>
+  {{end}}
 
 </header>
 

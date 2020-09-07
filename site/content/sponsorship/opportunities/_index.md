@@ -8,10 +8,20 @@ description: CaseIT is a not-for-profit organization that is proud to be
   opportunities.
 financial_sponsorship:
   heading: Financial Sponsorship
-  lead: Decide from five distinct and valuable tiers of sponsorship packages, meticulously designed to provide a wide variety of touchpoints with competitors, faculty advisors, the CaseIT Organizing Committee, and industry professionals throughout the competition week.
-  image: img/dsc03297.jpg
-  text: We invite your organization to be a Title Sponsor for one of CaseIT’s Signature Events. Our Title Sponsors have the unique opportunity to make the largest impression on our international competitors by supporting them during the most memorable moments of CaseIT. Through sponsoring our Signature Events, your organization will receive the opportunity to gain the greatest exposure to our local and international attendees while truly becoming an integral part of the CaseIT experience. Opportunities are available at the Wildcard Round Presentations, Final Presentations and Awards Ceremony.
-
+  lead: Decide from five distinct and valuable tiers of sponsorship packages,
+    meticulously designed to provide a wide variety of touchpoints with
+    competitors, faculty advisors, the CaseIT Organizing Committee, and industry
+    professionals throughout the competition week.
+  image: img/dsc03913.jpg
+  text: We invite your organization to be a Title Sponsor for one of CaseIT’s
+    Signature Events. Our Title Sponsors have the unique opportunity to make the
+    largest impression on our international competitors by supporting them
+    during the most memorable moments of CaseIT. Through sponsoring our
+    Signature Events, your organization will receive the opportunity to gain the
+    greatest exposure to our local and international attendees while truly
+    becoming an integral part of the CaseIT experience. Opportunities are
+    available at the Wildcard Round Presentations, Final Presentations and
+    Awards Ceremony.
 technology_sponsorship:
   heading: Technology Sponsorship
   lead: As we transition CaseIT to an online format, we strive to leverage the

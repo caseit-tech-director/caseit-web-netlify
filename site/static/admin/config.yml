@@ -484,7 +484,8 @@ collections: # A list of collections the CMS should be able to edit
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: "Description Blurb", name: text, widget: string },
-                  { label: "Link", name: text, widget: string },
+                  { label: "Image", name: image, widget: image },
+                  { label: "Link", name: link, widget: string },
                 ],
             }
       #chairs welcome

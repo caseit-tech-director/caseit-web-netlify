@@ -502,58 +502,6 @@ section {
 
 /*
  *
- * Hero Center
- * 
- */
-
-.hero-centered {
-  display: flex;
-  flex-direction: column;
-
-  // constraint the width
-  max-width: 35rem;
-
-  // create space between top and bottom
-  padding-top: 20vh;
-  padding-bottom: 4rem;
-
-  // center align
-  margin-left: auto;
-  margin-right: auto;
-
-  text-align: center;
-
-  // tweak the spacing between header and the lead
-  p {
-    margin-top: 1rem;
-  }
-}
-
-.hero-left-aligned {
-  display: flex;
-  flex-direction: column;
-
-  // constraint the width
-  max-width: 40rem;
-
-  // create space between top and bottom
-  margin-top: 15vh;
-  margin-bottom: 6rem;
-
-  // center align
-  // margin-left: auto;
-  // margin-right: auto;
-
-  text-align: left;
-
-  // tweak the spacing between header and the lead
-  p {
-    margin-top: 1rem;
-  }
-}
-
-/*
- *
  * Article Layout
  * 
  */

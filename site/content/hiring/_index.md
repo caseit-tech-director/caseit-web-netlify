@@ -1,15 +1,14 @@
 ---
 title: We Are Hiring!
 description: >-
-  Bring your innovation, collaboration, and enthusiasm to the CaseIT team. With
-  positions available in a multitiude of concentrations and skills. Do you have
-  what it takes? We know you do.
+  With positions available in a multitiude of concentrations and skills, bring
+  your innovation, collaboration, and enthusiasm to the CaseIT team. 
 
 
-  `<br>`
+  Do you have what it takes? We know you do. 
 
 
-  Apply by 28/9 11:59 PM.
+  Apply by September 28, 11:59 PM.
 application_link: https://www.surveymonkey.ca/r/C82SHWY
 cta_blurb: Please apply before 20/9
 hiring_banner:

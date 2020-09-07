@@ -6,7 +6,7 @@ type: about
 ---
 ### To date CaseIT has hosted 872 undergraduate competitors, 47 universities, and 19 different countries.
 
-CaseIT’s mission is to provide an unparalleled, rigorous, and engaging competition for talented business students to challenge themselves on an international stage. Therefore, every year, the CaseIT organizing committee introduces new ways to challenge competitors. With CaseIT 2021 being the first ever virtual competition
+CaseIT’s mission is to provide an unparalleled, rigorous, and engaging competition for talented business students to challenge themselves on an international stage. Therefore, every year, the CaseIT organizing committee introduces new ways to challenge competitors. 
 
 ## 2004
 
@@ -51,3 +51,7 @@ To celebrate 15 Years of CaseIT, a new multi-case structure was introduced to fu
 ## 2020
 
 CaseIT furthers the competition experience by introducing Coaches Hockey Night and a competitor networking event, ExchangeIT.
+
+## 2021
+
+CaseIT will have its first fully virtual competition, with a whole new experience for their competitors.

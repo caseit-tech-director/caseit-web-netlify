@@ -427,12 +427,14 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Intro Blurb", name: description, widget: markdown }
           - {
               label: "Financial Sponsorship",
-              name: finanicial_sponsorship,
+              name: financial_sponsorship,
               widget: object,
               fields:
                 [
                   { label: "Heading", name: heading, widget: string },
-                  { label: "Blurb", name: text, widget: markdown },
+                  { label: "Lead", name: lead, widget: markdown },
+                  { label: "Cover Image", name: image, widget: image },
+                  { label: "Text", name: text, widget: markdown },
                 ],
             }
           - {

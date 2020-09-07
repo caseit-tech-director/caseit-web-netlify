@@ -33,7 +33,7 @@ caseitGoingOnline:
     - heading: Event Schedule
       text: |
         New format, same fierce competition.
-      link: /competition/information
+      link: /competition/information/competition-week-schedule/
     - heading: CaseIT History
       text: Learn about the CaseIT evolution.
       link: /about/history/

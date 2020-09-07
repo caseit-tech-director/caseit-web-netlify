@@ -1,8 +1,12 @@
 ---
 title: We Are Hiring!
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-  mauris, ut ut in leo. Congue sit lobortis odio nunc, viverra lorem adipiscing
-  ornare. Who wish to particpatte in caseit 2021 Please apply before 20/9
+description: >-
+  Bring your innovation, collaboration, and enthusiasm to the CaseIT team! With
+  positions available in a multitiude of concentrations and skills. Do you have
+  what it takes? We know you do.
+
+
+  Apply by 28/9 11:59 PM.
 application_link: https://www.surveymonkey.ca/r/C82SHWY
 cta_blurb: Please apply before 20/9
 hiring_banner:

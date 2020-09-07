@@ -9,8 +9,8 @@ pitch:
       - text: Connect with the CaseIT 2021 Organizing Committee comprised of 42 driven,
           dedicated SFU students actively pursuing opportunities in Management
           Information Systems, Accounting, Finance, Operations Management,
-          Entrepreneurship & Innovation, Marketing, International Business, and
-          Human Resource Management.
+          Strategy, Entrepreneurship & Innovation, Marketing, International
+          Business, and Human Resource Management.
     imageUrl: img/dsc04597.jpg
   - heading: Build Professional Connections
     benefits:

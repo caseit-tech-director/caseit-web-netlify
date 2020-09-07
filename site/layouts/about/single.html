@@ -6,7 +6,9 @@
 </header>
 
 <main>
-  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair">
+  <div class="full-width">
+    <img class="banner-image" src="{{.Params.image}}" alt="cover photo">
+  </div>
   <section class="content-block content-block--related grid-2-cols full-width">
     <div class="grid-2-cols__content-area">
       {{.Content}}

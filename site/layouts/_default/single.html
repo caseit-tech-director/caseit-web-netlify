@@ -15,7 +15,9 @@
 <main>
   {{/*  Print a different layout if we have the image  */}}
   {{ if and (isset .Params "image") (ne .Params.image "")  }}
-  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair">
+  <div class="full-width">
+    <img class="banner-image" src="{{.Params.image}}" alt="this year's chair">
+  </div>
   <section class="content-block content-block--related grid-2-cols full-width">
     <div class="grid-2-cols__content-area">
       <p class="lead">{{.Params.lead}}</p>

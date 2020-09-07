@@ -63,7 +63,7 @@ Successful completion of this role provides:
 * Pride in being a part of the largest international MIS case competition
 * Pride in being a part of the team that transitioned and revamped CaseIT into a virtual case competition
 
-Contact
+**CONTACT**
 
 Questions regarding the Logistics & Events Coordinator role can be directed to:
 

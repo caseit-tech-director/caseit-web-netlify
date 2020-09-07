@@ -4,13 +4,11 @@ image: img/competition-judges-large.jpg
 description: Learn more about story behind CaseIT
 type: about
 ---
-To date CaseIT has hosted 872 undergraduate competitors, 47 universities, and 19 different countries.
+##### To date CaseIT has hosted 872 undergraduate competitors, 47 universities, and 19 different countries.
 
 CaseIT’s mission is to provide an unparalleled, rigorous, and engaging competition for talented business students to challenge themselves on an international stage. Therefore, every year, the CaseIT organizing committee introduces new ways to challenge competitors. With CaseIT 2021 being the first ever virtual competition
 
-
-
-## 2004 
+## 2004
 
 The year it all began! 2004 marked the inagural year of CaseIT as an undergraduate MIS-themed business case competition for Simon Fraser University students. 
 
@@ -18,7 +16,7 @@ The year it all began! 2004 marked the inagural year of CaseIT as an undergradua
 
 CaseIT expanded outside the borders of British Columbia for the first time to challenge top universities from Western Canada.
 
-## 2006 
+## 2006
 
 CaseIT debuts on the national stage by hosting teams from across Canada.
 
@@ -26,15 +24,15 @@ CaseIT debuts on the national stage by hosting teams from across Canada.
 
 CaseIT officially becomes an international competition with the inclusion of schools from the United States and Denmark.
 
-## 2008 
+## 2008
 
 CaseIT expands its reach, hosting competitors from North America, Europe, Africa, and Asia.
 
-## 2012 
+## 2012
 
 The competition reaches a new continent by inviting its first Austratlian team to compete.
 
-## 2013 
+## 2013
 
 CaseIT celebrates its 10th year and welcomes its first Latin American team.
 
@@ -42,7 +40,7 @@ CaseIT celebrates its 10th year and welcomes its first Latin American team.
 
 CaseIT challenges competitors to think on their feet with the first year of our signature Wildcard Round.
 
-## 2016 
+## 2016
 
 Embracing technology, CaseIT launches the competition portal, allowing competitors to engage with the competition like never before.
 

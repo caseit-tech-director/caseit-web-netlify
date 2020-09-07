@@ -360,8 +360,8 @@ collections: # A list of collections the CMS should be able to edit
       # Competition Registration Section
       # ==============================================================
       - file: "site/content/competition/information/_index.md"
-        label: "Competition Information"
-        name: "competition-information"
+        label: "Registration"
+        name: "competition-registration"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Intro Blurb", name: description, widget: markdown }

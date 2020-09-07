@@ -1,9 +1,12 @@
 ---
 title: We Are Hiring!
 description: >-
-  Bring your innovation, collaboration, and enthusiasm to the CaseIT team! With
+  Bring your innovation, collaboration, and enthusiasm to the CaseIT team. With
   positions available in a multitiude of concentrations and skills. Do you have
   what it takes? We know you do.
+
+
+  `<br>`
 
 
   Apply by 28/9 11:59 PM.

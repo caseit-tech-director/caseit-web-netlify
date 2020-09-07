@@ -3,8 +3,7 @@ title: The Premier MIS Case Competition
 subtitle: International Case Competition, reimagined
 pitch1:
   heading: Expand your network
-  text:
-    "An international stage. A rigorous competition. CaseIT aims to challenge
+  text: "An international stage. A rigorous competition. CaseIT aims to challenge
     your traditional thinking to foster analytic skills and experience. CaseIT’s
     week-long competition leaves competitors with passion, fulfillment, and
     fosters lasting connections. "
@@ -31,31 +30,33 @@ caseitGoingOnline:
   ctaText: See How We Adapt
   link: /competition/information/
   resources:
-    - heading: Competition Structure
+    - heading: Event Schedule
       text: |
         New format, same fierce competition.
       link: /competition/information
     - heading: CaseIT History
       text: Learn about the CaseIT evolution.
-      link: /competition/information
+      link: /about/history/
     - heading: COVID-19 Impact
       text: >
         CaseIT is committed to providing a competition that is accessible and
         safe.
-      link: /competition/information
+      link: /competition/information/covid-19-response/
 caseit2020:
   heading: Our Awesome 2020
   text: >
-
-
-    CaseIT 2020 was a week filled with intensive competition and exciting events. The premiere of our ExchangeIT event provided competitor engagement like never before. Students showcased their innovation and passion to esteemed industry judges with Indiana University taking first place.
+    CaseIT 2020 was a week filled with intensive competition and exciting
+    events. The premiere of our ExchangeIT event provided competitor engagement
+    like never before. Students showcased their innovation and passion to
+    esteemed industry judges with Indiana University taking first place.
 sponsors:
   heading: Sponsors
   text: >
-
+    
     We would like to extend a big thank you to our 2020 sponsors for helping us create a phenomenal event. Your involvement has helped CaseIT create connections and inspire learning and growth for 872 undergraduate competitors, representing 47 universities, and 19 countries since 2004.
   ctaText: See  Benefits
   imageUrl: img/sponsors-logo.png
+  link: /sponsorship/
 endingCtaBlock:
   heading: ExcITed? We are too!
   text: >

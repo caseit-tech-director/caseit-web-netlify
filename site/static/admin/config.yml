@@ -359,7 +359,7 @@ collections: # A list of collections the CMS should be able to edit
       # ==============================================================
       # Competition Registration Section
       # ==============================================================
-      - file: "site/content/competition/information/_index.md"
+      - file: "site/content/competition/registration/_index.md"
         label: "Registration"
         name: "competition-registration"
         fields:

@@ -41,9 +41,9 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="{{.Title}} | CaseIT 2021" />
-  <meta property="og:url" content="{{.absURL}}" />
+  <meta property="og:url" content="{{.Permalink}}" />
   {{ if isset .Params "image" }}
-  <meta property="og:image" content="{{.Params.image}}">
+  <meta property="og:image" content="http://caseit.org{{.Params.image}}">
   {{ else  }}
   <meta property="og:image" content="/img/favicon-32x32.png">
   {{ end }}

@@ -40,8 +40,11 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="CaseIT | The Premier MIS Case Compeititon" />
+  <meta property="og:title" content="{{.Title}} | CaseIT 2021" />
   <meta property="og:url" content="/" />
+  {{ if isset .Params "image" }}
+  <meta property="og:image" content="{{.Params.image}}">
+  {{ end }}
   <!-- TODO: replace this with CaseIT branding image -->
   <!-- <meta property="og:image" content="/img/og-image.jpg"> -->
 

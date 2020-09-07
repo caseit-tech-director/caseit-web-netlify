@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="header-module full-width">
+  {{/*  {{ partial "breadcrumbs.html" . }} */}}
+  <h1>{{.Params.title}}</h1>
+
+</header>
+
+<main>
+  {{/*  Print a different layout if we have the image  */}}
+  {{ if and (isset .Params "image") (eq .Params.image "")  }}
+  <img class="banner-image full-width" src="{{.Params.image}}" alt="this year's chair">
+  <section class="content-block content-block--related grid-2-cols full-width">
+    <div class="grid-2-cols__content-area">
+      {{.Content}}
+    </div>
+  </section>
+  {{else}}
+  <section class="content-block content-block--related full-width">
+    {{.Content}}
+  </section>
+  {{end}}
+</main>
+{{ end }}

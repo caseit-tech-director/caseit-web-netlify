@@ -10,7 +10,7 @@ about_sections:
     image: img/about-chair.jpg
     link: /about/welcoming/
   - heading: Our History
-    text: Our competition executive team could answer you about questions CaseIT 2021
+    text: Learn more about story behind CaseIT
     image: img/about-history.jpg
     link: /about/history/
   - heading: Organizing Committee

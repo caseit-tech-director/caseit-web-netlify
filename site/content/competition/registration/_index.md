@@ -3,8 +3,8 @@ title: Apply Now
 subtitle: Register for CaseIT 2021
 description: We are now accepting applications from universities all around the
   world! Please answer a few questions so we learn more about your University
-  and it's interest in CaseIT. Apply today so your university can compete in
-  CaseIT 2021.
+  and interest in CaseIT. Apply today so your university can compete in CaseIT
+  2021.
 type: competition-registration
 ---
 To apply for CaseIT 2021, our applicants will have to answer the following questions:

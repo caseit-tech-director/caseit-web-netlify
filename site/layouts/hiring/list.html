@@ -6,7 +6,20 @@
     <h1>{{.Params.title}}</h1>
     <p class="lead">{{.Params.description}}</p>
     <div class="form">
-      <a class="button-primary" href="{{.Params.application_link}}" target="blank">Apply Now</a>
+      {{/*  render the hiring apply button  */}}
+      {{/*  conditionally rendering the application link if thats not nil*/}}
+      {{with ($.Site.GetPage "/hiring") }}
+      {{ if .Params.application_link }}
+      <a href='{{.Params.application_link}}' target="blank" class="button-primary">
+        Apply Now
+      </a>
+      {{ else }}
+      <a href='{{.Permalink}}#' class="button-primary button-primary--disabled">
+        Apply Now
+      </a>
+      <p class="foot-notes">{{.Params.noLinkHelperText}}</p>
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 </header>

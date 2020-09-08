@@ -280,8 +280,16 @@ collections: # A list of collections the CMS should be able to edit
               label: "Application Form Link",
               name: application_link,
               widget: string,
+              hint: "When this field is set to empty, the button on page will automatically be disabled",
+              required: false,
             }
           - { label: "Cta Blurb", name: cta_blurb, widget: string }
+          - {
+              label: "Helper text when application is not available",
+              name: noLinkHelperText,
+              widget: string,
+              hint: "This will be shown when Application Form Link is empty",
+            }
           - {
               label: "Hiring Banner",
               name: hiring_banner,
@@ -320,7 +328,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Body", name: "body", widget: "markdown" }
 
       # ==============================================================
-      # Hiring page
+      # Traditional Territories Acknoledgement page
       # ==============================================================
       - file: "site/content/territories-acknowledgement.md"
         label: "Other - Traditional Territories Acknowledgement"

@@ -2,12 +2,15 @@
   {{ .Get "name" }}
   {{ $syncStatus := .Get "sync"}}
   {{ if eq $syncStatus "sync"}}
-    (Synchronous)
+  {{/*  (Synchronous)  */}}
+  <div class="comp-event-sync comp-event-sync--sync"></div>
   {{end}}
   {{ if eq $syncStatus "async"}}
-  (Asynchronous)
+  {{/*  (Asynchronous)  */}}
+  <div class="comp-event-sync comp-event-sync--async"></div>
   {{end}}
   {{ if eq $syncStatus "semi"}}
-  (Semi-Synchronous)
+  {{/*  (Semi-Synchronous)  */}}
+  <div class="comp-event-sync comp-event-sync--semi"></div>
   {{end}}
 </div>

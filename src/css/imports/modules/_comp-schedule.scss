@@ -54,3 +54,22 @@
     padding: 0.5rem 0rem;
   }
 }
+
+.comp-event-sync {
+  width: 0.5em;
+  height: 0.5em;
+
+  margin-right: 0.3em;
+  margin-top: 0.5em;
+  float: left;
+}
+
+.comp-event-sync--sync {
+  background-color: var(--color-accent);
+}
+.comp-event-sync--async {
+  background-color: var(--color-primary-light);
+}
+.comp-event-sync--semi {
+  border: 2px solid var(--color-accent);
+}

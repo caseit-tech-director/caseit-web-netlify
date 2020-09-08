@@ -14,9 +14,11 @@ type: competition-information
 netlify-cms-collection-ignore: false
 ---
 
-- **Synchronous** events will occur at the same time for all time zones during the competition week
-- **Semi-synchronous** events will occur in multiple time slots to accommodate for the varying time zones
-- **Asynchronous** events will not occur live during the competition week and will be held offline
+{{<comp-schedule-sync sync="sync">}}**Synchronous** events will occur at the same time for all time zones during the competition week
+
+{{<comp-schedule-sync sync="semi">}}**Semi-synchronous** events will occur in multiple time slots to accommodate for the varying time zones
+
+{{<comp-schedule-sync sync="async">}}**Asynchronous** events will not occur live during the competition week and will be held offline
 
 {{<comp-schedule>}}
 {{<comp-schedule-item index="00" date="2021-02-13">}}
@@ -25,8 +27,6 @@ netlify-cms-collection-ignore: false
 
 {{<comp-schedule-item index="01" date="2021-02-14">}}
 {{<comp-schedule-event name="Division Draw" sync="sync">}}
-{{<comp-schedule-event name="Division Draw" sync="async">}}
-{{<comp-schedule-event name="Division Draw" sync="semi">}}
 {{</comp-schedule-item>}}
 
 {{<comp-schedule-item index="02" date="2021-02-15">}}

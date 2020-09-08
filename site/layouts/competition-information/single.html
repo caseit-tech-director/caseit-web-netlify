@@ -12,9 +12,14 @@
       <div class="content-block--related">
         {{/*  get the info package  */}}
         {{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "competition-info-package" }}
+        {{$requireEmailRequest := (index $PDFResourceEntry 0).requireEmailRequest }}
         {{/*  get the pdf url  */}}
         {{$PDFUrl := (index $PDFResourceEntry 0).URL }}
+        {{ if eq $requireEmailRequest true }}
+        <a href="{{.Permalink}}#get-university-package" class="button-secondary button--stretch">Request Package</a>
+        {{else }}
         <a href="{{$PDFUrl}}" class="button-secondary button--stretch">Download Full PDF</a>
+        {{end}}
         <p class="foot-notes">For detailed information, please reference the PDF competition information package</p>
       </div>
     </div>
@@ -32,6 +37,8 @@
     </section>
   </main>
 </div>
+{{ partial "get-package-cta-university" . }}
+
 
 {{/*  The "up next" section */}}
 {{ partial "up-next-section.html" . }}

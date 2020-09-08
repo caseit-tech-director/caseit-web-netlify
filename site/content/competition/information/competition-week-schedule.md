@@ -26,27 +26,29 @@ netlify-cms-collection-ignore: false
 {{</comp-schedule-item>}}
 
 {{<comp-schedule-item index="01" date="2021-02-14">}}
-{{<comp-schedule-event name="Division Draw" sync="sync">}}
+{{<comp-schedule-event name="Division Draw" sync="semi">}}
+{{<comp-schedule-event name="Improv Competition" sync="semi">}}
+{{<comp-schedule-event name="Swag Swap" sync="semi">}}
 {{</comp-schedule-item>}}
 
 {{<comp-schedule-item index="02" date="2021-02-15">}}
-{{<comp-schedule-event name="Case 1 Deliberation" >}}
+{{<comp-schedule-event name="Case 1 Deliberation" sync="sync">}}
+{{<comp-schedule-event name="Case 1 Presentations" sync="sync">}}
 {{</comp-schedule-item>}}
-{{<comp-schedule-item index="03" date="2021-02-15">}}
-{{<comp-schedule-event name="Case I Presentations" >}}
+{{<comp-schedule-item index="03" date="2021-02-16">}}
+{{<comp-schedule-event name="Sponsor Networking Sessions" sync="sync">}}
+{{<comp-schedule-event name="Paint Night" sync="semi">}}
 {{</comp-schedule-item>}}
-{{<comp-schedule-item index="04" date="2021-02-15">}}
-{{<comp-schedule-event name="Sponsor Networking Sessions" >}}
+{{<comp-schedule-item index="05" date="2021-02-17">}}
+{{<comp-schedule-event name="Case II Deliberation" sync="sync">}}
 {{</comp-schedule-item>}}
-{{<comp-schedule-item index="05" date="2021-02-15">}}
-{{<comp-schedule-event name="Case II Deliberation" >}}
-{{<comp-schedule-event name="Case Sponsor Event" >}}
+{{<comp-schedule-item index="06" date="2021-02-18">}}
+{{<comp-schedule-event name="Case II Preliminary Presentations" sync="sync">}}
+{{<comp-schedule-event name="Wildcard Presentations" sync="sync">}}
+{{<comp-schedule-event name="Final Presentations" sync="sync">}}
 {{</comp-schedule-item>}}
-{{<comp-schedule-item index="06" date="2021-02-15">}}
-{{<comp-schedule-event name="Case II Preliminary Presentations" >}}
-{{<comp-schedule-event name="Wildcard Presentations" >}}
-{{<comp-schedule-event name="Final Presentations" >}}
-{{<comp-schedule-event name="Case II Preliminary Presentations" >}}
+{{<comp-schedule-item index="06" date="2021-02-19">}}
+{{<comp-schedule-event name="Awards ceremony" sync="sync">}}
 {{</comp-schedule-item>}}
 {{</comp-schedule>}}
 

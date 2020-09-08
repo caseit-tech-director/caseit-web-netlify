@@ -48,6 +48,23 @@
   }
 }
 
+.endingCtaBlock--lightest {
+  background-color: var(--color-primary-lightest);
+  color: var(--color-primary-darkest);
+  box-shadow: var(--drop-shadow-light);
+
+  .overline {
+    color: var(--color-accent);
+  }
+
+  // apply lighter shadow effect for a softer look
+  .endingCtaImage {
+    @include viewportLargerThan($breakpoint-l) {
+      box-shadow: var(--drop-shadow-light);
+    }
+  }
+}
+
 .endingCtaBlock--dark-red {
   background-color: var(--color-accent-darker);
   color: var(--color-primary-lightest);

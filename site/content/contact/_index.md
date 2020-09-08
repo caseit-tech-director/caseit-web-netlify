@@ -10,13 +10,13 @@ contact_entries:
     link: https://m.me/caseit
 top_questions:
   - heading: How do I join the CaseIT Team?
-    text: CaseIT team applications open on September 7th. Take a look at our
+    text: CaseIT team applications open on September 9th. Take a look at our
       opportunities under [Join Us](https://caseit.org/hiring/) to see how you
-      can be a part of the CaseIT Organizing Committee.
+      can be a part of the CaseIT Organizing Committee this year.
   - heading: I am a student, how can I compete in CaseIT 2021?
-    text: As a student, you will need an University faculty member to be your liason
-      and assist with completing the short application. Click **Compete in
-      2021** to continue.
+    text: SFU students are ineligible to compete in CaseIT. Local students may be
+      interested in competing in PIVOT, our local business technology management
+      case competition.
   - heading: I applied to be a competitor, now what?
     text: Awesome! Applications will be reviewed and you will receive notification
       of your acceptance. Next steps will be provided and eligible fees and

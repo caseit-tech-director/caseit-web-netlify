@@ -36,7 +36,7 @@ team:
       - name: Emily Kim
         position: Logistics
         image: img/team-portrait-emily.jpg
-      - name: Ahmed Jaffer
+      - name: Ahmad Jaffer
         position: Events
         image: img/team-portrait-ahmed.jpg
   - team_name: Marketing

@@ -9,7 +9,7 @@
 @import "_variables";
 
 :root {
-  --form-element-width: 20rem;
+  --form-element-width: 25rem;
   --form-element-leading: 1rem;
   --form-max-width: 25rem;
 }
@@ -75,6 +75,17 @@ input[type="password"].error {
   color: var(--color-accent) !important;
 }
 
+input.--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-accent-lightest);
+  border-color: var(--color-primary-lightest);
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--color-accent-lightest);
+  }
+}
+
 /* 
  * form layout
  */
@@ -84,14 +95,15 @@ input[type="password"].error {
   /* margin-bottom: 1rem; */
   margin-bottom: 1.5rem;
   /* define a constraining width for a field */
-  /* max-width: var(--form-element-wdith); */
+  max-width: var(--form-element-width);
+  width: 100%;
 }
 
 .field__assist,
 .field > span {
   font-family: var(--typeface-caption);
   font-size: 12px;
-  color: #999;
+  opacity: 0;
   margin-left: 1rem;
 }
 
@@ -185,4 +197,9 @@ form,
   100% {
     opacity: 0;
   }
+}
+
+// utility class for stretching element
+.form-width-stretch {
+  width: 100%;
 }

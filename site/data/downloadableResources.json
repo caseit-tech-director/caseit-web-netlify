@@ -5,14 +5,16 @@
       "URL": "img/university-info-package.pdf",
       "image": "img/information-package-high-res.jpg",
       "descriptionTitle": "Get Information Package Now",
-      "descriptionBlurb": "Interested in registering for CaseIT 2021? We got you covered! Learn more by downloading our university information package."
+      "descriptionBlurb": "Interested in registering for CaseIT 2021? We got you covered! Learn more by downloading our university information package.",
+      "requireEmailRequest": true
     },
     {
       "name": "sponsorship-package",
       "URL": "img/university-info-package.pdf",
       "image": "img/sponsorship-package.jpg",
       "descriptionTitle": "Get Sponsorship Package",
-      "descriptionBlurb": "For in-depth information of the 2021 CaseIT competition and an outline of our new sponsorship opportunities, we invite you to take a look through our sponsorship package."
+      "descriptionBlurb": "For in-depth information of the 2021 CaseIT competition and an outline of our new sponsorship opportunities, we invite you to take a look through our sponsorship package.",
+      "requireEmailRequest": true
     }
   ]
 }

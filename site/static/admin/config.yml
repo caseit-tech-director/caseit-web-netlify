@@ -628,3 +628,9 @@ collections: # A list of collections the CMS should be able to edit
                   hint: "This blurb will show up in the CTA (Call to Action) module",
                   widget: "markdown",
                 }
+              - {
+                  label: "Require Email Request",
+                  name: "requireEmailRequest",
+                  hint: "Turning this on means that the document only available to viewers who submit us their email address. We would have to send them the email manually.",
+                  widget: "boolean",
+                }

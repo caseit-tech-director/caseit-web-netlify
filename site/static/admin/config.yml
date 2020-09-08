@@ -276,6 +276,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: markdown }
+          - { label: "Cta Blurb", name: cta_blurb, widget: string }
           - {
               label: "Application Form Link",
               name: application_link,
@@ -283,7 +284,6 @@ collections: # A list of collections the CMS should be able to edit
               hint: "When this field is set to empty, the button on page will automatically be disabled",
               required: false,
             }
-          - { label: "Cta Blurb", name: cta_blurb, widget: string }
           - {
               label: "Helper text when application is not available",
               name: noLinkHelperText,

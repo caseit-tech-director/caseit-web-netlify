@@ -43,10 +43,7 @@ $nav-breakpoint: 1000px;
 // Wrapper that encapsulate the whole navigation module
 .main-nav {
   // create some space between nav bar top and bottom
-  padding: 1rem 0rem;
-  @include viewportLargerThan($nav-breakpoint) {
-    padding: 1.25rem 0rem;
-  }
+  padding: 1.25rem 0rem;
 
   // elegant transition
   transition-property: transform, color, background-color;
@@ -95,6 +92,12 @@ nav.main-nav--scrolled {
   // apply these value after the page is no longer on top
   box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   will-change: box-shadow;
+
+  // shrink the navigatino bar on moabile when scrolled, but not desktop
+  padding: 1rem 0;
+  @include viewportLargerThan($nav-breakpoint) {
+    padding: 1.25rem 0;
+  }
 
   // only apply background color when the page is scrolled
   background-color: var(--color-primary-lightest);

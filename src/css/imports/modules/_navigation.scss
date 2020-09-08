@@ -46,7 +46,7 @@ $nav-breakpoint: 1000px;
   padding: 1.25rem 0rem;
 
   // elegant transition
-  transition-property: transform, color, background-color;
+  transition-property: transform, color, background-color, padding;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 

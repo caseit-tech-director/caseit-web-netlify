@@ -6,7 +6,7 @@
 {{$blurb := (index $PDFResourceEntry 0).descriptionBlurb }}
 {{$image := (index $PDFResourceEntry 0).image }}
 
-<section class="endingCtaBlock content-block grid-2-cols full-width" data-aos="fade-up">
+<section class="endingCtaBlock endingCtaBlock content-block grid-2-cols full-width" data-aos="fade-up">
   <div class="grid-2-cols__image-left">
     <img class="image--bleed-left endingCtaImage" src="{{$image}}" />
   </div>
@@ -17,8 +17,20 @@
     <p>
       {{$blurb}}
     </p>
-    <div class="form-controls">
-      <a class="button-primary button-primary--inverted" target="blank" href="{{$url}}">Download Package (pdf)</a>
-    </div>
+    <form name="sponsorship-package-request" netlify class="form form-width-stretch">
+      <div class="field form-width-stretch">
+        <label for="txtEmail">Email</label>
+        <input id="txtEmail" name="txtEmail" placeholder="example@gmail.com" type="email" class="--dark" />
+        <span class="field__assist">*Required</span>
+      </div>
+      <div class="form-control">
+        <button class="button-primary button-primary--inverted" target="blank" href="{{$url}}">Request Package</button>
+      </div>
+    </form>
+
+    {{/*  code for straight download PDF */}}
+    {{/*  <div class="form-controls">
+      <a class="button-primary button-primary--inverted" target="blank" href="{{$url}}">Download PDF Package</a>
+  </div> */}}
   </div>
 </section>

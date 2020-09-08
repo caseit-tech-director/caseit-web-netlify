@@ -544,7 +544,7 @@ collections: # A list of collections the CMS should be able to edit
                 ],
             }
       #chairs welcome
-      - file: "site/content/about/welcoming.md"
+      - file: "site/content/about/welcome.md"
         label: "Chair's Welcome Page"
         name: "chairs-welcome"
         fields:

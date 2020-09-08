@@ -8,7 +8,7 @@ about_sections:
   - heading: Chair's Welcome
     text: Read CaseIT 2021 Chair Jordan Wong's welcome
     image: img/about-chair.jpg
-    link: /about/welcoming/
+    link: /about/welcome/
   - heading: Our History
     text: Learn more about story behind CaseIT
     image: img/about-history.jpg

@@ -1,8 +1,7 @@
 ---
 title: Traditional Territories Acknowledgement
-image:
-lead: Thfdsaf
+image: img/sfu.jpg
+lead: ""
 netlify-cms-collection-ignore: false
 ---
-
-fdsa
+Working on it....

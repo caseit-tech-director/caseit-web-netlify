@@ -625,6 +625,12 @@ collections: # A list of collections the CMS should be able to edit
               - { label: "Name", name: "name", widget: "string" }
               - { label: "File", name: "URL", widget: "file" }
               - {
+                  label: "Image Preivew",
+                  name: "image",
+                  hint: "The image that would show up in the download cta",
+                  widget: "image",
+                }
+              - {
                   label: "Description Title",
                   hint: "This will show up as a header in the CTA (Call to Action) module",
                   name: "descriptionTitle",

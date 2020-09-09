@@ -111,6 +111,7 @@ collections: # A list of collections the CMS should be able to edit
           options:
             [
               { label: "Associate", value: "associate" },
+              { label: "Team Host", value: "team-host" },
               { label: "Director", value: "director" },
               { label: "Vice Chair", value: "vice-chair" },
               { label: "Chair", value: "chair" },

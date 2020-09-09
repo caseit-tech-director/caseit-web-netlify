@@ -29,14 +29,10 @@
     {{/*  List all pages in director  */}}
     <h2>Directors</h2>
     <div class="position-container">
-      {{ $section := where $.Site.RegularPages "Section" "hiring"}}
+      {{ $section := where $.Site.RegularPages "Section" "hiring" }}
       {{ range $section }}
       {{ if eq .Params.position_type "director"}}
-      <a class="position card" href="{{.Permalink}}">
-        <h4 class="h4--accented position__title">{{.Params.title}}</h4>
-        <span class="position__description">{{.Params.description}}</span>
-        <span class="position__available">Available position: {{.Params.position_available}}</span>
-      </a>
+      {{ partial "hiring-position-card.html" . }}
       {{ end}}
       {{ end }}
     </div>
@@ -49,16 +45,20 @@
       {{ $section := where $.Site.RegularPages "Section" "hiring" }}
       {{ range $section }}
       {{ if eq .Params.position_type "associate"}}
-      <a class="position card" href="{{.Permalink}}">
-        <h4 class="h4--accented position__title">{{.Params.title}}</h4>
-        <span class="position__description">{{.Params.description}}</span>
-        {{/*  pluralise based on the position availability  */}}
-        {{ if gt .Params.position_available 1 }}
-        <span class="position__available">Available positions: {{.Params.position_available}}</span>
-        {{ else }}
-        <span class="position__available">Available position: {{.Params.position_available}}</span>
-        {{end}}
-      </a>
+      {{ partial "hiring-position-card.html" . }}
+      {{ end}}
+      {{ end }}
+    </div>
+  </section>
+
+  <section id="teamhost" class="full-width">
+    {{/*  List all pages in associates  */}}
+    <h2>Associates and Coordinators</h2>
+    <div class="position-container">
+      {{ $section := where $.Site.RegularPages "Section" "hiring" }}
+      {{ range $section }}
+      {{ if eq .Params.position_type "team-host"}}
+      {{ partial "hiring-position-card.html" . }}
       {{ end}}
       {{ end }}
     </div>

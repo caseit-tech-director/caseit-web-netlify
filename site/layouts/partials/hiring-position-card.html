@@ -1,0 +1,10 @@
+<a class="position card" href="{{.Permalink}}">
+  <h4 class="h4--accented position__title">{{.Params.title}}</h4>
+  <span class="position__description">{{.Params.description}}</span>
+  {{/*  pluralise based on the position availability  */}}
+  {{ if gt .Params.position_available 1 }}
+  <span class="position__available">Available positions: {{.Params.position_available}}</span>
+  {{ else }}
+  <span class="position__available">Available position: {{.Params.position_available}}</span>
+  {{end}}
+</a>

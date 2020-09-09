@@ -21,7 +21,8 @@
       "descriptionTitle": "Get Hiring Package Now",
       "descriptionBlurb": "Interested in Joining for our CaseIT 2021 Team? Learn more by downloading our university information package.",
       "URL": "img/acth-recruitment-package.pdf",
-      "requireEmailRequest": false
+      "requireEmailRequest": false,
+      "image": "img/hiring-package-cover.jpg"
     }
   ]
 }

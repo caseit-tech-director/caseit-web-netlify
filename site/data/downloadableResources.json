@@ -15,6 +15,13 @@
       "descriptionTitle": "Get Sponsorship Package",
       "descriptionBlurb": "For in-depth information of the 2021 CaseIT competition and an outline of our new sponsorship opportunities, we invite you to take a look through our sponsorship package.",
       "requireEmailRequest": true
+    },
+    {
+      "name": "hiring-info-package",
+      "descriptionTitle": "Get Hiring Package Now",
+      "descriptionBlurb": "Interested in Joining for our CaseIT 2021 Team? Learn more by downloading our university information package.",
+      "URL": "img/acth-recruitment-package.pdf",
+      "requireEmailRequest": false
     }
   ]
 }

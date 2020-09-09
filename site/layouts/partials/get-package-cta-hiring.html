@@ -1,0 +1,41 @@
+{{/*  get the info package  */}}
+{{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "hiring-info-package" }}
+{{/*  get the pdf url  */}}
+{{$url := (index $PDFResourceEntry 0).URL }}
+{{$title := (index $PDFResourceEntry 0).descriptionTitle }}
+{{$blurb := (index $PDFResourceEntry 0).descriptionBlurb }}
+{{$image := (index $PDFResourceEntry 0).image }}
+{{$requireEmailRequest := (index $PDFResourceEntry 0).requireEmailRequest }}
+
+<section class="endingCtaBlock endingCtaBlock content-block grid-2-cols full-width" data-aos="fade-up">
+  <div class="grid-2-cols__image-left">
+    <img class="image--bleed-left endingCtaImage" src="{{$image}}" />
+  </div>
+  <div class="grid-2-cols__blurb-right blurb--valign-center endingCtaBlurb">
+    <div class="overline">Hiring Package</div>
+
+    <h2>{{$title}}</h2>
+    <p>
+      {{$blurb}}
+    </p>
+
+    {{ if eq $requireEmailRequest true }}
+    {{/*  code for requesting using email */}}
+    <form name="hiring-info-package" netlify class="form form-width-stretch">
+      <div class="field form-width-stretch">
+        <label for="txtEmail">Email</label>
+        <input id="txtEmail" name="txtEmail" placeholder="example@gmail.com" type="email" class="--dark" />
+        <span class="field__assist">*Required</span>
+      </div>
+      <div class="form-controls">
+        <button class="button-primary button-primary--inverted" target="blank" href="{{$url}}">Request Package</button>
+      </div>
+    </form>
+    {{ else }}
+    {{/*  code for straight download PDF */}}
+    <div class="form-controls">
+      <a class="button-primary button-primary--inverted" target="blank" href="{{$url}}">Download PDF Package</a>
+    </div>
+    {{end}}
+  </div>
+</section>

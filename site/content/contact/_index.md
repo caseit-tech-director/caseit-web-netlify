@@ -17,7 +17,7 @@ top_questions:
     text: If you are a student interested in competing at CaseIT, please have a
       faculty representative contact us to express your school's interest and
       complete the application.
-  - heading: I applied to be a competitor, now what?
+  - heading: My school applied, now what?
     text: Awesome! Applications will be reviewed and you will receive notification
       of your acceptance. Next steps will be provided and eligible fees and
       information will be sent periodically.

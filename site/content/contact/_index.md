@@ -14,9 +14,9 @@ top_questions:
       opportunities under [Join Us](https://caseit.org/hiring/) to see how you
       can be a part of the CaseIT Organizing Committee.
   - heading: I am a student, how can I compete in CaseIT 2021?
-    text: SFU students are ineligible to compete in CaseIT. Local students may be
-      interested in competing in PIVOT, our local business technology management
-      case competition.
+    text: If you are a student interested in competing at CaseIT, please have a
+      faculty representative contact us to express your school's interest and
+      complete the application.
   - heading: I applied to be a competitor, now what?
     text: Awesome! Applications will be reviewed and you will receive notification
       of your acceptance. Next steps will be provided and eligible fees and

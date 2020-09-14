@@ -54,7 +54,7 @@
 
   <div class="hiring-cta-mobile">
     <div class="hiring-cta-mobile__content">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</div>
-    <a href='($.Site.GetPage "/hiring").Params.application_link' target="blank"
+    <a href='{{($.Site.GetPage "/hiring").Params.application_link}}' target="blank"
       class="button-primary button--stretch">Apply Now</a>
   </div>
 </div>

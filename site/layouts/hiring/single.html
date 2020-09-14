@@ -25,7 +25,7 @@
         {{/*  render the hiring apply button  */}}
         {{/*  conditionally rendering the application link if thats not nil*/}}
         {{ if .Params.application_link }}
-        <a href='($.Site.GetPage "/hiring").Params.application_link' target="blank"
+        <a href='{{($.Site.GetPage "/hiring").Params.application_link}}' target="blank"
           class="button-primary button--stretch">
           Apply Now
         </a>
@@ -54,8 +54,17 @@
 
   <div class="hiring-cta-mobile">
     <div class="hiring-cta-mobile__content">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</div>
+    {{ if .Params.application_link }}
     <a href='{{($.Site.GetPage "/hiring").Params.application_link}}' target="blank"
-      class="button-primary button--stretch">Apply Now</a>
+      class="button-primary button--stretch">
+      Apply Now
+    </a>
+    {{ else }}
+    <a href='{{.Permalink}}#' class="button-primary button-primary--disabled button--stretch">
+      Apply Now
+    </a>
+    <p class="foot-notes">{{.Params.noLinkHelperText}}</p>
+    {{end}}
   </div>
 </div>
 

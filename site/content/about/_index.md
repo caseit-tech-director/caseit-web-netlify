@@ -1,5 +1,5 @@
 ---
-title: About Caseit
+title: About CaseIT
 intro_blurb: CaseIT brings together top undergraduate business students,
   distinguished faculty members, experienced industry professionals, and a
   dedicated student-run organizing committee to challenge conventional thinking

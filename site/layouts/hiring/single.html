@@ -52,6 +52,7 @@
     </section>
   </main>
 
+  {{with ($.Site.GetPage "/hiring") }}
   <div class="hiring-cta-mobile">
     <div class="hiring-cta-mobile__content">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</div>
     {{ if .Params.application_link }}
@@ -66,6 +67,7 @@
     <p class="foot-notes">{{.Params.noLinkHelperText}}</p>
     {{end}}
   </div>
+  {{end}}
 </div>
 
 {{ partial "get-package-cta-hiring.html" . }}

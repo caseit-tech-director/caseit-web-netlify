@@ -7,8 +7,8 @@ description: >-
 
   Apply before September 28, 11:59 PM.
 cta_blurb: Apply before September 28, 11:59 PM.
-application_link: https://www.surveymonkey.ca/r/C82SHWY
-noLinkHelperText: Applications open after September 9th
+application_link: ""
+noLinkHelperText: CaseIT 2021 Application closed on September 28, 11:59 PM.
 hiring_banner:
   heading: Do you have what IT takes?
   text: Do you have what IT takes to be a part of CaseIT? Fall intake is open now

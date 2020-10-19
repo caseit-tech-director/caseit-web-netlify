@@ -6,7 +6,7 @@ image: img/dsc03272.jpg
 lead: The competition week provides a rigorous platform to test students’ case
   analysis abilities, exercise creative thinking in a high-pressure setting, and
   empower students to present with confidence in front of esteemed industry
-  professionals on an international stage.f
+  professionals on an international stage.
 menu:
   competition:
     parent: competition-information

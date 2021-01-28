@@ -1,0 +1,8 @@
+{{/* Registration */}}
+{{if eq .Site.Data.canCompete.canCompete true }}
+<a href="/registration-form/" class="nav-cta-button" title="Enroll school for CaseIT 2021">
+  Compete in 2021
+</a>
+{{else}}
+<div class="nav-cta-closed">University Application Closed</div>
+{{end}}

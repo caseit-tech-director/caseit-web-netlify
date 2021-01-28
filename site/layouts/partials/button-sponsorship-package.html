@@ -1,5 +1,5 @@
-{{/*  get the info package  */}}
+{{/* get the info package */}}
 {{$PDFResourceEntry := where .Site.Data.downloadableResources.documents "name" "sponsorship-package" }}
-{{/*  get the pdf url  */}}
+{{/* get the pdf url */}}
 {{$PDFUrl := (index $PDFResourceEntry 0).URL }}
 <a href="{{$PDFUrl}}" class="button-primary">Get Full Sponsorhip Package (PDF)</a>

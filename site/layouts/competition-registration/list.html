@@ -15,9 +15,13 @@
   <div class="hero-left-aligned">
     <h1>{{.Params.title}}</h1>
     <p class="lead">{{.Params.description}}</p>
+    {{if eq .Site.Data.canCompete.canCompete true }}
     <div class="form-controls">
       <a class="button-primary" href="/registration-form/">Register school to compete in 2021</a>
     </div>
+    {{else}}
+    <div class="nav-cta-closed">University Application Closed</div>
+    {{end}}
   </div>
 </header>
 

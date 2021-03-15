@@ -19,23 +19,12 @@
     <div class="sticky">
       <h2 class="h4">Interested?</h2>
       <div class="content-block--related">
-
+        {{if eq .Params.application_link nil }}
         {{with ($.Site.GetPage "/hiring") }}
-        <p>{{ .Params.cta_blurb }}</p>
-        {{/* render the hiring apply button */}}
-        {{/* conditionally rendering the application link if thats not nil*/}}
-        {{ if .Params.application_link }}
-        <a href='{{($.Site.GetPage "/hiring").Params.application_link}}' target="blank"
-          class="button-primary button--stretch">
-          Apply Now
-        </a>
-        {{ else }}
-        <a href='{{.Permalink}}#' class="button-primary button-primary--disabled button--stretch">
-          Apply Now
-        </a>
-        <p class="foot-notes">{{.Params.noLinkHelperText}}</p>
-        {{ end }}
-
+        {{ partial "hiring-apply-button" . }}
+        {{end}}
+        {{else}}
+        {{ partial "hiring-apply-button" . }}
         {{end}}
       </div>
     </div>
@@ -52,22 +41,15 @@
     </section>
   </main>
 
-  {{with ($.Site.GetPage "/hiring") }}
   <div class="hiring-cta-mobile">
-    <div class="hiring-cta-mobile__content">{{ ($.Site.GetPage "/hiring").Params.cta_blurb }}</div>
-    {{ if .Params.application_link }}
-    <a href='{{($.Site.GetPage "/hiring").Params.application_link}}' target="blank"
-      class="button-primary button--stretch">
-      Apply Now
-    </a>
-    {{ else }}
-    <a href='{{.Permalink}}#' class="button-primary button-primary--disabled button--stretch">
-      Apply Now
-    </a>
-    <p class="foot-notes">{{.Params.noLinkHelperText}}</p>
+    {{if eq .Params.application_link nil }}
+    {{with ($.Site.GetPage "/hiring") }}
+    {{ partial "hiring-apply-button-mobile" . }}
+    {{end}}
+    {{else}}
+    {{ partial "hiring-apply-button-mobile" . }}
     {{end}}
   </div>
-  {{end}}
 </div>
 
 {{ partial "get-package-cta-hiring.html" . }}

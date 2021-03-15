@@ -113,8 +113,7 @@ collections: # A list of collections the CMS should be able to edit
               { label: "Associate", value: "associate" },
               { label: "Team Host", value: "team-host" },
               { label: "Director", value: "director" },
-              { label: "Vice Chair", value: "vice-chair" },
-              { label: "Chair", value: "chair" },
+              { label: "Executive Team", value: "executive-team" },
             ],
         }
       - {

@@ -44,4 +44,6 @@ sponsorship_opportunities:
     benefits strive to foster opportunities in networking, engagement and
     community involvement.
   ctaText: Explore All Options
+our_2021_sponsors:
+  heading: Our 2021 Sponsors
 ---

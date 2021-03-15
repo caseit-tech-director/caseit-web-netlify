@@ -122,6 +122,12 @@ collections: # A list of collections the CMS should be able to edit
           widget: "number",
           options: ["associate", "director", "chair", "vice-chair"],
         }
+      - {
+          label: "Application Form Link",
+          name: "application_link",
+          widget: string,
+          hint: "Link to the application page",
+        }
       - { label: "Body", name: "body", widget: "markdown" }
       - {
           label: "netlify-cms-collection-ignore",

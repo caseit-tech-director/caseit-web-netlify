@@ -14,10 +14,10 @@
         Apply Now
       </a>
       {{ else }}
-      <a href='{{.Permalink}}#' class="button-primary button-primary--disabled">
+      {{/* <a href='{{.Permalink}}#' class="button-primary button-primary--disabled">
         Apply Now
       </a>
-      <p class="foot-notes">{{.Params.noLinkHelperText}}</p>
+      <p class="foot-notes">{{.Params.noLinkHelperText}}</p> */}}
       {{ end }}
       {{ end }}
     </div>
@@ -93,7 +93,7 @@
       {{ range $section }}
       {{ if and (eq .Params.position_type "executive-team") (ne .Params.position_available 0)}}
       {{ partial "hiring-position-card.html" . }}
-      {{ $hasDirector.Set "hasExePosition" true }}
+      {{ $hasExePosition.Set "hasExePosition" true }}
       {{ end}}
       {{ end }}
 

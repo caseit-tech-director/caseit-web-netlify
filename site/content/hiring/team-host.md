@@ -7,7 +7,7 @@ lead: Team Hosts stand on the frontlines of CaseIT, ensuring that competing
   teams from around the world are well-equipped to tackle every aspect of the
   competition week.
 position_type: team-host
-position_available: 16
+position_available: 0
 netlify-cms-collection-ignore: false
 ---
 

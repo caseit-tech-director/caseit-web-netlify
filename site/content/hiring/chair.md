@@ -1,18 +1,13 @@
 ---
-title: Director of Web Development
-description: As a full stack developer, this individual is passionate about
-  leveraging modern web technology to build an efficient and aesthetic
-  experience, moving swiftly in the face of disaster to fix any issues that
-  arise.
-lead: As a full stack developer, this individual is passionate about leveraging
-  modern web technology to build an efficient and aesthetic experience, moving
-  swiftly in the face of disaster to fix any issues that arise.
-position_type: director
-position_available: 0
+title: Chair
+description: The CaseIT 2022 Chair will develop and drive the vision, planning, and execution of one of the longest-running, most reputable undergraduate business case competitions in the world.
+lead: The CaseIT 2022 Chair will develop and drive the vision, planning, and execution of one of the longest-running, most reputable undergraduate business case competitions in the world.
+position_type: executive-team
+position_available: 1
 netlify-cms-collection-ignore: false
 ---
 
-Working closely with the Director of Design, they will be responsible for bringing design mockups to life from pixels to the browser as well as refactoring the current code base.
+The CaseIT 2022 Chair will have the opportunity to step outside their comfort zone as they form the foundation of an organizing committee that shapes a world-class competition experience for 300+ local and international competitors, coaches, faculty, industry professionals, and sponsors. They are both a visionary and an executor, possessing a calm, positive, resilient demeanour in the face of conflict, frustration, and challenge. This individual will become a strong and charismatic leader that sets the standard of quality and hard work while aiming beyond the status quo.
 
 **Commitment required:**
 

@@ -6,8 +6,8 @@
     <h1>{{.Params.title}}</h1>
     <p class="lead">{{.Params.description}}</p>
     <div class="form">
-      {{/*  render the hiring apply button  */}}
-      {{/*  conditionally rendering the application link if thats not nil*/}}
+      {{/* render the hiring apply button */}}
+      {{/* conditionally rendering the application link if thats not nil*/}}
       {{with ($.Site.GetPage "/hiring") }}
       {{ if .Params.application_link }}
       <a href='{{.Params.application_link}}' target="blank" class="button-primary">
@@ -26,42 +26,81 @@
 
 <div class="positions-wrapper">
   <section id="directors" class="full-width">
-    {{/*  List all pages in director  */}}
+    {{/* List all pages in director */}}
     <h2>Directors</h2>
     <div class="position-container">
+      {{ $hasDirector := newScratch}}
+      {{ $hasDirector.Set "hasDirector" false}}
       {{ $section := where $.Site.RegularPages "Section" "hiring" }}
       {{ range $section }}
-      {{ if eq .Params.position_type "director"}}
+      {{ if and (eq .Params.position_type "director") (ne .Params.position_available 0)}}
       {{ partial "hiring-position-card.html" . }}
+      {{ $hasDirector.Set "hasDirector" true }}
       {{ end}}
       {{ end }}
+
     </div>
+    {{ if eq ($hasDirector.Get "hasDirector") false }}
+    No director position available at this point.
+    {{ end }}
   </section>
 
   <section id="associates" class="full-width">
-    {{/*  List all pages in associates  */}}
+    {{/* List all pages in associates */}}
     <h2>Associates and Coordinators</h2>
     <div class="position-container">
+      {{ $hasAssociates := newScratch}}
+      {{ $hasAssociates.Set "hasAssociates" false}}
       {{ $section := where $.Site.RegularPages "Section" "hiring" }}
       {{ range $section }}
-      {{ if eq .Params.position_type "associate"}}
+      {{ if and (eq .Params.position_type "associate") (ne .Params.position_available 0)}}
       {{ partial "hiring-position-card.html" . }}
+      {{ $hasAssociates.Set "hasAssociates" true }}
       {{ end}}
       {{ end }}
     </div>
+    {{ if eq ($hasAssociates.Get "hasAssociates") false }}
+    No associates position available at this point.
+    {{ end }}
   </section>
 
   <section id="teamhost" class="full-width">
-    {{/*  List all pages in associates  */}}
+    {{/* List all pages in associates */}}
     <h2>Team Host</h2>
     <div class="position-container">
+      {{ $hasTeamhosts := newScratch}}
+      {{ $hasTeamhosts.Set "hasTeamhosts" false}}
       {{ $section := where $.Site.RegularPages "Section" "hiring" }}
       {{ range $section }}
-      {{ if eq .Params.position_type "team-host"}}
+      {{ if and (eq .Params.position_type "team-host") (ne .Params.position_available 0)}}
       {{ partial "hiring-position-card.html" . }}
+      {{ $hasTeamhosts.Set "hasTeamhosts" true }}
       {{ end}}
       {{ end }}
     </div>
+    {{ if eq ($hasTeamhosts.Get "hasTeamhosts") false }}
+    No Teamhost position available at this point.
+    {{ end }}
+  </section>
+
+  <section id="chair" class="full-width">
+    {{/* List all pages in director */}}
+    <h2>Executive Team</h2>
+    <div class="position-container">
+      {{ $hasExePosition := newScratch}}
+      {{ $hasExePosition.Set "hasExePosition" false}}
+      {{ $section := where $.Site.RegularPages "Section" "hiring" }}
+      {{ range $section }}
+      {{ if and (eq .Params.position_type "executive-team") (ne .Params.position_available 0)}}
+      {{ partial "hiring-position-card.html" . }}
+      {{ $hasDirector.Set "hasExePosition" true }}
+      {{ end}}
+      {{ end }}
+
+    </div>
+    {{ if eq ($hasExePosition.Get "hasExePosition") false }}
+    No executive team position available at this point.
+    {{ end }}
   </section>
 </div>
 

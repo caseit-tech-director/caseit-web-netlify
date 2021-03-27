@@ -7,7 +7,7 @@ lead: The CaseIT 2022 Chair will develop and drive the vision, planning, and
   execution of one of the longest-running, most reputable undergraduate business
   case competitions in the world.
 position_type: executive-team
-position_available: 1
+position_available: 0
 application_link: https://docs.google.com/forms/d/e/1FAIpQLScP1R-gHjvov1tcmE3bpT6Pjv0fwvwor6D6cqxB36mknfJ45Q/viewform
 netlify-cms-collection-ignore: false
 ---

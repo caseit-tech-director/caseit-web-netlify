@@ -71,7 +71,7 @@
     "@emotion/styled": "^10.0.27",
     "codemirror": "^5.46.0",
     "immutable": "^3.7.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "netlify-cms-lib-widgets": "^1.0.0",
     "netlify-cms-ui-default": "^2.6.2",

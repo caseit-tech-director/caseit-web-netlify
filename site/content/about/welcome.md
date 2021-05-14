@@ -14,7 +14,3 @@ The CaseIT 2022 Organizing Committee is comprised of top students from a multitu
 CaseIT has since developed from an internal competition, to one of the most prestigious undergraduate MIS case competitions in the world. Upholding the ambition, tenacity, and insatiable curiosity of our international competitors, CaseIT’s mission is to provide an unparalleled, rigorous, and engaging competition for talented business students to challenge themselves on an international stage. Not only will this talented cohort showcase their analytical skills and technology expertise, but they will be engaged in building meaningful global connections.
 
 Welcome to CaseIT and the international audience of change-makers who are passionate about leveraging information systems to reshape the boundaries between technology and business.
-
-
-
-Emily Kim, CaseIT 2022 Chair

@@ -6,8 +6,8 @@ intro_blurb: CaseIT brings together top undergraduate business students,
   and build global connections.
 about_sections:
   - heading: Chair's Welcome
-    text: Read CaseIT 2021 Chair Jordan Wong's welcome
-    image: img/about-chair.jpg
+    text: Read CaseIT 2022 Chair Emily Kim's welcome
+    image: img/instagram-story-1-2-.png
     link: /about/welcome/
   - heading: Our History
     text: Learn more about story behind CaseIT

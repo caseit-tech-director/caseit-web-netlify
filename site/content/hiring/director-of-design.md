@@ -1,13 +1,7 @@
 ---
 title: Director of Design
-description: "The Director of Design masters the art of transforming imaginative
-  ideas and concepts into a cohesive, professional visual experience. This
-  individual has a keen eye for detail and is captivated by the opportunity to
-  ensure that every line, word, and image is placed on competition materials
-  with a purpose. The Director of Design is comfortable with challenging the
-  status quo, stimulating thoughtful discussion, and also understands that the
-  “packaging” of the competition is equally as valuable and impactful as the
-  competition itself. "
+description: The Director of Design masters the art of transforming imaginative
+  ideas and concepts into a cohesive, professional visual experience.
 lead: The Director of Design masters the art of transforming imaginative ideas
   and concepts into a cohesive, professional visual experience. This individual
   has a keen eye for detail and is captivated by the opportunity to ensure that
@@ -59,4 +53,4 @@ netlify-cms-collection-ignore: false
 
 **CONTACT**
 
-Questions regarding the Director of Web Development role can be directed to the Vice-Chair of Marketing, Rachel Vicencio, at rvicenci@sfu.ca
+Questions regarding the Director of Design role can be directed to the Vice-Chair of Marketing, Rachel Vicencio, at rvicenci@sfu.ca

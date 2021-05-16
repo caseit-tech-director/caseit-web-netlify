@@ -2,7 +2,7 @@
 title: Director of Web Development
 description: As a full stack developer, this individual is passionate about
   leveraging modern web technology to build an efficient and aesthetic
-  experience, moving swiftly in the face of disaster to fix any issues that may
+  experience, moving swiftly in the face of disaster to fix any issues that
   arise.
 lead: As the Director of Web Development, this individual is passionate in
   leveraging modern web technologies to build an efficient and aesthetic

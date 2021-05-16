@@ -2,7 +2,7 @@
 title: Chair's Welcome
 image: img/image-from-ios-20-.jpg
 author: Emily Kim
-signiture_image: img/jordan-signiture.png
+signiture_image: img/image-from-ios-21-.jpg
 written_date: 5/14/2021
 description: Read CaseIT 2022 Chair Emily Kim's welcome
 type: about-chairs-welcoming

@@ -11,7 +11,7 @@ lead: As the Director of Web Development, this individual is passionate in
   to life from pixels to the browser as well as refactoring the current code
   base.
 position_type: director
-position_available: 1
+position_available: 0
 application_link: https://forms.gle/c2KH4B59HtVKCBop9
 netlify-cms-collection-ignore: false
 ---

@@ -29,7 +29,7 @@ netlify-cms-collection-ignore: false
 * Aligning sponsorship requests to CaseIT 2022 goals, and reviewing and revising the current sponsorship package to match industry best practices
 * Retaining existing and obtaining new corporate sponsors by developing a partner relationship management strategy and sponsorship outreach strategy that leverages the Organizing Committee’s connections and capabilities
 * Developing and delivering a clear CaseIT 2022 value proposition, tailored to driving benefits and meeting the needs of various types of sponsor organizations
-* Strategically prioritizing, contacting, and meeting in-person with potential sponsors, ensuring that each sponsor aligns with the values and vision of CaseIT 2021
+* Strategically prioritizing, contacting, and meeting in-person with potential sponsors, ensuring that each sponsor aligns with the values and vision of CaseIT 2022
 * Managing all relational touch points leading up to the competition and ensuring timely completion of contracted deliverables between CaseIT 2022 and corporate partners through implementing systems and procedures
 * Ensuring all corporate sponsors receive a consistent experience by acting as the main point of contact prior to, during, and after competition execution
 * Building lasting relationships with corporate sponsors by developing and providing post-competition impact summaries

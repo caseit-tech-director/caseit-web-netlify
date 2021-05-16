@@ -1,5 +1,5 @@
 ---
-title: Director of Marketing
+title: "[PIVOT] Director of Marketing"
 description: The Director of Marketing will be responsible for leading and
   driving the marketing strategy for PIVOT 2022.
 lead: The Director of Marketing will be responsible for leading and driving the

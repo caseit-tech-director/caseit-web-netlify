@@ -1,5 +1,5 @@
 ---
-title: Director of External Relations
+title: "[PIVOT] Director of External Relations"
 description: From securing the corporate interest and monetary support necessary
   to bring PIVOT to life, to communicating with teams from across the province,
   the Director of External Relations is the first point of contact for PIVOT’s

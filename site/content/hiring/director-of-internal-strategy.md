@@ -28,7 +28,7 @@ netlify-cms-collection-ignore: false
 
 * Documenting key milestones, risks, decisions, and action items throughout Organizing Committee meetings and working sessions
 * Ensuring the Organizing Committee and sub-teams are equipped with appropriate working environments by scheduling and managing room bookings
-* Reinforce team culture by coordinating timely check-ins with team members by collecting, combining, and summarizing Organizing Committee progress into formal status updates and identifying conflict, burnout, or other team challenges during CaseIT 2021
+* Reinforce team culture by coordinating timely check-ins with team members by collecting, combining, and summarizing Organizing Committee progress into formal status updates and identifying conflict, burnout, or other team challenges during CaseIT 2022
 * Ensuring the Organizing Committee is well equipped to execute an exceptional competition week by managing communication channels
 * Inspiring team cohesion and collaboration by arranging engaging social opportunities for the Organizing Committee
 * Assisting the Organizing Committee in developing a recruitment strategy for Associates, Team Hosts, and Coordinators and contributing to the selection process

@@ -50,4 +50,4 @@ netlify-cms-collection-ignore: false
 
 **CONTACT**
 
-Questions regarding the Director of Events role can be directed to the Vice-Chair of Competition Execution, Rachel Dee, at rachel_dee@sfu.ca
+Questions regarding the Director of Logistics role can be directed to the Vice-Chair of Competition Execution, Rachel Dee, at rachel_dee@sfu.ca

@@ -1,10 +1,10 @@
 ---
 title: We Are Hiring!
 description: Applications are now open. Challenge yourself, inspire innovation,
-  and bring your enthusiasm to the CaseIT  team.
+  and bring your enthusiasm to the CaseIT 2022 team.
 cta_blurb: Apply before May 31st at 11:59 PM.
 application_link: https://forms.gle/c2KH4B59HtVKCBop9
-noLinkHelperText: CaseIT 2021 Application closed on September 28, 11:59 PM.
+noLinkHelperText: CaseIT 2022 Application closed on May 31st, 11:59 PM.
 hiring_banner:
   heading: Do you have what IT takes?
   text: Do you have what IT takes to be a part of CaseIT? Summer intake is open

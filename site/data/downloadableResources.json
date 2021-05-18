@@ -19,10 +19,10 @@
     {
       "name": "hiring-info-package",
       "descriptionTitle": "Get Hiring Package Now",
-      "descriptionBlurb": "Interested in joining our CaseIT 2021 Team? Learn more by downloading our recruitment information package.",
-      "URL": "img/acth-recruitment-package.pdf",
+      "descriptionBlurb": "Interested in joining our CaseIT 2022 Team? Learn more by downloading our recruitment information package.",
+      "URL": "img/director_jd.pdf",
       "requireEmailRequest": false,
-      "image": "img/hiring-package-cover.jpg"
+      "image": "img/0001.jpg"
     }
   ]
 }

@@ -1,22 +1,18 @@
 ---
 title: Sponsoring CaseIT
-description: Your involvement and support goes a long way in facilitating a
-  competition week that is the highlight of many student’s undergraduate
-  careers.
+description: Your involvement and support goes a long way in facilitating a competition week that is the highlight of many students’ undergraduate careers.
+
 pitch:
   - heading: Top Talent Recruitment
     benefits:
-      - text: Connect with the CaseIT 2021 Organizing Committee comprised of 42 driven,
-          dedicated SFU students actively pursuing opportunities in Management
-          Information Systems, Accounting, Finance, Operations Management,
-          Strategy, Entrepreneurship & Innovation, Marketing, International
-          Business, and Human Resource Management.
+      - text: Connect with the CaseIT 2022 Organizing Committee composed of driven, dedicated SFU students actively pursuing opportunities in Management Information Systems, Accounting, Finance, Operations Management, Strategy, Entrepreneurship & Innovation, Marketing, International Business, and Human Resource Management.
+
     imageUrl: img/dsc04597.jpg
   - heading: Build Professional Connections
     benefits:
       - text: Gain greater access to a global network of leading technology companies
           ranked amongst the Forbes Global 2000 List.
-      - text: Connect virtually with distinguished professors and faculty advisors from
+      - text: Connect with distinguished professors and faculty advisors from
           leading universities from around the globe and the Beedie School of
           Business.
       - text: Engage and network with over 70 industry professionals from the Vancouver
@@ -26,11 +22,8 @@ pitch:
     benefits:
       - text: Share your expertise, feedback, and insights with the next generation of
           Management Information Systems professionals.
-      - text: Support an established, reputable academic case competition in it's
-          ability to grow and develop the Management Information Systems
-          business industry.
-      - text: Contribute to building the prevalence and importance of technology focused
-          undergraduate business programs in universities around the world.
+      - text: Support a well-established academic case competition in its development to grow the Management Information Systems industry.
+      - text: Contribute in establishing the prevalence of technology-focused undergraduate business programs at an international level.
     imageUrl: img/dsc03417.jpg
 our_2020_sponsors:
   heading: Our 2020 Sponsors

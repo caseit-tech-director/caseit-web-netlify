@@ -7,7 +7,7 @@ written_date: 5/14/2021
 description: Read CaseIT 2022 Chair Emily Kim's welcome
 type: about-chairs-welcoming
 ---
-It is our pleasure to welcome you to CaseIT 2022. Hosted in collaboration with the Beedie School of Business at Simon Fraser University, CaseIT is the world’s premier International Undergraduate Management Information Systems Business Case Competition. CaseIT has welcomed 936 undergraduate competitors representing 48 universities from 19 different countries to compete in Vancouver since 2004.
+It is our pleasure to welcome you to CaseIT 2022. Hosted in collaboration with the Beedie School of Business at Simon Fraser University, CaseIT is the world’s premier International Undergraduate Management Information Systems Business Case Competition. CaseIT has welcomed 936 undergraduate competitors representing 49 universities from 19 different countries to compete in Vancouver since 2004.
 
 The CaseIT 2022 Organizing Committee is comprised of top students from a multitude of faculties at Simon Fraser University and strives to work humbly, innovatively, and collaboratively. Hosting the first virtual iteration of CaseIT in 2021, the CaseIT 2022 Organizing Committee is extremely excited to provide yet another unprecedented, world-class experience to all attendees.
 

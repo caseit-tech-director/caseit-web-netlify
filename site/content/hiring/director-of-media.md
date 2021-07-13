@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Director of Media
 description: The Director of Media is impeccably skilled at being in the right
   place at the right time to capture the competitive spirit, energetic
@@ -46,4 +46,4 @@ netlify-cms-collection-ignore: false
 
 **CONTACT**
 
-Questions regarding the Director of Media role can be directed to the Vice-Chair of Marketing, Rachel Vicencio, at rvicenci@sfu.ca
+Questions regarding the Director of Media role can be directed to the Vice-Chair of Marketing, Rachel Vicencio, at rvicenci@sfu.ca -->

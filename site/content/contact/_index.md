@@ -3,7 +3,7 @@ title: Contact
 subtitle: Let's Talk!
 contact_entries:
   - heading: Email
-    text: We would love to answer your questions about CaseIT 2021!
+    text: We would love to answer your questions about CaseIT 2022!
     link: caseit@sfu.ca
   - heading: Quick Question?
     text: For more casual inquiries, you can reach us through Facebook or Instagram

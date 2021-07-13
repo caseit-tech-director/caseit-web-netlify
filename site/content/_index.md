@@ -1,12 +1,9 @@
 ---
 title: The Premier MIS Case Competition
-subtitle: International Case Competition, reimagined
+subtitle: International Case Competition
 pitch1:
   heading: Expand your network
-  text: "An international stage. A rigorous competition. CaseIT aims to challenge
-    your traditional thinking to foster analytic skills and experience. CaseIT’s
-    week-long competition leaves competitors with passion, fulfillment, and
-    fosters lasting connections. "
+  text: "An international stage. A rigorous competition. CaseIT aims to challenge your traditional thinking to foster analytical skills and experience. CaseIT’s week-long competition leaves competitors with passion, fulfillment, and lasting connections. "
   imageUrl: img/dsc03831.jpg
   ctaText: Learn more about CaseIT 2021
   link: /competition/
@@ -53,7 +50,7 @@ sponsors:
   heading: Sponsors
   text: >
     
-    We would like to extend a big thank you to our 2020 sponsors for helping us create a phenomenal event. Your involvement has helped CaseIT create connections and inspire learning and growth for 872 undergraduate competitors, representing 47 universities, and 19 countries since 2004.
+    We would like to extend a big thank you to our 2020 sponsors for helping us create a phenomenal event. Your involvement has helped CaseIT create connections and inspire learning and growth for 936 undergraduate competitors, representing 47 universities, and 19 countries since 2004.
   ctaText: See  Benefits
   imageUrl: img/sponsors-logo.png
   link: /sponsorship/

@@ -4,9 +4,10 @@ image: img/competition-judges-large.jpg
 description: Learn more about story behind CaseIT
 type: about
 ---
-{{<lead>}}To date CaseIT has hosted 872 undergraduate competitors, 49 universities, and 19 different countries. {{</lead>}}
+{{<lead>}}To date CaseIT has hosted 936 undergraduate competitors, 49 universities, and 19 different countries. {{</lead>}}
 
-CaseIT’s mission is to provide an unparalleled, rigorous, and engaging competition for talented business students to challenge themselves on an international stage. Therefore, every year, the CaseIT organizing committee introduces new ways to challenge competitors. 
+CaseIT’s mission is to provide an unparalleled, rigorous, and engaging competition for talented business students to challenge themselves on an international stage.  Therefore, the CaseIT organizing committee introduces new ways to challenge competitors each year.
+ 
 
 ## 2004
 
@@ -30,7 +31,7 @@ CaseIT expands its reach, hosting competitors from North America, Europe, Africa
 
 ## 2012
 
-The competition reaches a new continent by inviting its first Austratlian team to compete.
+The competition reaches a new continent by inviting its first Australian team to compete. 
 
 ## 2013
 
